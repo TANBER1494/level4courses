@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EELU Level 4 | Home</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style></style>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <img src="final EELU logo-01.png" alt="EELU Logo" class="header-logo" />
+        <h1>EELU Level 4</h1>
+        <div class="header-placeholder"></div>
+      </div>
+    </header>
+
+    <main class="container page-container">
+      <div id="homePage" class="page active">
+        <h2 class="section-title">Choose a Subject to Review</h2>
+        <div class="subjects-grid" id="subjectsGrid"></div>
+      </div>
+      <div id="subjectPage" class="page hidden-right">
+        <a href="#" class="back-button" id="backToHomeButton"
+          >&larr; Back to Home</a
+        >
+        <h2 class="section-title" id="subjectTitle"></h2>
+        <div class="options-container">
+          <div class="option-card" id="questionBankButton">
+            <h3>Question Bank</h3>
+          </div>
+          <div class="option-card" id="quizButton">
+            <h3>Quizzes & Final Reviews</h3>
+          </div>
+          <div
+            class="option-card"
+            onclick="window.open('https://web.telegram.org/a/#-1002611464287', '_blank')"
+          >
+            <h3>Records</h3>
+          </div>
+        </div>
+      </div>
+      <div id="lectureSelectionPage" class="page hidden-right">
+        <a href="#" class="back-button" id="backToSubjectButton"
+          >&larr; Back to Subject Menu</a
+        >
+        <h2 class="section-title" id="lectureSelectionTitle"></h2>
+        <div class="lecture-grid" id="lectureGrid"></div>
+      </div>
+      <div id="lectureDetailPage" class="page hidden-right">
+        <a href="#" class="back-button" id="backToLecturesButton"
+          >&larr; Back to Lectures</a
+        >
+        <h2 class="section-title" id="lectureDetailTitle"></h2>
+        <div id="lectureDetailContent"></div>
+      </div>
+      <div id="quizPage" class="page hidden-right">
+        <a
+          href="#"
+          class="back-button"
+          id="backToLectureSelectionFromQuizButton"
+          >&larr; Back to Lecture Selection</a
+        >
+        <h2 class="section-title" id="quizTitle"></h2>
+        <form id="quizForm"></form>
+        <button id="submitQuizButton" class="submit-button">Submit Quiz</button>
+        <div id="quizResults" style="display: none"></div>
+      </div>
+    </main>
+
+    <script src="app.js" defer></script>
+
+    <script></script>
+  </body>
+</html>
