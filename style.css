@@ -297,3 +297,25 @@ label.incorrect {
   background-color: #bdc3c7;
   cursor: not-allowed;
 }
+.main-footer-credit {
+  position: fixed; /* يجعل العنصر ثابتًا في مكانه بالشاشة */
+  bottom: 0; /* يثبته في الأسفل */
+  width: 100%; /* يجعله يمتد بعرض الشاشة */
+  text-align: center;
+  padding: 10px 0; /* قللنا الـ padding قليلًا */
+  color: #a0a0a0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+}
+
+/* ابحث عن هذا الكود */
+.page-container {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+/* وقم بزيادة الـ padding-bottom ليصبح هكذا */
+.page-container {
+  position: relative;
+  padding-bottom: 60px; /* لترك مساحة كافية للـ footer */
+}
