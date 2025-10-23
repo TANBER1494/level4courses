@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     submitQuizBtn: document.getElementById("submitQuizButton"),
   };
   const mainHeader = document.getElementById("mainHeader");
-
+  const footerCredit = document.getElementById("footerCredit");
   // --- متغيرات الحالة ---
   let currentSubject = {};
   let quizQuestions = [];
@@ -127,8 +127,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (activePage === pageElements.home) {
       mainHeader.style.display = "block";
+      footerCredit.style.display = "block";
     } else {
       mainHeader.style.display = "none";
+      footerCredit.style.display = "none";
     }
 
     Object.values(pageElements).forEach((page) => {
