@@ -215,6 +215,152 @@
           "correction": "It's an example of Digital Data, Analog Signal."
         }
       ]
+    },
+    "2": {
+      "mcq": [
+        {
+          "q": "A signal in which the intensity varies in a smooth fashion over time is called a _______ signal.",
+          "opts": ["Discrete", "Digital", "Continuous", "Square"],
+          "answer": "Continuous"
+        },
+        {
+          "q": "A signal that maintains a constant level and then changes to another constant level is called a _______ signal.",
+          "opts": ["Continuous", "Analog", "Sine", "Discrete"],
+          "answer": "Discrete"
+        },
+        {
+          "q": "Which of these is used in digital systems to represent binary data (0s and 1s)?",
+          "opts": [
+            "Sine Wave",
+            "Square Wave",
+            "Continuous Signal",
+            "Analog Signal"
+          ],
+          "answer": "Square Wave"
+        },
+        {
+          "q": "The peak value (height) of a sine wave, representing its strength, is called its _______.",
+          "opts": ["Frequency", "Period", "Phase", "Amplitude"],
+          "answer": "Amplitude"
+        },
+        {
+          "q": "The number of complete cycles a sine wave makes per second is called its _______.",
+          "opts": ["Frequency", "Period", "Phase", "Amplitude"],
+          "answer": "Frequency"
+        },
+        {
+          "q": "The time it takes for a sine wave to complete one full cycle is called its _______.",
+          "opts": ["Frequency", "Period", "Phase", "Amplitude"],
+          "answer": "Period"
+        },
+        {
+          "q": "The horizontal shift, or starting point, of a sine wave on the time axis is called its _______.",
+          "opts": ["Frequency", "Period", "Phase", "Amplitude"],
+          "answer": "Phase"
+        },
+        {
+          "q": "What is the correct mathematical relationship between Period (T) and Frequency (f)?",
+          "opts": ["T = f", "T = f * 2", "T = 1 / f", "T = f / 1"],
+          "answer": "T = 1 / f"
+        },
+        {
+          "q": "The mathematical tool used to decompose a complex signal into its simple sine wave components is called _______.",
+          "opts": [
+            "Spectrum Analysis",
+            "Fourier Analysis",
+            "Amplitude Modulation",
+            "Time Domain Analysis"
+          ],
+          "answer": "Fourier Analysis"
+        },
+        {
+          "q": "The range of frequencies contained within a signal is called its _______.",
+          "opts": ["Spectrum", "Period", "Phase", "Amplitude"],
+          "answer": "Spectrum"
+        },
+        {
+          "q": "A component of zero frequency (f=0) in a signal's spectrum is known as a _______ component.",
+          "opts": ["AC", "Phase", "DC", "Peak"],
+          "answer": "DC"
+        },
+        {
+          "q": "The difference between the upper and lower frequencies in a continuous band is called _______.",
+          "opts": ["Data Rate", "Spectrum", "Bandwidth", "Frequency"],
+          "answer": "Bandwidth"
+        },
+        {
+          "q": "Which of the following applications typically requires the largest bandwidth?",
+          "opts": ["Telephone Voice", "AM Radio", "FM Radio", "Wi-Fi & 5G"],
+          "answer": "Wi-Fi & 5G"
+        },
+        {
+          "q": "A perfect square wave (ideal digital signal) theoretically has _______ bandwidth.",
+          "opts": ["Zero", "Limited", "Infinite", "Small"],
+          "answer": "Infinite"
+        },
+        {
+          "q": "Which equation correctly describes a sine wave?",
+          "opts": [
+            "s(t) = A * f(t)",
+            "s(t) = A + f + t",
+            "s(t) = A sin(2πft + φ)",
+            "s(t) = A / sin(t)"
+          ],
+          "answer": "s(t) = A sin(2πft + φ)"
+        }
+      ],
+      "tf": [
+        {
+          "q": "A square wave is an example of a continuous signal.",
+          "answer": "False",
+          "correction": "It is an example of a discrete signal."
+        },
+        {
+          "q": "In the equation s(t) = A sin(2πft + φ), 'A' represents the frequency.",
+          "answer": "False",
+          "correction": "It represents the Amplitude (peak strength)."
+        },
+        {
+          "q": "If a signal has a frequency of 10 Hz, its period (T) is 0.1 seconds.",
+          "answer": "True",
+          "correction": ""
+        },
+        {
+          "q": "A sine wave with a phase (φ) of 0 starts at its maximum peak value.",
+          "answer": "False",
+          "correction": "It starts at the 0 value, going positive."
+        },
+        {
+          "q": "Any complex signal, including a square wave, can be represented as a sum of simple sine waves.",
+          "answer": "True",
+          "correction": ""
+        },
+        {
+          "q": "The 'spectrum' of a signal shows how its amplitude changes over time.",
+          "answer": "False",
+          "correction": "It shows the range of frequencies the signal contains."
+        },
+        {
+          "q": "A DC component in a signal has a frequency of 0 Hz.",
+          "answer": "True",
+          "correction": ""
+        },
+        {
+          "q": "Higher bandwidth in a communication channel allows for slower data rates.",
+          "answer": "False",
+          "correction": "It allows for faster data rates."
+        },
+        {
+          "q": "AM radio uses a larger bandwidth than FM radio.",
+          "answer": "False",
+          "correction": "FM radio uses a much larger bandwidth (e.g., 200 kHz vs 10 kHz)."
+        },
+        {
+          "q": "A digital signal (square wave) requires a large bandwidth to be transmitted accurately.",
+          "answer": "True",
+          "correction": "A larger bandwidth is needed to represent the sharp edges."
+        }
+      ]
     }
   },
   "acn": {},

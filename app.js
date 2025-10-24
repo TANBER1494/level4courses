@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     questionBankBtn: document.getElementById("questionBankButton"),
     quizBtn: document.getElementById("quizButton"),
     submitQuizBtn: document.getElementById("submitQuizButton"),
+    newQuizBtn: document.getElementById("newQuizButton"),
   };
   const mainHeader = document.getElementById("mainHeader");
   const footerCredit = document.getElementById("footerCredit");
@@ -66,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentSubject = {};
   let quizQuestions = [];
   let lectureSelectionMode = "view";
-
+  let currentLectureNum = null;
   // --- تحميل بيانات الأسئلة من ملف JSON ---
   fetch("questions.json")
     .then((response) => response.json())
@@ -78,13 +79,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // --- دالة تشغيل التطبيق الرئيسية ---
   function initializeApp() {
-    // بناء واجهة المستخدم الأولية
     subjects.forEach((subject) => {
       const card = document.createElement("div");
       card.className = "subject-card";
       card.innerHTML = `<div class="card-content"><h3>${subject.title}</h3><p>${subject.description}</p></div>`;
       card.addEventListener("click", () => showSubjectPage(subject));
       UIElements.subjectsGrid.appendChild(card);
+      UIElements.newQuizBtn.addEventListener("click", () =>
+        startQuiz(currentLectureNum)
+      );
     });
 
     // ربط الأحداث بالأزرار
@@ -187,13 +190,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const subjectLectures = lectureData[currentSubject.id] || {};
     const lectureKeys = Object.keys(subjectLectures);
 
-    // يمكنك تغيير الرقم 20 إلى العدد الفعلي للمحاضرات أو جعله ديناميكيًا
     for (let i = 1; i <= 20; i++) {
       const btn = document.createElement("div");
       btn.className = "lecture-button";
       btn.textContent = `Lecture ${i}`;
 
-      // (اختياري) تعطيل الزر إذا لم تكن هناك بيانات للمحاضرة
       if (!lectureKeys.includes(i.toString())) {
         btn.classList.add("disabled");
       }
@@ -218,8 +219,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const mcqHtml = `<div class="question-section"><h3>MCQ Questions</h3>${data.mcq
       .map(
-        (q) =>
-          `<div class="question"><p>${q.q}</p><ul>${q.opts
+        (q, index) =>
+          `<div class="question"><p>${index + 1}. ${q.q}</p><ul>${q.opts
             .map(
               (opt) =>
                 `<li class="${
@@ -229,12 +230,15 @@ document.addEventListener("DOMContentLoaded", function () {
             .join("")}</ul></div>`
       )
       .join("")}</div>`;
+
     const tfHtml = `<div class="question-section"><h3>True / False Questions</h3>${data.tf
       .map(
-        (q) =>
-          `<div class="question"><p>${q.q}</p><div class="answer"><b>Answer: ${
-            q.answer
-          }.</b> ${q.correction || ""}</div></div>`
+        (q, index) =>
+          `<div class="question"><p>${data.mcq.length + index + 1}. ${
+            q.q
+          }</p><div class="answer"><b>Answer: ${q.answer}.</b> ${
+            q.correction || ""
+          }</div></div>`
       )
       .join("")}</div>`;
     UIElements.lectureDetailContent.innerHTML = mcqHtml + tfHtml;
@@ -246,11 +250,12 @@ document.addEventListener("DOMContentLoaded", function () {
       alert(`A quiz for Lecture ${lectureNum} is not available yet.`);
       return;
     }
-
+    currentLectureNum = lectureNum;
     UIElements.quizTitle.textContent = `${currentSubject.title} - Quiz (Lecture ${lectureNum})`;
     UIElements.quizResults.style.display = "none";
     UIElements.submitQuizBtn.disabled = false;
     UIElements.submitQuizBtn.style.display = "block";
+    UIElements.newQuizBtn.style.display = "none";
 
     const allQuestions = [
       ...data.mcq.map((q) => ({ ...q, type: "mcq" })),
@@ -288,7 +293,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const questionDiv = document.getElementById(`quiz-q${index}`);
       const labels = questionDiv.querySelectorAll("label");
 
-      // تعطيل جميع خيارات الإجابة بعد التصحيح
       const inputs = questionDiv.querySelectorAll('input[type="radio"]');
       inputs.forEach((input) => (input.disabled = true));
 
@@ -310,5 +314,6 @@ document.addEventListener("DOMContentLoaded", function () {
     UIElements.quizResults.style.display = "block";
     UIElements.submitQuizBtn.disabled = true;
     UIElements.submitQuizBtn.style.display = "none";
+    UIElements.newQuizBtn.style.display = "block";
   }
 });
