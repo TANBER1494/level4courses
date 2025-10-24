@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
-  let lectureData = {}; // سيتم ملء هذا المتغير من ملف JSON
+  let currentSubjectData = {}; // سيحتفظ ببيانات المادة الحالية فقط
 
   // --- عناصر الواجهة الرسومية ---
   const pageElements = {
@@ -63,71 +63,60 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   const mainHeader = document.getElementById("mainHeader");
   const footerCredit = document.getElementById("footerCredit");
+
   // --- متغيرات الحالة ---
   let currentSubject = {};
   let quizQuestions = [];
   let lectureSelectionMode = "view";
   let currentLectureNum = null;
-  // --- تحميل بيانات الأسئلة من ملف JSON ---
-  fetch("questions.json")
-    .then((response) => response.json())
-    .then((data) => {
-      lectureData = data;
-      initializeApp(); // تشغيل التطبيق بعد تحميل البيانات بنجاح
-    })
-    .catch((error) => console.error("Error loading lecture data:", error));
 
-  // --- دالة تشغيل التطبيق الرئيسية ---
-  function initializeApp() {
-    subjects.forEach((subject) => {
-      const card = document.createElement("div");
-      card.className = "subject-card";
-      card.innerHTML = `<div class="card-content"><h3>${subject.title}</h3><p>${subject.description}</p></div>`;
-      card.addEventListener("click", () => showSubjectPage(subject));
-      UIElements.subjectsGrid.appendChild(card);
-      UIElements.newQuizBtn.addEventListener("click", () =>
-        startQuiz(currentLectureNum)
-      );
-    });
+  // --- بناء الواجهة الأولية وربط الأحداث ---
+  subjects.forEach((subject) => {
+    const card = document.createElement("div");
+    card.className = "subject-card";
+    card.innerHTML = `<div class="card-content"><h3>${subject.title}</h3><p>${subject.description}</p></div>`;
+    card.addEventListener("click", () => showSubjectPage(subject));
+    UIElements.subjectsGrid.appendChild(card);
+  });
 
-    // ربط الأحداث بالأزرار
-    UIElements.backToHomeBtn.addEventListener("click", (e) => {
+  UIElements.backToHomeBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    showHomePage();
+  });
+  UIElements.backToSubjectBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    showSubjectPage(currentSubject);
+  });
+  UIElements.backToLecturesBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    showLectureSelectionPage("view");
+  });
+  UIElements.backToLectureSelectionFromQuizBtn.addEventListener(
+    "click",
+    (e) => {
       e.preventDefault();
-      showHomePage();
-    });
-    UIElements.backToSubjectBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      showSubjectPage(currentSubject);
-    });
-    UIElements.backToLecturesBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      showLectureSelectionPage("view");
-    });
-    UIElements.backToLectureSelectionFromQuizBtn.addEventListener(
-      "click",
-      (e) => {
-        e.preventDefault();
-        showLectureSelectionPage("quiz");
-      }
-    );
-    UIElements.questionBankBtn.addEventListener("click", () =>
-      showLectureSelectionPage("view")
-    );
-    UIElements.quizBtn.addEventListener("click", () =>
-      showLectureSelectionPage("quiz")
-    );
-    UIElements.quizForm.addEventListener("submit", checkQuizAnswers);
-    UIElements.submitQuizBtn.addEventListener("click", () =>
-      UIElements.quizForm.requestSubmit()
-    );
-  }
+      showLectureSelectionPage("quiz");
+    }
+  );
+  UIElements.questionBankBtn.addEventListener("click", () =>
+    showLectureSelectionPage("view")
+  );
+  UIElements.quizBtn.addEventListener("click", () =>
+    showLectureSelectionPage("quiz")
+  );
+  UIElements.quizForm.addEventListener("submit", checkQuizAnswers);
+  UIElements.newQuizBtn.addEventListener("click", () =>
+    startQuiz(currentLectureNum)
+  );
+  UIElements.submitQuizBtn.addEventListener("click", () =>
+    UIElements.quizForm.requestSubmit()
+  );
 
   // --- دوال التنقل وإدارة الواجهة ---
 
   function transitionTo(activePage) {
     window.scrollTo(0, 0);
     document.body.style.overflowY = "hidden";
-
     if (activePage === pageElements.home) {
       mainHeader.style.display = "block";
       footerCredit.style.display = "block";
@@ -135,7 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
       mainHeader.style.display = "none";
       footerCredit.style.display = "none";
     }
-
     Object.values(pageElements).forEach((page) => {
       const isActive = page.classList.contains("active");
       if (page === activePage) {
@@ -146,12 +134,10 @@ document.addEventListener("DOMContentLoaded", function () {
         page.classList.remove("active");
       }
     });
-
     setTimeout(() => {
       const pageContentHeight =
         document.querySelector(".page.active").scrollHeight;
       const windowHeight = window.innerHeight;
-
       if (pageContentHeight > windowHeight) {
         document.body.style.overflowY = "auto";
       } else {
@@ -163,20 +149,37 @@ document.addEventListener("DOMContentLoaded", function () {
   function showHomePage() {
     transitionTo(pageElements.home);
   }
-
   function showSubjectPage(subject) {
     currentSubject = subject;
     UIElements.subjectTitle.textContent = subject.title;
     transitionTo(pageElements.subject);
   }
 
-  function showLectureSelectionPage(mode) {
+  // --- ** تعديل جوهري هنا ** ---
+  // الآن يتم تحميل البيانات عند دخول صفحة اختيار المحاضرات
+  async function showLectureSelectionPage(mode) {
     lectureSelectionMode = mode;
     UIElements.lectureSelectionTitle.textContent = `${
       currentSubject.title
     } - Select a Lecture for ${mode === "view" ? "Review" : "Quiz"}`;
-    populateLectures();
+    UIElements.lectureGrid.innerHTML = "<h2>Loading...</h2>"; // رسالة تحميل مؤقتة
     transitionTo(pageElements.lectureSelection);
+
+    try {
+      const response = await fetch(`${currentSubject.id}.json`);
+      if (!response.ok)
+        throw new Error(
+          `File not found or error loading: ${response.statusText}`
+        );
+      currentSubjectData = await response.json();
+    } catch (error) {
+      console.error("Failed to fetch subject data:", error);
+      UIElements.lectureGrid.innerHTML = `<p style="text-align:center; color: red;">Could not load questions for this subject.</p>`;
+      currentSubjectData = {}; // إفراغ البيانات عند حدوث خطأ
+      return; // التوقف عن التنفيذ
+    }
+
+    populateLectures();
   }
 
   function showLectureDetailPage(lectureNum) {
@@ -187,18 +190,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function populateLectures() {
     UIElements.lectureGrid.innerHTML = "";
-    const subjectLectures = lectureData[currentSubject.id] || {};
-    const lectureKeys = Object.keys(subjectLectures);
-
+    const lectureKeys = Object.keys(currentSubjectData);
+    if (lectureKeys.length === 0) {
+      UIElements.lectureGrid.innerHTML = `<p style="text-align:center;">No lectures available for this subject yet.</p>`;
+      return;
+    }
     for (let i = 1; i <= 20; i++) {
       const btn = document.createElement("div");
       btn.className = "lecture-button";
       btn.textContent = `Lecture ${i}`;
-
       if (!lectureKeys.includes(i.toString())) {
-        btn.classList.add("disabled");
+        btn.classList.add("disabled"); // يمكنك إضافة تنسيق للزر غير المفعل في CSS
       }
-
       if (lectureSelectionMode === "view") {
         btn.onclick = () => showLectureDetailPage(i);
       } else {
@@ -210,13 +213,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function populateLectureDetails(lectureNum) {
     UIElements.lectureDetailContent.innerHTML = "";
-    const data = lectureData[currentSubject.id]?.[lectureNum];
+    const data = currentSubjectData?.[lectureNum];
     if (!data) {
       UIElements.lectureDetailContent.innerHTML =
         "<h3>No questions available for this lecture yet.</h3>";
       return;
     }
-
     const mcqHtml = `<div class="question-section"><h3>MCQ Questions</h3>${data.mcq
       .map(
         (q, index) =>
@@ -230,7 +232,6 @@ document.addEventListener("DOMContentLoaded", function () {
             .join("")}</ul></div>`
       )
       .join("")}</div>`;
-
     const tfHtml = `<div class="question-section"><h3>True / False Questions</h3>${data.tf
       .map(
         (q, index) =>
@@ -245,24 +246,22 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function startQuiz(lectureNum) {
-    const data = lectureData[currentSubject.id]?.[lectureNum];
+    currentLectureNum = lectureNum;
+    const data = currentSubjectData?.[lectureNum];
     if (!data || (data.mcq.length === 0 && data.tf.length === 0)) {
       alert(`A quiz for Lecture ${lectureNum} is not available yet.`);
       return;
     }
-    currentLectureNum = lectureNum;
     UIElements.quizTitle.textContent = `${currentSubject.title} - Quiz (Lecture ${lectureNum})`;
     UIElements.quizResults.style.display = "none";
     UIElements.submitQuizBtn.disabled = false;
     UIElements.submitQuizBtn.style.display = "block";
     UIElements.newQuizBtn.style.display = "none";
-
     const allQuestions = [
       ...data.mcq.map((q) => ({ ...q, type: "mcq" })),
       ...data.tf.map((q) => ({ ...q, type: "tf" })),
     ];
     quizQuestions = allQuestions.sort(() => 0.5 - Math.random()).slice(0, 10);
-
     UIElements.quizForm.innerHTML = quizQuestions
       .map((q, index) => {
         const options =
@@ -279,7 +278,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }. ${q.q}</p><div class="quiz-options">${options}</div></div>`;
       })
       .join("");
-
     transitionTo(pageElements.quiz);
   }
 
@@ -292,14 +290,11 @@ document.addEventListener("DOMContentLoaded", function () {
       );
       const questionDiv = document.getElementById(`quiz-q${index}`);
       const labels = questionDiv.querySelectorAll("label");
-
       const inputs = questionDiv.querySelectorAll('input[type="radio"]');
       inputs.forEach((input) => (input.disabled = true));
-
       if (selected) {
         const isCorrect = selected.value === q.answer;
         if (isCorrect) score++;
-
         labels.forEach((label) => {
           const radioInput = label.querySelector("input");
           if (radioInput.value === q.answer) {
