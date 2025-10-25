@@ -6,27 +6,37 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Advanced Computer Networks",
       description:
         "A question bank and quizzes for advanced computer networks.",
+      driveLink:
+        "https://drive.google.com/drive/folders/1OKxFA0FkT1_kgfCB2ft8VkuA8UKABC1B?usp=drive_link",
     },
     {
       id: "ct",
       title: "Communication Technology",
       description: "A question bank and quizzes for communication technology.",
+      driveLink:
+        "https://drive.google.com/drive/folders/1J5Y6DOYHa2gbi_mMKylFaG5ms4d7Boba?usp=drive_link",
     },
     {
       id: "cg",
       title: "Computer Graphics",
       description: "A question bank and quizzes for computer graphics.",
+      driveLink:
+        "https://drive.google.com/drive/folders/1s_8SKV7LXP8Q5TXWo4R6ta3gONC4LfBK?usp=drive_link",
     },
     {
       id: "es",
       title: "Embedded Systems",
       description: "A question bank and quizzes for embedded systems .",
+      driveLink:
+        "https://drive.google.com/drive/folders/1XOYeK6lDH-y0hvFrqt9oFC3g9D96wghP?usp=drive_link",
     },
     {
       id: "se",
       title: "Selected Labs in Software Engineering",
       description:
         "A question bank and quizzes for selected software engineering labs.",
+      driveLink:
+        "https://drive.google.com/drive/folders/1mGZzQCC43RILbC2TFp1CklVHJaDWASHG?usp=drive_link",
     },
   ];
 
@@ -42,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   const UIElements = {
     subjectsGrid: document.getElementById("subjectsGrid"),
+    recordsButton: document.getElementById("recordsButton"),
     subjectTitle: document.getElementById("subjectTitle"),
     lectureSelectionTitle: document.getElementById("lectureSelectionTitle"),
     lectureGrid: document.getElementById("lectureGrid"),
@@ -152,6 +163,10 @@ document.addEventListener("DOMContentLoaded", function () {
   function showSubjectPage(subject) {
     currentSubject = subject;
     UIElements.subjectTitle.textContent = subject.title;
+
+    UIElements.recordsButton.onclick = () => {
+    window.open(subject.driveLink, '_blank');
+  };
     transitionTo(pageElements.subject);
   }
 
