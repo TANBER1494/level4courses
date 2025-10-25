@@ -1,0 +1,163 @@
+{
+  "1": {
+    "mcq": [
+      {
+        "q": "Which of the following is NOT a principle behind transport layer services?",
+        "opts": [
+          "Reliable data transfer",
+          "Flow control",
+          "Routing",
+          "Multiplexing"
+        ],
+        "answer": "Routing"
+      },
+      {
+        "q": "The Internet transport protocol that provides connectionless transport is called _______.",
+        "opts": ["TCP", "UDP", "IP", "HTTP"],
+        "answer": "UDP"
+      },
+      {
+        "q": "The Internet transport protocol that provides connection-oriented reliable transport is called _______.",
+        "opts": ["TCP", "UDP", "IP", "HTTP"],
+        "answer": "TCP"
+      },
+      {
+        "q": "The transport layer provides logical communication between _______ running on different hosts.",
+        "opts": ["Networks", "Processes", "Data links", "Routers"],
+        "answer": "Processes"
+      },
+      {
+        "q": "On the sender side, the transport layer breaks application messages into _______.",
+        "opts": ["Packets", "Frames", "Segments", "Bits"],
+        "answer": "Segments"
+      },
+      {
+        "q": "On the receiver side, the transport layer _______ segments back into messages.",
+        "opts": ["Reassembles", "Breaks", "Routes", "Discards"],
+        "answer": "Reassembles"
+      },
+      {
+        "q": "The network layer provides communication between _______.",
+        "opts": ["Hosts", "Processes", "Applications", "Sockets"],
+        "answer": "Hosts"
+      },
+      {
+        "q": "In the 'household analogy', hosts are equivalent to _______.",
+        "opts": ["Kids", "Houses", "Letters", "Post office"],
+        "answer": "Houses"
+      },
+      {
+        "q": "In the 'household analogy', processes are equivalent to _______.",
+        "opts": ["Kids", "Houses", "Letters", "Post office"],
+        "answer": "Kids"
+      },
+      {
+        "q": "The receiver's transport layer receives a segment from the _______ layer.",
+        "opts": ["Application", "IP", "Link", "Physical"],
+        "answer": "IP"
+      },
+      {
+        "q": "The process of passing a received message up to the correct application via a socket is called _______.",
+        "opts": ["Multiplexing", "Demultiplexing", "Encoding", "Flow control"],
+        "answer": "Demultiplexing"
+      },
+      {
+        "q": "Which protocol provides reliable, in-order delivery?",
+        "opts": ["TCP", "UDP", "IP", "HTTP"],
+        "answer": "TCP"
+      },
+      {
+        "q": "Which protocol provides unreliable, unordered delivery?",
+        "opts": ["TCP", "UDP", "IP", "HTTP"],
+        "answer": "UDP"
+      },
+      {
+        "q": "Which of the following is NOT a feature of TCP?",
+        "opts": [
+          "Flow control",
+          "Connection setup",
+          "Bandwidth guarantees",
+          "Congestion control"
+        ],
+        "answer": "Bandwidth guarantees"
+      },
+      {
+        "q": "UDP is described as a no-frills extension of _______.",
+        "opts": ["TCP", "\"best-effort\" IP", "HTTP", "Ethernet"],
+        "answer": "\"best-effort\" IP"
+      },
+      {
+        "q": "Which of these services is NOT available from Internet transport protocols?",
+        "opts": [
+          "Reliable delivery",
+          "Flow control",
+          "Delay guarantees",
+          "Congestion control"
+        ],
+        "answer": "Delay guarantees"
+      }
+    ],
+    "tf": [
+      {
+        "q": "UDP is a connection-oriented transport protocol.",
+        "answer": "False",
+        "correction": "UDP provides connectionless transport."
+      },
+      {
+        "q": "TCP provides reliable, in-order delivery.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The transport layer provides logical communication between hosts.",
+        "answer": "False",
+        "correction": "It provides logical communication between application processes."
+      },
+      {
+        "q": "The sender's transport layer breaks application messages into segments.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The network layer provides communication between processes.",
+        "answer": "False",
+        "correction": "It provides communication between hosts."
+      },
+      {
+        "q": "The transport layer relies on and enhances network layer services.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The sender's transport layer passes a created segment directly to the Link layer.",
+        "answer": "False",
+        "correction": "It passes the segment to IP (the network layer)."
+      },
+      {
+        "q": "The receiver's transport layer receives segments from the IP layer.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP provides congestion control and flow control.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "UDP provides congestion control.",
+        "answer": "False",
+        "correction": "It is a 'no-frills' protocol; TCP provides congestion control."
+      },
+      {
+        "q": "TCP provides connection setup.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Internet transport protocols like TCP and UDP offer bandwidth guarantees.",
+        "answer": "False",
+        "correction": "This service is not available from them."
+      }
+    ]
+  }
+}
