@@ -109,6 +109,7 @@ body {
 }
 .subject-card,
 .lecture-button {
+  position: relative;
   background-color: var(--card-bg-color);
   border-radius: 15px;
   cursor: pointer;
@@ -320,3 +321,5 @@ label.incorrect {
   position: relative;
   padding-bottom: 60px; /* لترك مساحة كافية للـ footer */
 }
+
+/* Style for the green checkmark indicator */

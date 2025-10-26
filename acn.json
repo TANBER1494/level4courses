@@ -72,6 +72,41 @@
         "answer": "UDP"
       },
       {
+        "q": "Which TCP service prevents a fast sender from overwhelming a slow receiver?",
+        "opts": [
+          "Congestion control",
+          "Flow control",
+          "Multiplexing",
+          "Reliable data transfer"
+        ],
+        "answer": "Flow control"
+      },
+      {
+        "q": "Which TCP service slows down the sender to avoid overloading the entire network?",
+        "opts": [
+          "Congestion control",
+          "Flow control",
+          "Demultiplexing",
+          "Connection setup"
+        ],
+        "answer": "Congestion control"
+      },
+      {
+        "q": "Which protocol would an online gaming application most likely choose?",
+        "opts": [
+          "TCP, for reliability",
+          "UDP, for speed and low latency",
+          "HTTP, for web access",
+          "IP, directly"
+        ],
+        "answer": "UDP, for speed and low latency"
+      },
+      {
+        "q": "An application sends and receives messages through a/an _______, which acts as a 'door' to the transport layer.",
+        "opts": ["IP address", "MAC address", "Socket", "Frame"],
+        "answer": "Socket"
+      },
+      {
         "q": "Which of the following is NOT a feature of TCP?",
         "opts": [
           "Flow control",
@@ -83,8 +118,8 @@
       },
       {
         "q": "UDP is described as a no-frills extension of _______.",
-        "opts": ["TCP", "\"best-effort\" IP", "HTTP", "Ethernet"],
-        "answer": "\"best-effort\" IP"
+        "opts": ["TCP", "best-effort IP", "HTTP", "Ethernet"],
+        "answer": "best-effort IP"
       },
       {
         "q": "Which of these services is NOT available from Internet transport protocols?",
@@ -154,9 +189,225 @@
         "correction": ""
       },
       {
+        "q": "A web browser (HTTP) is a suitable application for UDP.",
+        "answer": "False",
+        "correction": "Web browsing requires 100% reliability, so it uses TCP."
+      },
+      {
+        "q": "Routers in the middle of the network typically inspect and process the transport layer header.",
+        "answer": "False",
+        "correction": "Routers are network layer devices; they only process the IP header and do not look at the transport layer."
+      },
+      {
+        "q": "A transport-layer segment is created by adding a transport header (Th) to an application message.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
         "q": "Internet transport protocols like TCP and UDP offer bandwidth guarantees.",
         "answer": "False",
         "correction": "This service is not available from them."
+      }
+    ]
+  },
+  "2": {
+    "mcq": [
+      {
+        "q": "The sender-side process of gathering data chunks from different sockets and adding transport headers is called _______.",
+        "opts": ["Demultiplexing", "Multiplexing", "Encapsulation", "Routing"],
+        "answer": "Multiplexing"
+      },
+      {
+        "q": "The receiver-side process of using header info to deliver segments to the correct socket is called _______.",
+        "opts": [
+          "Demultiplexing",
+          "Multiplexing",
+          "Decapsulation",
+          "Flow Control"
+        ],
+        "answer": "Demultiplexing"
+      },
+      {
+        "q": "For connectionless demultiplexing (UDP), a socket is identified only by the _______.",
+        "opts": [
+          "Source port #",
+          "Destination IP address",
+          "Destination port #",
+          "Source IP address"
+        ],
+        "answer": "Destination port #"
+      },
+      {
+        "q": "For connection-oriented demultiplexing (TCP), a socket is identified by a _______.",
+        "opts": ["2-tuple", "3-tuple", "4-tuple", "5-tuple"],
+        "answer": "4-tuple"
+      },
+      {
+        "q": "Which of the following is NOT part of the TCP socket's 4-tuple identifier?",
+        "opts": [
+          "Source IP address",
+          "Destination port #",
+          "MAC address",
+          "Source port #"
+        ],
+        "answer": "MAC address"
+      },
+      {
+        "q": "A single server process can support many simultaneous TCP sockets on the same port because each socket has a unique _______.",
+        "opts": ["Process ID", "4-tuple", "Destination port", "Checksum value"],
+        "answer": "4-tuple"
+      },
+      {
+        "q": "UDP is described as a _______ service.",
+        "opts": [
+          "Reliable delivery",
+          "Best-effort",
+          "Guaranteed bandwidth",
+          "In-order delivery"
+        ],
+        "answer": "Best-effort"
+      },
+      {
+        "q": "Which of the following is a primary reason to use UDP?",
+        "opts": [
+          "Guaranteed reliability",
+          "In-order delivery",
+          "No connection establishment delay",
+          "Congestion control"
+        ],
+        "answer": "No connection establishment delay"
+      },
+      {
+        "q": "Which application is a good candidate for using UDP?",
+        "opts": [
+          "File transfer (FTP)",
+          "Web browsing (HTTP)",
+          "Streaming multimedia",
+          "Email (SMTP)"
+        ],
+        "answer": "Streaming multimedia"
+      },
+      {
+        "q": "The modern web protocol HTTP/3 is built on top of _______.",
+        "opts": ["TCP", "IP directly", "UDP", "Ethernet"],
+        "answer": "UDP"
+      },
+      {
+        "q": "Which field in the UDP header specifies the length of the entire UDP segment (header + data)?",
+        "opts": ["Checksum", "Source Port", "Length", "Data size"],
+        "answer": "Length"
+      },
+      {
+        "q": "What is the primary purpose of the UDP checksum?",
+        "opts": [
+          "Error detection",
+          "Flow control",
+          "Sequencing",
+          "Congestion control"
+        ],
+        "answer": "Error detection"
+      },
+      {
+        "q": "The UDP header consists of 4 fields, making its total size _______.",
+        "opts": ["4 bytes", "8 bytes", "16 bytes", "20 bytes"],
+        "answer": "8 bytes"
+      },
+      {
+        "q": "When a receiver computes a checksum that differs from the one in the segment's header, it indicates _______.",
+        "opts": [
+          "A network delay",
+          "An error was detected",
+          "The sender is too fast",
+          "The connection is lost"
+        ],
+        "answer": "An error was detected"
+      },
+      {
+        "q": "UDP is connectionless, which means there is no _______ between sender and receiver.",
+        "opts": [
+          "Data transfer",
+          "Handshaking",
+          "Demultiplexing",
+          "Checksum calculation"
+        ],
+        "answer": "Handshaking"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Multiplexing happens at the receiving host.",
+        "answer": "False",
+        "correction": "Multiplexing happens at the sending host; demultiplexing happens at the receiver."
+      },
+      {
+        "q": "UDP demultiplexing uses both the destination IP address and destination port number to identify the socket.",
+        "answer": "False",
+        "correction": "UDP demultiplexing uses only the destination port number."
+      },
+      {
+        "q": "A TCP server can handle multiple client connections on the same destination port simultaneously.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "UDP segments may be lost or delivered out-of-order.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "One of UDP's main features is its robust congestion control mechanism.",
+        "answer": "False",
+        "correction": "UDP has no congestion control; it can send data as fast as the application desires."
+      },
+      {
+        "q": "The lack of connection setup makes UDP faster than TCP for initial data transmission.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "DNS is an application that typically runs over TCP.",
+        "answer": "False",
+        "correction": "DNS typically runs over UDP because it involves short, query-response transactions."
+      },
+      {
+        "q": "The UDP checksum is calculated over the UDP header and the application data (payload).",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Internet checksum used by UDP is guaranteed to detect all possible bit flip errors.",
+        "answer": "False",
+        "correction": "The checksum is considered weak protection as some errors can cancel each other out and go undetected."
+      },
+      {
+        "q": "If the computed checksum at the receiver equals the checksum value in the received segment, it proves that no errors occurred.",
+        "answer": "False",
+        "correction": "It means no errors were detected, but errors may still exist."
+      },
+      {
+        "q": "The 'Source Port' field is a mandatory field in the UDP header.",
+        "answer": "False",
+        "correction": "The source port is needed if a reply is expected, but it is not strictly mandatory for a one-way message."
+      },
+      {
+        "q": "The UDP 'Length' field includes the size of the header in its calculation.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP sockets are identified by the destination port number alone.",
+        "answer": "False",
+        "correction": "TCP sockets are identified by a 4-tuple (source IP/port, destination IP/port)."
+      },
+      {
+        "q": "Multiplexing and demultiplexing principles are only used in the transport layer.",
+        "answer": "False",
+        "correction": "These principles happen at multiple layers in the network stack."
+      },
+      {
+        "q": "Reliability can be added to an application running over UDP at the application layer.",
+        "answer": "True",
+        "correction": ""
       }
     ]
   }

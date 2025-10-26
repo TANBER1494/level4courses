@@ -40,9 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
-  let currentSubjectData = {}; // سيحتفظ ببيانات المادة الحالية فقط
+  let currentSubjectData = {};
 
-  // --- عناصر الواجهة الرسومية ---
   const pageElements = {
     home: document.getElementById("homePage"),
     subject: document.getElementById("subjectPage"),
@@ -75,13 +74,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const mainHeader = document.getElementById("mainHeader");
   const footerCredit = document.getElementById("footerCredit");
 
-  // --- متغيرات الحالة ---
   let currentSubject = {};
   let quizQuestions = [];
   let lectureSelectionMode = "view";
   let currentLectureNum = null;
 
-  // --- بناء الواجهة الأولية وربط الأحداث ---
   subjects.forEach((subject) => {
     const card = document.createElement("div");
     card.className = "subject-card";
@@ -123,8 +120,6 @@ document.addEventListener("DOMContentLoaded", function () {
     UIElements.quizForm.requestSubmit()
   );
 
-  // --- دوال التنقل وإدارة الواجهة ---
-
   function transitionTo(activePage) {
     window.scrollTo(0, 0);
     document.body.style.overflowY = "hidden";
@@ -165,19 +160,17 @@ document.addEventListener("DOMContentLoaded", function () {
     UIElements.subjectTitle.textContent = subject.title;
 
     UIElements.recordsButton.onclick = () => {
-    window.open(subject.driveLink, '_blank');
-  };
+      window.open(subject.driveLink, "_blank");
+    };
     transitionTo(pageElements.subject);
   }
 
-  // --- ** تعديل جوهري هنا ** ---
-  // الآن يتم تحميل البيانات عند دخول صفحة اختيار المحاضرات
   async function showLectureSelectionPage(mode) {
     lectureSelectionMode = mode;
     UIElements.lectureSelectionTitle.textContent = `${
       currentSubject.title
     } - Select a Lecture for ${mode === "view" ? "Review" : "Quiz"}`;
-    UIElements.lectureGrid.innerHTML = "<h2>Loading...</h2>"; // رسالة تحميل مؤقتة
+    UIElements.lectureGrid.innerHTML = "<h2>Loading...</h2>";
     transitionTo(pageElements.lectureSelection);
 
     try {
@@ -190,8 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } catch (error) {
       console.error("Failed to fetch subject data:", error);
       UIElements.lectureGrid.innerHTML = `<p style="text-align:center; color: red;">Could not load questions for this subject.</p>`;
-      currentSubjectData = {}; // إفراغ البيانات عند حدوث خطأ
-      return; // التوقف عن التنفيذ
+      currentSubjectData = {};
     }
 
     populateLectures();
@@ -205,23 +197,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function populateLectures() {
     UIElements.lectureGrid.innerHTML = "";
+
+    // احصل على أرقام المحاضرات المتاحة من البيانات التي تم تحميلها
     const lectureKeys = Object.keys(currentSubjectData);
+
+    // في حالة عدم وجود أي محاضرة للمادة
     if (lectureKeys.length === 0) {
       UIElements.lectureGrid.innerHTML = `<p style="text-align:center;">No lectures available for this subject yet.</p>`;
       return;
     }
-    for (let i = 1; i <= 20; i++) {
+
+    lectureKeys.sort((a, b) => Number(a) - Number(b));
+
+    for (const lectureNum of lectureKeys) {
       const btn = document.createElement("div");
       btn.className = "lecture-button";
-      btn.textContent = `Lecture ${i}`;
-      if (!lectureKeys.includes(i.toString())) {
-        btn.classList.add("disabled"); // يمكنك إضافة تنسيق للزر غير المفعل في CSS
-      }
+      btn.textContent = `Lecture ${lectureNum}`;
+
       if (lectureSelectionMode === "view") {
-        btn.onclick = () => showLectureDetailPage(i);
+        btn.onclick = () => showLectureDetailPage(lectureNum);
       } else {
-        btn.onclick = () => startQuiz(i);
+        btn.onclick = () => startQuiz(lectureNum);
       }
+
       UIElements.lectureGrid.appendChild(btn);
     }
   }
