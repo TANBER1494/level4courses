@@ -73,7 +73,18 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   const mainHeader = document.getElementById("mainHeader");
   const footerCredit = document.getElementById("footerCredit");
+  const resultModalOverlay = document.getElementById("resultModalOverlay");
+  const modalScoreText = document.getElementById("modalScoreText");
+  const modalResultImage = document.getElementById("modalResultImage");
+  const closeModalButton = document.getElementById("closeModalButton");
 
+  let fireworksInterval = null;
+  closeModalButton.addEventListener("click", () => {
+    resultModalOverlay.style.display = "none";
+    if (fireworksInterval) {
+      clearInterval(fireworksInterval); // إيقاف الألعاب النارية عند الإغلاق
+    }
+  });
   let currentSubject = {};
   let quizQuestions = [];
   let lectureSelectionMode = "view";
@@ -119,6 +130,38 @@ document.addEventListener("DOMContentLoaded", function () {
   UIElements.submitQuizBtn.addEventListener("click", () =>
     UIElements.quizForm.requestSubmit()
   );
+
+  function startFireworks() {
+    const duration = 5 * 1000; // 5 ثواني
+    const animationEnd = Date.now() + duration;
+    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+    function randomInRange(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+
+    fireworksInterval = setInterval(function () {
+      const timeLeft = animationEnd - Date.now();
+
+      if (timeLeft <= 0) {
+        return clearInterval(fireworksInterval);
+      }
+
+      const particleCount = 50 * (timeLeft / duration);
+      confetti(
+        Object.assign({}, defaults, {
+          particleCount,
+          origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+        })
+      );
+      confetti(
+        Object.assign({}, defaults, {
+          particleCount,
+          origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+        })
+      );
+    }, 250);
+  }
 
   function transitionTo(activePage) {
     window.scrollTo(0, 0);
@@ -302,26 +345,35 @@ document.addEventListener("DOMContentLoaded", function () {
         `input[name="q${index}"]:checked`
       );
       const questionDiv = document.getElementById(`quiz-q${index}`);
-      const labels = questionDiv.querySelectorAll("label");
       const inputs = questionDiv.querySelectorAll('input[type="radio"]');
       inputs.forEach((input) => (input.disabled = true));
       if (selected) {
         const isCorrect = selected.value === q.answer;
         if (isCorrect) score++;
+        const labels = questionDiv.querySelectorAll("label");
         labels.forEach((label) => {
           const radioInput = label.querySelector("input");
-          if (radioInput.value === q.answer) {
-            label.classList.add("correct");
-          } else if (radioInput.checked && !isCorrect) {
+          if (radioInput.value === q.answer) label.classList.add("correct");
+          else if (radioInput.checked && !isCorrect)
             label.classList.add("incorrect");
-          }
         });
       }
     });
-    UIElements.quizResults.innerHTML = `You scored <strong>${score}</strong> out of ${quizQuestions.length}!`;
-    UIElements.quizResults.style.display = "block";
+
     UIElements.submitQuizBtn.disabled = true;
     UIElements.submitQuizBtn.style.display = "none";
     UIElements.newQuizBtn.style.display = "block";
+
+    modalScoreText.innerHTML = `You scored <strong>${score}</strong> out of ${quizQuestions.length}!`;
+
+    if (score === quizQuestions.length && quizQuestions.length > 0) {
+      modalResultImage.src = "10.gif";
+      startFireworks();
+    } else if (score <= 7 && score > 4) {
+      modalResultImage.src = "4.gif";
+    } else {
+      modalResultImage.src = "7.gif";
+    }
+    resultModalOverlay.style.display = "flex";
   }
 });
