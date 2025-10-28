@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // --- DATA ---
   const subjects = [
     {
       id: "acn",
@@ -40,8 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
-  let currentSubjectData = {};
-
   const pageElements = {
     home: document.getElementById("homePage"),
     subject: document.getElementById("subjectPage"),
@@ -59,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
     lectureDetailContent: document.getElementById("lectureDetailContent"),
     quizTitle: document.getElementById("quizTitle"),
     quizForm: document.getElementById("quizForm"),
-    quizResults: document.getElementById("quizResults"),
     backToHomeBtn: document.getElementById("backToHomeButton"),
     backToSubjectBtn: document.getElementById("backToSubjectButton"),
     backToLecturesBtn: document.getElementById("backToLecturesButton"),
@@ -70,6 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
     quizBtn: document.getElementById("quizButton"),
     submitQuizBtn: document.getElementById("submitQuizButton"),
     newQuizBtn: document.getElementById("newQuizButton"),
+    quizActionsContainer: document.getElementById("quizActionsContainer"),
+    chooseAnotherLecBtn: document.getElementById("chooseAnotherLecButton"),
   };
   const mainHeader = document.getElementById("mainHeader");
   const footerCredit = document.getElementById("footerCredit");
@@ -78,25 +76,48 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalResultImage = document.getElementById("modalResultImage");
   const closeModalButton = document.getElementById("closeModalButton");
 
+  fetch("summary.json")
+    .then((response) => response.json())
+    .then((summaryData) => {
+      buildHomePageUI(summaryData);
+    })
+    .catch((error) => {
+      console.error("Could not load summary file:", error);
+      buildHomePageUI({});
+    });
+
+  function buildHomePageUI(summaryData) {
+    UIElements.subjectsGrid.innerHTML = "";
+    subjects.forEach((subject) => {
+      const card = document.createElement("div");
+      card.className = "subject-card";
+      const lectureCount = summaryData[subject.id] || 0;
+      let badgeHTML = "";
+      if (lectureCount > 0) {
+        const lectureText = lectureCount === 1 ? "Lecture" : "Lectures";
+        badgeHTML = `<span class="lecture-count-badge available">📖 ${lectureCount} ${lectureText} Available</span>`;
+      } else {
+        badgeHTML = `<span class="lecture-count-badge unavailable">Coming Soon</span>`;
+      }
+      card.innerHTML = `<div class="card-content"><h3>${subject.title}</h3>${badgeHTML}</div>`;
+      card.addEventListener("click", () => showSubjectPage(subject));
+      UIElements.subjectsGrid.appendChild(card);
+    });
+  }
+
+  let currentSubjectData = {};
   let fireworksInterval = null;
   closeModalButton.addEventListener("click", () => {
     resultModalOverlay.style.display = "none";
     if (fireworksInterval) {
-      clearInterval(fireworksInterval); // إيقاف الألعاب النارية عند الإغلاق
+      clearInterval(fireworksInterval);
     }
   });
+
   let currentSubject = {};
   let quizQuestions = [];
   let lectureSelectionMode = "view";
   let currentLectureNum = null;
-
-  subjects.forEach((subject) => {
-    const card = document.createElement("div");
-    card.className = "subject-card";
-    card.innerHTML = `<div class="card-content"><h3>${subject.title}</h3><p>${subject.description}</p></div>`;
-    card.addEventListener("click", () => showSubjectPage(subject));
-    UIElements.subjectsGrid.appendChild(card);
-  });
 
   UIElements.backToHomeBtn.addEventListener("click", (e) => {
     e.preventDefault();
@@ -127,26 +148,25 @@ document.addEventListener("DOMContentLoaded", function () {
   UIElements.newQuizBtn.addEventListener("click", () =>
     startQuiz(currentLectureNum)
   );
+  UIElements.chooseAnotherLecBtn.addEventListener("click", () =>
+    showLectureSelectionPage("quiz")
+  );
   UIElements.submitQuizBtn.addEventListener("click", () =>
     UIElements.quizForm.requestSubmit()
   );
 
   function startFireworks() {
-    const duration = 5 * 1000; // 5 ثواني
+    const duration = 5 * 1000;
     const animationEnd = Date.now() + duration;
     const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
-
     function randomInRange(min, max) {
       return Math.random() * (max - min) + min;
     }
-
     fireworksInterval = setInterval(function () {
       const timeLeft = animationEnd - Date.now();
-
       if (timeLeft <= 0) {
         return clearInterval(fireworksInterval);
       }
-
       const particleCount = 50 * (timeLeft / duration);
       confetti(
         Object.assign({}, defaults, {
@@ -198,10 +218,10 @@ document.addEventListener("DOMContentLoaded", function () {
   function showHomePage() {
     transitionTo(pageElements.home);
   }
+
   function showSubjectPage(subject) {
     currentSubject = subject;
     UIElements.subjectTitle.textContent = subject.title;
-
     UIElements.recordsButton.onclick = () => {
       window.open(subject.driveLink, "_blank");
     };
@@ -215,7 +235,6 @@ document.addEventListener("DOMContentLoaded", function () {
     } - Select a Lecture for ${mode === "view" ? "Review" : "Quiz"}`;
     UIElements.lectureGrid.innerHTML = "<h2>Loading...</h2>";
     transitionTo(pageElements.lectureSelection);
-
     try {
       const response = await fetch(`${currentSubject.id}.json`);
       if (!response.ok)
@@ -228,7 +247,6 @@ document.addEventListener("DOMContentLoaded", function () {
       UIElements.lectureGrid.innerHTML = `<p style="text-align:center; color: red;">Could not load questions for this subject.</p>`;
       currentSubjectData = {};
     }
-
     populateLectures();
   }
 
@@ -240,29 +258,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function populateLectures() {
     UIElements.lectureGrid.innerHTML = "";
-
-    // احصل على أرقام المحاضرات المتاحة من البيانات التي تم تحميلها
     const lectureKeys = Object.keys(currentSubjectData);
-
-    // في حالة عدم وجود أي محاضرة للمادة
     if (lectureKeys.length === 0) {
       UIElements.lectureGrid.innerHTML = `<p style="text-align:center;">No lectures available for this subject yet.</p>`;
       return;
     }
-
     lectureKeys.sort((a, b) => Number(a) - Number(b));
-
     for (const lectureNum of lectureKeys) {
       const btn = document.createElement("div");
       btn.className = "lecture-button";
       btn.textContent = `Lecture ${lectureNum}`;
-
       if (lectureSelectionMode === "view") {
         btn.onclick = () => showLectureDetailPage(lectureNum);
       } else {
         btn.onclick = () => startQuiz(lectureNum);
       }
-
       UIElements.lectureGrid.appendChild(btn);
     }
   }
@@ -309,10 +319,9 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
     UIElements.quizTitle.textContent = `${currentSubject.title} - Quiz (Lecture ${lectureNum})`;
-    UIElements.quizResults.style.display = "none";
     UIElements.submitQuizBtn.disabled = false;
     UIElements.submitQuizBtn.style.display = "block";
-    UIElements.newQuizBtn.style.display = "none";
+    UIElements.quizActionsContainer.style.display = "none";
     const allQuestions = [
       ...data.mcq.map((q) => ({ ...q, type: "mcq" })),
       ...data.tf.map((q) => ({ ...q, type: "tf" })),
@@ -359,14 +368,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
     });
-
     UIElements.submitQuizBtn.disabled = true;
     UIElements.submitQuizBtn.style.display = "none";
-    UIElements.newQuizBtn.style.display = "block";
-
+    UIElements.quizActionsContainer.style.display = "flex";
     modalScoreText.innerHTML = `You scored <strong>${score}</strong> out of ${quizQuestions.length}!`;
-
-    if (score === quizQuestions.length && quizQuestions.length > 0) {
+    if (score >= 8) {
       modalResultImage.src = "10.gif";
       startFireworks();
     } else if (score <= 7 && score > 4) {

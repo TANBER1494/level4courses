@@ -376,3 +376,28 @@ label.incorrect {
     opacity: 1;
   }
 }
+
+/* Lecture Count Badge Style */
+.lecture-count-badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.lecture-count-badge.available {
+  background-color: var(--correct-color);
+}
+
+.lecture-count-badge.unavailable {
+  background-color: #59ccd4;
+}
+
+.subject-card:hover .lecture-count-badge.available {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(16, 130, 207, 0.5);
+}

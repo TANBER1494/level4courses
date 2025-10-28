@@ -331,6 +331,61 @@
           "Checksum calculation"
         ],
         "answer": "Handshaking"
+      },
+      {
+        "q": "The port number range for well-known protocols (e.g., HTTP, FTP) is:",
+        "opts": ["0 – 1023", "1024 – 49151", "49152 – 65535", "1000 – 9999"],
+        "answer": "0 – 1023"
+      },
+      {
+        "q": "In UDP, reliability, if needed, is usually added at the _______.",
+        "opts": [
+          "Network layer",
+          "Transport layer",
+          "Application layer",
+          "Physical layer"
+        ],
+        "answer": "Application layer"
+      },
+      {
+        "q": "UDP can send data as fast as the application desires because it _______.",
+        "opts": [
+          "Ignores congestion control",
+          "Uses flow control",
+          "Uses sequence numbers",
+          "Is slower than TCP"
+        ],
+        "answer": "Ignores congestion control"
+      },
+      {
+        "q": "The Internet checksum calculation treats the segment's content as a sequence of _______.",
+        "opts": [
+          "32-bit integers",
+          "8-bit integers",
+          "16-bit integers",
+          "Floating-point numbers"
+        ],
+        "answer": "16-bit integers"
+      },
+      {
+        "q": "When adding two numbers in the checksum calculation, a carry-out bit is _______.",
+        "opts": [
+          "Discarded",
+          "Subtracted",
+          "Wrapped around and added",
+          "Ignored"
+        ],
+        "answer": "Wrapped around and added"
+      },
+      {
+        "q": "A key weakness of the Internet checksum is that it _______.",
+        "opts": [
+          "Cannot detect all bit errors",
+          "Significantly increases segment size",
+          "Adds delay to TCP",
+          "Is overly complex"
+        ],
+        "answer": "Cannot detect all bit errors"
       }
     ],
     "tf": [
@@ -408,6 +463,474 @@
         "q": "Reliability can be added to an application running over UDP at the application layer.",
         "answer": "True",
         "correction": ""
+      },
+      {
+        "q": "A datagram socket in UDP is created without requiring a connection setup.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "UDP is called a 'best effort' service because it does not guarantee delivery.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
+  },
+
+  "3": {
+    "mcq": [
+      {
+        "q": "What is the fundamental goal of a reliable data transfer (rdt) protocol?",
+        "opts": [
+          "To provide a reliable channel over an unreliable network",
+          "To guarantee the fastest possible data transfer speed",
+          "To encrypt data packets for security",
+          "To select the shortest physical path for a packet"
+        ],
+        "answer": "To provide a reliable channel over an unreliable network"
+      },
+      {
+        "q": "In the rdt protocol specifications, a Finite State Machine (FSM) is used to _______.",
+        "opts": [
+          "Calculate the checksum",
+          "Specify the sender and receiver behavior",
+          "Measure the Round-Trip Time",
+          "Buffer out-of-order packets"
+        ],
+        "answer": "Specify the sender and receiver behavior"
+      },
+      {
+        "q": "The rdt1.0 protocol assumes the underlying channel is _______.",
+        "opts": [
+          "Perfectly reliable",
+          "Prone to bit errors only",
+          "Prone to packet loss only",
+          "Completely unreliable"
+        ],
+        "answer": "Perfectly reliable"
+      },
+      {
+        "q": "To handle bit errors, the rdt2.0 protocol introduces _______.",
+        "opts": [
+          "A timeout mechanism",
+          "Pipelining",
+          "Checksums, ACKs, and NAKs",
+          "Larger sequence numbers"
+        ],
+        "answer": "Checksums, ACKs, and NAKs"
+      },
+      {
+        "q": "In rdt2.1, what is added to solve the problem of corrupted ACKs/NAKs?",
+        "opts": [
+          "A timeout timer",
+          "Sequence numbers (0 and 1)",
+          "A larger sliding window",
+          "Cumulative ACKs"
+        ],
+        "answer": "Sequence numbers (0 and 1)"
+      },
+      {
+        "q": "In a NAK-free protocol like rdt2.2, how does the sender detect a corrupted packet at the receiver?",
+        "opts": [
+          "By receiving a NAK message",
+          "By receiving a duplicate ACK for the previous packet",
+          "The sender cannot detect corrupted packets",
+          "By waiting for a timeout"
+        ],
+        "answer": "By receiving a duplicate ACK for the previous packet"
+      },
+      {
+        "q": "The primary mechanism introduced in rdt3.0 to handle packet loss is the _______.",
+        "opts": [
+          "Sequence number",
+          "Checksum",
+          "Countdown timer (timeout)",
+          "Sliding window"
+        ],
+        "answer": "Countdown timer (timeout)"
+      },
+      {
+        "q": "A major drawback of 'Stop-and-Wait' protocols like rdt3.0 is _______.",
+        "opts": [
+          "Inability to detect errors",
+          "Inability to handle packet loss",
+          "Very low sender utilization on high-speed links",
+          "Complexity of the receiver"
+        ],
+        "answer": "Very low sender utilization on high-speed links"
+      },
+      {
+        "q": "The technique of allowing the sender to transmit multiple packets without waiting for an ACK is called _______.",
+        "opts": ["Stop-and-Wait", "Flow Control", "Pipelining", "Handshaking"],
+        "answer": "Pipelining"
+      },
+      {
+        "q": "In the Go-Back-N (GBN) protocol, a cumulative ACK, ACK(n), means _______.",
+        "opts": [
+          "Only packet 'n' has been received",
+          "All packets up to and including 'n' have been received",
+          "The receiver is requesting packet 'n'",
+          "Packet 'n' was corrupted"
+        ],
+        "answer": "All packets up to and including 'n' have been received"
+      },
+      {
+        "q": "In the Selective Repeat (SR) protocol, the receiver individually acknowledges _______.",
+        "opts": [
+          "Only the last packet received",
+          "Only in-order packets",
+          "All correctly received packets",
+          "Only the first packet in the window"
+        ],
+        "answer": "All correctly received packets"
+      },
+      {
+        "q": "Scenario (GBN): Sender sends packets 0, 1, 2, 3 (N=4). Pkt 2 is lost. Receiver gets pkts 0, 1, then 3. What action does the receiver take for pkt 3?",
+        "opts": [
+          "Buffers pkt 3, sends ACK3",
+          "Delivers pkt 3",
+          "Discards pkt 3, re-sends ACK1",
+          "Discards pkt 3, sends NAK2"
+        ],
+        "answer": "Discards pkt 3, re-sends ACK1"
+      },
+      {
+        "q": "Scenario (SR): Sender sends packets 0, 1, 2, 3 (N=4). Pkt 2 is lost. Receiver gets pkts 0, 1, then 3. What action does the receiver take for pkt 3?",
+        "opts": [
+          "Buffers pkt 3, sends ACK3",
+          "Discards pkt 3, sends ACK1",
+          "Discards pkt 3, waits for pkt 2",
+          "Delivers pkt 3 immediately"
+        ],
+        "answer": "Buffers pkt 3, sends ACK3"
+      },
+      {
+        "q": "Scenario (rdt3.0): Sender sends pkt 1. The ACK for pkt 1 is lost. What happens next?",
+        "opts": [
+          "Sender waits indefinitely",
+          "Receiver sends a NAK",
+          "Timer expires, sender retransmits pkt 1",
+          "Sender immediately sends pkt 2"
+        ],
+        "answer": "Timer expires, sender retransmits pkt 1"
+      },
+      {
+        "q": "Scenario (GBN): Sender has sent packets 5, 6, 7. The timer for packet 5 expires. What does the sender retransmit?",
+        "opts": [
+          "Only packet 5",
+          "Packets 5, 6, and 7",
+          "Only packet 7",
+          "It does nothing"
+        ],
+        "answer": "Packets 5, 6, and 7"
+      },
+      {
+        "q": "Scenario (SR): Sender has sent packets 5, 6, 7. The timer for packet 5 expires, while ACKs for 6 and 7 have been received. What does the sender retransmit?",
+        "opts": [
+          "Only packet 5",
+          "Packets 5, 6, and 7",
+          "Only packet 7",
+          "It does nothing"
+        ],
+        "answer": "Only packet 5"
+      },
+      {
+        "q": "Scenario (rdt2.1): Receiver is expecting packet 0. It receives a corrupted packet. What does it send back?",
+        "opts": ["ACK0", "NAK", "ACK1", "Nothing"],
+        "answer": "NAK"
+      },
+      {
+        "q": "Scenario (GBN): Receiver has received up to packet 3. It then receives packet 5. Which ACK does it send?",
+        "opts": ["ACK3", "ACK4", "ACK5", "No ACK is sent"],
+        "answer": "ACK3"
+      },
+      {
+        "q": "The primary advantage of Selective Repeat over Go-Back-N is that it _______.",
+        "opts": [
+          "Has a simpler receiver design",
+          "Avoids unnecessary retransmissions",
+          "Uses smaller sequence numbers",
+          "Does not require receiver buffering"
+        ],
+        "answer": "Avoids unnecessary retransmissions"
+      }
+    ],
+    "tf": [
+      {
+        "q": "In rdt2.0, a sender in the 'Wait for ACK or NAK' state will return to the 'Wait for call from above' state upon receiving an ACK.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A single bit for sequence numbers (0/1) is sufficient for any pipelined protocol.",
+        "answer": "False",
+        "correction": "This is only sufficient for Stop-and-Wait protocols; pipelining requires a larger range of sequence numbers."
+      },
+      {
+        "q": "rdt3.0 is considered a functionally correct reliable data transfer protocol.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Pipelining decreases sender utilization because it increases the number of in-flight packets.",
+        "answer": "False",
+        "correction": "Pipelining dramatically increases sender utilization by keeping the network channel busy."
+      },
+      {
+        "q": "The receiver in Go-Back-N must buffer out-of-order packets.",
+        "answer": "False",
+        "correction": "The GBN receiver is simple; it discards all out-of-order packets."
+      },
+      {
+        "q": "In Selective Repeat, a sender maintains a conceptual timer for each unacknowledged packet.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Scenario: In rdt2.1, a sender sends packet 1. The receiver gets it and sends ACK1, but the ACK1 is corrupted. The sender will retransmit packet 1.",
+        "answer": "True",
+        "correction": "The sender retransmits upon receiving a garbled response. The receiver will then see a duplicate packet 1 and re-send ACK1."
+      },
+      {
+        "q": "Scenario: In Go-Back-N, if the sender receives an ACK for a packet that is not the oldest unacknowledged packet, it will not advance its window.",
+        "answer": "True",
+        "correction": "GBN uses cumulative ACKs, so the window only moves forward when the oldest packet (send_base) is acknowledged."
+      },
+      {
+        "q": "The Selective Repeat receiver delivers packets to the application layer as soon as they are received, even if they are out of order.",
+        "answer": "False",
+        "correction": "The SR receiver buffers out-of-order packets and only delivers a contiguous sequence of packets to the upper layer."
+      },
+      {
+        "q": "Scenario: In Selective Repeat, the sender receives an ACK for packet 5, which is within its window. This action alone is enough to make the sender's window slide forward.",
+        "answer": "False",
+        "correction": "The sender's window only slides forward when the oldest unacknowledged packet (send_base) is acknowledged."
+      }
+    ]
+  },
+  "4": {
+    "mcq": [
+      {
+        "q": "Which of the following best describes how TCP views the data it sends?",
+        "opts": [
+          "As a stream of individual messages",
+          "As a continuous, ordered byte-stream",
+          "As fixed-size packets",
+          "As an unreliable datagram service"
+        ],
+        "answer": "As a continuous, ordered byte-stream"
+      },
+      {
+        "q": "In the TCP segment header, what does the 'acknowledgement number' field signify?",
+        "opts": [
+          "The sequence number of the last packet received",
+          "The sequence number of the next byte the receiver expects",
+          "The total number of bytes received so far",
+          "The sequence number of the current segment"
+        ],
+        "answer": "The sequence number of the next byte the receiver expects"
+      },
+      {
+        "q": "The maximum amount of data that can be placed in a single TCP segment is known as the _______.",
+        "opts": [
+          "RcvBuffer",
+          "MSS (Maximum Segment Size)",
+          "Window Size",
+          "MTU (Maximum Transmission Unit)"
+        ],
+        "answer": "MSS (Maximum Segment Size)"
+      },
+      {
+        "q": "The primary purpose of the 'receive window' (rwnd) field in the TCP header is for _______.",
+        "opts": [
+          "Congestion control",
+          "Flow control",
+          "Error detection",
+          "Connection establishment"
+        ],
+        "answer": "Flow control"
+      },
+      {
+        "q": "How does TCP set its retransmission timeout value?",
+        "opts": [
+          "It is a fixed value configured by the user",
+          "It is always twice the last measured RTT",
+          "It is dynamically calculated based on EstimatedRTT and DevRTT",
+          "It is negotiated during the 3-way handshake"
+        ],
+        "answer": "It is dynamically calculated based on EstimatedRTT and DevRTT"
+      },
+      {
+        "q": "What triggers a 'Fast Retransmit'?",
+        "opts": [
+          "The expiration of the retransmission timer",
+          "The receipt of a single NAK packet",
+          "The receipt of three duplicate ACKs for the same data",
+          "The receipt of a segment with a bad checksum"
+        ],
+        "answer": "The receipt of three duplicate ACKs for the same data"
+      },
+      {
+        "q": "The 3-way handshake is necessary to avoid which problem?",
+        "opts": [
+          "Buffer overflow at the receiver",
+          "Network congestion",
+          "Half-open connections from delayed, old requests",
+          "Incorrect checksum calculations"
+        ],
+        "answer": "Half-open connections from delayed, old requests"
+      },
+      {
+        "q": "Which TCP flag is used to abruptly terminate a connection, often in response to an error?",
+        "opts": ["FIN", "SYN", "PSH", "RST"],
+        "answer": "RST"
+      },
+      {
+        "q": "Scenario: A TCP client sends a SYN packet with `Seq=500`. What will the server's SYN-ACK response contain?",
+        "opts": [
+          "`SYN=1, ACK=1, Seq=501, ACKnum=y` (y is random)",
+          "`SYN=1, ACK=1, Seq=y, ACKnum=501` (y is random)",
+          "`SYN=0, ACK=1, Seq=500, ACKnum=501`",
+          "`SYN=1, ACK=1, Seq=y, ACKnum=500` (y is random)"
+        ],
+        "answer": "`SYN=1, ACK=1, Seq=y, ACKnum=501` (y is random)"
+      },
+      {
+        "q": "Scenario: Host A sends a segment with `Seq=1000` containing 100 bytes of data to Host B. If it is received correctly, what ACK number will Host B send back?",
+        "opts": ["1000", "1001", "1100", "1101"],
+        "answer": "1100"
+      },
+      {
+        "q": "Scenario: A receiver has a buffer (RcvBuffer) of 4096 bytes. The application has read 1024 bytes from it, leaving 3072 bytes of data. What `rwnd` value will the receiver advertise?",
+        "opts": ["0", "1024", "3072", "4096"],
+        "answer": "1024"
+      },
+      {
+        "q": "Scenario: Host A sends three segments to B: `Seq=200` (100 bytes), `Seq=300` (100 bytes), and `Seq=400` (100 bytes). The segment with `Seq=300` is lost. Host B receives the segments with `Seq=200` and `Seq=400`. What ACK will B send after receiving the segment with `Seq=400`?",
+        "opts": ["ACK=500", "ACK=400", "ACK=300", "ACK=200"],
+        "answer": "ACK=300"
+      },
+      {
+        "q": "Scenario: A TCP receiver gets an in-order segment with the expected sequence number, and all previous data has already been acknowledged. According to RFC 5681, what is the recommended receiver action?",
+        "opts": [
+          "Immediately send a cumulative ACK",
+          "Discard the segment as it might be a duplicate",
+          "Wait up to 500ms for the next segment before sending an ACK",
+          "Immediately send a duplicate ACK"
+        ],
+        "answer": "Wait up to 500ms for the next segment before sending an ACK"
+      },
+      {
+        "q": "Scenario (Lost ACK): Host A sends a segment with `Seq=92` (8 bytes). Host B receives it and sends `ACK=100`, but this ACK is lost. What does Host A do when its timer expires?",
+        "opts": [
+          "It sends the next segment with `Seq=100`",
+          "It waits for a different ACK from Host B",
+          "It retransmits the segment with `Seq=92`",
+          "It terminates the connection with a FIN packet"
+        ],
+        "answer": "It retransmits the segment with `Seq=92`"
+      },
+      {
+        "q": "Scenario (Lost ACK Follow-up): After the timeout, Host A retransmits the `Seq=92` segment. Host B receives this duplicate segment. What is Host B's correct action?",
+        "opts": [
+          "Accept the duplicate data and send `ACK=108`",
+          "Send a NAK because it's a duplicate",
+          "Ignore the packet completely",
+          "Discard the duplicate data and re-send `ACK=100`"
+        ],
+        "answer": "Discard the duplicate data and re-send `ACK=100`"
+      },
+      {
+        "q": "Scenario (Cumulative ACK): Host A sends `Seq=92` (8 bytes), then `Seq=100` (20 bytes). The first response, `ACK=100`, is lost. Shortly after, the second response, `ACK=120`, arrives successfully at Host A. How does Host A interpret this?",
+        "opts": [
+          "It concludes only the second segment was received and waits for a timeout on the first",
+          "It concludes both segments were received correctly thanks to the cumulative nature of the ACK",
+          "It ignores `ACK=120` because it is out of order",
+          "It immediately retransmits the segment with `Seq=92`"
+        ],
+        "answer": "It concludes both segments were received correctly thanks to the cumulative nature of the ACK"
+      },
+      {
+        "q": "Scenario (Premature Timeout): Host A sends `Seq=92` (8 bytes) and `Seq=100` (20 bytes). Due to network delay, the ACKs are slow to return. Host A's timer for `Seq=92` expires. What is the immediate result?",
+        "opts": [
+          "Host A retransmits both segments `Seq=92` and `Seq=100`",
+          "Host A only retransmits `Seq=92` because its timer expired",
+          "Host A waits longer because it knows the ACKs are just delayed",
+          "Host A's `SendBase` immediately advances to 120"
+        ],
+        "answer": "Host A only retransmits `Seq=92` because its timer expired"
+      },
+      {
+        "q": "Scenario (Premature Timeout Follow-up): After the premature timeout and retransmission of `Seq=92`, the original (but delayed) `ACK=100` and `ACK=120` finally arrive at Host A. What will Host A's `SendBase` be after processing `ACK=120`?",
+        "opts": [
+          "92",
+          "100",
+          "120",
+          "It will not change until the retransmitted packet is acknowledged"
+        ],
+        "answer": "120"
+      }
+    ],
+    "tf": [
+      {
+        "q": "TCP sequence numbers count segments, not bytes.",
+        "answer": "False",
+        "correction": "TCP uses a byte-stream paradigm, and its sequence numbers count bytes."
+      },
+      {
+        "q": "The TCP specification requires the receiver to buffer out-of-order segments.",
+        "answer": "False",
+        "correction": "The TCP RFC does not mandate this; it is an implementation choice (though a common one)."
+      },
+      {
+        "q": "When calculating `EstimatedRTT`, TCP should include the RTT measurements from retransmitted segments.",
+        "answer": "False",
+        "correction": "To avoid ambiguity, measurements from retransmitted segments are ignored when calculating SampleRTT and EstimatedRTT."
+      },
+      {
+        "q": "A `TimeoutInterval` that is too short can lead to unnecessary retransmissions.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Flow control is a mechanism to prevent the sender from overwhelming the network.",
+        "answer": "False",
+        "correction": "That is congestion control. Flow control prevents the sender from overwhelming the receiver."
+      },
+      {
+        "q": "During a 3-way handshake, both the client and server choose their own initial sequence numbers.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The TCP 'Header Length' field is necessary because the header can contain a variable-length options field.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Scenario: If a sender receives an ACK with `rwnd=0`, it must stop sending all packets until a new ACK arrives.",
+        "answer": "False",
+        "correction": "The sender will stop sending data segments but can still send special 1-byte probe segments to check if the window has re-opened."
+      },
+      {
+        "q": "Scenario: A sender receives three duplicate ACKs for `ACKnum=500`. It will immediately retransmit the segment that starts with byte 500.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Scenario: In the final step of the 3-way handshake, the client sends an ACK to the server. This ACK segment cannot contain any application data.",
+        "answer": "False",
+        "correction": "In many implementations, this final ACK can carry (piggyback) the first piece of application data."
+      },
+      {
+        "q": "TCP's ACK is cumulative, meaning `ACK=X` acknowledges all data up to byte `X-1`.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The TCP 'FIN' flag is used to abruptly reset a connection.",
+        "answer": "False",
+        "correction": "The FIN flag is used for a graceful termination of a connection. The RST flag is used for an abrupt reset."
       }
     ]
   }

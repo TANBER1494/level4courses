@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-K" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EELU Level 4 | Home</title>
     <link rel="stylesheet" href="style.css" />
-
-    <style></style>
   </head>
   <body>
     <header class="main-header" id="mainHeader">
@@ -34,8 +32,7 @@
           <div class="option-card" id="quizButton">
             <h3>Quizzes & Final Reviews</h3>
           </div>
-          <div
-            class="option-card"id="recordsButton">
+          <div class="option-card" id="recordsButton">
             <h3>Records</h3>
           </div>
         </div>
@@ -64,17 +61,27 @@
         <h2 class="section-title" id="quizTitle"></h2>
         <form id="quizForm"></form>
         <button id="submitQuizButton" class="submit-button">Submit Quiz</button>
-        <div id="quizResults" style="display: none"></div>
 
-        <button id="newQuizButton" class="submit-button">New Quiz</button>
+        <div
+          id="quizActionsContainer"
+          class="quiz-actions-container"
+          style="display: none"
+        >
+          <button id="newQuizButton" class="submit-button">New Quiz</button>
+          <button id="chooseAnotherLecButton" class="submit-button">
+            Choose Another Lecture
+          </button>
+        </div>
+      </div>
     </main>
 
     <script src="app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
-    <script></script>
     <footer class="main-footer-credit" id="footerCredit">
       <p>Designed by : Mohamed Abdelkhalek</p>
     </footer>
+
     <div id="resultModalOverlay" class="modal-overlay">
       <div id="resultModalContent" class="modal-content">
         <h2 id="modalScoreText"></h2>
