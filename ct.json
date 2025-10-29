@@ -1032,5 +1032,191 @@
         "correction": "It is the opposite; it reduces (attenuates) the signal power."
       }
     ]
+  },
+  "6": {
+    "mcq": [
+      {
+        "q": "What component in a DWDM system converts a non-DWDM wavelength signal into a DWDM-compliant one?",
+        "opts": ["Multiplexer", "Amplifier", "Transponder", "Attenuator"],
+        "answer": "Transponder"
+      },
+      {
+        "q": "The process where a transponder converts a signal from optical to electrical and back to optical is known as _______ conversion.",
+        "opts": ["O-O-O", "O-E-O", "E-O-E", "E-E-O"],
+        "answer": "O-E-O"
+      },
+      {
+        "q": "Which of these is NOT a primary function of a transponder?",
+        "opts": [
+          "Signal Conversion",
+          "Regeneration",
+          "Wavelength Assignment",
+          "Signal Attenuation"
+        ],
+        "answer": "Signal Attenuation"
+      },
+      {
+        "q": "Which wavelength is typically used on the terminal side for short-distance connections in multimode fiber systems?",
+        "opts": ["850 nm", "1310 nm", "1550 nm", "1625 nm"],
+        "answer": "850 nm"
+      },
+      {
+        "q": "Which wavelength is common for single-mode fiber over medium distances (up to 10 km)?",
+        "opts": ["850 nm", "1310 nm", "1550 nm", "1625 nm"],
+        "answer": "1310 nm"
+      },
+      {
+        "q": "DWDM systems primarily operate in which optical spectrum band for its low attenuation?",
+        "opts": ["O-band", "S-band", "C-band", "E-band"],
+        "answer": "C-band"
+      },
+      {
+        "q": "What is the name of the component that allows light to pass in one direction but blocks it in the opposite direction?",
+        "opts": ["Circulator", "Attenuator", "Isolator", "Coupler"],
+        "answer": "Isolator"
+      },
+      {
+        "q": "Isolators are primarily used to protect which type of sensitive components from reflections?",
+        "opts": ["Fibers", "Receivers", "Amplifiers and Lasers", "Filters"],
+        "answer": "Amplifiers and Lasers"
+      },
+      {
+        "q": "In an optical _______, light entering a specific port exits from the next sequential port.",
+        "opts": ["Isolator", "Circulator", "Splitter", "Filter"],
+        "answer": "Circulator"
+      },
+      {
+        "q": "What device combines multiple optical signals of different wavelengths into a single beam?",
+        "opts": [
+          "Demultiplexer (DEMUX)",
+          "Multiplexer (MUX)",
+          "Isolator",
+          "OADM"
+        ],
+        "answer": "Multiplexer (MUX)"
+      },
+      {
+        "q": "What device performs the reverse function of a multiplexer by separating a combined signal into individual wavelengths?",
+        "opts": [
+          "Demultiplexer (DEMUX)",
+          "Multiplexer (MUX)",
+          "Circulator",
+          "Transponder"
+        ],
+        "answer": "Demultiplexer (DEMUX)"
+      },
+      {
+        "q": "A demultiplexer can be constructed using a circulator in combination with what other component?",
+        "opts": ["Isolator", "VOA", "Fiber Bragg Grating (FBG)", "Transponder"],
+        "answer": "Fiber Bragg Grating (FBG)"
+      },
+      {
+        "q": "What does OADM stand for?",
+        "opts": [
+          "Optical Amplifier-Demultiplexer Module",
+          "Optical Add-Drop Multiplexer",
+          "Overall Attenuation-Dispersion Manager",
+          "Optical Access Distribution Module"
+        ],
+        "answer": "Optical Add-Drop Multiplexer"
+      },
+      {
+        "q": "An OADM is used at what point in a network to route specific channels?",
+        "opts": [
+          "Only at the beginning",
+          "Only at the end",
+          "At intermediate stations",
+          "Only in the transponder"
+        ],
+        "answer": "At intermediate stations"
+      },
+      {
+        "q": "What is the primary function of an Optical Attenuator?",
+        "opts": [
+          "To amplify the signal",
+          "To control and reduce the power level of the signal",
+          "To filter out unwanted wavelengths",
+          "To change the signal's wavelength"
+        ],
+        "answer": "To control and reduce the power level of the signal"
+      },
+      {
+        "q": "Which type of attenuator provides a predetermined and unchangeable amount of attenuation?",
+        "opts": [
+          "Variable Optical Attenuator (VOA)",
+          "Fixed Optical Attenuator",
+          "Dynamic Optical Attenuator",
+          "Standard Optical Attenuator"
+        ],
+        "answer": "Fixed Optical Attenuator"
+      },
+      {
+        "q": "Which type of attenuator allows for adjustable attenuation levels, useful in dynamic networks?",
+        "opts": [
+          "Variable Optical Attenuator (VOA)",
+          "Fixed Optical Attenuator",
+          "Static Optical Attenuator",
+          "Preset Optical Attenuator"
+        ],
+        "answer": "Variable Optical Attenuator (VOA)"
+      }
+    ],
+    "tf": [
+      {
+        "q": "A transponder's main job is to filter noise from a signal.",
+        "answer": "False",
+        "correction": "Its main job is signal and wavelength conversion."
+      },
+      {
+        "q": "The L-band (1565-1625 nm) is sometimes used to expand the capacity of DWDM systems.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "An optical isolator is a bi-directional device, allowing light to pass freely in both directions.",
+        "answer": "False",
+        "correction": "It is a uni-directional device, allowing light to pass in only one direction."
+      },
+      {
+        "q": "In a 3-port circulator, light entering port 2 will exit from port 1.",
+        "answer": "False",
+        "correction": "It will exit from the next sequential port, which is port 3."
+      },
+      {
+        "q": "A MUX and a DEMUX perform identical functions.",
+        "answer": "False",
+        "correction": "A DEMUX performs the reverse function of a MUX."
+      },
+      {
+        "q": "An FBG used with a circulator for demultiplexing works by reflecting a specific wavelength.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "An OADM is used to add or remove all wavelengths from a DWDM signal simultaneously.",
+        "answer": "False",
+        "correction": "It adds or removes specific wavelengths while allowing others to pass through."
+      },
+      {
+        "q": "An optical attenuator is a type of amplifier.",
+        "answer": "False",
+        "correction": "It performs the opposite function; it reduces signal power."
+      },
+      {
+        "q": "One reason to use an attenuator is to prevent the overloading of components like receivers.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A Variable Optical Attenuator (VOA) provides a fixed amount of attenuation.",
+        "answer": "False",
+        "correction": "It allows for adjustable attenuation levels."
+      },
+      {
+        "q": "A Fixed Optical Attenuator is used in applications where the required attenuation level may change frequently.",
+        "answer": "False",
+        "correction": "It is used when a specific, unchanging level of signal reduction is needed."
+      }
+    ]
   }
 }
