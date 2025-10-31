@@ -1,0 +1,352 @@
+{
+  "1": {
+    "mcq": [
+      {
+        "q": "What is the primary definition of Computer Graphics?",
+        "opts": [
+          "Designing computer hardware components",
+          "Generating, manipulating, and displaying visual content using computers",
+          "Programming computer networks",
+          "Creating only 2D images and animations"
+        ],
+        "answer": "Generating, manipulating, and displaying visual content using computers"
+      },
+      {
+        "q": "Which of these is NOT mentioned as an application of Computer Graphics?",
+        "opts": [
+          "Database management",
+          "Virtual & Augmented Reality",
+          "Medical imaging",
+          "Video games"
+        ],
+        "answer": "Database management"
+      },
+      {
+        "q": "What is the correct sequence of the primary stages in the Graphics Pipeline?",
+        "opts": [
+          "Lighting, Modeling, Rasterization, Transformation, Shading",
+          "Shading, Modeling, Transformation, Lighting, Rasterization",
+          "Modeling, Transformation, Lighting, Rasterization, Shading",
+          "Transformation, Modeling, Shading, Lighting, Rasterization"
+        ],
+        "answer": "Modeling, Transformation, Lighting, Rasterization, Shading"
+      },
+      {
+        "q": "Which coordinate system comes after 'World Coordinates' in the graphics pipeline?",
+        "opts": [
+          "Device Coordinates",
+          "Modeling Coordinates",
+          "Viewing Coordinates",
+          "Normalized Coordinates"
+        ],
+        "answer": "Viewing Coordinates"
+      },
+      {
+        "q": "What are the two main types of Computer Graphics?",
+        "opts": [
+          "Raster and Vector",
+          "Real-time and Offline",
+          "2D and 3D",
+          "Interactive and Non-Interactive"
+        ],
+        "answer": "Interactive and Non-Interactive"
+      },
+      {
+        "q": "What are the three components of a modern graphics display system?",
+        "opts": [
+          "CPU, GPU, RAM",
+          "Keyboard, Mouse, Monitor",
+          "Display controller, Digital memory, Television monitor",
+          "ALU, CU, RF"
+        ],
+        "answer": "Display controller, Digital memory, Television monitor"
+      },
+      {
+        "q": "What is the function of the Display Controller?",
+        "opts": [
+          "Manage network connections",
+          "Execute main program logic",
+          "Pass Frame Buffer's contents to the monitor",
+          "Store the operating system"
+        ],
+        "answer": "Pass Frame Buffer's contents to the monitor"
+      },
+      {
+        "q": "What is another name for the Digital Memory in graphics systems?",
+        "opts": [
+          "Main Memory",
+          "Frame Buffer",
+          "Cache Memory",
+          "Virtual Memory"
+        ],
+        "answer": "Frame Buffer"
+      },
+      {
+        "q": "How are images stored in a Frame Buffer?",
+        "opts": [
+          "As mathematical equations",
+          "As audio signals",
+          "As text descriptions",
+          "As an array (matrix of 0 & 1)"
+        ],
+        "answer": "As an array (matrix of 0 & 1)"
+      },
+      {
+        "q": "What is the modern term for Frame Buffer?",
+        "opts": [
+          "CPU Cache",
+          "V-RAM (video RAM)",
+          "SSD Storage",
+          "Cloud Storage"
+        ],
+        "answer": "V-RAM (video RAM)"
+      },
+      {
+        "q": "Why does the Frame Buffer help increase graphics speed?",
+        "opts": [
+          "It compresses image files automatically",
+          "It eliminates the need for a graphics card",
+          "Graphics hardware can quickly read/write without involving slower main CPU",
+          "It reduces the monitor's refresh rate"
+        ],
+        "answer": "Graphics hardware can quickly read/write without involving slower main CPU"
+      },
+      {
+        "q": "What is another name for Non-Interactive Computer Graphics?",
+        "opts": [
+          "Active computer graphics",
+          "Dynamic graphics",
+          "Passive computer graphics",
+          "Real-time graphics"
+        ],
+        "answer": "Passive computer graphics"
+      },
+      {
+        "q": "Which of these is an example of Non-Interactive Computer Graphics?",
+        "opts": [
+          "Video games",
+          "Drawing on touch screens",
+          "Ping-pong game",
+          "Screen savers"
+        ],
+        "answer": "Screen savers"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Computer graphics deals only with simple 2D images.",
+        "answer": "False"
+      },
+      {
+        "q": "Medical imaging uses computer graphics for 3D reconstructions of CT scans.",
+        "answer": "True"
+      },
+      {
+        "q": "Rasterization is the process of converting 3D information into a 2D image.",
+        "answer": "True"
+      },
+      {
+        "q": "In interactive computer graphics, users have no control over the image.",
+        "answer": "False"
+      },
+      {
+        "q": "The display controller is also known as a display card.",
+        "answer": "True"
+      },
+      {
+        "q": "VGA card typically has a resolution of 1920x1080.",
+        "answer": "False"
+      },
+      {
+        "q": "In frame buffer, 0 represents darkness and 1 represents image or picture.",
+        "answer": "True"
+      },
+      {
+        "q": "Non-interactive graphics are completely controlled by program instructions.",
+        "answer": "True"
+      },
+      {
+        "q": "Drawing on touch screens is an example of interactive computer graphics.",
+        "answer": "True"
+      },
+      {
+        "q": "The television monitor is responsible for executing graphics calculations.",
+        "answer": "False"
+      }
+    ]
+  },
+  "2": {
+    "mcq": [
+      {
+        "q": "What is the process of converting vector graphics into a raster image called?",
+        "opts": ["Transformation", "Rasterization", "Shading", "Modeling"],
+        "answer": "Rasterization"
+      },
+      {
+        "q": "Which rendering type prioritizes speed over quality and is used in video games?",
+        "opts": [
+          "Offline rendering",
+          "Batch rendering",
+          "Real-time rendering",
+          "High-quality rendering"
+        ],
+        "answer": "Real-time rendering"
+      },
+      {
+        "q": "What is the main characteristic of vector graphics?",
+        "opts": [
+          "Resolution-dependent",
+          "Pixel-based",
+          "Resolution-independent",
+          "Fixed size"
+        ],
+        "answer": "Resolution-independent"
+      },
+      {
+        "q": "Which component in the graphics system architecture contains the Frame Buffer?",
+        "opts": [
+          "CPU Processor",
+          "Display Processor Memory",
+          "System Memory",
+          "Video Controller"
+        ],
+        "answer": "Display Processor Memory"
+      },
+      {
+        "q": "What type of graphics representation uses mathematical equations and geometric shapes?",
+        "opts": [
+          "Raster Graphics",
+          "Bitmap Graphics",
+          "Pixel Graphics",
+          "Vector Graphics"
+        ],
+        "answer": "Vector Graphics"
+      },
+      {
+        "q": "In raster graphics, what is the term for the small individual dots that make up the image?",
+        "opts": ["Vectors", "Pixels", "Points", "Coordinates"],
+        "answer": "Pixels"
+      },
+      {
+        "q": "Which of these is an advantage of frame buffers?",
+        "opts": [
+          "They reduce image quality",
+          "They work with different screen resolutions",
+          "They slow down rendering",
+          "They require more CPU processing"
+        ],
+        "answer": "They work with different screen resolutions"
+      },
+      {
+        "q": "What is the typical frame rate target for real-time rendering in video games?",
+        "opts": [
+          "24 frames per second",
+          "30 frames per second",
+          "60 frames per second or higher",
+          "10 frames per second"
+        ],
+        "answer": "60 frames per second or higher"
+      },
+      {
+        "q": "Which graphics representation is also known as bitmap images?",
+        "opts": [
+          "Vector Graphics",
+          "3D Graphics",
+          "Raster Graphics",
+          "Mathematical Graphics"
+        ],
+        "answer": "Raster Graphics"
+      },
+      {
+        "q": "What happens when you scale up a raster image?",
+        "opts": [
+          "It becomes sharper",
+          "It maintains perfect quality",
+          "It can become pixelated or blurry",
+          "It converts to vector graphics"
+        ],
+        "answer": "It can become pixelated or blurry"
+      },
+      {
+        "q": "Where are vector graphics best suited?",
+        "opts": [
+          "For complex photographs",
+          "For detailed textures",
+          "For logos and illustrations",
+          "For realistic scenes"
+        ],
+        "answer": "For logos and illustrations"
+      },
+      {
+        "q": "What does a frame buffer contain for each pixel?",
+        "opts": [
+          "Mathematical equations",
+          "Color values",
+          "Sound data",
+          "Text information"
+        ],
+        "answer": "Color values"
+      },
+      {
+        "q": "Which rendering type can take minutes or hours per frame?",
+        "opts": [
+          "Real-time rendering",
+          "Interactive rendering",
+          "Offline rendering",
+          "Game rendering"
+        ],
+        "answer": "Offline rendering"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Rasterization is the process of converting 3D models into vector graphics.",
+        "answer": "False"
+      },
+      {
+        "q": "Vector graphics can be scaled infinitely without losing quality.",
+        "answer": "True"
+      },
+      {
+        "q": "Real-time rendering is commonly used in film production.",
+        "answer": "False"
+      },
+      {
+        "q": "Raster images are resolution-dependent.",
+        "answer": "True"
+      },
+      {
+        "q": "The frame buffer is located in the CPU processor.",
+        "answer": "False"
+      },
+      {
+        "q": "Vector files are typically larger than high-resolution raster images.",
+        "answer": "False"
+      },
+      {
+        "q": "Rasterization is often used in real-time rendering for video games.",
+        "answer": "True"
+      },
+      {
+        "q": "Offline rendering prioritizes speed over quality.",
+        "answer": "False"
+      },
+      {
+        "q": "Each pixel in a raster image has a defined color value.",
+        "answer": "True"
+      },
+      {
+        "q": "Vector graphics are made up of a grid of colored squares.",
+        "answer": "False"
+      },
+      {
+        "q": "The frame buffer acts as temporary storage for pixel data.",
+        "answer": "True"
+      },
+      {
+        "q": "Raster images are best suited for logos and simple illustrations.",
+        "answer": "False"
+      }
+    ]
+  }
+}
