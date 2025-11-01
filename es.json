@@ -740,5 +740,615 @@
         "answer": true
       }
     ]
+  },
+  "4": {
+    "mcq": [
+      {
+        "q": "What document serves as the contract between the customer and the architects?",
+        "opts": [
+          "Requirements Form",
+          "Specification",
+          "Architecture Diagram",
+          "User Manual"
+        ],
+        "answer": "Specification"
+      },
+      {
+        "q": "Which of these is listed as a component of the GPS system specification?",
+        "opts": [
+          "Manufacturing Cost",
+          "Power consumption",
+          "Map data",
+          "Physical size"
+        ],
+        "answer": "Map data"
+      },
+      {
+        "q": "What are the two main categories of components defined in the architecture design phase?",
+        "opts": [
+          "Hardware and Software",
+          "CPU and Peripherals",
+          "Programs and Data Structures",
+          "Functional and Non-functional"
+        ],
+        "answer": "Hardware and Software"
+      },
+      {
+        "q": "In the GPS block diagram, which component finds data from the map database based on location?",
+        "opts": ["GPS Receiver", "Renderer", "Search Engine", "User Interface"],
+        "answer": "Search Engine"
+      },
+      {
+        "q": "Which hardware component temporarily stores image data before it is displayed?",
+        "opts": ["Memory", "CPU", "Panel I/O", "Frame Buffer"],
+        "answer": "Frame Buffer"
+      },
+      {
+        "q": "In the GPS software architecture, what is used to refresh data periodically?",
+        "opts": ["Position", "Renderer", "Timer", "Pixels"],
+        "answer": "Timer"
+      },
+      {
+        "q": "At which stage of the design process are components put together, often revealing new bugs?",
+        "opts": [
+          "Specification",
+          "System integration",
+          "Architecture design",
+          "Requirements"
+        ],
+        "answer": "System integration"
+      },
+      {
+        "q": "Which device is described as general-purpose and requires an external memory device?",
+        "opts": [
+          "Microcontroller (MCU)",
+          "Microprocessor (MPU)",
+          "System on Chip (SoC)",
+          "ALU"
+        ],
+        "answer": "Microprocessor (MPU)"
+      },
+      {
+        "q": "Which device is described as specific-purpose, independent, and includes power-saving features?",
+        "opts": [
+          "Microcontroller (MCU)",
+          "Microprocessor (MPU)",
+          "Bus Set",
+          "RF"
+        ],
+        "answer": "Microcontroller (MCU)"
+      },
+      {
+        "q": "What are the three main busses that make up the 'Bus Set'?",
+        "opts": [
+          "Fetch, Decode, Execute",
+          "Data, Address, Control",
+          "MPU, MCU, CPU",
+          "Input, Output, Memory"
+        ],
+        "answer": "Data, Address, Control"
+      },
+      {
+        "q": "What are the three main components of a processor?",
+        "opts": [
+          "ALU, CU, RF",
+          "CPU, Memory, I/O",
+          "MAR, MDR, IR",
+          "Data, Address, Control Bus"
+        ],
+        "answer": "ALU, CU, RF"
+      },
+      {
+        "q": "What are the three main stages of the Instruction Life Cycle?",
+        "opts": [
+          "Fetch, Decode, Execute",
+          "Read, Write, Store",
+          "Compile, Link, Run",
+          "Start, Wait, Stop"
+        ],
+        "answer": "Fetch, Decode, Execute"
+      },
+      {
+        "q": "Which register contains the memory address of the *next* instruction to be executed?",
+        "opts": [
+          "Instruction Register (IR)",
+          "Program Counter (PC)",
+          "Memory Address Register (MAR)",
+          "Register File (RF)"
+        ],
+        "answer": "Program Counter (PC)"
+      },
+      {
+        "q": "What happens to the Program Counter (PC) immediately after the CPU fetches an instruction?",
+        "opts": [
+          "It is reset to zero",
+          "It is incremented",
+          "It is loaded into the IR",
+          "It is sent to the ALU"
+        ],
+        "answer": "It is incremented"
+      },
+      {
+        "q": "Which component is responsible for fetching the instruction from memory?",
+        "opts": [
+          "ALU",
+          "Control Unit (CU)",
+          "Register Files (RF)",
+          "Instruction Decoder (ID)"
+        ],
+        "answer": "Control Unit (CU)"
+      },
+      {
+        "q": "The Control Unit (CU) fetches an instruction and stores it in which register?",
+        "opts": [
+          "Program Counter (PC)",
+          "Instruction Register (IR)",
+          "ALU",
+          "MDR"
+        ],
+        "answer": "Instruction Register (IR)"
+      },
+      {
+        "q": "What is the purpose of the 'Decode' step in the instruction life cycle?",
+        "opts": [
+          "To increase the PC",
+          "To fetch from memory",
+          "To understand the instruction",
+          "To store the result"
+        ],
+        "answer": "To understand the instruction"
+      },
+      {
+        "q": "What two pieces of information are required to decode an instruction?",
+        "opts": [
+          "ALU and CU",
+          "Instruction Set and Instruction Format",
+          "Data Bus and Address Bus",
+          "PC and IR"
+        ],
+        "answer": "Instruction Set and Instruction Format"
+      }
+    ],
+    "tf": [
+      {
+        "q": "The 'Specification' is less precise than the 'Requirements'.",
+        "answer": false
+      },
+      {
+        "q": "Architecture design must only account for functional specifications.",
+        "answer": false
+      },
+      {
+        "q": "In the GPS hardware, the 'Frame Buffer' manages input from the user interface.",
+        "answer": false
+      },
+      {
+        "q": "It is recommended to start coding or designing circuits *before* architecting the system.",
+        "answer": false
+      },
+      {
+        "q": "A microprocessor (MPU) is an independent device that does not require other chips.",
+        "answer": false
+      },
+      {
+        "q": "A microcontroller (MCU) is considered a specific-purpose device.",
+        "answer": true
+      },
+      {
+        "q": "'RF' stands for Register Files, which are groups of registers inside the microprocessor.",
+        "answer": true
+      },
+      {
+        "q": "The Program Counter (PC) is a register located inside the Register Files.",
+        "answer": true
+      },
+      {
+        "q": "C Code is directly converted into Machine Language (0s and 1s).",
+        "answer": false
+      },
+      {
+        "q": "The Program Counter (PC) contains the address of the *current* instruction being executed.",
+        "answer": false
+      },
+      {
+        "q": "After fetching an instruction, the CPU increments the PC to point to the next instruction.",
+        "answer": true
+      },
+      {
+        "q": "The ALU is the component that fetches the instruction from ROM.",
+        "answer": false
+      },
+      {
+        "q": "It is easier to fetch an instruction to a register inside the CPU than to deal directly with the Bus.",
+        "answer": true
+      },
+      {
+        "q": "The Instruction Decoder (ID) is located inside the Control Unit (CU).",
+        "answer": true
+      },
+      {
+        "q": "Decoding an instruction involves sending a signal to the ALU.",
+        "answer": true
+      }
+    ]
+  },
+  "5": {
+    "mcq": [
+      {
+        "q": "What are the three main stages of the processor's Instruction Life Cycle?",
+        "opts": [
+          "Fetch, Decode, Execute",
+          "Read, Write, Store",
+          "Compile, Link, Run",
+          "Input, Process, Output"
+        ],
+        "answer": "Fetch, Decode, Execute"
+      },
+      {
+        "q": "What is the primary function of the Program Counter (PC)?",
+        "opts": [
+          "Store instruction result",
+          "Hold address of next instruction",
+          "Decode the instruction",
+          "Perform arithmetic operations"
+        ],
+        "answer": "Hold address of next instruction"
+      },
+      {
+        "q": "What happens to the Program Counter (PC) immediately after the CPU fetches an instruction?",
+        "opts": [
+          "It is cleared",
+          "It is incremented",
+          "It is decoded",
+          "It is sent to ALU"
+        ],
+        "answer": "It is incremented"
+      },
+      {
+        "q": "Which component fetches the instruction from memory and places it in the Instruction Register (IR)?",
+        "opts": ["ALU", "Control Unit (CU)", "Register File (RF)", "PC"],
+        "answer": "Control Unit (CU)"
+      },
+      {
+        "q": "What is the primary reason for fetching instructions from memory into a CPU register?",
+        "opts": [
+          "Memory is slow",
+          "Dealing with the Bus is hard",
+          "Registers are larger",
+          "To save power"
+        ],
+        "answer": "Dealing with the Bus is hard"
+      },
+      {
+        "q": "Which component inside the Control Unit is used to understand the instruction?",
+        "opts": ["ALU", "Instruction Decoder (ID)", "Accumulator", "PC"],
+        "answer": "Instruction Decoder (ID)"
+      },
+      {
+        "q": "What two pieces of information are required to decode an instruction?",
+        "opts": [
+          "ALU and CU",
+          "Instruction Set and Instruction Format",
+          "Data Bus and Address Bus",
+          "PC and IR"
+        ],
+        "answer": "Instruction Set and Instruction Format"
+      },
+      {
+        "q": "In an instruction format, what is the part that specifies the operation (e.g., ADD, SUB)?",
+        "opts": ["Op-code", "Operand 1", "Operand 2", "Address"],
+        "answer": "Op-code"
+      },
+      {
+        "q": "In old processors, which specific register was used to store the results of the ALU?",
+        "opts": [
+          "Program Counter (PC)",
+          "Instruction Register (IR)",
+          "Accumulator",
+          "General Purpose Register"
+        ],
+        "answer": "Accumulator"
+      },
+      {
+        "q": "What mapping is defined by the 'Instruction Set'?",
+        "opts": [
+          "Op-code to Operation (e.g., 00010 to ADD)",
+          "Register to Memory Address",
+          "C Code to Assembly Code",
+          "CPU to Bus"
+        ],
+        "answer": "Op-code to Operation (e.g., 00010 to ADD)"
+      },
+      {
+        "q": "What are the two main types of Instruction Set Architecture (ISA)?",
+        "opts": [
+          "RISC and CISC",
+          "Harvard and Von-Neumann",
+          "ALU and CU",
+          "Hard-Wired and Memory-Mapped"
+        ],
+        "answer": "RISC and CISC"
+      },
+      {
+        "q": "What does 'RISC' stand for?",
+        "opts": [
+          "Reduced Instruction Set Computing",
+          "Rapid Instruction System Core",
+          "Register Intensive System CPU",
+          "Reusable Instruction Set Compiler"
+        ],
+        "answer": "Reduced Instruction Set Computing"
+      },
+      {
+        "q": "What does 'CISC' stand for?",
+        "opts": [
+          "Complex Instruction Set Computing",
+          "Common Instruction System Core",
+          "Compiled Instruction Set CPU",
+          "Controlled Instruction System Compiler"
+        ],
+        "answer": "Complex Instruction Set Computing"
+      },
+      {
+        "q": "Which ISA type understands *fewer* instructions and requires a *strong* compiler?",
+        "opts": ["RISC", "CISC", "ISA", "ID"],
+        "answer": "RISC"
+      },
+      {
+        "q": "What are the two main manufacturing methods for an Instruction Decoder (ID)?",
+        "opts": [
+          "RISC and CISC",
+          "Hard-Wired and Memory-Mapped",
+          "ALU and CU",
+          "Hardware and Software"
+        ],
+        "answer": "Hard-Wired and Memory-Mapped"
+      },
+      {
+        "q": "Which ID manufacturing method uses logic gates, is fast, and is typical for RISC?",
+        "opts": ["Hard-Wired", "Memory-Mapped", "Compiler", "Accumulator"],
+        "answer": "Hard-Wired"
+      },
+      {
+        "q": "Which ID manufacturing method is slower because it searches for instructions in memory and is typical for CISC?",
+        "opts": ["Hard-Wired", "Memory-Mapped", "Compiler", "Logic Gates"],
+        "answer": "Memory-Mapped"
+      },
+      {
+        "q": "Which ISA is most commonly used in embedded systems?",
+        "opts": ["RISC", "CISC", "Both", "Neither"],
+        "answer": "RISC"
+      },
+      {
+        "q": "Which ISA is characterized by single instructions that can execute several low-level operations?",
+        "opts": ["RISC", "CISC", "ALU", "CU"],
+        "answer": "CISC"
+      }
+    ],
+    "tf": [
+      {
+        "q": "The Program Counter (PC) is a register located inside the Register Files.",
+        "answer": true
+      },
+      {
+        "q": "The PC holds the memory address of the instruction *currently* being executed.",
+        "answer": false
+      },
+      {
+        "q": "Decoding an instruction means sending a signal to the ALU to specify the operation.",
+        "answer": true
+      },
+      {
+        "q": "In modern microprocessors, all ALU results are stored in the Accumulator.",
+        "answer": false
+      },
+      {
+        "q": "All microprocessors use the same machine language (e.g., '000' for ADD).",
+        "answer": false
+      },
+      {
+        "q": "Using C language is often better than assembly because assembly language can vary between microprocessors.",
+        "answer": true
+      },
+      {
+        "q": "Understanding an instruction requires only Hardware (Instruction Decoder).",
+        "answer": false
+      },
+      {
+        "q": "CISC architecture understands *many* instructions and requires a *simple* compiler.",
+        "answer": true
+      },
+      {
+        "q": "A 'Hard-Wired' ID is expensive if you need it to understand many instructions.",
+        "answer": true
+      },
+      {
+        "q": "A 'Memory-Mapped' ID needs a strong compiler.",
+        "answer": false
+      },
+      {
+        "q": "A 'Hard-Wired' ID is slower than a 'Memory-Mapped' ID.",
+        "answer": false
+      },
+      {
+        "q": "CISC is typically used for high-performance systems like computers.",
+        "answer": true
+      },
+      {
+        "q": "RISC architecture typically has a range of 30 to 40 instructions.",
+        "answer": true
+      },
+      {
+        "q": "CISC architecture can only use Von-Neumann Architecture.",
+        "answer": false
+      }
+    ]
+  },
+  "6": {
+    "mcq": [
+      {
+        "q": "What are the two main types of Register Files?",
+        "opts": ["GPR and SPR", "ALU and CU", "PC and SP", "ROM and RAM"],
+        "answer": "GPR and SPR"
+      },
+      {
+        "q": "What is the primary function of General Purpose Registers (GPR)?",
+        "opts": [
+          "Store data permanently",
+          "Store data temporarily",
+          "Hold the next instruction",
+          "Store status flags"
+        ],
+        "answer": "Store data temporarily"
+      },
+      {
+        "q": "Why might a programmer use the 'register' keyword in C?",
+        "opts": [
+          "To guarantee memory storage",
+          "To store in GPR for faster access",
+          "To create a permanent variable",
+          "To define a status flag"
+        ],
+        "answer": "To store in GPR for faster access"
+      },
+      {
+        "q": "What happens if a 'register' keyword is used but no GPR is available?",
+        "opts": [
+          "The program crashes",
+          "The variable is stored in memory",
+          "It waits for a GPR",
+          "It is stored in the PC"
+        ],
+        "answer": "The variable is stored in memory"
+      },
+      {
+        "q": "Which register holds the memory address of the *next* instruction?",
+        "opts": [
+          "Stack Pointer (SP)",
+          "Instruction Register (IR)",
+          "Program Counter (PC)",
+          "Accumulator (ACC)"
+        ],
+        "answer": "Program Counter (PC)"
+      },
+      {
+        "q": "What does the Stack Pointer (SP) register store?",
+        "opts": [
+          "The next instruction address",
+          "The last ALU result",
+          "The address of the last item on the stack",
+          "The current instruction"
+        ],
+        "answer": "The address of the last item on the stack"
+      },
+      {
+        "q": "The stack is a memory region that operates in which manner?",
+        "opts": [
+          "FIFO (First In, First Out)",
+          "LIFO (Last In, First Out)",
+          "Random Access",
+          "Read Only"
+        ],
+        "answer": "LIFO (Last In, First Out)"
+      },
+      {
+        "q": "Which register stores the instruction *after* it is fetched from memory?",
+        "opts": [
+          "Instruction Register (IR)",
+          "Program Counter (PC)",
+          "Process Status Word (PSW)",
+          "Stack Pointer (SP)"
+        ],
+        "answer": "Instruction Register (IR)"
+      },
+      {
+        "q": "What is the Process Status Word (PSW) register?",
+        "opts": [
+          "A general-purpose register",
+          "A set of flags (bits)",
+          "The stack memory",
+          "The instruction itself"
+        ],
+        "answer": "A set of flags (bits)"
+      },
+      {
+        "q": "The 'Sign flag' in the PSW indicates the sign of what?",
+        "opts": [
+          "The next instruction",
+          "The last data on the stack",
+          "The last result from the ALU",
+          "The PC address"
+        ],
+        "answer": "The last result from the ALU"
+      },
+      {
+        "q": "Why does a 'JMP' (Jump) instruction typically not require an ALU operation?",
+        "opts": [
+          "It only changes the PC",
+          "It is a complex operation",
+          "It uses the Stack Pointer",
+          "It writes to memory"
+        ],
+        "answer": "It only changes the PC"
+      },
+      {
+        "q": "In an 8-bit architecture, what is the maximum size of the ALU operands?",
+        "opts": ["4-bits", "8-bits", "16-bits", "32-bits"],
+        "answer": "8-bits"
+      },
+      {
+        "q": "What is the solution for handling operands larger than the ALU's architecture (e.g., 16-bit data in an 8-bit ALU)?",
+        "opts": [
+          "Slicing",
+          "Jumping (JMP)",
+          "Stacking (LIFO)",
+          "Flagging (PSW)"
+        ],
+        "answer": "Slicing"
+      },
+      {
+        "q": "In an 8-bit architecture, one memory location is typically equal to what?",
+        "opts": ["1 bit", "4 bits", "1 byte (8-bits)", "2 bytes (16-bits)"],
+        "answer": "1 byte (8-bits)"
+      }
+    ],
+    "tf": [
+      {
+        "q": "GPRs store ALU results temporarily until the CU stores them in RAM.",
+        "answer": true
+      },
+      {
+        "q": "Using the 'register' keyword in C is a guarantee that the variable will be stored in a GPR.",
+        "answer": false
+      },
+      {
+        "q": "The Program Counter (PC) is classified as a Special Purpose Register (SPR).",
+        "answer": true
+      },
+      {
+        "q": "The Stack Pointer (SP) holds the address of the *first* item added to the stack.",
+        "answer": false
+      },
+      {
+        "q": "The Accumulator (ACC) is a modern register used in all new processors.",
+        "answer": false
+      },
+      {
+        "q": "The Process Status Word (PSW) flags are updated by every type of instruction, including JMP.",
+        "answer": false
+      },
+      {
+        "q": "An Increment (INC) instruction must always use the ALU.",
+        "answer": false
+      },
+      {
+        "q": "An 8-bit architecture means the width of the memory register is 8-bits.",
+        "answer": true
+      },
+      {
+        "q": "'Slicing' involves dividing a single operation into multiple smaller operations.",
+        "answer": true
+      }
+    ]
   }
 }

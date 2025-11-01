@@ -348,5 +348,218 @@
         "answer": "False"
       }
     ]
+  },
+  "3": {
+    "mcq": [
+      {
+        "q": "What is the fundamental element of picture representation in computer graphics?",
+        "opts": ["Line", "Polygon", "Point", "Pixel"],
+        "answer": "Point"
+      },
+      {
+        "q": "How is a point represented in two-dimensional space?",
+        "opts": ["(x₁, y₁, z₁)", "(x₁)", "(x₁, y₁)", "(y₁)"],
+        "answer": "(x₁, y₁)"
+      },
+      {
+        "q": "What represents a collection of three or more points?",
+        "opts": ["Line", "Edge", "Pixel", "Polygon"],
+        "answer": "Polygon"
+      },
+      {
+        "q": "In computer graphics, how is a line actually drawn on screen?",
+        "opts": [
+          "By drawing continuous perfect lines",
+          "By shading selected pixels",
+          "By using special pens",
+          "By projecting laser beams"
+        ],
+        "answer": "By shading selected pixels"
+      },
+      {
+        "q": "What is the general equation of any straight line?",
+        "opts": ["x = my + c", "y = mx + c", "y = cx + m", "x = cy + m"],
+        "answer": "y = mx + c"
+      },
+      {
+        "q": "In the line equation y = mx + c, what does 'm' represent?",
+        "opts": [
+          "Y-intercept",
+          "X-intercept",
+          "Gradient/steepness",
+          "Constant value"
+        ],
+        "answer": "Gradient/steepness"
+      },
+      {
+        "q": "In the line equation y = mx + c, what does 'c' represent?",
+        "opts": ["X-intercept", "Y-intercept", "Slope", "Gradient"],
+        "answer": "Y-intercept"
+      },
+      {
+        "q": "What is the formula to calculate slope (m) between two points (x₁,y₁) and (x₂,y₂)?",
+        "opts": [
+          "m = (x₂-x₁)/(y₂-y₁)",
+          "m = (y₂-x₂)/(x₂-y₁)",
+          "m = (y₂-y₁)/(x₂-x₁)",
+          "m = (x₂+y₂)/(x₁+y₁)"
+        ],
+        "answer": "m = (y₂-y₁)/(x₂-x₁)"
+      },
+      {
+        "q": "For points (2,2) and (3,4), what is the slope of the line?",
+        "opts": ["1", "3", "4", "2"],
+        "answer": "2"
+      },
+      {
+        "q": "For points (2,2) and (3,4), what is the y-intercept (b)?",
+        "opts": ["-2", "2", "0", "4"],
+        "answer": "-2"
+      },
+      {
+        "q": "What is the main problem with the Slope-Intercept formula method for line drawing?",
+        "opts": [
+          "It uses only integers",
+          "It's too fast",
+          "It uses decimal/floating-point numbers",
+          "It doesn't work for straight lines"
+        ],
+        "answer": "It uses decimal/floating-point numbers"
+      },
+      {
+        "q": "Why is the Slope-Intercept method not suitable for computer graphics?",
+        "opts": [
+          "It's too accurate",
+          "It's resource-intensive and slow",
+          "It only works for curved lines",
+          "It doesn't use mathematics"
+        ],
+        "answer": "It's resource-intensive and slow"
+      },
+      {
+        "q": "What is the slope-intercept form equation for the line passing through points (2,3) and (6,11)?",
+        "opts": ["y = 3x - 1", "y = 2x - 1", "y = 2x + 1", "y = 4x - 5"],
+        "answer": "y = 2x - 1"
+      },
+      {
+        "q": "What is the slope-intercept form equation for the line passing through points (1,-7) and (3,-15)?",
+        "opts": ["y = -4x - 3", "y = 4x - 11", "y = -8x + 1", "y = -2x - 5"],
+        "answer": "y = -4x - 3"
+      },
+      {
+        "q": "What is the slope-intercept form equation for the line passing through (-1,1) with slope 2/3?",
+        "opts": [
+          "y = 2/3x + 5/3",
+          "y = 2/3x + 1",
+          "y = 3/2x + 5/3",
+          "y = 2/3x - 1/3"
+        ],
+        "answer": "y = 2/3x + 5/3"
+      },
+      {
+        "q": "What is the slope-intercept form equation for the line passing through (6,-3) with slope -1/2?",
+        "opts": [
+          "y = -1/2x + 0",
+          "y = -1/2x + 3",
+          "y = -2x - 3",
+          "y = 1/2x - 6"
+        ],
+        "answer": "y = -1/2x + 0"
+      },
+      {
+        "q": "What is the standard form equation for the line passing through points (5,8) and (3,2)?",
+        "opts": ["3x - y = 7", "x - 3y = 7", "2x + y = 18", "3x + y = 23"],
+        "answer": "3x - y = 7"
+      },
+      {
+        "q": "What is the standard form equation for the line passing through points (-4,-5) and (-2,5)?",
+        "opts": ["5x - y = -15", "x - 5y = 21", "5x + y = -25", "2x - y = -3"],
+        "answer": "5x - y = -15"
+      },
+      {
+        "q": "What is the slope of the line passing through points (2,3) and (6,11)?",
+        "opts": ["1", "3", "2", "4"],
+        "answer": "2"
+      },
+      {
+        "q": "What is the slope of the line passing through points (1,-7) and (3,-15)?",
+        "opts": ["-8", "-4", "4", "-2"],
+        "answer": "-4"
+      },
+      {
+        "q": "What is the y-intercept of the line y = 2x - 1?",
+        "opts": ["2", "1", "0", "-1"],
+        "answer": "-1"
+      },
+      {
+        "q": "In parametric form, what range of values does parameter 't' take?",
+        "opts": ["1 to 10", "-1 to 1", "0 to 1", "0 to 100"],
+        "answer": "0 to 1"
+      },
+      {
+        "q": "In parametric form, what point do you get when t=0?",
+        "opts": ["End point", "Mid point", "Start point", "No point"],
+        "answer": "Start point"
+      },
+      {
+        "q": "In parametric form, what point do you get when t=1?",
+        "opts": ["Start point", "Mid point", "End point", "Random point"],
+        "answer": "End point"
+      }
+    ],
+    "tf": [
+      {
+        "q": "A point in three-dimensional space is represented as (x₁, y₁).",
+        "answer": "False"
+      },
+      {
+        "q": "Two points would represent a line or edge.",
+        "answer": "True"
+      },
+      {
+        "q": "In computer graphics, lines are drawn as continuous perfect lines.",
+        "answer": "False"
+      },
+      {
+        "q": "The slope of a straight line is always constant.",
+        "answer": "True"
+      },
+      {
+        "q": "In the equation y = 3x - 2, the y-intercept is 3.",
+        "answer": "False"
+      },
+      {
+        "q": "For parallel lines, the slopes are equal.",
+        "answer": "True"
+      },
+      {
+        "q": "The Slope-Intercept method is the fastest method for line drawing in computer graphics.",
+        "answer": "False"
+      },
+      {
+        "q": "Parametric form uses a parameter 't' that varies between 0 and 1.",
+        "answer": "True"
+      },
+      {
+        "q": "In parametric form, when t=0.5, you get the midpoint of the line.",
+        "answer": "True"
+      },
+      {
+        "q": "The main problem with both Slope-Intercept and Parametric forms is the use of floating-point numbers.",
+        "answer": "True"
+      },
+      {
+        "q": "Pixels are the tiny squares that make up a computer screen.",
+        "answer": "True"
+      },
+      {
+        "q": "The y-intercept is where the line crosses the x-axis.",
+        "answer": "False"
+      },
+      {
+        "q": "For points (1,-7) and (3,-15), the slope is -4.",
+        "answer": "True"
+      }
+    ]
   }
 }
