@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
       card.className = "subject-card";
       const lectureCount = summaryData[subject.id] || 0;
       let badgeHTML = "";
-      if (lectureCount > 0) {
+      if (lectureCount > "0") {
         const lectureText = lectureCount === 1 ? "Lecture" : "Lectures";
         badgeHTML = `<span class="lecture-count-badge available">📖 ${lectureCount} ${lectureText} Available</span>`;
       } else {
