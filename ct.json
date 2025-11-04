@@ -1218,5 +1218,983 @@
         "correction": "It is used when a specific, unchanging level of signal reduction is needed."
       }
     ]
+  },
+  "7": {
+    "mcq": [
+      {
+        "q": "What phenomenon causes the spreading of different wavelengths of light and signal degradation?",
+        "opts": [
+          "Chromatic dispersion",
+          "Amplification",
+          "Isolation",
+          "Switching"
+        ],
+        "answer": "Chromatic dispersion"
+      },
+      {
+        "q": "What is the name of the specialized fiber engineered with opposite dispersion characteristics to reverse broadening?",
+        "opts": [
+          "Single-Mode Fiber (SMF)",
+          "Erbium-Doped Fiber",
+          "Dispersion Compensating Fiber (DCF)",
+          "Multi-Mode Fiber (MMF)"
+        ],
+        "answer": "Dispersion Compensating Fiber (DCF)"
+      },
+      {
+        "q": "Standard Single-Mode Fiber (SMF) typically has which type of chromatic dispersion?",
+        "opts": ["Positive", "Negative", "Zero", "Random"],
+        "answer": "Positive"
+      },
+      {
+        "q": "Dispersion Compensating Fiber (DCF) is designed to have which type of chromatic dispersion?",
+        "opts": ["Positive", "Negative", "Zero", "Random"],
+        "answer": "Negative"
+      },
+      {
+        "q": "In the lecture example, 80 km of regular fiber is compensated by how much DCF?",
+        "opts": ["80 km", "15 km", "160 km", "0 km"],
+        "answer": "15 km"
+      },
+      {
+        "q": "What is the name of a device that amplifies an optical signal directly without converting it to an electrical signal?",
+        "opts": ["Regenerator", "Optical Amplifier", "DCM", "Optical Switch"],
+        "answer": "Optical Amplifier"
+      },
+      {
+        "q": "Which of the following is NOT a type of optical amplifier listed in the lecture?",
+        "opts": [
+          "Erbium-Doped Fiber Amplifier (EDFA)",
+          "Raman Amplifier",
+          "Semiconductor Optical Amplifier (SOA)",
+          "Dispersion Compensating Amplifier (DCA)"
+        ],
+        "answer": "Dispersion Compensating Amplifier (DCA)"
+      },
+      {
+        "q": "What element is used to dope the fiber in an EDFA?",
+        "opts": ["Erbium", "Silicon", "Germanium", "Raman"],
+        "answer": "Erbium"
+      },
+      {
+        "q": "An EDFA uses a _______ to stimulate the doped fiber and increase signal strength.",
+        "opts": ["Photodetector", "Pump laser", "Isolator", "Coupler"],
+        "answer": "Pump laser"
+      },
+      {
+        "q": "EDFAs are ideal for long-distance communication because they have _______ gain and _______ noise.",
+        "opts": ["Low, Low", "Low, High", "High, Low", "High, High"],
+        "answer": "High, Low"
+      },
+      {
+        "q": "The pump laser for an EDFA typically operates at which wavelengths?",
+        "opts": ["980 nm or 1480 nm", "1550 nm", "1310 nm", "850 nm"],
+        "answer": "980 nm or 1480 nm"
+      },
+      {
+        "q": "What component is placed at the end of an EDFA to avoid reflections?",
+        "opts": ["Coupler", "Pump laser", "Isolator", "Erbium fiber"],
+        "answer": "Isolator"
+      },
+      {
+        "q": "A Regenerator performs 3R, which stands for _______.",
+        "opts": [
+          "Reamplify, Reshape, and Retime",
+          "Reamplify, Reroute, and Retime",
+          "Reshape, Reroute, and Receive",
+          "Reamplify, Reshape, and Reroute"
+        ],
+        "answer": "Reamplify, Reshape, and Retime"
+      },
+      {
+        "q": "An EDFA is known as a _______ device because it only re-amplifies the signal.",
+        "opts": ["1R", "2R", "3R", "O-E-O"],
+        "answer": "1R"
+      },
+      {
+        "q": "What is the main drawback of an Optical Amplifier compared to a Regenerator?",
+        "opts": [
+          "It amplifies signal and noise together",
+          "It is more complex and costly",
+          "It cannot amplify all wavelengths",
+          "It converts the signal to electrical"
+        ],
+        "answer": "It amplifies signal and noise together"
+      },
+      {
+        "q": "Which device provides a clean, fully restored signal by removing noise and reshaping the pulse?",
+        "opts": ["Regenerator (O-E-O)", "Optical Amplifier", "EDFA", "DCM"],
+        "answer": "Regenerator (O-E-O)"
+      },
+      {
+        "q": "What is the function of a Wavelength Converter (WC)?",
+        "opts": [
+          "Converts input wavelength to another wavelength",
+          "Compensates for dispersion",
+          "Amplifies the signal",
+          "Switches the signal to a different fiber"
+        ],
+        "answer": "Converts input wavelength to another wavelength"
+      },
+      {
+        "q": "Which type of Wavelength Converter (WC) converts the signal from optical to electrical and back to optical?",
+        "opts": [
+          "Opto-Electronic WC (OE-WC)",
+          "Coherent Effects WC",
+          "All-Optical WC",
+          "Nonlinear WC"
+        ],
+        "answer": "Opto-Electronic WC (OE-WC)"
+      },
+      {
+        "q": "Which type of WC relies on nonlinear optical effects and involves no electrical conversion?",
+        "opts": [
+          "Opto-Electronic WC (OE-WC)",
+          "Coherent Effects WC",
+          "O-E-O WC",
+          "Regenerator WC"
+        ],
+        "answer": "Coherent Effects WC"
+      },
+      {
+        "q": "Which WC technology has the advantage of signal regeneration (reshaping and retiming)?",
+        "opts": [
+          "Opto-Electronic WC (OE-WC)",
+          "Coherent Effects WC",
+          "All-Optical WC",
+          "Nonlinear WC"
+        ],
+        "answer": "Opto-Electronic WC (OE-WC)"
+      },
+      {
+        "q": "Which WC technology is described as being ultrahigh-speed?",
+        "opts": [
+          "Opto-Electronic WC (OE-WC)",
+          "Coherent Effects WC",
+          "O-E-O WC",
+          "Regenerator WC"
+        ],
+        "answer": "Coherent Effects WC"
+      },
+      {
+        "q": "Which type of switching is currently employed in WDM optical networks?",
+        "opts": ["Circuit switching", "Packet switching", "OPS", "OBS"],
+        "answer": "Circuit switching"
+      },
+      {
+        "q": "What is the term for the fraction of power lost as a signal passes through an optical switch?",
+        "opts": [
+          "Extinction Ratio",
+          "Insertion loss",
+          "Crosstalk",
+          "Cross state"
+        ],
+        "answer": "Insertion loss"
+      },
+      {
+        "q": "What term describes the ratio of power at the desired output vs. an undesired output in a switch?",
+        "opts": [
+          "Extinction Ratio",
+          "Insertion loss",
+          "Crosstalk",
+          "Bar state"
+        ],
+        "answer": "Crosstalk"
+      },
+      {
+        "q": "What is the ratio of output power in the ON state to the power in the OFF state called?",
+        "opts": [
+          "Extinction Ratio",
+          "Insertion loss",
+          "Crosstalk",
+          "Bar state"
+        ],
+        "answer": "Extinction Ratio"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Chromatic dispersion causes optical pulses to sharpen and narrow.",
+        "answer": "False",
+        "correction": "It causes pulse broadening (spreading)."
+      },
+      {
+        "q": "Dispersion Compensating Fiber (DCF) works by having dispersion characteristics opposite to regular fiber.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "SMF has negative chromatic dispersion, and DCF has positive chromatic dispersion.",
+        "answer": "False",
+        "correction": "SMF has positive, and DCF has negative."
+      },
+      {
+        "q": "An optical amplifier must convert a signal to electrical form to amplify it.",
+        "answer": "False",
+        "correction": "It amplifies the signal directly in its optical form."
+      },
+      {
+        "q": "Raman Amplifier is one type of optical amplifier.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "An EDFA amplifies signals by using a fiber doped with erbium and a pump laser.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "An isolator is used in an EDFA to couple the pump laser into the fiber.",
+        "answer": "False",
+        "correction": "It is placed at the end to avoid reflections."
+      },
+      {
+        "q": "If an EDFA does not have an isolator, it may convert into a laser.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A regenerator is a 1R device.",
+        "answer": "False",
+        "correction": "It is a 3R device (Reamplify, Reshape, Retime)."
+      },
+      {
+        "q": "An EDFA performs 1R (Reamplify).",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "An EDFA can remove noise and reshape the signal pulse.",
+        "answer": "False",
+        "correction": "It amplifies both the signal and the noise."
+      },
+      {
+        "q": "A Regenerator (O-E-O) provides a clean, fully restored signal.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Optical amplifiers are generally higher in cost and complexity than regenerators.",
+        "answer": "False",
+        "correction": "They are lower in cost and complexity."
+      },
+      {
+        "q": "A Wavelength Converter (WC) is used to amplify an optical signal.",
+        "answer": "False",
+        "correction": "It converts the signal from one wavelength to another."
+      },
+      {
+        "q": "OE-WC is an all-optical conversion method.",
+        "answer": "False",
+        "correction": "It is Optical-to-Electrical-to-Optical."
+      },
+      {
+        "q": "Wavelength conversion using coherent effects provides signal regeneration.",
+        "answer": "False",
+        "correction": "No, it only transfers the wavelength."
+      },
+      {
+        "q": "OE-WC speed is limited by electronic components.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Optical packet switching currently faces many challenges.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In a switch's 'bar state', the inputs are crossed to the opposite outputs.",
+        "answer": "False",
+        "correction": "This describes the 'cross state'."
+      },
+      {
+        "q": "Crosstalk is the fraction of power lost when a signal passes through a switch.",
+        "answer": "False",
+        "correction": "That is Insertion Loss."
+      }
+    ]
+  },
+  "8": {
+    "mcq": [
+      {
+        "q": "Which network generation (G1-G4) is described as 'Electronic' and uses copper cables?",
+        "opts": ["G1", "G2", "G3", "G4"],
+        "answer": "G1"
+      },
+      {
+        "q": "In the G2 network generation, what is the 'Node Technology'?",
+        "opts": ["Electronic", "Optical", "Hybrid", "WDM"],
+        "answer": "Electronic"
+      },
+      {
+        "q": "Which network generation (G1-G4) introduced WDM as its 'Transmission Technology'?",
+        "opts": ["G1", "G2", "G3", "G4"],
+        "answer": "G3"
+      },
+      {
+        "q": "Which network generation is still in research laboratories and aims for 'Optical' node technology?",
+        "opts": ["G1", "G2", "G3", "G4"],
+        "answer": "G4"
+      },
+      {
+        "q": "In an 'All-Optical Network' diagram, what does OXC stand for?",
+        "opts": [
+          "Optical Cross-Connect",
+          "Optical Wavelength Converter",
+          "Optical Transmission Capacity",
+          "Optical Electronic Control"
+        ],
+        "answer": "Optical Cross-Connect"
+      },
+      {
+        "q": "What is the term for a full optical path from source to destination in a WDM network?",
+        "opts": ["Lightpath", "Wavelength-link", "OXC", "WDM Switch"],
+        "answer": "Lightpath"
+      },
+      {
+        "q": "According to the graph, which capacity is growing faster: Optical Transmission Capacity or Electronic Switching Capacity?",
+        "opts": [
+          "Optical Transmission Capacity",
+          "Electronic Switching Capacity",
+          "Both are equal",
+          "Neither is growing"
+        ],
+        "answer": "Optical Transmission Capacity"
+      },
+      {
+        "q": "The gap between the growth of fiber capacity and electronic switching capacity leads to what issue?",
+        "opts": [
+          "Fiber/Processor Bottlenecks",
+          "Increased Power Consumption",
+          "Wavelength Conversion",
+          "Reduced Leakage"
+        ],
+        "answer": "Fiber/Processor Bottlenecks"
+      },
+      {
+        "q": "What was the first generation of WDM networks deployed in the early to mid 90's?",
+        "opts": [
+          "Point-to-Point WDM systems",
+          "Wavelength Add/Drop Multiplexer (WADM)",
+          "Active Switch",
+          "Passive Router"
+        ],
+        "answer": "Point-to-Point WDM systems"
+      },
+      {
+        "q": "Today's common channel count for Point-to-Point WDM systems is _______.",
+        "opts": ["64", "160", "320", "10"],
+        "answer": "64"
+      },
+      {
+        "q": "Which generation of WDM networks allows adding/dropping data streams at intermediate points?",
+        "opts": [
+          "Point-to-Point WDM systems",
+          "Wavelength Add/Drop Multiplexer (WADM)",
+          "Fiber Crossconnects",
+          "G1 Networks"
+        ],
+        "answer": "Wavelength Add/Drop Multiplexer (WADM)"
+      },
+      {
+        "q": "Which generation of WDM systems marked the birth of a true 'WDM networking' infrastructure?",
+        "opts": [
+          "Point-to-Point WDM systems",
+          "Wavelength Add/Drop Multiplexers",
+          "Fiber and Wavelength Cross-Connects",
+          "G2 Networks"
+        ],
+        "answer": "Fiber and Wavelength Cross-Connects"
+      },
+      {
+        "q": "Which of these is NOT a category of optical interconnection device listed?",
+        "opts": [
+          "Passive Star",
+          "Passive Router",
+          "Active Switch",
+          "Active Router"
+        ],
+        "answer": "Active Router"
+      },
+      {
+        "q": "What device splits the power of an input signal on one fiber equally among all output fibers?",
+        "opts": ["Passive Star", "Passive Router", "Active Switch", "WADM"],
+        "answer": "Passive Star"
+      },
+      {
+        "q": "What problem occurs in a Passive Star if two signals on the same wavelength arrive from different input fibers simultaneously?",
+        "opts": [
+          "Collision",
+          "Amplification",
+          "Wavelength Conversion",
+          "Bottleneck"
+        ],
+        "answer": "Collision"
+      },
+      {
+        "q": "Which device routes optical signals based on a fixed, predetermined 'routing matrix'?",
+        "opts": ["Passive Star", "Passive Router", "Active Switch", "WADM"],
+        "answer": "Passive Router"
+      },
+      {
+        "q": "Which of the following is another name for a Passive Router?",
+        "opts": [
+          "Arrayed Waveguide Grating (AWG)",
+          "Optical Cross-Connect (OXC)",
+          "Active Switch",
+          "Passive Star"
+        ],
+        "answer": "Arrayed Waveguide Grating (AWG)"
+      },
+      {
+        "q": "What is the key difference between an Active Switch and a Passive Router?",
+        "opts": [
+          "Active Switch has a reconfigurable routing matrix",
+          "Active Switch is passive",
+          "Passive Router has a reconfigurable matrix",
+          "Active Switch cannot route signals"
+        ],
+        "answer": "Active Switch has a reconfigurable routing matrix"
+      },
+      {
+        "q": "What is the name for an Active Switch?",
+        "opts": [
+          "Wavelength-Routed Switch (WRS)",
+          "Waveguide Grating Router (WGR)",
+          "Passive Star",
+          "Wavelength Add/Drop Multiplexer"
+        ],
+        "answer": "Wavelength-Routed Switch (WRS)"
+      },
+      {
+        "q": "What limitation of an Active Switch can be overcome by using wavelength converters?",
+        "opts": [
+          "Being 'blocking' (e.g., cannot route two same-wavelength inputs to one output)",
+          "Its high cost",
+          "Its power consumption",
+          "Its fixed configuration"
+        ],
+        "answer": "Being 'blocking' (e.g., cannot route two same-wavelength inputs to one output)"
+      },
+      {
+        "q": "According to the comparison table, which device is passive and simply splits signals?",
+        "opts": ["Passive Star", "Passive Router", "Active Switch", "WADM"],
+        "answer": "Passive Star"
+      },
+      {
+        "q": "According to the comparison table, which device is active and can reconfigure paths in real time?",
+        "opts": ["Passive Star", "Passive Router", "Active Switch", "WADM"],
+        "answer": "Active Switch"
+      },
+      {
+        "q": "Which device has 'Fixed paths; limited routing capability' according to the comparison table?",
+        "opts": ["Passive Star", "Passive Router", "Active Switch", "WADM"],
+        "answer": "Passive Router"
+      },
+      {
+        "q": "Which device is 'Highly scalable' and suited for data centers and metro networks?",
+        "opts": ["Passive Star", "Passive Router", "Active Switch", "WADM"],
+        "answer": "Active Switch"
+      },
+      {
+        "q": "Which device is suited for Fiber-to-the-home (FTTH) and has low flexibility?",
+        "opts": ["Passive Star", "Passive Router", "Active Switch", "WADM"],
+        "answer": "Passive Star"
+      }
+    ],
+    "tf": [
+      {
+        "q": "The G1 network generation used optical fiber as its transmission medium.",
+        "answer": "False",
+        "correction": "It used copper cables."
+      },
+      {
+        "q": "The G3 network generation is currently deployed in backbone networks (WANs).",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The G4 network aims to have electronic node technology.",
+        "answer": "False",
+        "correction": "It aims for optical node technology."
+      },
+      {
+        "q": "Electronic switching capacity (Moore's Law) is growing faster than optical transmission capacity.",
+        "answer": "False",
+        "correction": "Optical transmission capacity is growing faster."
+      },
+      {
+        "q": "The first generation of WDM networks was Wavelength Add/Drop Multiplexers.",
+        "answer": "False",
+        "correction": "It was Point-to-Point WDM systems."
+      },
+      {
+        "q": "The maximum channel count for Point-to-Point WDM is 64.",
+        "answer": "False",
+        "correction": "The maximum channel count today is 160."
+      },
+      {
+        "q": "A WADM provides the flexibility to add/drop data streams at intermediate points.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A WADM consists of a MUX, followed by switches, followed by a DEMUX.",
+        "answer": "False",
+        "correction": "It consists of a DEMUX, followed by switches, followed by a MUX."
+      },
+      {
+        "q": "Passive Star, Passive Router, and Active Switch are all categories of optical interconnection devices.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A Passive Star routes signals based on wavelength to specific outputs.",
+        "answer": "False",
+        "correction": "It splits the power of an input signal equally among all output fibers."
+      },
+      {
+        "q": "A collision occurs in a Passive Star if two different wavelengths are launched simultaneously.",
+        "answer": "False",
+        "correction": "It occurs if two signals on the same wavelength are launched."
+      },
+      {
+        "q": "A Passive Router has a reconfigurable routing matrix.",
+        "answer": "False",
+        "correction": "Its routing matrix is fixed."
+      },
+      {
+        "q": "AWG (Arrayed Waveguide Grating) is another name for an Active Switch.",
+        "answer": "False",
+        "correction": "It is another name for a Passive Router."
+      },
+      {
+        "q": "An Active Switch has a fixed routing matrix, similar to a Passive Router.",
+        "answer": "False",
+        "correction": "It has a reconfigurable routing matrix."
+      },
+      {
+        "q": "An Active Switch can direct the same wavelength from different input fibers to any of the output fibers.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Active switches are 'non-blocking' and can always connect an input to any output.",
+        "answer": "False",
+        "correction": "They can be 'blocking' under some configurations."
+      },
+      {
+        "q": "An Active Switch cannot connect input signals on the same wavelength to the same output fiber.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Using wavelength converters can overcome the blocking limitations of Active Switches.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Passive devices (Star, Router) require external power to operate.",
+        "answer": "False",
+        "correction": "They are passive and do not require power."
+      },
+      {
+        "q": "An Active Switch has low flexibility and a fixed configuration.",
+        "answer": "False",
+        "correction": "It has high flexibility and a dynamic configuration."
+      },
+      {
+        "q": "Passive Routers are highly scalable and used in data centers.",
+        "answer": "False",
+        "correction": "Active Switches are."
+      }
+    ]
+  },
+  "9": {
+    "mcq": [
+      {
+        "q": "Wavelength-Routed Networks are also known as _______.",
+        "opts": [
+          "Optical Packet Switching (OPS)",
+          "Optical Circuit Switching (OCS)",
+          "Optical Burst Switching (OBS)",
+          "Wavelength Assignment (WRA)"
+        ],
+        "answer": "Optical Circuit Switching (OCS)"
+      },
+      {
+        "q": "In an OCS network, what is the circuit (path) commonly called?",
+        "opts": ["Lightpath", "Fiber line", "Wavelength", "Route"],
+        "answer": "Lightpath"
+      },
+      {
+        "q": "The main problem in Wavelength-Routed Networks is the _______ problem.",
+        "opts": [
+          "Wavelength Routing and Assignment (WRA)",
+          "Optical Packet Switching (OPS)",
+          "Contention Resolution",
+          "Speed-Mismatch"
+        ],
+        "answer": "Wavelength Routing and Assignment (WRA)"
+      },
+      {
+        "q": "What is the goal of the WRA problem?",
+        "opts": [
+          "Establish the maximum number of lightpaths",
+          "Reduce the number of wavelengths",
+          "Use only adaptive routing",
+          "Increase packet delay"
+        ],
+        "answer": "Establish the maximum number of lightpaths"
+      },
+      {
+        "q": "Which of these is NOT a Routing Problem strategy mentioned?",
+        "opts": [
+          "Fixed Routing",
+          "Adaptive Routing",
+          "Fault-Tolerant Routing",
+          "First-Fit Routing"
+        ],
+        "answer": "First-Fit Routing"
+      },
+      {
+        "q": "Which routing strategy uses the shortest path, such as Dijkstra's algorithm?",
+        "opts": [
+          "Fixed Routing",
+          "Adaptive Routing",
+          "Fault-Tolerant Routing",
+          "Fixed-Alternate Routing"
+        ],
+        "answer": "Fixed Routing"
+      },
+      {
+        "q": "Which of these is NOT a Wavelength Assignment strategy?",
+        "opts": [
+          "Random (R)",
+          "First-Fit (FF)",
+          "Least-Used (LU)",
+          "Adaptive (A)"
+        ],
+        "answer": "Adaptive (A)"
+      },
+      {
+        "q": "Which wavelength assignment strategy involves choosing the 'Most-Used' wavelength?",
+        "opts": ["R", "FF", "LU", "MU"],
+        "answer": "MU"
+      },
+      {
+        "q": "The mismatch between switching capability and optical transmission capacity leads to the _______.",
+        "opts": [
+          "Speed-Mismatch Problem",
+          "WRA Problem",
+          "Contention Problem",
+          "Signaling Problem"
+        ],
+        "answer": "Speed-Mismatch Problem"
+      },
+      {
+        "q": "What does OPS stand for?",
+        "opts": [
+          "Optical Packet Switching",
+          "Optical Path Switching",
+          "Optical Protection Switching",
+          "Optical Port Switching"
+        ],
+        "answer": "Optical Packet Switching"
+      },
+      {
+        "q": "Design of a truly OPS architecture requires advances in Optical Memory and _______.",
+        "opts": [
+          "Optical Computing",
+          "Optical RAM",
+          "Optical Switching",
+          "Optical Lasers"
+        ],
+        "answer": "Optical Computing"
+      },
+      {
+        "q": "In OPS, what occurs when two packets try to leave the same output port, on the same wavelength, at the same time?",
+        "opts": ["Contention", "Signaling", "Scheduling", "Assembly"],
+        "answer": "Contention"
+      },
+      {
+        "q": "How do electrical packet-switched networks typically resolve contention?",
+        "opts": [
+          "Store-and-forward (using RAM)",
+          "Fiber Delay Lines (FDL)",
+          "Wavelength Converters (WC)",
+          "First-Fit (FF)"
+        ],
+        "answer": "Store-and-forward (using RAM)"
+      },
+      {
+        "q": "Since there is no optical RAM, OPS can use 'Optical Buffers' which are implemented using _______.",
+        "opts": [
+          "Fiber Delay Lines (FDL)",
+          "Wavelength Converters (WC)",
+          "Control Units",
+          "Splitters"
+        ],
+        "answer": "Fiber Delay Lines (FDL)"
+      },
+      {
+        "q": "Besides Optical Buffers (FDL), what other technology can be used for contention resolution in OPS?",
+        "opts": [
+          "Wavelength Converters (WC)",
+          "Optical RAM",
+          "Control Units",
+          "Dijkstra's Algorithm"
+        ],
+        "answer": "Wavelength Converters (WC)"
+      },
+      {
+        "q": "What network architecture presents a compromise between OCS and OPS?",
+        "opts": [
+          "Optical Burst Switching (OBS)",
+          "Wavelength-Routed Networks",
+          "Electronic Switching",
+          "IP Networks"
+        ],
+        "answer": "Optical Burst Switching (OBS)"
+      },
+      {
+        "q": "What is the key idea of OBS?",
+        "opts": [
+          "Direct bursts without electronics for routing decisions",
+          "Store all bursts in optical RAM",
+          "Use OEO processing at every node",
+          "Use only fixed routing"
+        ],
+        "answer": "Direct bursts without electronics for routing decisions"
+      },
+      {
+        "q": "In OBS, which node is responsible for 'Optical burst generation'?",
+        "opts": ["Ingress node", "Core node", "Egress node", "Control node"],
+        "answer": "Ingress node"
+      },
+      {
+        "q": "In OBS, which node is responsible for 'Data burst disassembly'?",
+        "opts": ["Ingress node", "Core node", "Egress node", "Control node"],
+        "answer": "Egress node"
+      },
+      {
+        "q": "In OBS, which node performs 'Control packet lookup' and 'Switching'?",
+        "opts": ["Ingress node", "Core node", "Egress node", "Access node"],
+        "answer": "Core node"
+      },
+      {
+        "q": "In OBS, what is the time separation between the 'Control packet' and the 'Data burst' called?",
+        "opts": ["Offset", "Delay", "Threshold", "Timer"],
+        "answer": "Offset"
+      },
+      {
+        "q": "The procedure for aggregating data packets into bursts at the edge of an OBS network is called _______.",
+        "opts": [
+          "Burst assembly",
+          "Burst scheduling",
+          "Signaling",
+          "Contention"
+        ],
+        "answer": "Burst assembly"
+      },
+      {
+        "q": "Which burst assembly algorithm generates a burst after a fixed time has passed?",
+        "opts": [
+          "Timer-based",
+          "Threshold-based",
+          "Mixed-based",
+          "Random-based"
+        ],
+        "answer": "Timer-based"
+      },
+      {
+        "q": "Which burst assembly algorithm generates a burst when a specific number of packets or burst length is reached?",
+        "opts": [
+          "Timer-based",
+          "Threshold-based",
+          "Mixed-based",
+          "Random-based"
+        ],
+        "answer": "Threshold-based"
+      },
+      {
+        "q": "Which burst assembly algorithm combines timer and threshold methods?",
+        "opts": [
+          "Timer-based",
+          "Threshold-based",
+          "Mixed-based",
+          "Random-based"
+        ],
+        "answer": "Mixed-based"
+      },
+      {
+        "q": "What is the drawback of a timer-based scheme if the timeout value is too small?",
+        "opts": [
+          "Higher control overhead",
+          "Intolerable packet delay",
+          "Guaranteed delay",
+          "Larger bursts"
+        ],
+        "answer": "Higher control overhead"
+      },
+      {
+        "q": "What is the drawback of a threshold-based assembly algorithm?",
+        "opts": [
+          "No guarantee on assembly delay",
+          "Higher control overhead",
+          "Fixed burst lengths",
+          "Too many small bursts"
+        ],
+        "answer": "No guarantee on assembly delay"
+      },
+      {
+        "q": "Which algorithm is responsible for adjusting the offset time and scheduling bursts on output links?",
+        "opts": [
+          "Burst scheduling",
+          "Burst assembly",
+          "Signaling protocol",
+          "WRA"
+        ],
+        "answer": "Burst scheduling"
+      },
+      {
+        "q": "Which of the following is a scheduling technique mentioned for OBS?",
+        "opts": [
+          "Latest Available Unused Channel (LAUC)",
+          "Least-Used (LU)",
+          "Adaptive Routing",
+          "Tell and Wait (TAW)"
+        ],
+        "answer": "Latest Available Unused Channel (LAUC)"
+      },
+      {
+        "q": "Which of the following is NOT a signaling protocol for OBS mentioned in the lecture?",
+        "opts": [
+          "Just Enough Time (JET)",
+          "Just In Time (JIT)",
+          "Tell and Wait (TAW)",
+          "First Fit (FF)"
+        ],
+        "answer": "First Fit (FF)"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Wavelength-Routed Networks are a type of Optical Packet Switching.",
+        "answer": "False",
+        "correction": "They are a type of Optical Circuit Switching."
+      },
+      {
+        "q": "In OCS, a circuit (path) is established after the data is streamed.",
+        "answer": "False",
+        "correction": "It is established in a set-up phase before the data."
+      },
+      {
+        "q": "The WRA problem involves both a Routing Problem and a Wavelength Assignment Problem.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "'Fixed-Alternate Routing' is a strategy for the Wavelength Assignment problem.",
+        "answer": "False",
+        "correction": "It is a strategy for the Routing Problem."
+      },
+      {
+        "q": "'First-Fit (FF)' is a strategy for the Wavelength Assignment problem.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "WDM electronic switches have become bottlenecks due to their high speed and small size.",
+        "answer": "False",
+        "correction": "They are bottlenecks due to their (limited) Size and Speed."
+      },
+      {
+        "q": "OPS processes packets in the electronic domain.",
+        "answer": "False",
+        "correction": "It processes packets in the optical domain."
+      },
+      {
+        "q": "A key challenge for OPS is the lack of optical RAM.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Contention in OPS can be resolved using Wavelength Converters (WC).",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "FDL stands for Fiber Delay Line.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Optical Burst Switching (OBS) is a compromise between OCS and OPS.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "OBS requires OEO processing at every core node for routing decisions.",
+        "answer": "False",
+        "correction": "It avoids electronics for routing data bursts."
+      },
+      {
+        "q": "In OBS, the Data Burst is sent before the Control Packet.",
+        "answer": "False",
+        "correction": "The Control Packet is sent first."
+      },
+      {
+        "q": "The Core node in an OBS network performs 'Data burst disassembly'.",
+        "answer": "False",
+        "correction": "The Egress node does."
+      },
+      {
+        "q": "The Ingress node in an OBS network makes the 'Offset-time decision'.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Burst assembly algorithms are classified as timer-based and threshold-based only.",
+        "answer": "False",
+        "correction": "Also mixed timer/threshold-based."
+      },
+      {
+        "q": "In a timer-based scheme, a large timeout value can lead to higher control overhead.",
+        "answer": "False",
+        "correction": "It can lead to intolerable packet delay."
+      },
+      {
+        "q": "Threshold-based assembly algorithms provide a strong guarantee on packet delay.",
+        "answer": "False",
+        "correction": "They do not provide any guarantee on the assembly delay."
+      },
+      {
+        "q": "Mixed timer/threshold-based assembly algorithms have a lower operational complexity.",
+        "answer": "False",
+        "correction": "They have a higher operational complexity."
+      },
+      {
+        "q": "Burst scheduling is performed at the Egress node.",
+        "answer": "False",
+        "correction": "It is performed at the Ingress node."
+      },
+      {
+        "q": "LAUC (Latest Available Unused Channel) is a type of burst assembly algorithm.",
+        "answer": "False",
+        "correction": "It is a burst-scheduling technique."
+      },
+      {
+        "q": "A signaling protocol in OBS can be one-way or two-way.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Just In Time (JIT) is a burst assembly algorithm.",
+        "answer": "False",
+        "correction": "It is a signaling protocol."
+      }
+    ]
   }
 }

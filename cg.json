@@ -1028,5 +1028,186 @@
       }
     ],
     "tf": []
+  },
+  "7": {
+    "mcq": [
+      {
+        "q": "What is the equation used to define a circle in computer graphics?",
+        "opts": ["x + y = r", "x² + y² = r²", "y = mx + c", "x² - y² = r²"],
+        "answer": "x² + y² = r²"
+      },
+      {
+        "q": "What is the main disadvantage of the simple circle drawing algorithm?",
+        "opts": [
+          "It uses too many colors",
+          "It has large gaps where slope approaches vertical",
+          "It only works for small circles",
+          "It requires special hardware"
+        ],
+        "answer": "It has large gaps where slope approaches vertical"
+      },
+      {
+        "q": "How many points are calculated directly in the Midpoint Circle Algorithm due to symmetry?",
+        "opts": ["All points", "One quadrant", "One octant", "Half the circle"],
+        "answer": "One octant"
+      },
+      {
+        "q": "What is the initial decision parameter P₀ for a circle with radius r?",
+        "opts": ["1 - r", "r - 1", "5/4 - r", "Both 1 - r and 5/4 - r"],
+        "answer": "Both 1 - r and 5/4 - r"
+      },
+      {
+        "q": "When Pₖ < 0 in the Midpoint Circle Algorithm, what is the next point?",
+        "opts": [
+          "(xₖ + 1, yₖ - 1)",
+          "(xₖ + 1, yₖ)",
+          "(xₖ, yₖ - 1)",
+          "(xₖ - 1, yₖ)"
+        ],
+        "answer": "(xₖ + 1, yₖ)"
+      },
+      {
+        "q": "When Pₖ ≥ 0 in the Midpoint Circle Algorithm, what is the next point?",
+        "opts": [
+          "(xₖ + 1, yₖ)",
+          "(xₖ + 1, yₖ - 1)",
+          "(xₖ, yₖ - 1)",
+          "(xₖ - 1, yₖ)"
+        ],
+        "answer": "(xₖ + 1, yₖ - 1)"
+      },
+      {
+        "q": "For a circle with radius 10 centered at (0,0), what is the initial point?",
+        "opts": ["(0,0)", "(10,0)", "(0,10)", "(10,10)"],
+        "answer": "(0,10)"
+      },
+      {
+        "q": "What is the initial decision parameter for a circle with radius 10?",
+        "opts": ["-9", "9", "-10", "10"],
+        "answer": "-9"
+      },
+      {
+        "q": "When Pₖ < 0, how is Pₖ₊₁ calculated?",
+        "opts": [
+          "Pₖ + 2xₖ₊₁ + 1",
+          "Pₖ + 2xₖ₊₁ + 1 - 2yₖ₊₁",
+          "Pₖ + 2yₖ₊₁ + 1",
+          "Pₖ - 2xₖ₊₁ - 1"
+        ],
+        "answer": "Pₖ + 2xₖ₊₁ + 1"
+      },
+      {
+        "q": "When Pₖ ≥ 0, how is Pₖ₊₁ calculated?",
+        "opts": [
+          "Pₖ + 2xₖ₊₁ + 1",
+          "Pₖ + 2xₖ₊₁ + 1 - 2yₖ₊₁",
+          "Pₖ + 2yₖ₊₁ + 1",
+          "Pₖ - 2xₖ₊₁ - 1"
+        ],
+        "answer": "Pₖ + 2xₖ₊₁ + 1 - 2yₖ₊₁"
+      },
+      {
+        "q": "The Midpoint Circle Algorithm terminates when:",
+        "opts": ["x = 0", "y = 0", "x ≥ y", "x ≤ y"],
+        "answer": "x ≥ y"
+      },
+      {
+        "q": "Which mathematician developed the Midpoint Circle Algorithm?",
+        "opts": [
+          "Jack Bresenham",
+          "Albert Einstein",
+          "Isaac Newton",
+          "Alan Turing"
+        ],
+        "answer": "Jack Bresenham"
+      },
+      {
+        "q": "What is the circle function f_circ(x,y) used for?",
+        "opts": [
+          "To calculate circle area",
+          "To determine if a point is inside/on/outside circle",
+          "To find circle circumference",
+          "To calculate circle diameter"
+        ],
+        "answer": "To determine if a point is inside/on/outside circle"
+      },
+      {
+        "q": "For the point (4,9) in octant-1, what is the corresponding point in octant-2?",
+        "opts": ["(9,4)", "(4,9)", "(9,-4)", "(-4,9)"],
+        "answer": "(9,4)"
+      },
+      {
+        "q": "What is evaluated at the midpoint between candidate pixels?",
+        "opts": [
+          "The color value",
+          "The circle function f_circ(x,y)",
+          "The distance from origin",
+          "The slope of the circle"
+        ],
+        "answer": "The circle function f_circ(x,y)"
+      }
+    ],
+    "tf": [
+      {
+        "q": "The simple circle drawing algorithm using y = ±√(r² - x²) is very efficient for computer graphics.",
+        "answer": "False"
+      },
+      {
+        "q": "The Midpoint Circle Algorithm uses eight-way symmetry to reduce calculations.",
+        "answer": "True"
+      },
+      {
+        "q": "In the Midpoint Circle Algorithm, we calculate all points of the circle directly.",
+        "answer": "False"
+      },
+      {
+        "q": "The initial point for a circle centered at (0,0) with radius r is (0,r).",
+        "answer": "True"
+      },
+      {
+        "q": "When Pₖ < 0, the midpoint is outside the circle.",
+        "answer": "False"
+      },
+      {
+        "q": "When Pₖ ≥ 0, the midpoint is inside or on the circle.",
+        "answer": "False"
+      },
+      {
+        "q": "The algorithm moves in unit steps along the x-axis.",
+        "answer": "True"
+      },
+      {
+        "q": "For a circle with radius 10, the initial decision parameter P₀ is -10.",
+        "answer": "False"
+      },
+      {
+        "q": "Points in other octants are obtained by swapping and negating coordinates.",
+        "answer": "True"
+      },
+      {
+        "q": "The Midpoint Circle Algorithm uses floating point arithmetic extensively.",
+        "answer": "False"
+      },
+      {
+        "q": "The circle function f_circ(x,y) = x² + y² - r² equals 0 for points on the circle.",
+        "answer": "True"
+      },
+      {
+        "q": "The algorithm continues until x becomes less than y.",
+        "answer": "False"
+      },
+      {
+        "q": "For radius 10, the point (7,7) is the last point calculated in the first octant.",
+        "answer": "True"
+      },
+      {
+        "q": "The Midpoint Circle Algorithm can only draw circles centered at (0,0).",
+        "answer": "False"
+      },
+      {
+        "q": "The algorithm uses only integer arithmetic for efficiency.",
+        "answer": "True"
+      }
+    ]
   }
 }
