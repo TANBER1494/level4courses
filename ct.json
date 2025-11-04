@@ -2196,5 +2196,371 @@
         "correction": "It is a signaling protocol."
       }
     ]
+  },
+  "10": {
+    "mcq": [
+      {
+        "q": "What is the access network also known as?",
+        "opts": [
+          "The backbone network",
+          "The core network",
+          "The local loop",
+          "The wide area network"
+        ],
+        "answer": "The local loop"
+      },
+      {
+        "q": "What does the access network connect?",
+        "opts": [
+          "COs to businesses and subscribers",
+          "Two COs together",
+          "Two backbone networks",
+          "Subscribers to each other directly"
+        ],
+        "answer": "COs to businesses and subscribers"
+      },
+      {
+        "q": "Which of these is NOT another name for the access network?",
+        "opts": [
+          "first-mile network",
+          "last-mile network",
+          "subscriber access network",
+          "core-office network"
+        ],
+        "answer": "core-office network"
+      },
+      {
+        "q": "What are the predominant broadband access solutions deployed today?",
+        "opts": [
+          "DSL and CATV",
+          "PON and DSL",
+          "FTTH and CATV",
+          "ISDN and Dial-Up"
+        ],
+        "answer": "DSL and CATV"
+      },
+      {
+        "q": "DSL and CATV infrastructures were originally built for carrying voice and _______ signals, respectively.",
+        "opts": ["Digital TV", "Analog TV", "Internet data", "Radio"],
+        "answer": "Analog TV"
+      },
+      {
+        "q": "What is the distance limitation of DSL due to signal distortions?",
+        "opts": [
+          "less than 18000 feet",
+          "less than 1500 feet",
+          "less than 50 Mbps",
+          "less than 20 km"
+        ],
+        "answer": "less than 18000 feet"
+      },
+      {
+        "q": "What does VDSL stand for?",
+        "opts": [
+          "Video Digital Subscriber Line",
+          "Very High Bit-rate DSL",
+          "Voice Digital Subscriber Line",
+          "Variable High-speed DSL"
+        ],
+        "answer": "Very High Bit-rate DSL"
+      },
+      {
+        "q": "VDSL can support up to _______ of downstream bandwidth.",
+        "opts": ["50 Mbps", "1.4 Mbps", "24 Mbps", "1 Gbps"],
+        "answer": "50 Mbps"
+      },
+      {
+        "q": "What is the maximum distance limitation for VDSL?",
+        "opts": ["18000 feet", "20 km", "5.5 km", "1500 feet"],
+        "answer": "1500 feet"
+      },
+      {
+        "q": "How do CATV networks provide Internet services?",
+        "opts": [
+          "By dedicating RF channels",
+          "By using optical splitters",
+          "By using PtP topology",
+          "By using VDSL"
+        ],
+        "answer": "By dedicating RF channels"
+      },
+      {
+        "q": "What is a major limitation of CATV networks?",
+        "opts": [
+          "Distance limit of 1500 feet",
+          "Network performance degrades at high load",
+          "Cannot support video",
+          "Requires 2N transceivers"
+        ],
+        "answer": "Network performance degrades at high load"
+      },
+      {
+        "q": "At best, ADSL2+ provides _______ of downstream bandwidth and _______ of upstream bandwidth.",
+        "opts": [
+          "50 Mbps, 1.4 Mbps",
+          "24 Mbps, 1.4 Mbps",
+          "24 Mbps, 24 Mbps",
+          "1.4 Mbps, 24 Mbps"
+        ],
+        "answer": "24 Mbps, 1.4 Mbps"
+      },
+      {
+        "q": "What part of the network is described as a 'bottleneck for providing broadband services'?",
+        "opts": ["The access network", "The CO", "The backbone", "The MAN"],
+        "answer": "The access network"
+      },
+      {
+        "q": "Next-generation access networks are based on what technology?",
+        "opts": ["VDSL", "ADSL2+", "CATV", "Passive Optical Network (PON)"],
+        "answer": "Passive Optical Network (PON)"
+      },
+      {
+        "q": "What does FTTB stand for?",
+        "opts": [
+          "Fiber-to-the-Business",
+          "Fiber-to-the-Backbone",
+          "Fiber-to-the-Building",
+          "Fiber-to-the-Box"
+        ],
+        "answer": "Fiber-to-the-Building"
+      },
+      {
+        "q": "According to the comparison graph, which technology offers both the highest line rate and the longest reach distance?",
+        "opts": ["VDSL", "DSL", "Dial-Up", "PON"],
+        "answer": "PON"
+      },
+      {
+        "q": "What is the logical topology for deploying fiber shown in scenario 1?",
+        "opts": [
+          "Point-to-point (PtP)",
+          "Point-to-multipoint (PtMP)",
+          "Curb Switch",
+          "Passive Optical Network"
+        ],
+        "answer": "Point-to-point (PtP)"
+      },
+      {
+        "q": "In a PtP design with N subscribers at distance L, how many transceivers are required?",
+        "opts": ["N", "N+1", "2N", "2N+2"],
+        "answer": "2N"
+      },
+      {
+        "q": "In a PtP design with N subscribers at distance L, what is the total fiber length required?",
+        "opts": ["L", "N x L", "N + L", "2N * L"],
+        "answer": "N x L"
+      },
+      {
+        "q": "What is the main drawback of the curb-switched network architecture?",
+        "opts": [
+          "Requires N x L fiber",
+          "Requires electrical power at the curb switch",
+          "Requires 2N transceivers",
+          "Has no active elements"
+        ],
+        "answer": "Requires electrical power at the curb switch"
+      },
+      {
+        "q": "In the curb-switched scenario (scenario 2), how many transceivers are required?",
+        "opts": ["N", "N+1", "2N", "2N+2"],
+        "answer": "2N+2"
+      },
+      {
+        "q": "What is the topology of a Passive Optical Network (PON)?",
+        "opts": [
+          "Point-to-point (PtP)",
+          "Point-to-multipoint (PtMP)",
+          "Curb-to-Curb",
+          "Active-to-Active"
+        ],
+        "answer": "Point-to-multipoint (PtMP)"
+      },
+      {
+        "q": "How many transceivers are required for a PON design with N subscribers?",
+        "opts": ["N", "N+1", "2N", "2N+2"],
+        "answer": "N+1"
+      },
+      {
+        "q": "A PON employs what passive device to split and combine optical power?",
+        "opts": ["Couplers", "Transceivers", "Curb Switch", "Active Elements"],
+        "answer": "Couplers"
+      },
+      {
+        "q": "An optical coupler consists of two _______ together.",
+        "opts": ["Fibers fused", "Transceivers", "Splitters", "OLTs"],
+        "answer": "Fibers fused"
+      },
+      {
+        "q": "Which of these is NOT listed as a PON topology?",
+        "opts": ["Tree", "Ring", "Bus", "Mesh"],
+        "answer": "Mesh"
+      },
+      {
+        "q": "What does OLT stand for?",
+        "opts": [
+          "Optical Line Terminal",
+          "Optical Link Terminator",
+          "Optical Line Transceiver",
+          "Optical Local T"
+        ],
+        "answer": "Optical Line Terminal"
+      },
+      {
+        "q": "What does ONU stand for?",
+        "opts": [
+          "Optical Network Unit",
+          "Optical Node Unit",
+          "Optical Network Uplink",
+          "Optical Node Uplink"
+        ],
+        "answer": "Optical Network Unit"
+      },
+      {
+        "q": "Where does the OLT reside?",
+        "opts": [
+          "In the CO",
+          "At the subscriber's home",
+          "At the curb",
+          "In the backbone"
+        ],
+        "answer": "In the CO"
+      },
+      {
+        "q": "The ONU is located at the end-user location in which FTTx model?",
+        "opts": ["FTTH and FTTB", "FTTC", "FTT-CO", "FTT-MAN"],
+        "answer": "FTTH and FTTB"
+      },
+      {
+        "q": "What is the maximum operating distance for PONs mentioned as an advantage?",
+        "opts": [
+          "Up to 20 km",
+          "Up to 1500 ft",
+          "Up to 18000 ft",
+          "Up to 5 km"
+        ],
+        "answer": "Up to 20 km"
+      },
+      {
+        "q": "How does a PON operate in the downstream, allowing for services like video broadcasting?",
+        "opts": [
+          "As a broadcast network",
+          "As a point-to-point network",
+          "As a ring network",
+          "As an active network"
+        ],
+        "answer": "As a broadcast network"
+      }
+    ],
+    "tf": [
+      {
+        "q": "The access network is also known as the 'first-mile' network.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The 'local loop' connects two service provider central offices (COs).",
+        "answer": "False",
+        "correction": "It connects COs to subscribers."
+      },
+      {
+        "q": "DSL and CATV infrastructures were originally designed to carry data.",
+        "answer": "False",
+        "correction": "They were built for voice and analog TV, respectively."
+      },
+      {
+        "q": "The distance limit for DSL is 1500 feet.",
+        "answer": "False",
+        "correction": "It is 18000 feet."
+      },
+      {
+        "q": "VDSL can support up to 50 Mbps, but its maximum distance is limited to 1500 feet.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "CATV networks were mainly built for distributing access bandwidth, not broadcast services.",
+        "answer": "False",
+        "correction": "They were mainly built for delivering broadcast services."
+      },
+      {
+        "q": "The access network is considered a bottleneck for providing broadband services.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Next-generation access networks are based on VDSL technology.",
+        "answer": "False",
+        "correction": "They are based on Passive Optical Network (PON)."
+      },
+      {
+        "q": "FTTx stands for 'Fiber-to-the-Transceiver'.",
+        "answer": "False",
+        "correction": "It stands for 'Fiber-to-the-...' (e.g., Home, Office, Building)."
+      },
+      {
+        "q": "In the comparison graph, PON has a lower line rate than VDSL.",
+        "answer": "False",
+        "correction": "It has a significantly higher line rate."
+      },
+      {
+        "q": "A point-to-point (PtP) topology requires 2N transceivers for N subscribers.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A curb-switched network (scenario 2) requires N x L total fiber length.",
+        "answer": "False",
+        "correction": "It requires L km of fiber (assuming negligible distance from switch to customers)."
+      },
+      {
+        "q": "A curb switch is a passive device that requires no electrical power.",
+        "answer": "False",
+        "correction": "It is an active device that requires electrical power and back-up power."
+      },
+      {
+        "q": "PON is a point-to-point (PtP) optical network.",
+        "answer": "False",
+        "correction": "It is a point-to-multipoint (PtMP) network."
+      },
+      {
+        "q": "A PON has active elements in the signal path from source to destination.",
+        "answer": "False",
+        "correction": "It has no active elements in the signal path."
+      },
+      {
+        "q": "A PON design requires N+1 transceivers for N subscribers.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A PON design requires L km of fiber for N subscribers at distance L.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "An optical coupler can only split signals from one fiber into several, it cannot combine them.",
+        "answer": "False",
+        "correction": "It can also combine signals from multiple fibers into one."
+      },
+      {
+        "q": "The OLT (Optical Line Terminal) resides at the customer's premises.",
+        "answer": "False",
+        "correction": "It resides in the CO (Central Office)."
+      },
+      {
+        "q": "The ONU (Optical Network Unit) connects the access network to the MAN or backbone network.",
+        "answer": "False",
+        "correction": "The OLT does."
+      },
+      {
+        "q": "A PON can operate at distances up to 20 km.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A PON operates as a broadcast network in the upstream direction.",
+        "answer": "False",
+        "correction": "It operates as a broadcast network in the downstream."
+      }
+    ]
   }
 }
