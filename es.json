@@ -1350,5 +1350,212 @@
         "answer": true
       }
     ]
+  },
+  "7": {
+    "mcq": [
+      {
+        "q": "In memory access, which operation's access time is typically greater (slower)?",
+        "opts": [
+          "Read (r)",
+          "Write (w)",
+          "Both are equal",
+          "Depends on the CPU"
+        ],
+        "answer": "Write (w)"
+      },
+      {
+        "q": "What component is used to construct an 8-bit register?",
+        "opts": [
+          "8 D-flip-flops",
+          "8 Capacitors",
+          "8 Transistors",
+          "8 Address Busses"
+        ],
+        "answer": "8 D-flip-flops"
+      },
+      {
+        "q": "Which bus determines the memory *location* for a read or write operation?",
+        "opts": ["Data bus", "Control bus", "Address bus", "System bus"],
+        "answer": "Address bus"
+      },
+      {
+        "q": "Which bus carries the *contents* (data) to be read from or written to memory?",
+        "opts": ["Data bus", "Control bus", "Address bus", "System bus"],
+        "answer": "Data bus"
+      },
+      {
+        "q": "Which bus manages the information flow, indicating if the operation is a read or a write?",
+        "opts": ["Data bus", "Control bus", "Address bus", "System bus"],
+        "answer": "Control bus"
+      },
+      {
+        "q": "Why is the read operation time generally less than the write operation time?",
+        "opts": [
+          "Write may need to clear data first",
+          "Read uses a faster bus",
+          "Write uses the ALU",
+          "Read is a simpler instruction"
+        ],
+        "answer": "Write may need to clear data first"
+      },
+      {
+        "q": "What determines the 'Capacity' (Memory Size) of a memory?",
+        "opts": [
+          "Data bus",
+          "Control bus",
+          "Address line in address bus",
+          "Speed / Access time"
+        ],
+        "answer": "Address line in address bus"
+      },
+      {
+        "q": "In a microcontroller, what component allows the CPU to deal with the external world (e.g., LEDs, sensors)?",
+        "opts": ["ALU", "Port", "DRAM", "MOSFET"],
+        "answer": "Port"
+      },
+      {
+        "q": "What are the three pins of a MOSFET transistor?",
+        "opts": [
+          "Source, Gate, Drain",
+          "Input, Output, Ground",
+          "TRISA, PORTA, Pins",
+          "RAM, ROM, CPU"
+        ],
+        "answer": "Source, Gate, Drain"
+      },
+      {
+        "q": "Which of the following is a type of Volatile memory?",
+        "opts": ["ROM", "RAM", "EPROM", "Flash"],
+        "answer": "RAM"
+      },
+      {
+        "q": "Which type of memory does *not* keep data if the power is disconnected?",
+        "opts": ["Volatile (RAM)", "Non-Volatile (ROM)", "Hybrid", "EPROM"],
+        "answer": "Volatile (RAM)"
+      },
+      {
+        "q": "What component is Dynamic RAM (DRAM) based on?",
+        "opts": ["Capacitor", "6 Transistors", "D-flip-flop", "Logic gates"],
+        "answer": "Capacitor"
+      },
+      {
+        "q": "What is the primary problem of using capacitors in DRAM?",
+        "opts": [
+          "They are too fast",
+          "They are too expensive",
+          "They discharge over time",
+          "They consume no power"
+        ],
+        "answer": "They discharge over time"
+      },
+      {
+        "q": "What is required in DRAM to prevent charge leakage from the capacitors?",
+        "opts": [
+          "A Refreshment Circuit",
+          "An Address Bus",
+          "A MOSFET",
+          "A bigger capacitor"
+        ],
+        "answer": "A Refreshment Circuit"
+      },
+      {
+        "q": "If both the CPU and the Refreshment Circuit need to access DRAM, which has higher priority?",
+        "opts": [
+          "The CPU",
+          "The Refreshment Circuit",
+          "Whichever comes first",
+          "They have equal priority"
+        ],
+        "answer": "The Refreshment Circuit"
+      },
+      {
+        "q": "What is Static RAM (SRAM) based on?",
+        "opts": [
+          "Capacitors",
+          "Transistor (flip-flops)",
+          "A single D-flip-flop",
+          "EPROM cells"
+        ],
+        "answer": "Transistor (flip-flops)"
+      },
+      {
+        "q": "What is a major problem of SRAM compared to DRAM?",
+        "opts": [
+          "It is slower",
+          "It needs a refreshment circuit",
+          "It has high cost per bit",
+          "It has low density"
+        ],
+        "answer": "It has high cost per bit"
+      },
+      {
+        "q": "According to the comparison table, which RAM type is faster?",
+        "opts": ["SRAM", "DRAM", "They are the same", "ROM"],
+        "answer": "SRAM"
+      },
+      {
+        "q": "According to the comparison table, which RAM type has higher density (size)?",
+        "opts": ["SRAM", "DRAM", "Both are equal", "EPROM"],
+        "answer": "DRAM"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Accessing memory means to only read from it.",
+        "answer": false
+      },
+      {
+        "q": "An 8-bit register is constructed from 8 D-flip-flops.",
+        "answer": true
+      },
+      {
+        "q": "A bus is a single wire.",
+        "answer": false
+      },
+      {
+        "q": "The 'Address bus' is one of the three main advantages of memory.",
+        "answer": false
+      },
+      {
+        "q": "A MOSFET is a type of transistor.",
+        "answer": true
+      },
+      {
+        "q": "RAM is an example of Non-Volatile memory.",
+        "answer": false
+      },
+      {
+        "q": "Hybrid memory is a mix between RAM and ROM.",
+        "answer": true
+      },
+      {
+        "q": "RAM is generally faster than ROM.",
+        "answer": true
+      },
+      {
+        "q": "In DRAM, a charged capacitor represents a '0' and a discharged one represents a '1'.",
+        "answer": false
+      },
+      {
+        "q": "DRAM is slow because the refreshment circuit can delay the CPU.",
+        "answer": true
+      },
+      {
+        "q": "DRAM is listed as having low power consumption as an advantage.",
+        "answer": true
+      },
+      {
+        "q": "SRAM requires a refreshment circuit.",
+        "answer": false
+      },
+      {
+        "q": "In embedded systems, large sizes of SRAM are used because it is cheap.",
+        "answer": false
+      },
+      {
+        "q": "According to the comparison table, SRAM has lower power consumption than DRAM.",
+        "answer": true
+      }
+    ]
   }
 }
