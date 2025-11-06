@@ -1355,11 +1355,6 @@
           "Flagging (PSW)"
         ],
         "answer": "Slicing"
-      },
-      {
-        "q": "In an 8-bit architecture, one memory location is typically equal to what?",
-        "opts": ["1 bit", "4 bits", "1 byte (8-bits)", "2 bytes (16-bits)"],
-        "answer": "1 byte (8-bits)"
       }
     ],
     "tf": [
