@@ -2,246 +2,241 @@
   "1": {
     "mcq": [
       {
-        "q": "A system designed to perform a specific function and is a combination of both hardware and firmware is called a(n) ________.",
+        "q": "An Embedded System (ES) is best defined as a combination of hardware, software, and...",
+        "opts": [
+          "a general-purpose OS",
+          "a mechanical component",
+          "a user interface",
+          "an internet connection"
+        ],
+        "answer": "a mechanical component"
+      },
+      {
+        "q": "What is the primary characteristic of an Embedded System's function?",
+        "opts": [
+          "It performs a specific task",
+          "It can be altered by the user",
+          "It relies on high performance",
+          "It performs multiple functions"
+        ],
+        "answer": "It performs a specific task"
+      },
+      {
+        "q": "In an embedded system like a washing machine, the chip holding the software is the _______, while the motor is the _______.",
+        "opts": [
+          "Hardware, Mechanical Component",
+          "Software, Hardware",
+          "Software, Mechanical Component",
+          "Mechanical Component, Software"
+        ],
+        "answer": "Software, Mechanical Component"
+      },
+      {
+        "q": "The 'Control Unit' of an embedded system (Processor, RAM, ROM) is analogous to what part of any computing system?",
+        "opts": [
+          "Processor, Memory, and I/O",
+          "Hardware, Software, and Mechanical",
+          "Input, Process, and Output",
+          "CPU, GPU, and DSP"
+        ],
+        "answer": "Processor, Memory, and I/O"
+      },
+      {
+        "q": "A laptop is a 'General Purpose' system. What is a microwave an example of?",
+        "opts": [
+          "A multi-purpose system",
+          "A general-purpose system",
+          "A specific purpose system",
+          "An alterable system"
+        ],
+        "answer": "A specific purpose system"
+      },
+      {
+        "q": "What is a key difference between Embedded Systems (ES) and General Purpose (GP) computers?",
+        "opts": [
+          "ES applications are alterable; GP are not",
+          "ES key factor is performance; GP is cost",
+          "ES applications are non-alterable; GP are alterable",
+          "ES power consumption is high; GP is low"
+        ],
+        "answer": "ES applications are non-alterable; GP are alterable"
+      },
+      {
+        "q": "For which system is 'Response Time' often critical?",
         "opts": [
           "General Purpose Computer",
-          "Embedded System",
-          "Operating System",
-          "Mainframe"
+          "Embedded system",
+          "Both",
+          "Neither"
         ],
-        "answer": "Embedded System"
+        "answer": "Embedded system"
       },
       {
-        "q": "What are the three main components that combine to form an embedded system?",
+        "q": "Power, cost, speed, and size are known as:",
         "opts": [
-          "CPU, RAM, ROM",
-          "Hardware, Software, Mechanical",
-          "Input, Output, Process",
-          "VLSI, SoC, SB"
+          "Embedded system challenges",
+          "General-purpose features",
+          "Software requirements",
+          "Hardware components"
         ],
-        "answer": "Hardware, Software, Mechanical"
+        "answer": "Embedded system challenges"
       },
       {
-        "q": "In an embedded system like a washing machine, what component holds the software that controls and monitors operations?",
-        "opts": ["Display", "Buttons", "Chip", "Motor"],
-        "answer": "Chip"
-      },
-      {
-        "q": "What is the primary characteristic of an embedded system's function?",
+        "q": "What are the two main methods for building an Embedded System?",
         "opts": [
-          "Multi-tasking",
-          "General use",
-          "User-programmable",
-          "Specific task only"
+          "MPU and MCU",
+          "IC and VLSI",
+          "Hardware and Software",
+          "System Board (SB) and System on Chip (SoC)"
         ],
-        "answer": "Specific task only"
+        "answer": "System Board (SB) and System on Chip (SoC)"
       },
       {
-        "q": "An embedded system will always have a chip, which is either a microprocessor or a ________.",
-        "opts": ["RAM", "ROM", "Microcontroller", "GPU"],
-        "answer": "Microcontroller"
-      },
-      {
-        "q": "Any computing system must consist of which three main components?",
+        "q": "Which technology integrates all system components (Processor, Memory, etc.) onto a single IC?",
         "opts": [
-          "Processor, Memory, I/O",
-          "CPU, GPU, DSP",
-          "SB, SoC, IC",
-          "Hardware, Software, Firmware"
-        ],
-        "answer": "Processor, Memory, I/O"
-      },
-      {
-        "q": "A laptop, which can run many different applications, is an example of what type of computing system?",
-        "opts": [
-          "Specific Purpose",
-          "Embedded System",
-          "General Purpose",
-          "Microcontroller"
-        ],
-        "answer": "General Purpose"
-      },
-      {
-        "q": "A microwave, which is used for a single purpose, is an example of what type of computing system?",
-        "opts": [
-          "General Purpose",
-          "Specific Purpose",
-          "Mainframe",
-          "Supercomputer"
-        ],
-        "answer": "Specific Purpose"
-      },
-      {
-        "q": "Compared to a general-purpose computer, the power consumption of an embedded system is generally ________.",
-        "opts": ["More", "Less", "Equal", "Variable"],
-        "answer": "Less"
-      },
-      {
-        "q": "In which type of system are user applications typically non-alterable by the user?",
-        "opts": [
-          "General Purpose Computer",
-          "Laptop",
-          "Desktop",
-          "Embedded System"
-        ],
-        "answer": "Embedded System"
-      },
-      {
-        "q": "Which of the following is considered a primary challenge or constraint in embedded system design?",
-        "opts": [
-          "High performance",
-          "Large size",
-          "User alterability",
-          "Power consumption"
-        ],
-        "answer": "Power consumption"
-      },
-      {
-        "q": "A board used to connect separate electronic components like processors and memory to build a system is called a ________.",
-        "opts": [
-          "System on Chip (SoC)",
-          "Integrated Circuit (IC)",
-          "System Board (SB)",
-          "Microcontroller (MCU)"
-        ],
-        "answer": "System Board (SB)"
-      },
-      {
-        "q": "What does 'SoC' stand for in the context of embedded systems?",
-        "opts": [
-          "System on Circuit",
-          "Software on Chip",
-          "System on Chip",
-          "Source on Chip"
-        ],
-        "answer": "System on Chip"
-      },
-      {
-        "q": "An IC that combines all high-level function elements of a device onto a single chip is a(n) ________.",
-        "opts": [
-          "System on Chip (SoC)",
           "System Board (SB)",
           "Breadboard",
-          "MPU"
+          "System on Chip (SoC)",
+          "VLSI"
         ],
         "answer": "System on Chip (SoC)"
       },
       {
-        "q": "When comparing SB and SoC, which one is generally larger in size and more expensive?",
-        "opts": ["SoC", "SB", "Both are equal", "IC"],
-        "answer": "SB"
-      },
-      {
-        "q": "Which approach offers better 'Configurability' or editability during the system's design phase?",
-        "opts": ["SoC", "VLSI", "IC", "SB"],
+        "q": "When comparing SB and SoC, which is larger, more expensive, but more configurable?",
+        "opts": ["SoC", "SB", "Both are the same", "Neither"],
         "answer": "SB"
       },
       {
         "q": "What does 'VLSI' stand for?",
         "opts": [
-          "Very Large-System Integration",
-          "Virtual Large-Scale IC",
-          "Very Low-Scale Integration",
-          "Very Large-Scale Integrated Circuit"
+          "Very Low-Size IC",
+          "Variable Large-Scale IC",
+          "Very Large-Scale Integrated Circuit",
+          "Virtual Logic System IC"
         ],
         "answer": "Very Large-Scale Integrated Circuit"
       },
       {
-        "q": "Microprocessors, Microcontrollers, RAMs, and ROMs are all examples of ________.",
-        "opts": ["ICs", "SBs", "DSPs", "Breadboards"],
-        "answer": "ICs"
+        "q": "MPUs, MCUs, SoCs, and RAM are all examples of:",
+        "opts": [
+          "System Boards (SB)",
+          "Integrated Circuits (ICs)",
+          "Mechanical Components",
+          "Vacuum Tubes"
+        ],
+        "answer": "Integrated Circuits (ICs)"
       },
       {
-        "q": "What component was used in old processors, like vacuum tubes, to represent one bit (0 or 1)?",
-        "opts": ["Transistor", "IC", "Tube", "Chip"],
-        "answer": "Tube"
-      },
-      {
-        "q": "Modern microprocessors replaced vacuum tubes with a much smaller component called a ________.",
-        "opts": ["Capacitor", "Resistor", "Transistor", "Diode"],
-        "answer": "Transistor"
-      },
-      {
-        "q": "If a system has many microprocessors, the primary or master processor is referred to as the ________.",
-        "opts": ["GPU", "DSP", "CPU", "MPU"],
+        "q": "What is the 'Primary/Master' processor in a system called?",
+        "opts": ["MPU", "GPU", "DSP", "CPU"],
         "answer": "CPU"
       },
       {
-        "q": "What is an 'MCU' (Microcontroller Unit)?",
+        "q": "What component replaced large 'Vacuum Tubes' to create smaller 'Microprocessors'?",
+        "opts": ["Transistors", "Breadboards", "Timer 555", "SoCs"],
+        "answer": "Transistors"
+      },
+      {
+        "q": "What is a 'Microcontroller' (MCU)?",
         "opts": [
+          "Just another name for a CPU",
+          "A processor only (MPU)",
           "A small computer on a single IC",
-          "A graphics processor",
-          "A master processor",
           "A type of system board"
         ],
         "answer": "A small computer on a single IC"
       },
       {
-        "q": "An MCU (Microcontroller Unit) contains a Processor (MPU), Memory, and ________.",
-        "opts": ["GPU", "DSP", "I/O", "VLSI"],
-        "answer": "I/O"
+        "q": "What is the correct relationship between MPU and MCU?",
+        "opts": [
+          "MCU is a part of MPU",
+          "MPU is a part of MCU",
+          "They are unrelated",
+          "They are the same thing"
+        ],
+        "answer": "MPU is a part of MCU"
       },
       {
-        "q": "What component is a microprocessor that assists the primary processor with graphics-related operations?",
-        "opts": ["DSP", "GPU", "MCU", "MPU"],
-        "answer": "GPU"
+        "q": "What is the function of a GPU (Graphics Processing Unit)?",
+        "opts": [
+          "To deal with complex computations",
+          "To be the primary processor",
+          "To assist the MP with graphics operations",
+          "To store the main software"
+        ],
+        "answer": "To assist the MP with graphics operations"
       },
       {
-        "q": "What type of microprocessor is specialized to deal with complex computations?",
-        "opts": ["CPU", "GPU", "DSP", "VPU"],
-        "answer": "DSP"
+        "q": "Which secondary processor is a microprocessor that deals with 'Complex Computations'?",
+        "opts": [
+          "DSP (Digital Signal Processor)",
+          "CPU (Central Processing Unit)",
+          "GPU (Graphics Processing Unit)",
+          "VPU (Visual Processing Unit)"
+        ],
+        "answer": "DSP (Digital Signal Processor)"
       }
     ],
     "tf": [
       {
-        "q": "A general-purpose computer is designed to perform one specific task only.",
-        "answer": "False",
-        "correction": "It is designed to perform many different tasks."
-      },
-      {
-        "q": "Response time is always a critical factor in general-purpose computing systems.",
-        "answer": "False",
-        "correction": "Response time is critical in real-time embedded systems, not necessarily in general-purpose systems."
-      },
-      {
-        "q": "Applications in an embedded system are typically alterable by the end-user.",
-        "answer": "False",
-        "correction": "Applications are typically non-alterable by the user."
-      },
-      {
-        "q": "A System on Chip (SoC) is generally smaller and consumes less power than a System Board (SB).",
+        "q": "An Embedded System is designed to perform a specific function.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "A System Board (SB) is 'configurable', meaning it is easier to edit during the design phase.",
+        "q": "An embedded system is a combination of hardware and software only.",
+        "answer": "False",
+        "correction": "It is a combination of hardware, software, and a mechanical component."
+      },
+      {
+        "q": "A general-purpose computer (like a laptop) is an example of a 'specific purpose' system.",
+        "answer": "False",
+        "correction": "It is a 'general purpose' system."
+      },
+      {
+        "q": "In an embedded system, applications are 'non-alterable' by the user.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "A Microprocessor Unit (MPU) is a complete computing system on a single chip.",
+        "q": "'Performance' is the main key factor for embedded systems.",
         "answer": "False",
-        "correction": "This describes a Microcontroller (MCU). An MPU is just the processor itself without memory or I/O on the same chip."
+        "correction": "Application specific requirements (cost, power, size) are the key factors."
       },
       {
-        "q": "A Microcontroller Unit (MCU) contains an MPU, memory, and I/O components.",
+        "q": "A breadboard is used to build a System on Chip (SoC).",
+        "answer": "False",
+        "correction": "It is used to build a System Board (SB)."
+      },
+      {
+        "q": "A System on Chip (SoC) is less expensive and smaller than a System Board (SB).",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "VLSI stands for Very Large-Scale Integrated Circuit.",
+        "q": "VLSI is an IC with millions of transistors.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "A single computing system can have multiple CPUs (Central Processing Units).",
+        "q": "Old processors used transistors, while new microprocessors use vacuum tubes.",
         "answer": "False",
-        "correction": "A system has one primary CPU, but can have multiple other processors (like GPUs, DSPs)."
+        "correction": "Old processors used vacuum tubes; new ones use transistors."
       },
       {
-        "q": "A DSP (Digital Signal Processor) is a microprocessor specialized for graphics operations.",
+        "q": "A system can have multiple CPUs.",
         "answer": "False",
-        "correction": "That describes a GPU. A DSP is specialized for complex mathematical computations, particularly for signal processing."
+        "correction": "A system can have one CPU (primary processor)."
+      },
+      {
+        "q": "A Microcontroller (MCU) is a complete computer on a chip, containing a processor (MPU), memory, and I/O.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A DSP (Digital Signal Processor) assists the main processor with graphics operations.",
+        "answer": "False",
+        "correction": "The GPU (Graphics Processing Unit) assists with graphics."
       }
     ]
   },
@@ -421,67 +416,78 @@
     "tf": [
       {
         "q": "The Control Unit (CU) is a component found inside the MP.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "The ALU is used for complex computations like Fourier transform.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "An MCU is a high-performance version of an SoC.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "In BareMetal SW, the Application layer deals directly with the Kernel.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "BareMetal SW is typically used for microcontrollers that do not have high performance.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "A car is an example of a large system that can consist of at least 200 ECUs.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "A sensor converts electrical signals into physical events.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "An actuator takes input from the system and gives output to the environment.",
-        "answer": true
-      },
-      {
-        "q": "The Intel 4004 was the first recognized embedded system.",
-        "answer": false
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "SCADA is an example of a first-generation embedded system.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "ASICs are designed for general-purpose use.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "Miniaturization is a characteristic of fourth-generation embedded systems.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "Medium-scale embedded systems usually contain an operating system.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "For large-scale embedded systems, response time is not critical.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "In Soft Real-time systems, missing a deadline is tolerated.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "Event-triggered systems are dynamic and depend on the occurrence of events.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       }
     ]
   },
@@ -681,63 +687,78 @@
     "tf": [
       {
         "q": "Washing machines and refrigerators are examples of automotive embedded systems.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "ABS works by using an ECU to rapidly apply and release the brakes.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "EEG and ECG machines are examples of embedded systems in the 'Telecom' category.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "Data collected by an embedded system must always be stored; it cannot be deleted instantly.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "Embedded data communication can only happen through a wired interface like Ethernet.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "A 'Monitoring' system uses sensors to determine the state of variables.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "An embedded system for 'Control' contains sensors but does not require actuators.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "The 'Bottom-up' design process starts with system integration and moves toward requirements.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "Requirements for an embedded system can only be functional.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "Performance, cost, and physical size are examples of nonfunctional requirements.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "Manufacturing cost includes the cost of components, assembly, and the design process (NRE).",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "Power consumption is usually specified by the customer in terms of allowable wattage.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "In a requirements form, 'Inputs and outputs' is a simple entry covering only device types.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "The most important power decision is often whether the machine will be battery-powered or wall-plugged.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "The GPS moving map example specified a power requirement of 100mW.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       }
     ]
   },
@@ -912,63 +933,78 @@
     "tf": [
       {
         "q": "The 'Specification' is less precise than the 'Requirements'.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "Architecture design must only account for functional specifications.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "In the GPS hardware, the 'Frame Buffer' manages input from the user interface.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "It is recommended to start coding or designing circuits *before* architecting the system.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "A microprocessor (MPU) is an independent device that does not require other chips.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "A microcontroller (MCU) is considered a specific-purpose device.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "'RF' stands for Register Files, which are groups of registers inside the microprocessor.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "The Program Counter (PC) is a register located inside the Register Files.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "C Code is directly converted into Machine Language (0s and 1s).",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "The Program Counter (PC) contains the address of the *current* instruction being executed.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "After fetching an instruction, the CPU increments the PC to point to the next instruction.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "The ALU is the component that fetches the instruction from ROM.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "It is easier to fetch an instruction to a register inside the CPU than to deal directly with the Bus.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "The Instruction Decoder (ID) is located inside the Control Unit (CU).",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "Decoding an instruction involves sending a signal to the ALU.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       }
     ]
   },
@@ -1128,59 +1164,73 @@
     "tf": [
       {
         "q": "The Program Counter (PC) is a register located inside the Register Files.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "The PC holds the memory address of the instruction *currently* being executed.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "Decoding an instruction means sending a signal to the ALU to specify the operation.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "In modern microprocessors, all ALU results are stored in the Accumulator.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "All microprocessors use the same machine language (e.g., '000' for ADD).",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "Using C language is often better than assembly because assembly language can vary between microprocessors.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "Understanding an instruction requires only Hardware (Instruction Decoder).",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "CISC architecture understands *many* instructions and requires a *simple* compiler.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "A 'Hard-Wired' ID is expensive if you need it to understand many instructions.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "A 'Memory-Mapped' ID needs a strong compiler.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "A 'Hard-Wired' ID is slower than a 'Memory-Mapped' ID.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "CISC is typically used for high-performance systems like computers.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "RISC architecture typically has a range of 30 to 40 instructions.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "CISC architecture can only use Von-Neumann Architecture.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       }
     ]
   },
@@ -1315,39 +1365,48 @@
     "tf": [
       {
         "q": "GPRs store ALU results temporarily until the CU stores them in RAM.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "Using the 'register' keyword in C is a guarantee that the variable will be stored in a GPR.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "The Program Counter (PC) is classified as a Special Purpose Register (SPR).",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "The Stack Pointer (SP) holds the address of the *first* item added to the stack.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "The Accumulator (ACC) is a modern register used in all new processors.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "The Process Status Word (PSW) flags are updated by every type of instruction, including JMP.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "An Increment (INC) instruction must always use the ALU.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "An 8-bit architecture means the width of the memory register is 8-bits.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "'Slicing' involves dividing a single operation into multiple smaller operations.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       }
     ]
   },
@@ -1502,59 +1561,73 @@
     "tf": [
       {
         "q": "Accessing memory means to only read from it.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "An 8-bit register is constructed from 8 D-flip-flops.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "A bus is a single wire.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "The 'Address bus' is one of the three main advantages of memory.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "A MOSFET is a type of transistor.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "RAM is an example of Non-Volatile memory.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "Hybrid memory is a mix between RAM and ROM.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "RAM is generally faster than ROM.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "In DRAM, a charged capacitor represents a '0' and a discharged one represents a '1'.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "DRAM is slow because the refreshment circuit can delay the CPU.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "DRAM is listed as having low power consumption as an advantage.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "SRAM requires a refreshment circuit.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "In embedded systems, large sizes of SRAM are used because it is cheap.",
-        "answer": false
+        "answer": "False",
+        "correction": ""
       },
       {
         "q": "According to the comparison table, SRAM has lower power consumption than DRAM.",
-        "answer": true
+        "answer": "True",
+        "correction": ""
       }
     ]
   }
