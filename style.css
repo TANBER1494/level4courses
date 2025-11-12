@@ -438,3 +438,23 @@ label.incorrect {
   transform: scale(1.05);
   box-shadow: 0 2px 8px rgba(16, 130, 207, 0.5);
 }
+/* Midterm Button Style */
+.midterm-button {
+  grid-column: 1 / -1; /* يجعل الزر يمتد بعرض الجريد بالكامل */
+  background-color: #e6e6ea; /* لون برتقالي مميز */
+  color: rgb(65, 58, 58);
+  border: none;
+  padding: 25px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.midterm-button:hover {
+  background-color: #5058b2;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}

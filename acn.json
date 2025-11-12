@@ -933,5 +933,1600 @@
         "correction": "The FIN flag is used for a graceful termination of a connection. The RST flag is used for an abrupt reset."
       }
     ]
+  },
+  "midterm": {
+    "mcq": [
+      {
+        "q": "A................ network can guarantee certain amount of end-to-end bandwidth for the duration of a call.",
+        "opts": [
+          "a. Circuit Switched",
+          "b. none of them",
+          "c. Packet switched",
+          "d. both of them"
+        ],
+        "answer": "a. Circuit Switched"
+      },
+      {
+        "q": "................... hosts break application-layer messages into packets.",
+        "opts": [
+          "a. Circuit Switched",
+          "b. none of them",
+          "c. Packet switched",
+          "d. both of them"
+        ],
+        "answer": "c. Packet switched"
+      },
+      {
+        "q": "When host receives segments and direct it to the appropriate socket this is called………..",
+        "opts": [
+          "a. Demultiplexing",
+          "b. None of them",
+          "c. Pipelining",
+          "d. Multiplexing"
+        ],
+        "answer": "a. Demultiplexing"
+      },
+      {
+        "q": "In rdt protocols, sequence numbers are used to…………",
+        "opts": [
+          "a. To handle flow control",
+          "b. To handle congestion control",
+          "c. Distinguish between new data or retransmission",
+          "d. To handle losses in channel"
+        ],
+        "answer": "c. Distinguish between new data or retransmission"
+      },
+      {
+        "q": "A message in transport layer is called……….?",
+        "opts": ["a. Packet", "b. Payload", "c. data frame", "d. Segment"],
+        "answer": "d. Segment"
+      },
+      {
+        "q": "A message in Network layer is called……….?",
+        "opts": ["a. Packet", "b. Payload", "c. data frame", "d. Segment"],
+        "answer": "a. Packet"
+      },
+      {
+        "q": "A message in link layer is called……….?",
+        "opts": ["a. Packet", "b. Payload", "c. data frame", "d. Segment"],
+        "answer": "c. data frame"
+      },
+      {
+        "q": "A message in Physical layer is called……….?",
+        "opts": ["a. Packet", "b. bits", "c. data frame", "d. Segment"],
+        "answer": "b. bits"
+      },
+      {
+        "q": "A message in Application is called……….?",
+        "opts": ["a. Data", "b. bits", "c. data frame", "d. Segment"],
+        "answer": "a. Data"
+      },
+      {
+        "q": "Amount of time, the sender is not idle but is sending data…….?",
+        "opts": [
+          "a. None of them",
+          "b. Utilization",
+          "c. Transmission time",
+          "d. Pipelining"
+        ],
+        "answer": "b. Utilization"
+      },
+      {
+        "q": "TCP protocol is............. protocol.",
+        "opts": ["a. Unreliable", "b. None of them", "c. Reliable"],
+        "answer": "c. Reliable"
+      },
+      {
+        "q": "The layer responsible for the routing of datagrams from source to destination is?",
+        "opts": ["a. Link layer", "b. Network layer", "c. Application Layer"],
+        "answer": "b. Network layer"
+      },
+      {
+        "q": "File Transfer Protocol (FTP) is one of the ……",
+        "opts": [
+          "a. Application layer Protocol",
+          "b. Network layer Protocol",
+          "c. Link layer Protocol"
+        ],
+        "answer": "a. Application layer Protocol"
+      },
+      {
+        "q": "private network that connects its data centers to Internet, often bypassing tier-1, regional ISPs",
+        "opts": [
+          "a. Internet Service Provider",
+          "b. None of them",
+          "c. content provider networks"
+        ],
+        "answer": "c. content provider networks"
+      },
+      {
+        "q": "In Client-Server Paradigm, the process which initiates the communication is?",
+        "opts": ["a. Any of them", "b. Client", "c. Server"],
+        "answer": "b. Client"
+      },
+      {
+        "q": "… ..............Protocol belongs to the transport layer.",
+        "opts": ["a. UDP", "b. TCP", "c. both of them"],
+        "answer": "c. both of them"
+      },
+      {
+        "q": "architecture refers to the organization of the communication process into layers (e.g., the five-layer Internet architecture).",
+        "opts": ["a. Network", "b. none of them", "c. Application"],
+        "answer": "a. Network"
+      },
+      {
+        "q": "In TCP, if the receiver “advertises” free buffer, so that the sender limits amount of unACKed (“in-flight”) data to received, this is called……",
+        "opts": [
+          "a. Congestion Control",
+          "b. Out of Order Control",
+          "c. Flow Control"
+        ],
+        "answer": "c. Flow Control"
+      },
+      {
+        "q": "To handle data from multiple sockets and add transport header is called…………",
+        "opts": ["a. Mutiplexing", "b. Demultiplexing", "c. Tunneling"],
+        "answer": "a. Mutiplexing"
+      },
+      {
+        "q": "By UDP, three segments from different hosts, all destined to the same IP address and same port number demultiplexed to ............................... socket/sockets.",
+        "opts": ["a. Different", "b. Can be different or same", "c. Same"],
+        "answer": "c. Same"
+      },
+      {
+        "q": "rate (bits/time unit) at which bits are being sent from sender to receiver.",
+        "opts": ["a. Throughput", "b. Cable rate", "c. Internet rate"],
+        "answer": "a. Throughput"
+      },
+      {
+        "q": "................... is private network that connects its data centers to Internet, often bypassing tier-1, regional ISPs.",
+        "opts": [
+          "a. Content Provider Networks",
+          "b. Internet Exchange Point",
+          "c. Both of them"
+        ],
+        "answer": "a. Content Provider Networks"
+      },
+      {
+        "q": "SMTP is considered ……",
+        "opts": ["a- push protocol", "b- Pull protocol", "c- both"],
+        "answer": "a- push protocol"
+      },
+      {
+        "q": "Time for a small packet to travel from client to server and back is called……..",
+        "opts": ["a- Response time", "b- Request time", "c- RTT"],
+        "answer": "c- RTT"
+      },
+      {
+        "q": "Applications that use TCP protocol.....",
+        "opts": [
+          "A. Can tolerate some data loss but cannot tolerate large time delay.",
+          "B. Can tolerate some time delay but cannot tolerate data loss.",
+          "C. All of the above.",
+          "D. None of the above."
+        ],
+        "answer": "B. Can tolerate some time delay but cannot tolerate data loss."
+      },
+      {
+        "q": "An identifier that specifies the identity of the receiving process on the destination host.",
+        "opts": [
+          "a- ip address",
+          "b- port number",
+          "c- ip address & port number"
+        ],
+        "answer": "b- port number"
+      },
+      {
+        "q": "When you browse the world wide web you are using an application that follows...",
+        "opts": [
+          "a- Peer- to-peer model",
+          "b- Client-server model",
+          "c- None of them"
+        ],
+        "answer": "b- Client-server model"
+      },
+      {
+        "q": "A network application is a software application that can run on………....",
+        "opts": [
+          "a- Routers & switches",
+          "b- Different hosts",
+          "c- None of them"
+        ],
+        "answer": "b- Different hosts"
+      },
+      {
+        "q": "File Transfer Protocol (FTP) is one of the ………….",
+        "opts": [
+          "a- Link layer Protocol",
+          "b- Application layer Protocol",
+          "c- Network layer Protocol"
+        ],
+        "answer": "b- Application layer Protocol"
+      },
+      {
+        "q": "… ......defines the format, order of messages sent and received among network entities, and actions taken on msg transmission, receipt.",
+        "opts": ["a- Protocol", "b- Standard", "c- None of them"],
+        "answer": "a- Protocol"
+      },
+      {
+        "q": "Use header info to deliver received segments to correct socket.",
+        "opts": ["a- Multiplexing", "b- Demultiplexing", "c- Tunneling"],
+        "answer": "b- Demultiplexing"
+      },
+      {
+        "q": "Using TCP, three segments from different hosts , all destined to the same IP and same port number demultiplexed to ......................socket/sockets.",
+        "opts": ["a- same", "b- Different", "c- Can be different or same"],
+        "answer": "b- Different"
+      },
+      {
+        "q": "If the sender allows multiple, \"in-flight\", yet-to-be-acknowledged packets. This is called……...",
+        "opts": ["a- Pipelining", "b- Tunneling", "c- None of them"],
+        "answer": "a- Pipelining"
+      },
+      {
+        "q": "- In TCP, the receiver buffer out-of-order packets in ………….",
+        "opts": ["a- Go-Back-N", "b- Selective Repeat", "c- Both of them"],
+        "answer": "b- Selective Repeat"
+      },
+      {
+        "q": "- In TCP, the receiver discard (drop) out-of-order packets in ………….",
+        "opts": ["a- Go-Back-N", "b- Selective Repeat", "c. Both of them"],
+        "answer": "a- Go-Back-N"
+      },
+      {
+        "q": "To agree to establish connection between sender and receiver by handshaking is called…….?",
+        "opts": [
+          "a- TCP connection management",
+          "b- UDP Connection management",
+          "c- Both of them"
+        ],
+        "answer": "a- TCP connection management"
+      },
+      {
+        "q": "………. routers provide direct feedback to sending/receiving hosts with flows passing through congested router.",
+        "opts": [
+          "a- End-end congestion control",
+          "b- Network-assisted congestion control",
+          "c- Both of them"
+        ],
+        "answer": "b- Network-assisted congestion control"
+      },
+      {
+        "q": "…...has responsibility of transferring datagram from one node to physically adjacent node over a link",
+        "opts": ["a- Link Layer", "b- Physical Layer", "c- Network Layer"],
+        "answer": "a- Link Layer"
+      },
+      {
+        "q": "To handle data from multiple sockets and add transport header is called……….",
+        "opts": ["a. Multiplexing", "b. Demultiplexing", "c. Tunneling"],
+        "answer": "a. Multiplexing"
+      },
+      {
+        "q": "Use header info to deliver received segments to correct socket is called………",
+        "opts": ["a. Multiplexing", "b. Demultiplexing", "c. Tunneling"],
+        "answer": "b. Demultiplexing"
+      },
+      {
+        "q": "By UDP (Connectionless demultiplexing), three segments from different hosts, all destined to the same IP address and same port number demultiplexed to .......................................socket/sockets",
+        "opts": ["a. Different", "b. Can be different or same", "c. Same"],
+        "answer": "c. Same"
+      },
+      {
+        "q": "By TCP (Connection-oriented demultiplexing), three segments from different hosts, all destined to the same IP address and same port number demultiplexed to............................socket/sockets",
+        "opts": ["a. Different", "b. Can be different or same", "c. Same"],
+        "answer": "a. Different"
+      },
+      {
+        "q": "By UDP, two process from same application in same host, all destined to server with the same destination port number how many sockets host need in server to connect……………………….",
+        "opts": ["a. one socket", "b. two sockets", "c. three sockets"],
+        "answer": "a. one socket"
+      },
+      {
+        "q": "By TCP, two process from same application in same host, all destined to server with the same destination port number how many sockets host need in server to connect ……………………….",
+        "opts": ["a. one socket", "b. two sockets", "c. three sockets"],
+        "answer": "b. two sockets"
+      },
+      {
+        "q": "When receiver send……… explicitly tells sender that pkt had errors",
+        "opts": ["a. (ACKs)", "b. (NAKs)", "c. Both"],
+        "answer": "b. (NAKs)"
+      },
+      {
+        "q": "Sender adds ............. to each packet to handling duplicates packet",
+        "opts": ["a. acknowledgement number", "b. sequence number", "c. Both"],
+        "answer": "b. sequence number"
+      },
+      {
+        "q": "In TCP, if the receiver “advertises” free buffer, so that the sender limits amount of unACKed (“in-flight”) data to received, this is called……",
+        "opts": [
+          "a. Congestion Control",
+          "b. Out of Order Control",
+          "c. Flow Control"
+        ],
+        "answer": "c. Flow Control"
+      },
+      {
+        "q": "too many sources sending too much data too fast for network to handle this is called……",
+        "opts": [
+          "a. Congestion Control",
+          "b. Out of Order Control",
+          "c. Flow Control"
+        ],
+        "answer": "a. Congestion Control"
+      },
+      {
+        "q": "Sender allows multiple, “in-flight”, yet-to-be-acknowledged packets this is called……",
+        "opts": ["a. Congestion Control", "b. pipelining", "c. Flow Control"],
+        "answer": "b. pipelining"
+      },
+      {
+        "q": "moves datagrams from input ports to output ports to transfer datagrams along end-end path this is Function of………………",
+        "opts": ["a-Router", "b- Switch", "c-Hup"],
+        "answer": "a-Router"
+      },
+      {
+        "q": "To determine path taken by packets from source to destination is called……………",
+        "opts": ["a. multiplexing", "b. Routing", "c. Forwarding"],
+        "answer": "b. Routing"
+      },
+      {
+        "q": "Moving packets from a router’s input link to appropriate router output link is called……………",
+        "opts": ["a. multiplexing", "b. Routing", "c. Forwarding"],
+        "answer": "c. Forwarding"
+      },
+      {
+        "q": "underlying channel perfectly reliable no bit errors no loss of packets",
+        "opts": ["a. rdt1.0", "b. rdt2.0", "c. rdt3.0"],
+        "answer": "a. rdt1.0"
+      },
+      {
+        "q": "underlying channel may flip bits in packet checksum (e.g., Internet checksum) to detect bit errors",
+        "opts": ["a. rdt1.0", "b. rdt2.0", "c. rdt3.0"],
+        "answer": "b. rdt2.0"
+      },
+      {
+        "q": "sender waits “reasonable” amount of time for ACK retransmits if no ACK received in this time",
+        "opts": ["a. rdt1.0", "b. rdt2.0", "c. rdt3.0"],
+        "answer": "c. rdt3.0"
+      },
+      {
+        "q": "Receiver compute checksum of received segment if computed checksum equals checksum field value…………….",
+        "opts": ["a. - error detected", "b. - no error detected."],
+        "answer": "b. - no error detected."
+      },
+      {
+        "q": "Receiver compute checksum of received segment if computed checksum Not equals checksum field value…………….",
+        "opts": ["a. - error detected", "b. - no error detected."],
+        "answer": "a. - error detected"
+      },
+      {
+        "q": "Suppose A sends two TCP segments back-to-back to B. The first segment has sequence number 80; the second has sequence number 110. How much data is the first segment?",
+        "opts": [
+          "a. 80 bytes.",
+          "b. 30 bytes",
+          "c. 110 bytes.",
+          "d. None of the above"
+        ],
+        "answer": "b. 30 bytes"
+      },
+      {
+        "q": "… .................. byte stream “number” of first byte in segment’s data",
+        "opts": [
+          "a. Sequence numbers",
+          "b. Acknowledgements",
+          "c. Flow control"
+        ],
+        "answer": "a. Sequence numbers"
+      },
+      {
+        "q": "… .................. seq # of next byte expected from other side",
+        "opts": [
+          "a. Sequence numbers",
+          "b. Acknowledgements",
+          "c. Flow control"
+        ],
+        "answer": "b. Acknowledgements"
+      },
+      {
+        "q": "TCP fast retransmit if sender receives...............additional ACKs for same data, resend unACKed segment with smallest seq #",
+        "opts": ["a. 2", "b. 3", "c. 4"],
+        "answer": "b. 3"
+      },
+      {
+        "q": "… ............. receiver controls sender, so sender won’t overflow receiver’s buffer by transmitting too much, too fast",
+        "opts": [
+          "a. Flow control",
+          "b. Congestion control",
+          "c. Connection managements"
+        ],
+        "answer": "a. Flow control"
+      },
+      {
+        "q": "Problem half open connection (no client) found in ………..",
+        "opts": [
+          "a. 2-way handshake",
+          "b. 3-way handshake",
+          "c. 4-way handshake"
+        ],
+        "answer": "a. 2-way handshake"
+      },
+      {
+        "q": "… .......... is too many sources sending too much data too fast for network to handle”",
+        "opts": [
+          "a. Flow control",
+          "b. Congestion control",
+          "c. Connection managements"
+        ],
+        "answer": "b. Congestion control"
+      },
+      {
+        "q": "…...has responsibility of transferring datagram from one node to physically adjacent node over a link",
+        "opts": ["a- Link Layer", "b- Physical Layer", "c- Network Layer"],
+        "answer": "a- Link Layer"
+      },
+      {
+        "q": "To handle data from multiple sockets and add transport header is called……….",
+        "opts": ["a. Multiplexing", "b. Demultiplexing", "c. Tunneling"],
+        "answer": "a. Multiplexing"
+      },
+      {
+        "q": "Use header info to deliver received segments to correct socket is called………",
+        "opts": ["a. Multiplexing", "b. Demultiplexing", "c. Tunneling"],
+        "answer": "b. Demultiplexing"
+      },
+      {
+        "q": "When receiver send……… explicitly tells sender that pkt had errors",
+        "opts": ["a. (ACKs)", "b. (NAKs)", "c. Both"],
+        "answer": "b. (NAKs)"
+      },
+      {
+        "q": "Sender adds ............. to each packet to handling duplicates packet",
+        "opts": ["a. acknowledgement number", "b. sequence number", "c. Both"],
+        "answer": "b. sequence number"
+      },
+      {
+        "q": "In TCP, if the receiver “advertises” free buffer, so that the sender limits amount of unACKed (“in-flight”) data to received, this is called……",
+        "opts": [
+          "a. Congestion Control",
+          "b. Out of Order Control",
+          "c. Flow Control"
+        ],
+        "answer": "c. Flow Control"
+      },
+      {
+        "q": "too many sources sending too much data too fast for network to handle this is called……",
+        "opts": [
+          "a. Congestion Control",
+          "b. Out of Order Control",
+          "c. Flow Control"
+        ],
+        "answer": "a. Congestion Control"
+      },
+      {
+        "q": "Sender allows multiple, “in-flight”, yet-to-be-acknowledged packets this is called……",
+        "opts": ["a. Congestion Control", "b. pipelining", "c. Flow Control"],
+        "answer": "b. pipelining"
+      },
+      {
+        "q": "moves datagrams from input ports to output ports to transfer datagrams along end-end path this is Function of………………",
+        "opts": ["a-Router", "b- Switch", "c-Hup"],
+        "answer": "a-Router"
+      },
+      {
+        "q": "To determine path taken by packets from source to destination is called……………",
+        "opts": ["a. multiplexing", "b. Routing", "c. Forwarding"],
+        "answer": "b. Routing"
+      },
+      {
+        "q": "Moving packets from a router’s input link to appropriate router output link is called……………",
+        "opts": ["a. multiplexing", "b. Routing", "c. Forwarding"],
+        "answer": "c. Forwarding"
+      },
+      {
+        "q": "underlying channel perfectly reliable no bit errors no loss of packets",
+        "opts": ["a. rdt1.0", "b. rdt2.0", "c. rdt3.0"],
+        "answer": "a. rdt1.0"
+      },
+      {
+        "q": "underlying channel may flip bits in packet checksum (e.g., Internet checksum) to detect bit errors",
+        "opts": ["a. rdt1.0", "b. rdt2.0", "c. rdt3.0"],
+        "answer": "b. rdt2.0"
+      },
+      {
+        "q": "sender waits “reasonable” amount of time for ACK retransmits if no ACK received in this time",
+        "opts": ["a. rdt1.0", "b. rdt2.0", "c. rdt3.0"],
+        "answer": "c. rdt3.0"
+      },
+      {
+        "q": "Receiver compute checksum of received segment if computed checksum equals checksum field value…………….",
+        "opts": ["a. - error detected", "b. - no error detected."],
+        "answer": "b. - no error detected."
+      },
+      {
+        "q": "Receiver compute checksum of received segment if computed checksum Not equals checksum field value…………….",
+        "opts": ["a. - error detected", "b. - no error detected."],
+        "answer": "a. - error detected"
+      },
+      {
+        "q": "Suppose A sends two TCP segments back-to-back to B. The first segment has sequence number 80; the second has sequence number 110. How much data is the first segment?",
+        "opts": [
+          "a. 80 bytes.",
+          "b. 30 bytes",
+          "c. 110 bytes.",
+          "d. None of the above"
+        ],
+        "answer": "b. 30 bytes"
+      },
+      {
+        "q": "… .................. byte stream “number” of first byte in segment’s data",
+        "opts": [
+          "a. Sequence numbers",
+          "b. Acknowledgements",
+          "c. Flow control"
+        ],
+        "answer": "a. Sequence numbers"
+      },
+      {
+        "q": "… .................. seq # of next byte expected from other side",
+        "opts": [
+          "a. Sequence numbers",
+          "b. Acknowledgements",
+          "c. Flow control"
+        ],
+        "answer": "b. Acknowledgements"
+      },
+      {
+        "q": "TCP fast retransmit if sender receives...............additional ACKs for same data, resend unACKed segment with smallest seq #",
+        "opts": ["a. 2", "b. 3", "c. 4"],
+        "answer": "b. 3"
+      },
+      {
+        "q": "… ............. receiver controls sender, so sender won’t overflow receiver’s buffer by transmitting too much, too fast",
+        "opts": [
+          "a. Flow control",
+          "b. Congestion control",
+          "c. Connection managements"
+        ],
+        "answer": "a. Flow control"
+      },
+      {
+        "q": "Problem half open connection (no client) found in ………..",
+        "opts": [
+          "a. 2-way handshake",
+          "b. 3-way handshake",
+          "c. 4-way handshake"
+        ],
+        "answer": "a. 2-way handshake"
+      },
+      {
+        "q": "… .......... is too many sources sending too much data too fast for network to handle”",
+        "opts": [
+          "a. Flow control",
+          "b. Congestion control",
+          "c. Connection managements"
+        ],
+        "answer": "b. Congestion control"
+      },
+      {
+        "q": "…...has responsibility of transferring datagram from one node to physically adjacent node over a link",
+        "opts": ["a- Link Layer", "b- Physical Layer", "c- Network Layer"],
+        "answer": "a- Link Layer"
+      },
+      {
+        "q": "To handle data from multiple sockets and add transport header is called……….",
+        "opts": ["a. Multiplexing", "b. Demultiplexing", "c. Tunneling"],
+        "answer": "a. Multiplexing"
+      },
+      {
+        "q": "Use header info to deliver received segments to correct socket is called………",
+        "opts": ["a. Multiplexing", "b. Demultiplexing", "c. Tunneling"],
+        "answer": "b. Demultiplexing"
+      },
+      {
+        "q": "……….no explicit feedback from network congestion inferred from observed loss, delay",
+        "opts": [
+          "a. End-end congestion control",
+          "b. Network-assisted congestion control",
+          "c. Both of them"
+        ],
+        "answer": "a. End-end congestion control"
+      },
+      {
+        "q": "… ............... routers provide direct feedback to sending/receiving hosts with flows passing through congested router",
+        "opts": [
+          "a. End-end congestion control",
+          "b. Network-assisted congestion control",
+          "c. Both of them"
+        ],
+        "answer": "b. Network-assisted congestion control"
+      },
+      {
+        "q": "Which approach taken by TCP to congestion control……..",
+        "opts": [
+          "a. End-end congestion control",
+          "b. Network-assisted congestion control",
+          "c. Both of them"
+        ],
+        "answer": "a. End-end congestion control"
+      },
+      {
+        "q": "………increase sending rate by 1 maximum segment size every RTT until loss detected",
+        "opts": [
+          "a. Additive Increase",
+          "b. Multiplicative Decrease",
+          "c. Congestion control"
+        ],
+        "answer": "a. Additive Increase"
+      },
+      {
+        "q": "… ................ is cut sending rate in half at each loss event",
+        "opts": [
+          "a. Additive Increase",
+          "b. Multiplicative Decrease",
+          "c. Congestion control"
+        ],
+        "answer": "b. Multiplicative Decrease"
+      },
+      {
+        "q": "Sending rate is cut in half on loss detected by triple duplicate ACK is called ……….",
+        "opts": ["a. TCP Reno", "b. TCP Tahoe", "c. TCP Flow control"],
+        "answer": "a. TCP Reno"
+      },
+      {
+        "q": "Sending rate is cut to 1 MSS (maximum segment size) when loss detected by timeout called ……",
+        "opts": ["a. TCP Reno", "b. TCP Tahoe", "c. TCP Flow control"],
+        "answer": "b. TCP Tahoe"
+      },
+      {
+        "q": "TCP Reno sending rate is cut in half on loss detected by …………...",
+        "opts": ["a. Triple duplicate ACK", "b. Timeout", "c. Both of them"],
+        "answer": "a. Triple duplicate ACK"
+      },
+      {
+        "q": "TCP Tahoe rate is cut to 1 MSS (maximum segment size) when loss detected by……….",
+        "opts": ["a. Triple duplicate ACK", "b. Timeout", "c. Both of them"],
+        "answer": "b. Timeout"
+      },
+      {
+        "q": "TCP slow start when connection begins, increase rate exponentially until first loss event initially cwnd = ……………..",
+        "opts": ["a. 1 MSS", "b. 2 MSS", "c. 3 MSS"],
+        "answer": "a. 1 MSS"
+      },
+      {
+        "q": "TCP slow start ..................... cwnd every RTT",
+        "opts": ["a. Single", "b. Double", "c. Triple"],
+        "answer": "b. Double"
+      },
+      {
+        "q": "The exponential increase switch to linear when cwnd gets to................of its value before timeout.",
+        "opts": ["a. ½", "b. 1/3", "c. 1/4"],
+        "answer": "a. ½"
+      },
+      {
+        "q": "… ............... default in Linux, most popular TCP for popular Web servers",
+        "opts": ["a. TCP CUBIC", "b. TCP Reno", "c. TCP Tahoe"],
+        "answer": "a. TCP CUBIC"
+      },
+      {
+        "q": "……….keeping sender-to-receiver pipe “just full enough, but no fuller”: keep bottleneck link busy transmitting, but avoid high delays/buffering",
+        "opts": [
+          "a. Delay-based TCP",
+          "b. Explicit congestion notification (ECN)",
+          "c. TCP CUBIC"
+        ],
+        "answer": "a. Delay-based TCP"
+      },
+      {
+        "q": "………… two bits in IP header (ToS field) marked by network router to indicate congestion",
+        "opts": [
+          "a. Delay-based TCP",
+          "b. Explicit congestion notification (ECN)",
+          "c. TCP CUBIC"
+        ],
+        "answer": "b. Explicit congestion notification (ECN)"
+      },
+      {
+        "q": "Retransmission of packets must not be done when",
+        "opts": [
+          "a) Packet is lost",
+          "b) Packet is corrupted",
+          "c) Packet is needed",
+          "d) Packet is error-free"
+        ],
+        "answer": "d) Packet is error-free"
+      },
+      {
+        "q": "In Go-Back-N window, when the timer of the packet times out, several packets have to be resent even some may have arrived safe. Whereas in Selective Repeat window, the sender resends ………._",
+        "opts": [
+          "a) Packet which are not lost",
+          "b) Only those packets which are lost or corrupted",
+          "c) Packet from starting",
+          "d) All the packets"
+        ],
+        "answer": "b) Only those packets which are lost or corrupted"
+      },
+      {
+        "q": "In the slow-start algorithm, the size of the congestion window increases until it reaches a threshold.",
+        "opts": [
+          "a) exponentially",
+          "b) additively",
+          "c) multiplicatively",
+          "d) suddenly"
+        ],
+        "answer": "a) exponentially"
+      },
+      {
+        "q": "In the congestion avoidance algorithm, the size of the congestion window increases until congestion is detected.",
+        "opts": [
+          "a) exponentially",
+          "b) additively",
+          "c) multiplicatively",
+          "d) suddenly"
+        ],
+        "answer": "b) additively"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Suppose a process in Host C has a UDP socket with port number 6789. Both Host A and Host B each send a UDP segment to Host C with destination port number 6789. (True/False, assuming they are directed to the same socket)",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Layer which is responsible for routing datagram from source to destination is transport layer.",
+        "answer": "False",
+        "correction": "The Network layer is responsible for routing."
+      },
+      {
+        "q": "The Layer which is responsible for supporting network applications is application layer.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Layer which is responsible for process-process data transfer is transport layer.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Layer which is responsible for data transfer between neighboring network elements is link layer.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In Selective repeat Protocol, the sender retransmits packet n and all higher seq. no. in window after timeout of packet n.",
+        "answer": "False",
+        "correction": "This describes Go-Back-N Protocol."
+      },
+      {
+        "q": "Applications that cannot tolerate loss should tolerate some delay and use TCP transport protocol.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "An Internet Exchange Points (IXP) is a meeting point where multiple ISPs can connect and/or peer together.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "network-core devices can run user applications.",
+        "answer": "False",
+        "correction": "Only end systems (hosts) run user applications."
+      },
+      {
+        "q": "SMTP Protocol is used to retrieve emails from the mail server to clients.",
+        "answer": "False",
+        "correction": "SMTP is used to send (push) emails."
+      },
+      {
+        "q": "The TCP protocol belongs to Application layer in TCP/IP protocol.",
+        "answer": "False",
+        "correction": "It belongs to the Transport layer."
+      },
+      {
+        "q": "HTTP Protocol is one of the link layer protocols.",
+        "answer": "False",
+        "correction": "It is an Application layer protocol."
+      },
+      {
+        "q": "In UDP, there is handshaking between sender and receiver to establish connection.",
+        "answer": "False",
+        "correction": "UDP is connectionless; TCP uses handshaking."
+      },
+      {
+        "q": "link layer implemented in network interface card (NIC) or on a chip",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Pipelining increases the utilization by 3 times, if the sender sends three in-flight packets yet-to-be- knowledge.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In TCP using the Go-Back-N, the receiver discards out-of-order packet",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Sender sends one packet, and then waits for receiver response is called stop and wait protocol.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "SMTP is both push & pull based protocol, so it can be used for downloading emails from mail server to clients",
+        "answer": "False",
+        "correction": "SMTP is a push protocol. POP3/IMAP are pull protocols."
+      },
+      {
+        "q": "TCP socket identified by 4-tuples",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Transport services and protocols provide logical communication between application processes running on different hosts",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Transport services and protocols provide physical communication between application processes running on different hosts",
+        "answer": "False",
+        "correction": "They provide logical communication."
+      },
+      {
+        "q": "Sender at transport layer in end systems breaks application messages into segments, passes to network layer",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Receiver at transport layer in end systems reassembles segments into messages, passes to application layer",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Receiver at transport layer in end systems breaks application messages into segments, passes to network layer",
+        "answer": "False",
+        "correction": "This is the sender's job."
+      },
+      {
+        "q": "Sender at transport layer in end systems reassembles segments into messages, passes to application layer",
+        "answer": "False",
+        "correction": "This is the receiver's job."
+      },
+      {
+        "q": "TCP, UDP both are two transport layer protocols available to Internet applications",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Network layer is logical communication between hosts",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Network layer is physical communication between hosts",
+        "answer": "False",
+        "correction": "It provides logical communication."
+      },
+      {
+        "q": "Network layer is logical communication between processes",
+        "answer": "False",
+        "correction": "This is the Transport layer's job."
+      },
+      {
+        "q": "Transport layer is logical communication between processes",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Transport layer is physical communication between processes",
+        "answer": "False",
+        "correction": "It provides logical communication."
+      },
+      {
+        "q": "Transport layer is logical communication between hosts",
+        "answer": "False",
+        "correction": "This is the Network layer's job. Transport is between processes."
+      },
+      {
+        "q": "Sender is passed an application-layer message, determines segment header fields values, creates segment and passes segment to IP",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Receiver is receiving segment from IP, checks header values, extracts application-layer message and demultiplexes message up to application via socket",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Sender multiplexes message and send it to network layer",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Receiver demultiplexes message up to application via socket",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP is Transmission Control Protocol, reliable, in-order delivery, congestion control, flow control and connection setup",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "UDP is User Datagram Protocol, unreliable, unordered delivery, no-frills extension of “besteffort” IP",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Delay guarantees and bandwidth guarantees services not available in TCP and UDP protocols",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Multiplexing at sender is handle data from multiple sockets and add transport header",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Multiplexing at receiver is handle data from multiple sockets and add transport header",
+        "answer": "False",
+        "correction": "This is the sender's job."
+      },
+      {
+        "q": "Demultiplexing at receiver use header info to deliver received segments to correct socket",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Demultiplexing at sender use header info to deliver received segments to correct socket",
+        "answer": "False",
+        "correction": "This is the receiver's job."
+      },
+      {
+        "q": "Host uses IP addresses & port numbers to direct segment to appropriate socket",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Host receives IP datagrams each datagram has source IP address, destination IP address, source port number and destination port number",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP socket identified by 4-tuple source IP address, dest IP address, source port number and dest port number",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP socket identified by 2-tuple source IP address and destination port number only",
+        "answer": "False",
+        "correction": "This describes UDP demux, not TCP."
+      },
+      {
+        "q": "when creating datagram to send into UDP socket, must specify destination IP address and destination port number",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "UDP demultiplexing using destination port number and destination IP addresses (only)",
+        "answer": "False",
+        "correction": "It uses only the destination port number."
+      },
+      {
+        "q": "TCP demultiplexing using 4-tuple: source and destination IP addresses, source and destination port numbers",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Multiplexing/demultiplexing happen at all layers",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "IP/UDP datagrams with same dest. port #, but different source IP addresses and/or source port numbers will be directed to same socket at receiving host",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In UDP, there is no flow control and no congestion control",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "acknowledgements (ACKs) receiver explicitly tells sender that pkt received OK",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "negative acknowledgements (NAKs) receiver explicitly tells sender that pkt had errors",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Sender will retransmit packet again when receive of (NAKs)",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Stop and wait protocol is sender sends one packet, then waits for receiver response",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In stop and wait protocol if ACK/NAK corrupted sender doesn’t know what happened at receiver",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In stop and wait protocol receiver cannot know if its last ACK/NAK received OK at sender",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "rdt2.1 receiver discard (doesn’t deliver up) duplicate pkt",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "rdt2.2 a NAK-free protocol same functionality as rdt2.1, using ACKs only",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "a NAK-free protocol is instead of NAK, receiver sends ACK for last pkt received OK",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In rdt2.2 duplicate ACK at sender results in same action as NAK: retransmit current pkt",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Rdt3.0 sender waits “reasonable” amount of time for ACK retransmits if no ACK received in this time",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Pipelining increased utilization in network",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Network layer protocols in every Internet device hosts, routers",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Routers examines header fields in all IP datagrams passing through it",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Forwarding is move packets from a router’s input link to appropriate router output link",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Routing is determined route taken by packets from source to destination",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Buffering occurs in router when arrival rate via switch exceeds output line speed",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "UDP is faster than TCP protocol",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP Connection Establishment done in 3 way hand check",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP Connection Termination done in 4 way hand check",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The six bits in the Control Bits field of the TCP segment header are also known as flags",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Sender retransmits pkt on receipt of NAK",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Stop and wait is sender sends one packet, then waits for receiver response",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "utilization is fraction of time sender busy sending",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "pipelining is sender allows multiple, “in-flight”, yet-to-be-acknowledged packets",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Go-Back-N sender cumulative ACKs all packets up to, including seq # n",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Selective repeat receiver individually acknowledges all correctly received packets",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "UDP small header size and simple no connection state at sender, receiver",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "UDP use streaming multimedia apps (loss tolerant, rate sensitive), DNS, SNMP",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "UDP checksum used to detect errors (i.e., flipped bits) in transmitted segment",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In Go-back-N protocol, if the acknowledgment of a frame is not received within an agreed upon time period, all frames starting from that frame are retransmitted",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Go-back-N protocol provides for sending multiple frames before receiving the acknowledgment for the first time",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The transport layer transports application layer message between the two communicating hosts using one of its two popular protocols TCP or UDP",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Each TCP segment has source port number (SP) and destination port number (DP), host uses IP addresses & port numbers to direct segment to appropriate socket.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Server host may support many simultaneous TCP sockets and each socket identified by its own 4-tuple.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP full duplex data: bi-directional data flow in same connection",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Sequence numbers: byte stream “number” of first byte in segment’s data",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Acknowledgements: seq # of next byte expected from other side",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP fast retransmit if sender receives 3 additional ACKs for same data (“triple duplicate ACKs”), resend unACKed segment with smallest seq #",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP receiver “advertises” free buffer space in rwnd field in TCP header",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Closing a TCP connection client, server each close their side of connection send TCP segment with FIN bit = 1",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Congestion control too many senders, sending too fast",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Flow control one sender send too fast for one receiver",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "link layer implemented in network interface card (NIC) or on a chip",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In TCP using the Go-Back-N, the receiver discards out-of-order packet",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP socket identified by 4-tuples",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Host uses IP addresses & port numbers to direct segment to appropriate socket",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Host receives IP datagrams each datagram has source IP address, destination IP address, source port number and destination port number",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP socket identified by 4-tuple source IP address, dest IP address, source port number and dest port number",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "when creating datagram to send into UDP socket, must specify destination IP address and destination port number",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP demultiplexing using 4-tuple: source and destination IP addresses, source and destination port numbers",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Multiplexing/demultiplexing happen at all layers",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "acknowledgements (ACKs) receiver explicitly tells sender that pkt received OK",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "negative acknowledgements (NAKs) receiver explicitly tells sender that pkt had errors",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Sender will retransmit packet again when receive of (NAKs)",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Stop and wait protocol is sender sends one packet, then waits for receiver response",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In stop and wait protocol if ACK/NAK corrupted sender doesn’t know what happened at receiver",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In stop and wait protocol receiver cannot know if its last ACK/NAK received OK at sender",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "rdt2.1 receiver discard (doesn’t deliver up) duplicate pkt",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "rdt2.2 a NAK-free protocol same functionality as rdt2.1, using ACKs only",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "a NAK-free protocol is instead of NAK, receiver sends ACK for last pkt received OK",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In rdt2.2 duplicate ACK at sender results in same action as NAK: retransmit current pkt",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Rdt3.0 sender waits “reasonable” amount of time for ACK retransmits if no ACK received in this time",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Pipelining increased utilization in network",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Network layer protocols in every Internet device hosts, routers",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Routers examines header fields in all IP datagrams passing through it",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Forwarding is move packets from a router’s input link to appropriate router output link",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Routing is determined route taken by packets from source to destination",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Buffering occurs in router when arrival rate via switch exceeds output line speed",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "UDP is faster than TCP protocol",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP Connection Establishment done in 3 way hand check",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP Connection Termination done in 4 way hand check",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The six bits in the Control Bits field of the TCP segment header are also known as flags",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Sender retransmits pkt on receipt of NAK",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Stop and wait is sender sends one packet, then waits for receiver response",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "utilization is fraction of time sender busy sending",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "pipelining is sender allows multiple, “in-flight”, yet-to-be-acknowledged packets",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Go-Back-N sender cumulative ACKs all packets up to, including seq # n",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Selective repeat receiver individually acknowledges all correctly received packets",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "UDP small header size and simple no connection state at sender, receiver",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "UDP use streaming multimedia apps (loss tolerant, rate sensitive), DNS, SNMP",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "UDP checksum used to detect errors (i.e., flipped bits) in transmitted segment",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP server can communicate with multiple clients using the same socket.",
+        "answer": "False",
+        "correction": "A new socket is created for each connection, identified by the 4-tuple."
+      },
+      {
+        "q": "TCP socket is identified by only source IP address and destination IP address",
+        "answer": "False",
+        "correction": "It's identified by the 4-tuple (source/dest IP, source/dest port)."
+      },
+      {
+        "q": "In selective repeat protocol, if the acknowledgment of a frame is not received within an agreed upon time period, all frames starting from that frame are retransmitted",
+        "answer": "False",
+        "correction": "This describes Go-Back-N. Selective Repeat only retransmits the single lost packet."
+      },
+      {
+        "q": "In Go-back-N protocol, if the acknowledgment of a frame is not received within an agreed upon time period, all frames starting from that frame are retransmitted",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Go-back-N protocol provides for sending multiple frames before receiving the acknowledgment for the first time",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The transport layer transports application layer message between the two communicating hosts using one of its two popular protocols TCP or UDP",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Each TCP segment has source port number (SP) and destination port number (DP), host uses IP addresses & port numbers to direct segment to appropriate socket.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Server host may support many simultaneous TCP sockets and each socket identified by its own 4-tuple.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP full duplex data: bi-directional data flow in same connection",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Sequence numbers: byte stream “number” of first byte in segment’s data",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Acknowledgements: seq # of next byte expected from other side",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP fast retransmit if sender receives 3 additional ACKs for same data (“triple duplicate ACKs”), resend unACKed segment with smallest seq #",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Opening a TCP connection client, server each close their side of connection send TCP segment with FIN bit = 1",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Congestion control too many senders, sending too fast",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Flow control one sender send too fast for one receiver",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "When sender times can time out prematurely, sending two copies, both of which are delivered",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Network-assisted congestion control routers provide direct feedback to sending/receiving hosts with flows passing through congested router",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP congestion control AIMD senders can increase sending rate until packet loss (congestion) occurs, then decrease sending rate on loss event",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Additive Increase is increase sending rate by 1 maximum segment size every RTT until loss detected",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Multiplicative Decrease is cut sending rate in half at each loss event",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In Multiplicative decrease sending rate is cut in half on loss detected by triple duplicate ACK called (TCP Reno)",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In Multiplicative decrease sending rate is cut to 1 MSS (maximum segment size) when loss detected by timeout called (TCP Tahoe)",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP slow start when connection begins, increase rate exponentially until first loss event",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP slow start initial rate is slow, but ramps up exponentially fast",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In slow start to congestion avoidance implementation of ssthresh is variable",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In slow start to congestion avoidance on loss event, ssthresh is set to 1/2 of cwnd just before loss event",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP CUBIC is there a better way than AIMD to “probe” for usable bandwidth",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP CUBIC after cutting rate/window in half on loss, initially ramp to to Wmax faster, but then approach Wmax more slowly",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP (classic, CUBIC) increase TCP’s sending rate until packet loss occurs at some router’s output called the bottleneck link",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The transport layer is in the core of the layered network architecture. It has the critical role of providing communication services directly to the application processes running on different hosts.",
+        "answer": "False",
+        "correction": "The transport layer is in the end systems, not the network core."
+      },
+      {
+        "q": "TCP CUBIC larger increases when further away from K",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP CUBIC smaller increases (cautious) when nearer K",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Explicit congestion notification (ECN) policy to determine marking chosen by network operator",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP fairness if K TCP sessions share same bottleneck link of bandwidth R, each should have average rate of R/K",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "TCP is fair under idealized assumptions have same RTT and fixed number of sessions only in congestion avoidance",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "multimedia apps often do not use TCP",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Fairness and UDP there is no “Internet police” policing use of congestion control",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
   }
 }
