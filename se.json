@@ -1,0 +1,868 @@
+{
+  "midterm": {
+    "mcq": [
+      {
+        "q": "Which of the following options correctly follows the Interface Segregation Principle?<br><pre>interface Printer {\n void printDocument();\n void scanDocument();\n void faxDocument();\n}\nclass SimplePrinter implements Printer {\n public void printDocument() { /*...*/ }\n public void scanDocument() { /*...*/ }\n public void faxDocument() { /*...*/ }\n}</pre>",
+        "opts": [
+          "a. The Printer interface should be an abstract class.",
+          "b. This code is already following ISP.",
+          "c. SimplePrinter should only implement the methods it needs.",
+          "d. The Printer interface should be split into smaller interfaces."
+        ],
+        "answer": "b. This code is already following ISP."
+      },
+      {
+        "q": "Which of the following classes violates the Single Responsibility Principle?<br><pre>class Order {\n public void calculateTotalPrice() { /*...*/ }\n public void saveToDatabase() { /*...*/ }\n public void sendOrderConfirmation() { /*...*/ }\n}</pre>",
+        "opts": [
+          "a. The class is correctly designed according to SRP.",
+          "b. The calculateTotalPrice method should be moved to another class.",
+          "c. The saveToDatabase and sendOrderConfirmation methods should be moved to separate classes.",
+          "d. All methods should be in separate classes."
+        ],
+        "answer": "c. The saveToDatabase and sendOrderConfirmation methods should be moved to separate classes."
+      },
+      {
+        "q": "What will be the output of the following code?<br><pre>class Animal {\n public String sound() {\n return \"Some sound\";\n }\n}\nclass Dog extends Animal {\n @Override\n public String sound() {\n return \"Bark\";\n }\n}\nclass Cat extends Animal {\n @Override\n public String sound() {\n return \"Meow\";\n }\n}\npublic class Main {\n public static void main(String[] args) {\n Animal[] animals = {new Dog(), new Cat(), new Animal()};\n for (Animal animal : animals) {\n System.out.println(animal.sound());\n }\n }\n}</pre>",
+        "opts": [
+          "a. Bark \n Meow \n Some sound",
+          "b. Some sound \n Some sound \n Some sound",
+          "c. Meow \n Bark \n Some sound",
+          "d. Bark \n Some sound \n Meow"
+        ],
+        "answer": "c. Meow \n Bark \n Some sound"
+      },
+      {
+        "q": "What will be the output of the following code?<br><pre>class Parent {\n public void show() {\n System.out.println(\"Parent show\");\n }\n}\nclass Child extends Parent {\n public void show() {\n System.out.println(\"Child show\");\n }\n}\npublic class Main {\n public static void main(String[] args) {\n Parent p = new Child();\n p.show();\n }\n}</pre>",
+        "opts": [
+          "a. Child show",
+          "b. Parent show",
+          "c. Compilation Error",
+          "d. Run Time Error"
+        ],
+        "answer": "b. Parent show"
+      },
+      {
+        "q": "Which of the following code snippets best demonstrates encapsulation?",
+        "opts": [
+          "a. public class Account { public double balance; }",
+          "b. public class Account { double balance; public Account(double balance) { this.balance = balance; } }",
+          "c. public class Account { protected double balance; public void setBalance(double balance) { this.balance = balance; } }",
+          "d. public class Account { private double balance; public double getBalance() { return balance; } public void deposit(double amount) { if (amount > 0) { balance += amount; } } public void withdraw(double amount) { if (amount > 0 && amount <= balance) { balance -= amount; } } }"
+        ],
+        "answer": "d. public class Account { private double balance; ... }"
+      },
+      {
+        "q": "A fire system that needs to warn employees when a fire occurs, what signals are used to transmit this data?",
+        "opts": [
+          "a. Vibration",
+          "b. Flag",
+          "c. Buzz",
+          "d. Light"
+        ],
+        "answer": "d. Light"
+      },
+      {
+        "q": "Which principle is violated if a class has more than one reason to change?",
+        "opts": [
+          "a. Single Responsibility Principle (SRP)",
+          "b. Open/Closed Principle (OCP)",
+          "c. Interface Segregation Principle (ISP)",
+          "d. Liskov Substitution Principle (LSP)"
+        ],
+        "answer": "a. Single Responsibility Principle (SRP)"
+      },
+      {
+        "q": "A class should be open for extension but closed for modification. Which principle does this statement refer to?",
+        "opts": [
+          "a. Dependency Inversion Principle (DIP)",
+          "b. Single Responsibility Principle (SRP)",
+          "c. Open/Closed Principle (OCP)",
+          "d. Interface Segregation Principle (ISP)"
+        ],
+        "answer": "b. Single Responsibility Principle (SRP)"
+      },
+      {
+        "q": "Which principle ensures that derived classes should be substitutable for their base classes?",
+        "opts": [
+          "a. Single Responsibility Principle (SRP)",
+          "b. Liskov Substitution Principle (LSP)",
+          "c. Open/Closed Principle (OCP)",
+          "d. Dependency Inversion Principle (DIP)"
+        ],
+        "answer": "b. Liskov Substitution Principle (LSP)"
+      },
+      {
+        "q": "In the context of Interface Segregation Principle (ISP), what is the main reason behind creating smaller, specific interfaces?",
+        "opts": [
+          "a. To simplify the implementation of classes",
+          "b. To avoid forcing a class to implement methods it does not use",
+          "c. To increase the complexity of a program",
+          "d. To ensure that classes depend on only one interface"
+        ],
+        "answer": "b. To avoid forcing a class to implement methods it does not use"
+      },
+      {
+        "q": "Which of the following best demonstrates the Dependency Inversion Principle (DIP)?",
+        "opts": [
+          "a. High-level modules should depend on low-level modules.",
+          "b. Low-level modules should depend on high-level modules.",
+          "c. Both high-level and low-level modules should depend on abstractions.",
+          "d. High-level modules should be completely independent of any modules."
+        ],
+        "answer": "c. Both high-level and low-level modules should depend on abstractions."
+      },
+      {
+        "q": "If a class violates the Open/Closed Principle, what is likely to happen when you need to add new functionality?",
+        "opts": [
+          "a. The class can be extended without any modification.",
+          "b. The existing class code has to be modified.",
+          "c. New classes can inherit without any issues.",
+          "d. The class automatically adapts to changes."
+        ],
+        "answer": "b. The existing class code has to be modified."
+      },
+      {
+        "q": "Why is adhering to the Single Responsibility Principle (SRP) important?",
+        "opts": [
+          "a. It increases the coupling between classes.",
+          "b. It simplifies code maintenance and testing.",
+          "c. It allows one class to handle all types of tasks.",
+          "d. It reduces the number of methods in a class."
+        ],
+        "answer": "b. It simplifies code maintenance and testing."
+      },
+      {
+        "q": "Which principle helps in ensuring that classes have dependencies injected into them rather than creating dependencies directly?",
+        "opts": [
+          "a. Liskov Substitution Principle (LSP)",
+          "b. Interface Segregation Principle (ISP)",
+          "c. Dependency Inversion Principle (DIP)",
+          "d. Single Responsibility Principle (SRP)"
+        ],
+        "answer": "c. Dependency Inversion Principle (DIP)"
+      },
+      {
+        "q": "What could be a consequence of violating the Liskov Substitution Principle?",
+        "opts": [
+          "a. Classes may become too large and unmanageable.",
+          "b. Derived classes may not behave as expected when used in place of a base class.",
+          "c. Classes would become tightly coupled.",
+          "d. Interfaces would need to be redefined frequently."
+        ],
+        "answer": "b. Derived classes may not behave as expected when used in place of a base class."
+      },
+      {
+        "q": "The Interface Segregation Principle (ISP) states that:",
+        "opts": [
+          "a. A class should implement all available interfaces to ensure full functionality.",
+          "b. A client should not be forced to depend on interfaces it does not use.",
+          "c. Interfaces should be avoided in most cases.",
+          "d. Classes should use only one interface to minimize complexity."
+        ],
+        "answer": "b. A client should not be forced to depend on interfaces it does not use."
+      },
+      {
+        "q": "Identify the violation of SRP in the following code and suggest how to fix it.<br><pre>public class ReportManager {\n public void generateReport() { // code to generate report }\n public void printReport() { // Code to print report }\n public void saveReportToDatabase() { // Code to save report to DB }\n}</pre>",
+        "opts": [
+          "a. All methods should be in separate classes.",
+          "b. The generateReport and printReport methods should be combined.",
+          "c. The saveReportToDatabase method should be moved to another class.",
+          "d. No violation."
+        ],
+        "answer": "c. The saveReportToDatabase method should be moved to another class."
+      },
+      {
+        "q": "Which part of the following code violates the OCP?<br><pre>public class Shape {\n public void draw(String shapeType) {\n if (shapeType.equals(\"Circle\")) {\n System.out.println(\"Drawing circle\");\n } else if (shapeType.equals(\"Square\")) {\n System.out.println(\"Drawing Square\");\n }\n }\n}</pre>",
+        "opts": [
+          "a. The draw method should use an abstract class.",
+          "b. The method uses if-else to handle different shapes.",
+          "c. New shapes require modifying the draw method.",
+          "d. The code is correctly following OCP."
+        ],
+        "answer": "b. The method uses if-else to handle different shapes."
+      },
+      {
+        "q": "Analyze the code snippet below. Does it violate the LSP?<br><pre>class Rectangle {\n private int width;\n private int height;\n public void setWidth(int width) { this.width = width; }\n public void setHeight(int height) { this.height = height; }\n public int getArea() { return width * height; }\n}\nclass Square extends Rectangle {\n @Override\n public void setWidth(int width) {\n super.setWidth(width);\n super.setHeight(width);\n }\n @Override\n public void setHeight(int height) {\n super.setWidth(height);\n super.setHeight(height);\n }\n}</pre>",
+        "opts": [
+          "a. Yes, because Square violates the expected behavior of Rectangle.",
+          "b. No, the code correctly follows LSP.",
+          "c. The getArea method needs to be overridden in Square.",
+          "d. The Rectangle class should be abstract."
+        ],
+        "answer": "b. No, the code correctly follows LSP."
+      },
+      {
+        "q": "What is wrong with the following interface?<br><pre>public interface MultiFunctionDevice {\n void print();\n void scan();\n void fax();\n}</pre>",
+        "opts": [
+          "a. The interface should be split into smaller interfaces.",
+          "b. All methods should be implemented by every class.",
+          "c. The fax method should be removed.",
+          "d. The code is fine as it is."
+        ],
+        "answer": "d. The code is fine as it is."
+      },
+      {
+        "q": "Which code snippet below follows the Dependency Inversion Principle?<br><pre>// Option 1\npublic class Light {\n public void turnOn() { System.out.println(\"Light is on\"); }\n}\npublic class Switch {\n private Light light;\n public Switch(Light light) { this.light = light; }\n public void press() { light.turnOn(); }\n}\n// Option 2\npublic interface Switchable {\n void turnOn();\n}\npublic class Light implements Switchable {\n public void turnOn() { System.out.println(\"Light is on\"); }\n}\npublic class Switch {\n private Switchable device;\n public Switch(Switchable device) { this.device = device; }\n public void press() { device.turnOn(); }\n}</pre>",
+        "opts": [
+          "a. Option 1 follows DIP.",
+          "b. Option 2 follows DIP.",
+          "c. Neither option follows DIP.",
+          "d. Both options follow DIP."
+        ],
+        "answer": "d. Both options follow DIP."
+      },
+      {
+        "q": "Identify the violation of SRP in the following code:<br><pre>class Report {\n public String generateReport() { // logic to generate report }\n public void printReport() { // logic to print report }\n}</pre>",
+        "opts": [
+          "a. The generateReport method should be moved to another class.",
+          "b. The printReport method should be separated into a different class.",
+          "c. Both methods are fine in the same class.",
+          "d. The class should be abstract."
+        ],
+        "answer": "b. The printReport method should be separated into a different class."
+      },
+      {
+        "q": "Which of the following refactors would best follow SRP for the given code?<br><pre>class UserManager {\n public void addUser(String user) { // logic to add user }\n public void saveUserData(String user) { // logic to save user data }\n}</pre>",
+        "opts": [
+          "a. Keep all methods in UserManager.",
+          "b. Create a new class UserDataSaver for saving user data.",
+          "c. Split addUser and saveUserData into different interfaces.",
+          "d. Convert UserManager into an abstract class."
+        ],
+        "answer": "b. Create a new class UserDataSaver for saving user data."
+      },
+      {
+        "q": "What change can be made to adhere to SRP in the following snippet?<br><pre>class OrderProcessor {\n public void processOrder() { // logic to process order }\n public void sendConfirmationEmail() { // logic to send confirmation email }\n}</pre>",
+        "opts": [
+          "a. Move sendConfirmationEmail to a separate EmailService class.",
+          "b. Merge the class with OrderManager.",
+          "c. Make OrderProcessor abstract.",
+          "d. The current implementation already follows SRP."
+        ],
+        "answer": "a. Move sendConfirmationEmail to a separate EmailService class."
+      },
+      {
+        "q": "Identify the class that violates SRP:<br><pre>class Invoice {\n public void calculateTotal() { // logic to calculate total }\n public void printInvoice() { // logic to print invoice }\n public void saveInvoiceToDatabase() { // logic to save invoice }\n}</pre>",
+        "opts": [
+          "a. calculateTotal should be separated.",
+          "b. printInvoice should be moved to a Printer class.",
+          "c. saveInvoiceToDatabase should be handled by InvoiceRepository.",
+          "d. All of the above."
+        ],
+        "answer": "c. saveInvoiceToDatabase should be handled by InvoiceRepository."
+      },
+      {
+        "q": "Which refactor would make the following class SRP-compliant?<br><pre>class Notification {\n public void sendSMS(String message) { // logic to send SMS }\n public void sendEmail(String message) { // logic to send Email }\n}</pre>",
+        "opts": [
+          "a. Create SMSService and EmailService classes.",
+          "b. Keep all methods as is.",
+          "c. Add sendPushNotification to the class.",
+          "d. Merge Notification with MessageSender."
+        ],
+        "answer": "a. Create SMSService and EmailService classes."
+      },
+      {
+        "q": "Spot the SRP violation in this class:<br><pre>class TaskHandler {\n public void createTask(String task) { // logic to create a task }\n public void logTask(String task) { // logic to log task }\n}</pre>",
+        "opts": [
+          "a. createTask should be moved to TaskCreator.",
+          "b. logTask should be moved to TaskLogger.",
+          "c. Both createTask and logTask should remain.",
+          "d. Create TaskManager instead."
+        ],
+        "answer": "b. logTask should be moved to TaskLogger."
+      },
+      {
+        "q": "What is the correct way to refactor the following code?<br><pre>class Library {\n public void addBook(String book) { // logic to add book }\n public void issueBook(String book) { // logic to issue book }\n public void calculateLateFees(String user) { // logic to calculate fees }\n}</pre>",
+        "opts": [
+          "a. Move calculateLateFees to FeeCalculator.",
+          "b. Split addBook into BookManager.",
+          "c. Separate issueBook to BookIssuer.",
+          "d. All of the above."
+        ],
+        "answer": "d. All of the above."
+      },
+      {
+        "q": "Which aspect of SRP is violated here?<br><pre>class Employee {\n public void calculateSalary() { // logic to calculate salary }\n public void saveToDatabase() { // logic to save employee data }\n}</pre>",
+        "opts": [
+          "a. Salary calculation should be in SalaryCalculator.",
+          "b. Database operation should be in EmployeeRepository.",
+          "c. Both a and b.",
+          "d. No changes needed."
+        ],
+        "answer": "c. Both a and b."
+      },
+      {
+        "q": "Refactor suggestion for SRP compliance:<br><pre>class ReportManager {\n public void generateReport() { // logic to generate report }\n public void sendReportEmail() { // logic to send report via email }\n}</pre>",
+        "opts": [
+          "a. Move sendReportEmail to EmailService.",
+          "b. Create ReportSender.",
+          "c. Leave ReportManager as is.",
+          "d. Combine with ReportGenerator."
+        ],
+        "answer": "a. Move sendReportEmail to EmailService."
+      },
+      {
+        "q": "Best refactor for this scenario:<br><pre>class Account {\n public void debitAccount(double amount) { // logic to debit }\n public void generateStatement() { // logic to generate statement }\n}</pre>",
+        "opts": [
+          "a. Move generateStatement to StatementGenerator.",
+          "b. Create a separate TransactionService for debitAccount.",
+          "c. Leave the class as it is.",
+          "d. Merge Account with FinancialService."
+        ],
+        "answer": "a. Move generateStatement to StatementGenerator."
+      },
+      {
+        "q": "Identify the OCP violation in the following code:<br><pre>class DiscountCalculator {\n public double calculateDiscount(String type, double amount) {\n if (type.equals(\"Christmas\")) {\n return amount * 0.25;\n } else if (type.equals(\"NewYear\")) {\n return amount * 0.20;\n } else {\n return amount * 0.10;\n }\n }\n}</pre>",
+        "opts": [
+          "a. The code is already open for extension.",
+          "b. The code violates OCP as new conditions require modifying the existing method.",
+          "c. The calculateDiscount method should be split into multiple classes.",
+          "d. No changes needed."
+        ],
+        "answer": "b. The code violates OCP as new conditions require modifying the existing method."
+      },
+      {
+        "q": "Which refactor would best adhere to OCP for the following code?<br><pre>class ReportPrinter {\n public void printReport(String format) {\n if (format.equals(\"PDF\")) {\n // logic to print PDF\n } else if (format.equals(\"HTML\")) {\n // logic to print HTML\n }\n }\n}</pre>",
+        "opts": [
+          "a. Create separate classes for each report format.",
+          "b. Add more conditions as needed.",
+          "c. Keep the method as is.",
+          "d. Make ReportPrinter abstract."
+        ],
+        "answer": "a. Create separate classes for each report format."
+      },
+      {
+        "q": "What change would make this code OCP-compliant?<br><pre>class PaymentProcessor {\n public void processPayment(String type) {\n if (type.equals(\"CreditCard\")) {\n // logic for credit card payment\n } else if (type.equals(\"PayPal\")) {\n // logic for PayPal payment\n }\n }\n}</pre>",
+        "opts": [
+          "a. Use an interface PaymentMethod and create classes for each payment type.",
+          "b. Add more payment types directly in processPayment.",
+          "c. Make processPayment final.",
+          "d. Keep all logic in one class."
+        ],
+        "answer": "a. Use an interface PaymentMethod and create classes for each payment type."
+      },
+      {
+        "q": "Identify how OCP can be applied here:<br><pre>class Logger {\n public void log(String type, String message) {\n if (type.equals(\"File\")) {\n // logic to log to file\n } else if (type.equals(\"Console\")) {\n // logic to log to console\n }\n }\n}</pre>",
+        "opts": [
+          "a. Create separate classes for each logging type implementing a Logger interface.",
+          "b. Keep adding more conditions for new logging types.",
+          "c. Use a switch statement for better readability.",
+          "d. Make the log method private."
+        ],
+        "answer": "a. Create separate classes for each logging type implementing a Logger interface."
+      },
+      {
+        "q": "What is the best OCP-compliant approach for the following code?<br><pre>class TaxCalculator {\n public double calculateTax(String region, double income) {\n if (region.equals(\"US\")) {\n return income * 0.3;\n } else if (region.equals(\"EU\")) {\n return income * 0.25;\n }\n }\n}</pre>",
+        "opts": [
+          "a. Create an abstract class TaxCalculator and extend it for each region.",
+          "b. Keep adding conditions as regions increase.",
+          "c. Make calculateTax static.",
+          "d. The current implementation is already compliant."
+        ],
+        "answer": "a. Create an abstract class TaxCalculator and extend it for each region."
+      },
+      {
+        "q": "Spot the OCP violation:<br><pre>class ShapeDrawer {\n public void drawShape(String shapeType) {\n if (shapeType.equals(\"Circle\")) {\n // logic to draw a circle\n } else if (shapeType.equals(\"Rectangle\")) {\n // logic to draw a rectangle\n }\n }\n}</pre>",
+        "opts": [
+          "a. Use an interface Shape with a draw method for each shape.",
+          "b. Add more conditions for new shapes.",
+          "c. Keep all logic in drawShape.",
+          "d. Make ShapeDrawer abstract."
+        ],
+        "answer": "a. Use an interface Shape with a draw method for each shape."
+      },
+      {
+        "q": "Which of the following demonstrates OCP adherence?<br><pre>interface Alert {\n void sendAlert();\n}\nclass EmailAlert implements Alert {\n public void sendAlert() { // logic to send email alert }\n}\nclass SMSAlert implements Alert {\n public void sendAlert() { // logic to send SMS alert }\n}</pre>",
+        "opts": [
+          "a. This implementation correctly follows OCP.",
+          "b. EmailAlert should extend SMSAlert.",
+          "c. Alert interface should include more alert types.",
+          "d. Combine both EmailAlert and SMSAlert into one class."
+        ],
+        "answer": "a. This implementation correctly follows OCP."
+      },
+      {
+        "q": "Refactor suggestion for OCP compliance:<br><pre>class MessageService {\n public void sendMessage(String type, String message) {\n if (type.equals(\"Text\")) {\n // logic to send text message\n } else if (type.equals(\"Push\")) {\n // logic to send push notification\n }\n }\n}</pre>",
+        "opts": [
+          "a. Create classes TextMessageService and PushMessageService.",
+          "b. Add more conditions as message types grow.",
+          "c. Use a switch for better readability.",
+          "d. Make sendMessage final."
+        ],
+        "answer": "a. Create classes TextMessageService and PushMessageService."
+      },
+      {
+        "q": "OCP-compliant architecture for this code:<br><pre>class VehicleSpeedCalculator {\n public double calculateSpeed(String vehicleType) {\n if (vehicleType.equals(\"Car\")) {\n return 100;\n } else if (vehicleType.equals(\"Bike\")) {\n return 50;\n }\n }\n}</pre>",
+        "opts": [
+          "a. Create separate classes for each vehicle type implementing SpeedCalculator.",
+          "b. Use a HashMap for speed values.",
+          "c. Add more conditions as needed.",
+          "d. No changes required."
+        ],
+        "answer": "a. Create separate classes for each vehicle type implementing SpeedCalculator."
+      },
+      {
+        "q": "Best practice for OCP adherence:<br><pre>class NotificationHandler {\n public void handleNotification(String type, String content) {\n if (type.equals(\"Email\")) {\n // logic for email notification\n } else if (type.equals(\"SMS\")) {\n // logic for SMS notification\n }\n }\n}</pre>",
+        "opts": [
+          "a. Implement an interface Notification with handleNotification in separate classes.",
+          "b. Add more conditions for new notification types.",
+          "c. Keep the logic centralized in one method.",
+          "d. Make NotificationHandler final."
+        ],
+        "answer": "a. Implement an interface Notification with handleNotification in separate classes."
+      },
+      {
+        "q": "Identify the LSP violation in the following code:<br><pre>class Bird {\n public void fly() { // logic to fly }\n}\nclass Penguin extends Bird {\n @Override\n public void fly() {\n throw new UnsupportedOperationException(\"Penguins can't fly\");\n }\n}</pre>",
+        "opts": [
+          "a. No LSP violation, the code is fine.",
+          "b. The Penguin class violates LSP as it doesn't behave like a Bird.",
+          "c. The Bird class should be abstract.",
+          "d. Use an interface FlyingBird to separate flying birds from non-flying birds."
+        ],
+        "answer": "b. The Penguin class violates LSP as it doesn't behave like a Bird."
+      },
+      {
+        "q": "What change would make the following code adhere to LSP?<br><pre>class Rectangle {\n private int width;\n private int height;\n public void setWidth(int width) { this.width = width; }\n public void setHeight(int height) { this.height = height; }\n}\nclass Square extends Rectangle {\n @Override\n public void setWidth(int width) {\n super.setWidth(width);\n super.setHeight(width);\n }\n @Override\n public void setHeight(int height) {\n super.setWidth(height);\n super.setHeight(height);\n }\n}</pre>",
+        "opts": [
+          "a. Remove Square and use only Rectangle.",
+          "b. Ensure Square does not override setWidth and setHeight.",
+          "c. Create a separate Shape interface and remove inheritance.",
+          "d. No changes needed."
+        ],
+        "answer": "c. Create a separate Shape interface and remove inheritance."
+      },
+      {
+        "q": "Identify how LSP is violated here:<br><pre>class PaymentMethod {\n public void processPayment(double amount) { // generic payment logic }\n}\nclass CashPayment extends PaymentMethod {\n @Override\n public void processPayment(double amount) { // logic for cash payment }\n}\nclass CreditCardPayment extends PaymentMethod {\n @Override\n public void processPayment(double amount) {\n throw new UnsupportedOperationException(\"Credit card not supported\");\n }\n}</pre>",
+        "opts": [
+          "a. CashPayment violates LSP.",
+          "b. CreditCardPayment violates LSP due to UnsupportedOperationException.",
+          "c. PaymentMethod should be abstract.",
+          "d. No LSP violations present."
+        ],
+        "answer": "b. CreditCardPayment violates LSP due to UnsupportedOperationException."
+      },
+      {
+        "q": "What adjustment can make the following code LSP-compliant?<br><pre>class Engine {\n public void start() { // generic start logic }\n}\nclass ElectricEngine extends Engine {\n @Override\n public void start() { // logic specific to electric engines }\n}\nclass BrokenEngine extends Engine {\n @Override\n public void start() {\n throw new RuntimeException(\"Engine is broken\");\n }\n}</pre>",
+        "opts": [
+          "a. Make Engine an interface and separate broken functionality.",
+          "b. Remove BrokenEngine.",
+          "c. Keep BrokenEngine as it is.",
+          "d. Implement an isOperational check."
+        ],
+        "answer": "a. Make Engine an interface and separate broken functionality."
+      },
+      {
+        "q": "Identify the issue regarding LSP:<br><pre>class Document {\n public void print() { // logic to print document }\n}\nclass ReadOnlyDocument extends Document {\n @Override\n public void print() {\n throw new UnsupportedOperationException(\"Read-only document cannot be printed\");\n }\n}</pre>",
+        "opts": [
+          "a. Document should not be extended by ReadOnlyDocument.",
+          "b. ReadOnlyDocument correctly extends Document.",
+          "c. Use an interface to separate read-only behavior.",
+          "d. No changes needed."
+        ],
+        "answer": "c. Use an interface to separate read-only behavior."
+      },
+      {
+        "q": "How can LSP be upheld in this code?<br><pre>class Animal {\n public void makeSound() {\n System.out.println(\"Some generic animal sound\");\n }\n}\nclass MuteAnimal extends Animal {\n @Override\n public void makeSound() {\n throw new UnsupportedOperationException(\"This animal is mute\");\n }\n}</pre>",
+        "opts": [
+          "a. Remove MuteAnimal or change its inheritance.",
+          "b. Keep MuteAnimal as it is.",
+          "c. Add a canMakeSound property.",
+          "d. Make Animal abstract."
+        ],
+        "answer": "c. Add a canMakeSound property."
+      },
+      {
+        "q": "Which option best resolves the LSP violation?<br><pre>class Car {\n public void drive() { // logic to drive }\n}\nclass SelfDrivingCar extends Car {\n @Override\n public void drive() {\n throw new UnsupportedOperationException(\"Self-driving car cannot be driven manually\");\n }\n}</pre>",
+        "opts": [
+          "a. SelfDrivingCar should implement a different interface.",
+          "b. Remove SelfDrivingCar.",
+          "c. No changes needed.",
+          "d. Make drive method abstract."
+        ],
+        "answer": "a. SelfDrivingCar should implement a different interface."
+      },
+      {
+        "q": "What modification ensures LSP compliance?<br><pre>class Appliance {\n public void turnOn() { // logic to turn on }\n}\nclass BrokenAppliance extends Appliance {\n @Override\n public void turnOn() {\n throw new UnsupportedOperationException(\"Cannot turn on broken appliance\");\n }\n}</pre>",
+        "opts": [
+          "a. Remove BrokenAppliance or change its relationship.",
+          "b. Add a property to check if the appliance is functional.",
+          "c. Keep BrokenAppliance as it is.",
+          "d. Make turnOn final."
+        ],
+        "answer": "b. Add a property to check if the appliance is functional."
+      },
+      {
+        "q": "Identify the correct LSP-compliant design:<br><pre>interface Printer {\n void print();\n}\nclass StandardPrinter implements Printer {\n public void print() {\n System.out.println(\"Printing document\");\n }\n}\nclass NullPrinter implements Printer {\n public void print() {\n throw new UnsupportedOperationException(\"Cannot print\");\n }\n}</pre>",
+        "opts": [
+          "a. Use NullPrinter as a decorator instead of implementing Printer.",
+          "b. Remove NullPrinter.",
+          "c. NullPrinter correctly follows LSP.",
+          "d. No changes needed."
+        ],
+        "answer": "b. Remove NullPrinter."
+      },
+      {
+        "q": "Best LSP-compliant approach:<br><pre>class Vehicle {\n public void startEngine() { // logic to start engine }\n}\nclass Bicycle extends Vehicle {\n @Override\n public void startEngine() {\n throw new UnsupportedOperationException(\"Bicycles do not have engines\");\n }\n}</pre>",
+        "opts": [
+          "a. Bicycle should not extend Vehicle.",
+          "b. Keep Bicycle as it is.",
+          "c. Add an isMotorized property.",
+          "d. Make startEngine final."
+        ],
+        "answer": "a. Bicycle should not extend Vehicle."
+      },
+      {
+        "q": "Identify the ISP violation in the following code:<br><pre>interface Worker {\n void work();\n void eat();\n}\nclass HumanWorker implements Worker {\n public void work() { // logic for human working }\n public void eat() { // logic for human eating }\n}\nclass RobotWorker implements Worker {\n public void work() { // logic for robot working }\n public void eat() {\n throw new UnsupportedOperationException(\"Robots do not eat\");\n }\n}</pre>",
+        "opts": [
+          "a. No violation, the code is fine.",
+          "b. RobotWorker violates ISP as it implements a method it doesn't need.",
+          "c. Worker should be split into Workable and Eatable interfaces.",
+          "d. HumanWorker should not implement Worker."
+        ],
+        "answer": "b. RobotWorker violates ISP as it implements a method it doesn't need."
+      },
+      {
+        "q": "What change would make the following code comply with ISP?<br><pre>interface Printer {\n void printDocument();\n void scanDocument();\n}\nclass BasicPrinter implements Printer {\n public void printDocument() { // logic to print }\n public void scanDocument() {\n throw new UnsupportedOperationException(\"Basic printer cannot scan\");\n }\n}</pre>",
+        "opts": [
+          "a. Split Printer into Printable and Scannable interfaces.",
+          "b. Keep Printer as it is.",
+          "c. Make BasicPrinter abstract.",
+          "d. Add more methods to Printer."
+        ],
+        "answer": "a. Split Printer into Printable and Scannable interfaces."
+      },
+      {
+        "q": "Identify how ISP is violated:<br><pre>interface Appliance {\n void turnOn();\n void setTemperature(int temp);\n}\nclass Fan implements Appliance {\n public void turnOn() { // logic to turn on }\n public void setTemperature(int temp) {\n throw new UnsupportedOperationException(\"Fan cannot set temperature\");\n }\n}</pre>",
+        "opts": [
+          "a. No ISP violation.",
+          "b. Fan violates ISP as it implements unnecessary methods.",
+          "c. Appliance should be separated into Switchable and TemperatureControllable interfaces.",
+          "d. turnOn should be abstract."
+        ],
+        "answer": "c. Appliance should be separated into Switchable and TemperatureControllable interfaces."
+      },
+      {
+        "q": "Which refactor would make this code ISP-compliant?<br><pre>interface Vehicle {\n void drive();\n void fly();\n}\nclass Car implements Vehicle {\n public void drive() { // logic to drive }\n public void fly() {\n throw new UnsupportedOperationException(\"Car cannot fly\");\n }\n}</pre>",
+        "opts": [
+          "a. Keep Vehicle as it is.",
+          "b. Split Vehicle into Drivable and Flyable interfaces.",
+          "c. Make Car abstract.",
+          "d. Add more vehicles to Vehicle."
+        ],
+        "answer": "b. Split Vehicle into Drivable and Flyable interfaces."
+      },
+      {
+        "q": "How can the following code be improved for ISP?<br><pre>interface SmartDevice {\n void connectToWiFi();\n void displayTime();\n}\nclass SmartSpeaker implements SmartDevice {\n public void connectToWiFi() { // logic to connect to WiFi }\n public void displayTime() {\n throw new UnsupportedOperationException(\"Smart speaker does not display time\");\n }\n}</pre>",
+        "opts": [
+          "a. No changes needed.",
+          "b. Separate SmartDevice into Connectable and Displayable interfaces.",
+          "c. Add more features to SmartDevice.",
+          "d. Make SmartSpeaker extend a different interface."
+        ],
+        "answer": "b. Separate SmartDevice into Connectable and Displayable interfaces."
+      },
+      {
+        "q": "Spot the ISP violation in this code:<br><pre>interface Worker {\n void work();\n void takeBreak();\n void manage();\n}\nclass Manager implements Worker {\n public void work() { // logic to work }\n public void takeBreak() { // logic to take a break }\n public void manage() { // logic to manage }\n}\nclass Developer implements Worker {\n public void work() { // logic to work }\n public void takeBreak() { // logic to take a break }\n public void manage() {\n throw new UnsupportedOperationException(\"Developer cannot manage\");\n }\n}</pre>",
+        "opts": [
+          "a. Keep Worker as it is.",
+          "b. Split Worker into Workable, Breakable, and Manageable interfaces.",
+          "c. Remove Developer class.",
+          "d. No ISP violation."
+        ],
+        "answer": "b. Split Worker into Workable, Breakable, and Manageable interfaces."
+      },
+      {
+        "q": "Identify the ISP issue here:<br><pre>interface Animal {\n void eat();\n void swim();\n}\nclass Dog implements Animal {\n public void eat() { // logic to eat }\n public void swim() { // logic to swim }\n}\nclass Eagle implements Animal {\n public void eat() { // logic to eat }\n public void swim() {\n throw new UnsupportedOperationException(\"Eagles do not swim\");\n }\n}</pre>",
+        "opts": [
+          "a. No violation, code is fine.",
+          "b. Animal should be split into Eatable and Swimmable interfaces.",
+          "c. Eagle should not implement Animal.",
+          "d. Make swim final."
+        ],
+        "answer": "b. Animal should be split into Eatable and Swimmable interfaces."
+      },
+      {
+        "q": "Which of the following changes would best adhere to ISP?<br><pre>interface MediaPlayer {\n void playAudio();\n void playVideo();\n}\nclass AudioPlayer implements MediaPlayer {\n public void playAudio() { // logic to play audio }\n public void playVideo() {\n throw new UnsupportedOperationException(\"Audio player cannot play video\");\n }\n}</pre>",
+        "opts": [
+          "a. No changes needed.",
+          "b. Split MediaPlayer into AudioPlayable and VideoPlayable interfaces.",
+          "c. Add more methods to MediaPlayer.",
+          "d. Make AudioPlayer abstract."
+        ],
+        "answer": "b. Split MediaPlayer into AudioPlayable and VideoPlayable interfaces."
+      },
+      {
+        "q": "How to make this code follow ISP?<br><pre>interface MultiFunctionPrinter {\n void print();\n void fax();\n void scan();\n}\nclass SimplePrinter implements MultiFunctionPrinter {\n public void print() { // logic to print }\n public void fax() {\n throw new UnsupportedOperationException(\"Simple printer cannot fax\");\n }\n public void scan() {\n throw new UnsupportedOperationException(\"Simple printer cannot scan\");\n }\n}</pre>",
+        "opts": [
+          "a. Keep MultiFunctionPrinter as it is.",
+          "b. Split MultiFunctionPrinter into Printable, Faxable, and Scannable interfaces.",
+          "c. Make SimplePrinter final.",
+          "d. Add more functionalities to MultiFunctionPrinter."
+        ],
+        "answer": "b. Split MultiFunctionPrinter into Printable, Faxable, and Scannable interfaces."
+      },
+      {
+        "q": "Best practice for ISP:<br><pre>interface Tool {\n void cut();\n void drill();\n}\nclass Cutter implements Tool {\n public void cut() { // logic to cut }\n public void drill() {\n throw new UnsupportedOperationException(\"Cutter cannot drill\");\n }\n}</pre>",
+        "opts": [
+          "a. No changes needed.",
+          "b. Split Tool into Cuttable and Drillable interfaces.",
+          "c. Make Cutter extend a different interface.",
+          "d. Add more methods to Tool."
+        ],
+        "answer": "b. Split Tool into Cuttable and Drillable interfaces."
+      },
+      {
+        "q": "Identify the DIP violation in the following code:<br><pre>class Light {\n public void turnOn() { // logic to turn on the light }\n}\nclass Switch {\n private Light light;\n public Switch(Light light) { this.light = light; }\n public void operate() { light.turnOn(); }\n}</pre>",
+        "opts": [
+          "a. No violation, the code is correct.",
+          "b. Switch should depend on an interface instead of Light.",
+          "c. Light should extend Switch.",
+          "d. Keep the classes as they are."
+        ],
+        "answer": "b. Switch should depend on an interface instead of Light."
+      },
+      {
+        "q": "Which refactor would best adhere to DIP?<br><pre>class Keyboard {\n public void type() { // logic for typing }\n}\nclass Computer {\n private Keyboard keyboard;\n public Computer() { keyboard = new Keyboard(); }\n}</pre>",
+        "opts": [
+          "a. Inject Keyboard through the constructor of Computer.",
+          "b. Keep Computer as it is.",
+          "c. Make Keyboard abstract.",
+          "d. Add more dependencies to Computer."
+        ],
+        "answer": "a. Inject Keyboard through the constructor of Computer."
+      },
+      {
+        "q": "Spot the DIP issue in this code:<br><pre>class Database {\n public void connect() { // logic to connect to database }\n}\nclass Application {\n private Database database;\n public Application() { this.database = new Database(); }\n public void run() { database.connect(); }\n}</pre>",
+        "opts": [
+          "a. No issues; the code is compliant.",
+          "b. Application should depend on an abstraction of Database.",
+          "c. Database should implement Application.",
+          "d. Make Application static."
+        ],
+        "answer": "b. Application should depend on an abstraction of Database."
+      },
+      {
+        "q": "How to make this code adhere to DIP?<br><pre>class EmailService {\n public void sendEmail() { // logic to send email }\n}\nclass Notification {\n private EmailService emailService;\n public Notification(EmailService emailService) { this.emailService = emailService; }\n public void notifyUser() { emailService.sendEmail(); }\n}</pre>",
+        "opts": [
+          "a. Change EmailService to an interface and implement it in Notification.",
+          "b. Inject EmailService through an interface.",
+          "c. Keep Notification as it is.",
+          "d. Make sendEmail method static."
+        ],
+        "answer": "b. Inject EmailService through an interface."
+      },
+      {
+        "q": "Identify the best approach for DIP compliance:<br><pre>class Logger {\n public void log(String message) { // logic to log message }\n}\nclass Processor {\n private Logger logger = new Logger();\n public void process() { logger.log(\"Processing data\"); }\n}</pre>",
+        "opts": [
+          "a. Create an ILogger interface and depend on it.",
+          "b. Keep Processor as it is.",
+          "c. Make Logger abstract.",
+          "d. Add more methods to Logger."
+        ],
+        "answer": "a. Create an ILogger interface and depend on it."
+      },
+      {
+        "q": "What change can be made for DIP?<br><pre>class PowerSupply {\n public void providePower() { // logic to provide power }\n}\nclass Computer {\n private PowerSupply powerSupply;\n public Computer() { powerSupply = new PowerSupply(); }\n}</pre>",
+        "opts": [
+          "a. Introduce an interface for PowerSupply and use dependency injection.",
+          "b. Keep Computer as it is.",
+          "c. Make PowerSupply abstract.",
+          "d. Add more dependencies to Computer."
+        ],
+        "answer": "a. Introduce an interface for PowerSupply and use dependency injection."
+      },
+      {
+        "q": "How does the following code violate DIP?<br><pre>class Speaker {\n public void playSound() { // logic to play sound }\n}\nclass MusicPlayer {\n private Speaker speaker;\n public MusicPlayer(Speaker speaker) { this.speaker = speaker; }\n public void play() { speaker.playSound(); }\n}</pre>",
+        "opts": [
+          "a. MusicPlayer should depend on an abstraction of Speaker.",
+          "b. Speaker should extend MusicPlayer.",
+          "c. Make playSound final.",
+          "d. No DIP violation."
+        ],
+        "answer": "a. MusicPlayer should depend on an abstraction of Speaker."
+      },
+      {
+        "q": "Which refactor would resolve the DIP violation?<br><pre>class TextPrinter {\n public void printText(String text) { // logic to print text }\n}\nclass DocumentEditor {\n private TextPrinter printer = new TextPrinter();\n public void edit() { printer.printText(\"Editing document\"); }\n}</pre>",
+        "opts": [
+          "a. Depend on an IPrinter interface and inject it.",
+          "b. Keep DocumentEditor as it is.",
+          "c. Make TextPrinter final.",
+          "d. Add more printing methods."
+        ],
+        "answer": "a. Depend on an IPrinter interface and inject it."
+      },
+      {
+        "q": "Identify the correct way to implement DIP:<br><pre>class Battery {\n public void supplyPower() { // logic to supply power }\n}\nclass Flashlight {\n private Battery battery;\n public Flashlight() { this.battery = new Battery(); }\n public void turnOn() { battery.supplyPower(); }\n}</pre>",
+        "opts": [
+          "a. Introduce an IPowerSource interface and inject it.",
+          "b. Keep Flashlight as it is.",
+          "c. Make Battery final.",
+          "d. Add more methods to Battery."
+        ],
+        "answer": "a. Introduce an IPowerSource interface and inject it."
+      },
+      {
+        "q": "Best refactor for DIP adherence:<br><pre>class Alarm {\n public void trigger() { // logic to trigger alarm }\n}\nclass SecuritySystem {\n private Alarm alarm;\n public SecuritySystem() { this.alarm = new Alarm(); }\n public void activate() { alarm.trigger(); }\n}</pre>",
+        "opts": [
+          "a. Depend on an IAlarm interface and inject it.",
+          "b. Make Alarm abstract.",
+          "c. Keep SecuritySystem as it is.",
+          "d. Add more security features to Alarm."
+        ],
+        "answer": "a. Depend on an IAlarm interface and inject it."
+      },
+      {
+        "q": "In OOP, which concept is demonstrated when a subclass provides a specific implementation of a method already defined in its superclass?",
+        "opts": [
+          "A. Abstraction",
+          "B. Inheritance",
+          "C. Polymorphism",
+          "D. Method Overriding"
+        ],
+        "answer": "D. Method Overriding"
+      },
+      {
+        "q": "Which of the following is an example of violating the Liskov Substitution Principle?",
+        "opts": [
+          "A. Using inheritance to extend a class.",
+          "B. Creating an abstract class that is not implemented by any subclass.",
+          "C. Subclass modifying the behavior of a method such that it cannot be used in place of its parent class.",
+          "D. Implementing an interface with an abstract class."
+        ],
+        "answer": "B. Creating an abstract class that is not implemented by any subclass."
+      },
+      {
+        "q": "Which of the following best describes the Dependency Inversion Principle?",
+        "opts": [
+          "A. High-level modules should not depend on low-level modules. Both should depend on abstractions.",
+          "B. Classes should be designed to be open for extension but closed for modification.",
+          "C. Subtypes must be substitutable for their base types.",
+          "D. One class should have only one reason to change."
+        ],
+        "answer": "A. High-level modules should not depend on low-level modules. Both should depend on abstractions."
+      },
+      {
+        "q": "Which SOLID principle is primarily aimed at reducing the size of large interfaces?",
+        "opts": [
+          "A. Single Responsibility Principle",
+          "B. Interface Segregation Principle",
+          "C. Liskov Substitution Principle",
+          "D. Dependency Inversion Principle"
+        ],
+        "answer": "A. Single Responsibility Principle"
+      },
+      {
+        "q": "Which of the following is an example of violating the Open/Closed Principle?",
+        "opts": [
+          "A. Using inheritance to extend a class's functionality.",
+          "B. Modifying existing classes to add new features.",
+          "C. Implementing an interface to add new behaviors.",
+          "D. Using abstract classes for common functionality."
+        ],
+        "answer": "A. Using inheritance to extend a class's functionality."
+      },
+      {
+        "q": "Which of the following statements about the Singleton pattern is true?",
+        "opts": [
+          "A. A Singleton class can have multiple instances if required.",
+          "B. A Singleton class uses a private constructor to restrict instantiation.",
+          "C. Singleton is used for creating multiple instances of a class.",
+          "D. The Singleton pattern cannot be used in multi-threaded applications."
+        ],
+        "answer": "B. A Singleton class uses a private constructor to restrict instantiation."
+      },
+      {
+        "q": "What is the primary difference between an eager Singleton and a lazy Singleton?",
+        "opts": [
+          "A. Eager Singleton is initialized when required, while Lazy Singleton is created at startup.",
+          "B. Lazy Singleton consumes more memory than Eager Singleton.",
+          "C. Lazy Singleton is instantiated when the class is loaded, while Eager Singleton is instantiated upon the first request.",
+          "D. Eager Singleton is created at startup, while Lazy Singleton is created upon the first request."
+        ],
+        "answer": "D. Eager Singleton is created at startup, while Lazy Singleton is created upon the first request."
+      },
+      {
+        "q": "Which method is commonly used in the Singleton pattern to provide the instance of the class?",
+        "opts": [
+          "A. getObject()",
+          "B. newInstance()",
+          "C. getInstance()",
+          "D. createObject()"
+        ],
+        "answer": "A. getObject()"
+      },
+      {
+        "q": "Which of the following scenarios is best suited for the Factory pattern?",
+        "opts": [
+          "A. When a class needs to ensure a single instance.",
+          "B. When a class needs to be extended.",
+          "C. When you have a superclass with multiple subclasses, and you need to return an object based on input.",
+          "D. When you want to copy objects."
+        ],
+        "answer": "C. When you have a superclass with multiple subclasses, and you need to return an object based on input."
+      },
+      {
+        "q": "What does the Factory pattern provide over directly instantiating objects using the new keyword?",
+        "opts": [
+          "A. Reduces the number of classes.",
+          "B. Improves code readability.",
+          "C. Encapsulates object creation and increases flexibility.",
+          "D. Reduces memory usage."
+        ],
+        "answer": "B. Improves code readability."
+      }
+    ],
+    "tf": [
+      {
+        "q": "Lazy initialization in Singleton is more memory efficient but may cause delays during object creation.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Factory patterns eliminate the need to use inheritance between classes.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "A Singleton class must have a static method that returns the single instance of the class.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Factory patterns help to reduce coupling between the client and the concrete classes.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Singleton pattern is suitable for scenarios where global access to an instance is required.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "An abstract class can implement multiple interfaces in Java.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Interface Segregation Principle aims to combine several interfaces into one larger interface.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "The Single Responsibility Principle means a class should have more than one reason to change.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "Polymorphism allows the same method to behave differently based on the object it is acting upon.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Liskov Substitution Principle allows using child classes interchangeably with parent classes without altering expected behavior.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
+  }
+}
