@@ -264,7 +264,6 @@ document.addEventListener("DOMContentLoaded", function () {
     UIElements.lectureGrid.innerHTML = "";
     const lectureKeys = Object.keys(currentSubjectData);
 
-    // --- الجزء الخاص بالميدتيرم ---
     if (lectureKeys.includes("midterm")) {
       const btn = document.createElement("div");
       btn.className = "midterm-button";
@@ -278,7 +277,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       UIElements.lectureGrid.appendChild(btn);
     }
-    // --- نهاية الجزء الخاص بالميدتيرم ---
 
     const normalLectureKeys = lectureKeys
       .filter((key) => key !== "midterm")
@@ -341,7 +339,6 @@ document.addEventListener("DOMContentLoaded", function () {
     transitionTo(pageElements.lectureDetail);
   }
 
-  // دالة لبدء كويز الميدتيرم (30 سؤال)
   function startMidtermQuiz() {
     const data = currentSubjectData?.midterm;
     if (!data || (data.mcq.length === 0 && data.tf.length === 0)) {
@@ -361,8 +358,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ...data.tf.map((q) => ({ ...q, type: "tf" })),
     ];
 
-    // --- التعديل الأهم: سحب 30 سؤالاً ---
-    // هذا يضمن سحب 30 سؤال مختلف في كل مرة (طالما متاح أكثر من 30)
     quizQuestions = allQuestions.sort(() => 0.5 - Math.random()).slice(0, 30);
 
     if (quizQuestions.length < 30) {
@@ -371,7 +366,6 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     }
 
-    // حفظ رقم محاضرة "وهمي" لزر "New Quiz"
     currentLectureNum = "midterm";
 
     UIElements.quizForm.innerHTML = quizQuestions
@@ -442,7 +436,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ...data.mcq.map((q) => ({ ...q, type: "mcq" })),
       ...data.tf.map((q) => ({ ...q, type: "tf" })),
     ];
-    quizQuestions = allQuestions.sort(() => 0.5 - Math.random()).slice(0, 10);
+    quizQuestions = allQuestions.sort(() => 0.5 - Math.random()).slice(0, 15);
     UIElements.quizForm.innerHTML = quizQuestions
       .map((q, index) => {
         const options =
