@@ -76,6 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalResultImage = document.getElementById("modalResultImage");
   const closeModalButton = document.getElementById("closeModalButton");
 
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
   fetch("summary.json")
     .then((response) => response.json())
     .then((summaryData) => {
@@ -146,11 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   UIElements.quizForm.addEventListener("submit", checkQuizAnswers);
   UIElements.newQuizBtn.addEventListener("click", () => {
-    if (currentLectureNum === "midterm") {
-      startMidtermQuiz();
-    } else {
-      startQuiz(currentLectureNum);
-    }
+    startQuiz(currentLectureNum);
   });
   UIElements.chooseAnotherLecBtn.addEventListener("click", () =>
     showLectureSelectionPage("quiz")
@@ -158,6 +156,28 @@ document.addEventListener("DOMContentLoaded", function () {
   UIElements.submitQuizBtn.addEventListener("click", () =>
     UIElements.quizForm.requestSubmit()
   );
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200
+    ) {
+      scrollTopBtn.style.display = "block";
+    } else {
+      scrollTopBtn.style.display = "none";
+    }
+  }
+
+  scrollTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 
   function startFireworks() {
     const duration = 5 * 1000;
@@ -262,32 +282,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function populateLectures() {
     UIElements.lectureGrid.innerHTML = "";
-    const lectureKeys = Object.keys(currentSubjectData);
 
-    if (lectureKeys.includes("midterm")) {
-      const btn = document.createElement("div");
-      btn.className = "midterm-button";
-
-      if (lectureSelectionMode === "view") {
-        btn.textContent = "MIDTERM BANK";
-        btn.onclick = () => showMidtermBankPage();
-      } else {
-        btn.textContent = "MIDTERM REVIEW";
-        btn.onclick = () => startMidtermQuiz();
-      }
-      UIElements.lectureGrid.appendChild(btn);
-    }
-
-    const normalLectureKeys = lectureKeys
+    const lectureKeys = Object.keys(currentSubjectData)
       .filter((key) => key !== "midterm")
-      .sort((a, b) => Number(a) - Number(b));
-
-    if (normalLectureKeys.length === 0 && !lectureKeys.includes("midterm")) {
+      .sort((a, b) => parseInt(a) - parseInt(b));
+    if (lectureKeys.length === 0) {
       UIElements.lectureGrid.innerHTML = `<p style="text-align:center;">No lectures available for this subject yet.</p>`;
       return;
     }
 
-    for (const lectureNum of normalLectureKeys) {
+    for (const lectureNum of lectureKeys) {
       const btn = document.createElement("div");
       btn.className = "lecture-button";
       btn.textContent = `Lecture ${lectureNum}`;
@@ -299,94 +303,7 @@ document.addEventListener("DOMContentLoaded", function () {
       UIElements.lectureGrid.appendChild(btn);
     }
   }
-  function showMidtermBankPage() {
-    UIElements.lectureDetailTitle.textContent = `${currentSubject.title} - Midterm Bank`;
 
-    UIElements.lectureDetailContent.innerHTML = "";
-    const data = currentSubjectData?.midterm;
-    if (!data) {
-      UIElements.lectureDetailContent.innerHTML =
-        "<h3>No midterm questions available yet.</h3>";
-      transitionTo(pageElements.lectureDetail);
-      return;
-    }
-
-    const mcqHtml = `<div class="question-section"><h3>MCQ Questions</h3>${data.mcq
-      .map(
-        (q, index) =>
-          `<div class="question"><p>${index + 1}. ${q.q}</p><ul>${q.opts
-            .map(
-              (opt) =>
-                `<li class="${
-                  opt === q.answer ? "correct-answer" : ""
-                }">${opt}</li>`
-            )
-            .join("")}</ul></div>`
-      )
-      .join("")}</div>`;
-    const tfHtml = `<div class="question-section"><h3>True / False Questions</h3>${data.tf
-      .map(
-        (q, index) =>
-          `<div class="question"><p>${data.mcq.length + index + 1}. ${
-            q.q
-          }</p><div class="answer"><b>Answer: ${q.answer}.</b> ${
-            q.correction || ""
-          }</div></div>`
-      )
-      .join("")}</div>`;
-
-    UIElements.lectureDetailContent.innerHTML = mcqHtml + tfHtml;
-    transitionTo(pageElements.lectureDetail);
-  }
-
-  function startMidtermQuiz() {
-    const data = currentSubjectData?.midterm;
-    if (!data || (data.mcq.length === 0 && data.tf.length === 0)) {
-      alert(
-        `A Midterm Review for ${currentSubject.title} is not available yet.`
-      );
-      return;
-    }
-
-    UIElements.quizTitle.textContent = `${currentSubject.title} - Midterm Review`;
-    UIElements.submitQuizBtn.disabled = false;
-    UIElements.submitQuizBtn.style.display = "block";
-    UIElements.quizActionsContainer.style.display = "none";
-
-    const allQuestions = [
-      ...data.mcq.map((q) => ({ ...q, type: "mcq" })),
-      ...data.tf.map((q) => ({ ...q, type: "tf" })),
-    ];
-
-    quizQuestions = allQuestions.sort(() => 0.5 - Math.random()).slice(0, 30);
-
-    if (quizQuestions.length < 30) {
-      alert(
-        `Warning: The midterm question bank only has ${quizQuestions.length} questions. The quiz will proceed with this amount.`
-      );
-    }
-
-    currentLectureNum = "midterm";
-
-    UIElements.quizForm.innerHTML = quizQuestions
-      .map((q, index) => {
-        const options =
-          q.type === "mcq"
-            ? q.opts
-                .map(
-                  (opt) =>
-                    `<label><input type="radio" name="q${index}" value="${opt}">${opt}</label>`
-                )
-                .join("")
-            : `<label><input type="radio" name="q${index}" value="True">True</label><label><input type="radio" name="q${index}" value="False">False</label>`;
-        return `<div class="quiz-question" id="quiz-q${index}"><p>${
-          index + 1
-        }. ${q.q}</p><div class="quiz-options">${options}</div></div>`;
-      })
-      .join("");
-
-    transitionTo(pageElements.quiz);
-  }
   function populateLectureDetails(lectureNum) {
     UIElements.lectureDetailContent.innerHTML = "";
     const data = currentSubjectData?.[lectureNum];
