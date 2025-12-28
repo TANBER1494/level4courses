@@ -3138,5 +3138,818 @@
         "correction": ""
       }
     ]
+  },
+  "15": {
+    "mcq": [
+      {
+        "q": "Which connection method is primarily used in Embedded Systems (ES)?",
+        "opts": [
+          "Port-Mapped",
+          "Logic-Mapped",
+          "Memory-Mapped",
+          "Serial-Mapped"
+        ],
+        "answer": "Memory-Mapped"
+      },
+      {
+        "q": "What technique assigns specific address ranges to RAM, ROM, or I/O devices?",
+        "opts": [
+          "Bus Matrixing",
+          "Memory Mapping",
+          "Instruction Pipelining",
+          "Port Switching"
+        ],
+        "answer": "Memory Mapping"
+      },
+      {
+        "q": "Internally, embedded systems commonly use which type of CPU?",
+        "opts": ["Von Neumann", "CISC", "Harvard", "Serial"],
+        "answer": "Harvard"
+      },
+      {
+        "q": "In an ES, I/O peripherals appear inside which address space?",
+        "opts": [
+          "Instruction space",
+          "Data address space (RAM space)",
+          "Control space",
+          "External bus space"
+        ],
+        "answer": "Data address space (RAM space)"
+      },
+      {
+        "q": "Which assembly instructions does the CPU use to access memory-mapped I/O?",
+        "opts": ["In/Out", "Fetch/Decode", "Load/Store", "Push/Pop"],
+        "answer": "Load/Store"
+      },
+      {
+        "q": "What is used to reach the very first address in a specific peripheral?",
+        "opts": ["Offset", "Base address", "Slave port", "Master port"],
+        "answer": "Base address"
+      },
+      {
+        "q": "What is used to reach each individual register inside a peripheral?",
+        "opts": ["Base address", "Master port", "Offset", "Bridge"],
+        "answer": "Offset"
+      },
+      {
+        "q": "What does GPIO stand for?",
+        "opts": [
+          "General-Purpose Input/Output",
+          "Global-Peripheral Input/Output",
+          "Generic-Port Instruction/Object",
+          "Ground-Power Internal/Offset"
+        ],
+        "answer": "General-Purpose Input/Output"
+      },
+      {
+        "q": "Which port type is required by the CPU to initiate a transaction on the system bus?",
+        "opts": ["Slave port", "Bridge port", "Master port", "Offset port"],
+        "answer": "Master port"
+      },
+      {
+        "q": "Which part of a peripheral is responsible for executing the GPIO process?",
+        "opts": [
+          "The registers",
+          "The hardware circuit",
+          "The system bus",
+          "The TRM"
+        ],
+        "answer": "The hardware circuit"
+      },
+      {
+        "q": "What does TRM stand for in embedded systems?",
+        "opts": [
+          "Total Registry Manual",
+          "Task Reference Module",
+          "Technical Reference Manual",
+          "Transfer Rate Measurement"
+        ],
+        "answer": "Technical Reference Manual"
+      },
+      {
+        "q": "In the provided example, what is the offset for the Direction Register (DR)?",
+        "opts": ["OX4", "OX0", "OX8", "OX1"],
+        "answer": "OX0"
+      },
+      {
+        "q": "In the provided example, what is the offset for the Output Data Register (ODR)?",
+        "opts": ["OX0", "OX1", "OX4", "OXF"],
+        "answer": "OX4"
+      },
+      {
+        "q": "What is required if a GPIO slave type is 'AHP' but the system bus master is not 'AHO'?",
+        "opts": ["A new CPU", "A Bridge", "A Bus Matrix", "A TRM"],
+        "answer": "A Bridge"
+      },
+      {
+        "q": "Which hardware description language is mentioned as being used to design the system bus?",
+        "opts": ["Java", "C++", "Verilog", "Assembly"],
+        "answer": "Verilog"
+      },
+      {
+        "q": "According to the AXI example, which of these can act as a master to initiate transactions?",
+        "opts": [
+          "Only the CPU",
+          "GPIO and RAM",
+          "CPU, GPU, and DSP",
+          "TRM and Bridges"
+        ],
+        "answer": "CPU, GPU, and DSP"
+      },
+      {
+        "q": "What component converts Harvard CPU output to appear as memory-mapped (Von Neumann style) address ranges?",
+        "opts": ["Bridge", "Slave port", "Bus matrix", "ISR"],
+        "answer": "Bus matrix"
+      },
+      {
+        "q": "What mechanism temporarily halts a program to attend to a high-priority task?",
+        "opts": ["Polling", "An Interrupt", "Pipelining", "Bridging"],
+        "answer": "An Interrupt"
+      },
+      {
+        "q": "What is the special routine executed when an interrupt occurs?",
+        "opts": [
+          "TRM",
+          "AXI",
+          "Interrupt Service Routine (ISR)",
+          "Bus Matrix Routine"
+        ],
+        "answer": "Interrupt Service Routine (ISR)"
+      },
+      {
+        "q": "Which method continuously checks a device status in a loop until a condition is met?",
+        "opts": ["Interrupt", "Pipelining", "Polling", "Direct Memory Access"],
+        "answer": "Polling"
+      },
+      {
+        "q": "After an ISR finishes, where does the processor return?",
+        "opts": [
+          "To the beginning of the program",
+          "To the main program",
+          "To the polling loop",
+          "To the standby state"
+        ],
+        "answer": "To the main program"
+      },
+      {
+        "q": "To reach each register in a peripheral, the formula used is:",
+        "opts": [
+          "Base address + End size",
+          "Base address * Offset",
+          "Base address + Offset",
+          "Base address - End size"
+        ],
+        "answer": "Base address + Offset"
+      },
+      {
+        "q": "If we have a Direction Register (DR) with offset OX0 and a base address of GPIO, what is the full address?",
+        "opts": ["OX4 + Base", "OX0 + Base", "Base - OX0", "OX0 * Base"],
+        "answer": "OX0 + Base"
+      },
+      {
+        "q": "In Section 1 of the TRM specs, what is primarily defined?",
+        "opts": [
+          "Only GPIO offsets",
+          "C-Language code",
+          "The memory map for all peripherals",
+          "The CPU core frequency"
+        ],
+        "answer": "The memory map for all peripherals"
+      },
+      {
+        "q": "Polling a sensor to read its value is an example of:",
+        "opts": [
+          "Interrupt handling",
+          "Bus matrixing",
+          "A method to check device status",
+          "Hardware signaling"
+        ],
+        "answer": "A method to check device status"
+      }
+    ],
+    "tf": [
+      {
+        "q": "In embedded systems, the connection for I/O is almost always memory-mapped.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Port-mapped I/O is the primary method used in Embedded Systems according to the lecture.",
+        "answer": "False",
+        "correction": "Memory-mapped I/O is used."
+      },
+      {
+        "q": "A base address is used to reach each individual register in a peripheral.",
+        "answer": "False",
+        "correction": "Base address reaches the first address; Offset reaches each register."
+      },
+      {
+        "q": "The System Bus must have a slave port to connect to the CPU's master port.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Registers in a peripheral are used to write 0 or 1 to perform actions like opening/closing a device.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A Technical Reference Manual (TRM) contains the bus addresses and register offsets for an ES engineer.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A Bus Matrix is used because Harvard architecture output is naturally port-mapped.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "An Interrupt is a hardware or software signal that causes the processor to stop its current operation.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Polling is more efficient than interrupts because it gives attention to high-priority tasks immediately.",
+        "answer": "False",
+        "correction": "Interrupts handle high-priority tasks; Polling checks status continuously in a loop."
+      },
+      {
+        "q": "Verilog code can define how many masters and slaves exist in a system bus.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
+  },
+  "16": {
+    "mcq": [
+      {
+        "q": "What mechanism temporarily halts a program to attend to a high-priority task?",
+        "opts": [
+          "Polling",
+          "Pipelining",
+          "Instruction fetching",
+          "An Interrupt"
+        ],
+        "answer": "An Interrupt"
+      },
+      {
+        "q": "What is the special routine executed by the processor when an interrupt signal is received?",
+        "opts": [
+          "Interrupt Service Routine (ISR)",
+          "Main Program Loop",
+          "Technical Reference Manual (TRM)",
+          "Context Restore Function"
+        ],
+        "answer": "Interrupt Service Routine (ISR)"
+      },
+      {
+        "q": "Where does the processor return after the ISR finishes execution?",
+        "opts": [
+          "To the standby mode",
+          "To the start of the program",
+          "To the main program",
+          "To the polling loop"
+        ],
+        "answer": "To the main program"
+      },
+      {
+        "q": "Which method continuously checks the status of another device in a loop?",
+        "opts": ["Context Switching", "Polling", "Nesting", "Masking"],
+        "answer": "Polling"
+      },
+      {
+        "q": "What is an example of an operation that uses polling?",
+        "opts": [
+          "Critical power failure error",
+          "Timer overflow",
+          "Checking a serial port for data in a loop",
+          "Hardware watchdog reset"
+        ],
+        "answer": "Checking a serial port for data in a loop"
+      },
+      {
+        "q": "Which benefit of interrupts prevents the need for constant status checking?",
+        "opts": [
+          "Multitasking",
+          "Efficiency",
+          "Resource Management",
+          "Real-time Response"
+        ],
+        "answer": "Efficiency"
+      },
+      {
+        "q": "Interrupts facilitate the execution of multiple tasks without needing multiple processors, which is called:",
+        "opts": ["Pipelining", "Nesting", "Multitasking", "Polling"],
+        "answer": "Multitasking"
+      },
+      {
+        "q": "Internal interrupts are typically generated by which component?",
+        "opts": [
+          "External sensors",
+          "User buttons",
+          "Timers or watchdogs",
+          "Communication interfaces"
+        ],
+        "answer": "Timers or watchdogs"
+      },
+      {
+        "q": "What table maps each interrupt source to its corresponding ISR?",
+        "opts": [
+          "Instruction Table",
+          "Technical Reference Table",
+          "Interrupt Vector Table",
+          "Context Table"
+        ],
+        "answer": "Interrupt Vector Table"
+      },
+      {
+        "q": "What action involves saving the registers and program counter before jumping to an ISR?",
+        "opts": ["Context Switching", "Polling", "Masking", "Nesting"],
+        "answer": "Context Switching"
+      },
+      {
+        "q": "In the interrupt processing flow, what happens immediately after the interrupt signal occurs?",
+        "opts": [
+          "ISR execution",
+          "Interrupt Vector Lookup",
+          "Context Restoring",
+          "Return to main program"
+        ],
+        "answer": "Interrupt Vector Lookup"
+      },
+      {
+        "q": "A button press or sensor data availability is classified as what type of interrupt?",
+        "opts": [
+          "Software Interrupt",
+          "Internal Interrupt",
+          "Watchdog Interrupt",
+          "Hardware Interrupt"
+        ],
+        "answer": "Hardware Interrupt"
+      },
+      {
+        "q": "Which interrupts are initiated by program commands or predefined time intervals?",
+        "opts": [
+          "Software Interrupts",
+          "Physical Interrupts",
+          "Non-maskable Interrupts",
+          "External Interrupts"
+        ],
+        "answer": "Software Interrupts"
+      },
+      {
+        "q": "What type of interrupt can be disabled by the processor during critical sections?",
+        "opts": [
+          "Non-Maskable Interrupt (NMI)",
+          "Maskable Interrupt",
+          "Critical Error Interrupt",
+          "Power Failure Interrupt"
+        ],
+        "answer": "Maskable Interrupt"
+      },
+      {
+        "q": "Which of the following is an example of a Non-Maskable Interrupt (NMI)?",
+        "opts": [
+          "Timer interrupt",
+          "Button press",
+          "Power failure",
+          "UART data receipt"
+        ],
+        "answer": "Power failure"
+      },
+      {
+        "q": "What is a key characteristic required of an ISR to minimize latency?",
+        "opts": [
+          "Include long delays",
+          "Perform complex tasks",
+          "Quick and short execution",
+          "Include I/O blocking operations"
+        ],
+        "answer": "Quick and short execution"
+      },
+      {
+        "q": "Why are interrupts generally disabled during the execution of an ISR?",
+        "opts": [
+          "To speed up the clock",
+          "To prevent nesting",
+          "To save power",
+          "To enable polling"
+        ],
+        "answer": "To prevent nesting"
+      },
+      {
+        "q": "What happens when a higher-priority interrupt occurs while a lower-priority ISR is running?",
+        "opts": [
+          "The higher-priority is ignored",
+          "The lower-priority ISR is terminated",
+          "The higher-priority interrupt preempts the lower-priority ISR",
+          "The system resets"
+        ],
+        "answer": "The higher-priority interrupt preempts the lower-priority ISR"
+      },
+      {
+        "q": "What prevents all interrupts from being processed for a specific period?",
+        "opts": [
+          "Disabling Interrupts",
+          "Masking Interrupts",
+          "Polling",
+          "Pipelining"
+        ],
+        "answer": "Disabling Interrupts"
+      },
+      {
+        "q": "Which specific timer resets the system in case of a software malfunction?",
+        "opts": [
+          "System Timer",
+          "Real-time Clock",
+          "UART Timer",
+          "Watchdog Timer"
+        ],
+        "answer": "Watchdog Timer"
+      },
+      {
+        "q": "In the timer interrupt example, what must be enabled globally before execution?",
+        "opts": [
+          "UART transmission",
+          "Polling loop",
+          "Global Interrupts",
+          "Context Switching"
+        ],
+        "answer": "Global Interrupts"
+      },
+      {
+        "q": "What is defined as the time between the arrival of an interrupt and the execution of the ISR?",
+        "opts": [
+          "Settling Time",
+          "Context Time",
+          "Interrupt Latency",
+          "Cycle Time"
+        ],
+        "answer": "Interrupt Latency"
+      },
+      {
+        "q": "Which factor increases interrupt latency?",
+        "opts": [
+          "High priority",
+          "Short ISRs",
+          "Long ISR lengths",
+          "Hardware triggers"
+        ],
+        "answer": "Long ISR lengths"
+      },
+      {
+        "q": "In the simple embedded system example, which event updates the button state?",
+        "opts": [
+          "Timer overflow",
+          "Button press interrupt",
+          "UART transmission",
+          "Watchdog timeout"
+        ],
+        "answer": "Button press interrupt"
+      },
+      {
+        "q": "What does the processor save during Context Saving?",
+        "opts": [
+          "TRM specs",
+          "Registers and flags",
+          "Polling requests",
+          "Wait cycles"
+        ],
+        "answer": "Registers and flags"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Polling is a mechanism that temporarily halts the normal execution of a program.",
+        "answer": "False",
+        "correction": "Interrupts halt the program; Polling is continuous checking in a loop."
+      },
+      {
+        "q": "Real-time response allows a system to respond to external events like sensor data immediately.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Interrupt Vector Table maps interrupt sources to their corresponding ISR.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Context switching occurs after the ISR has completed execution.",
+        "answer": "False",
+        "correction": "Context is saved before jumping to ISR and restored after completion."
+      },
+      {
+        "q": "Software interrupts are initiated by hardware devices like sensors.",
+        "answer": "False",
+        "correction": "Hardware interrupts are initiated by devices; Software interrupts are initiated by commands."
+      },
+      {
+        "q": "Non-Maskable Interrupts (NMI) can be disabled by the processor during critical code sections.",
+        "answer": "False",
+        "correction": "NMIs cannot be disabled and are used for critical events like power failure."
+      },
+      {
+        "q": "ISRs should avoid long delays and blocking I/O operations.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Higher-priority interrupts can preempt lower-priority ISRs.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Interrupt latency is affected by context switching and ISR length.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Disabling interrupts is often used when updating shared resources.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
+  },
+  "17": {
+    "mcq": [
+      {
+        "q": "What are the two primary classifications of communication systems in embedded systems?",
+        "opts": [
+          "Internal and Global",
+          "On-board and External",
+          "Serial and Binary",
+          "Synchronous and Fast"
+        ],
+        "answer": "On-board and External"
+      },
+      {
+        "q": "Which of the following is an example of an on-board communication interface?",
+        "opts": ["Ethernet", "RS232 C", "I2C", "USB"],
+        "answer": "I2C"
+      },
+      {
+        "q": "How many wires are required for the I2C protocol?",
+        "opts": ["One", "Two", "Four", "Eight"],
+        "answer": "Two"
+      },
+      {
+        "q": "What company designed the I2C bus in the early 80's?",
+        "opts": ["Intel", "Apple", "Phillips", "ARM"],
+        "answer": "Phillips"
+      },
+      {
+        "q": "What does the SCL line in I2C stand for?",
+        "opts": [
+          "Serial Control Line",
+          "System Command Loop",
+          "Serial Clockwise",
+          "Serial Capacitor Link"
+        ],
+        "answer": "Serial Clockwise"
+      },
+      {
+        "q": "What is the data transfer speed of I2C in 'Fast mode'?",
+        "opts": ["100 kbps", "400 kbps", "3.4 mbps", "10 mbps"],
+        "answer": "400 kbps"
+      },
+      {
+        "q": "What is the data transfer speed of I2C in 'High Speed' mode?",
+        "opts": ["400 kbps", "100 kbps", "3.4 mbps", "480 mbps"],
+        "answer": "3.4 mbps"
+      },
+      {
+        "q": "Which protocol is known for supporting a 'data broadcast' feature?",
+        "opts": ["UART", "I2C", "RS232", "Parallel"],
+        "answer": "I2C"
+      },
+      {
+        "q": "How many wires are required for SPI communication?",
+        "opts": ["Two", "Three", "Four", "Five"],
+        "answer": "Four"
+      },
+      {
+        "q": "In SPI, what does the 'MOSI' wire stand for?",
+        "opts": [
+          "Main Output Serial Input",
+          "Master Out Slave In",
+          "Multiple Object Serial Interface",
+          "Memory Output Storage Input"
+        ],
+        "answer": "Master Out Slave In"
+      },
+      {
+        "q": "In which mode does the SPI bus work?",
+        "opts": ["Simplex", "Half duplex", "Full duplex", "Static"],
+        "answer": "Full duplex"
+      },
+      {
+        "q": "Which SPI wire is used to select a specific device?",
+        "opts": ["MOSI", "MISO", "SCK", "SS"],
+        "answer": "SS"
+      },
+      {
+        "q": "What is a major disadvantage of the SPI bus mentioned in the text?",
+        "opts": [
+          "It is too slow",
+          "It only uses two wires",
+          "No acknowledgement from slave",
+          "It requires a clock signal"
+        ],
+        "answer": "No acknowledgement from slave"
+      },
+      {
+        "q": "How many wires are used by UART for communication?",
+        "opts": ["Two", "Four", "One", "Eight"],
+        "answer": "Two"
+      },
+      {
+        "q": "Which UART pin is responsible for sending data?",
+        "opts": ["RX", "TX", "SDA", "SCK"],
+        "answer": "TX"
+      },
+      {
+        "q": "Which protocol does NOT need a clock signal to synchronize data?",
+        "opts": ["I2C", "SPI", "UART", "CAN"],
+        "answer": "UART"
+      },
+      {
+        "q": "What bits are added to outgoing UART signals to separate them?",
+        "opts": [
+          "Wait bits",
+          "Parity and Command bits",
+          "Start and stop bits",
+          "Address bits"
+        ],
+        "answer": "Start and stop bits"
+      },
+      {
+        "q": "In UART, what is used to check the integrity of incoming bytes?",
+        "opts": ["Clock pulse", "SS pin", "Parity bit", "SDA line"],
+        "answer": "Parity bit"
+      },
+      {
+        "q": "Communication where data is sent bit by bit, one after another, is called:",
+        "opts": [
+          "Parallel Communication",
+          "Serial Communication",
+          "Logic Communication",
+          "Simultaneous Communication"
+        ],
+        "answer": "Serial Communication"
+      },
+      {
+        "q": "Why is parallel communication less commonly used in embedded systems?",
+        "opts": [
+          "It is too simple",
+          "It uses fewer wires",
+          "It is more complex and costly",
+          "It is slower than serial"
+        ],
+        "answer": "It is more complex and costly"
+      },
+      {
+        "q": "Which protocol is described as 'fault-tolerant' and used in safety-critical systems?",
+        "opts": ["USB", "UART", "I2C", "CAN"],
+        "answer": "CAN"
+      },
+      {
+        "q": "In which environment is the CAN protocol most commonly found?",
+        "opts": [
+          "Flash drives",
+          "Smartwatches",
+          "Automotive systems",
+          "GPS modules"
+        ],
+        "answer": "Automotive systems"
+      },
+      {
+        "q": "Which protocol provides both high-speed data transfer and power to connected devices?",
+        "opts": ["Bluetooth", "USB", "SPI", "Ethernet"],
+        "answer": "USB"
+      },
+      {
+        "q": "What is the typical range for a standard Bluetooth protocol?",
+        "opts": [
+          "Up to 10 meters",
+          "Up to 100 meters",
+          "Up to 1 kilometer",
+          "Unlimited"
+        ],
+        "answer": "Up to 100 meters"
+      },
+      {
+        "q": "Which wireless protocol is specifically mentioned for use in home automation and IoT?",
+        "opts": ["UART", "Bluetooth", "Wi-Fi", "CAN"],
+        "answer": "Wi-Fi"
+      },
+      {
+        "q": "For long distances, which protocol is considered a good choice according to the selection guide?",
+        "opts": ["UART", "SPI", "I2C", "LoRa"],
+        "answer": "LoRa"
+      },
+      {
+        "q": "If a device runs on battery, which protocol version is recommended?",
+        "opts": [
+          "Standard I2C",
+          "High-Speed USB",
+          "Bluetooth Low Energy (BLE)",
+          "Parallel Interface"
+        ],
+        "answer": "Bluetooth Low Energy (BLE)"
+      },
+      {
+        "q": "Which protocol is best if you need to send a lot of data quickly?",
+        "opts": ["I2C", "UART", "SPI or USB", "Bluetooth"],
+        "answer": "SPI or USB"
+      },
+      {
+        "q": "Standard I2C speed is defined as:",
+        "opts": ["400 kbps", "3.4 mbps", "100 kbps", "115.2 kbps"],
+        "answer": "100 kbps"
+      },
+      {
+        "q": "How many masters does the SPI bus support?",
+        "opts": ["Only 1", "Up to 8", "Up to 127", "Unlimited"],
+        "answer": "Only 1"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Communication interfaces are necessary for sub-systems to talk to the external world.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "RS232 C is an example of an on-board communication interface.",
+        "answer": "False",
+        "correction": "RS232 C is an external communication interface."
+      },
+      {
+        "q": "The I2C bus is a uni-directional serial link.",
+        "answer": "False",
+        "correction": "I2C is a bi-directional 2-wire serial bus."
+      },
+      {
+        "q": "I2C includes a provision for collision detection.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "SPI requires 4 wires: MOSI, MISO, SCK, and SS.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Full duplex mode means a device can send and receive data at the same time.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "SPI provides automatic error checking during data transfer.",
+        "answer": "False",
+        "correction": "There is no provision for error checking in SPI."
+      },
+      {
+        "q": "UART converts parallel data from a computer into a serial bit stream.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "UART uses a clock signal to synchronize data between devices.",
+        "answer": "False",
+        "correction": "UART is asynchronous and does not need a clock signal."
+      },
+      {
+        "q": "Serial communication uses more wires than parallel communication.",
+        "answer": "False",
+        "correction": "Serial uses fewer wires; parallel uses more."
+      },
+      {
+        "q": "The CAN protocol is fault-tolerant and continues working even if there is an issue.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Bluetooth Low Energy (BLE) features high power consumption.",
+        "answer": "False",
+        "correction": "BLE features low power consumption."
+      },
+      {
+        "q": "UART and SPI are good choices for communicating over long distances.",
+        "answer": "False",
+        "correction": "They are good choices for short distances."
+      },
+      {
+        "q": "I2C is often used to connect temperature sensors or LCD screens.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The I2C SDA line stands for Serial Data Line.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
   }
 }
