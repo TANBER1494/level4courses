@@ -2,206 +2,366 @@
   "1": {
     "mcq": [
       {
-        "q": "The basic process of exchanging information from one location (source) to a destination is called _______.",
-        "opts": ["Modulation", "Encoding", "Communication", "Transmission"],
+        "q": "What is the fundamental process of exchanging information from a source to a destination?",
+        "opts": [
+          "Modulation",
+          "Communication",
+          "Quantization",
+          "Sampling"
+        ],
         "answer": "Communication"
       },
       {
-        "q": "Which of the following is NOT a basic block of a communication system?",
-        "opts": ["Transmitter", "Source", "Receiver", "Communication Channel"],
-        "answer": "Source"
-      },
-      {
-        "q": "The component that prepares data into an appropriate format for transmission over the channel is the _______.",
-        "opts": ["Source", "Transmitter", "Receiver", "Channel"],
+        "q": "Which component prepares the data into a suitable format for the channel?",
+        "opts": [
+          "Receiver",
+          "Communication Channel",
+          "Transmitter",
+          "Information Source"
+        ],
         "answer": "Transmitter"
       },
       {
-        "q": "The process of converting a continuous-time signal to a discrete-time signal is known as _______.",
-        "opts": ["Quantization", "Encoding", "Sampling", "Modulation"],
+        "q": "Which component receives the signal and processes it for the recipient?",
+        "opts": [
+          "Transmitter",
+          "Receiver",
+          "Modulator",
+          "Encoder"
+        ],
+        "answer": "Receiver"
+      },
+      {
+        "q": "What generates the baseband signal (e.g., a microphone)?",
+        "opts": [
+          "Channel Encoder",
+          "Modulator",
+          "Information Source",
+          "ADC"
+        ],
+        "answer": "Information Source"
+      },
+      {
+        "q": "Which step in ADC converts a continuous-time signal to a discrete-time signal?",
+        "opts": [
+          "Quantization",
+          "Encoding",
+          "Sampling",
+          "Modulation"
+        ],
         "answer": "Sampling"
       },
       {
-        "q": "The process of converting continuous-amplitude samples into a finite set of discrete amplitude levels is called _______.",
-        "opts": ["Quantization", "Encoding", "Sampling", "Decoding"],
+        "q": "Which step in ADC converts continuous-amplitude samples into discrete levels?",
+        "opts": [
+          "Sampling",
+          "Quantization",
+          "Encoding",
+          "Compression"
+        ],
         "answer": "Quantization"
       },
       {
-        "q": "The primary goal of a _______ is to remove redundancy and represent the signal efficiently using as few bits as possible.",
-        "opts": ["Channel Encoder", "Source Encoder", "Modulator", "Receiver"],
-        "answer": "Source Encoder"
-      },
-      {
-        "q": "The primary goal of a _______ is to add extra bits to help detect and correct errors.",
+        "q": "Which step in ADC maps quantized levels to binary codes?",
         "opts": [
-          "Channel Encoder",
-          "Source Encoder",
-          "Modulator",
-          "Source Decoder"
+          "Sampling",
+          "Quantization",
+          "Encoding",
+          "Multiplexing"
         ],
-        "answer": "Channel Encoder"
+        "answer": "Encoding"
       },
       {
-        "q": "The process of impressing information onto the amplitude, phase, or frequency of a carrier wave is called _______.",
-        "opts": ["Encoding", "Modulation", "Sampling", "Quantization"],
-        "answer": "Modulation"
+        "q": "What is the goal of the Source Encoder?",
+        "opts": [
+          "To add redundancy",
+          "To remove redundancy",
+          "To modulate the signal",
+          "To correct errors"
+        ],
+        "answer": "To remove redundancy"
       },
       {
-        "q": "Which of the following is a type of guided communication channel?",
-        "opts": ["Satellites", "Radiowaves", "Optical Fiber", "Microwaves"],
-        "answer": "Optical Fiber"
+        "q": "MP3 compression is an example of which process?",
+        "opts": [
+          "Channel Encoding",
+          "Source Encoding",
+          "Modulation",
+          "Sampling"
+        ],
+        "answer": "Source Encoding"
       },
       {
-        "q": "The guided medium that consists of two insulated copper wires twisted around each other to reduce EMI is called _______.",
+        "q": "What is the goal of the Channel Encoder?",
+        "opts": [
+          "To compress data",
+          "To improve reliability",
+          "To convert to analog",
+          "To sample the signal"
+        ],
+        "answer": "To improve reliability"
+      },
+      {
+        "q": "How does the Channel Encoder improve reliability?",
+        "opts": [
+          "By removing bits",
+          "By adding extra bits (redundancy)",
+          "By increasing voltage",
+          "By slowing transmission"
+        ],
+        "answer": "By adding extra bits (redundancy)"
+      },
+      {
+        "q": "Which block provides for efficient transmission over the channel?",
+        "opts": [
+          "Source Encoder",
+          "ADC",
+          "Modulator",
+          "Receiver"
+        ],
+        "answer": "Modulator"
+      },
+      {
+        "q": "The modulator impresses information onto which wave?",
+        "opts": [
+          "Baseband wave",
+          "Carrier wave",
+          "Digital wave",
+          "Sound wave"
+        ],
+        "answer": "Carrier wave"
+      },
+      {
+        "q": "Which guided channel consists of two insulated copper wires twisted together?",
         "opts": [
           "Coaxial Cable",
-          "Twisted Pair Cable",
           "Optical Fiber",
+          "Twisted Pair Cable",
           "Waveguide"
         ],
         "answer": "Twisted Pair Cable"
       },
       {
-        "q": "The transmission medium that is immune to electromagnetic interference (EMI) is _______.",
+        "q": "Why are wires twisted in a Twisted Pair Cable?",
         "opts": [
+          "To increase flexibility",
+          "To reduce EMI and crosstalk",
+          "To increase weight",
+          "To conduct power"
+        ],
+        "answer": "To reduce EMI and crosstalk"
+      },
+      {
+        "q": "Which cable has a central conductor, insulator, and a metallic shield?",
+        "opts": [
+          "Twisted Pair",
+          "Coaxial Cable",
+          "Fiber Optic",
+          "Ethernet"
+        ],
+        "answer": "Coaxial Cable"
+      },
+      {
+        "q": "What allows Coaxial Cable to have higher bandwidth than Twisted Pair?",
+        "opts": [
+          "Twisting",
+          "Shielding",
+          "Length",
+          "Cost"
+        ],
+        "answer": "Shielding"
+      },
+      {
+        "q": "What principle does Optical Fiber use to guide light signals?",
+        "opts": [
+          "Refraction",
+          "Diffraction",
+          "Total Internal Reflection",
+          "Dispersion"
+        ],
+        "answer": "Total Internal Reflection"
+      },
+      {
+        "q": "Which channel offers bandwidths in Terabits/s?",
+        "opts": [
+          "Twisted Pair",
           "Coaxial Cable",
           "Optical Fiber",
-          "Twisted Pair Cable",
-          "STP Cable"
+          "Radiowaves"
         ],
         "answer": "Optical Fiber"
       },
       {
-        "q": "Hollow metallic structures that guide high-frequency signals like microwaves are known as _______.",
+        "q": "What are hollow metallic structures used to guide high-frequency signals called?",
         "opts": [
+          "Fiber Optics",
           "Coaxial Cables",
           "Waveguides",
-          "Optical Fibers",
-          "Twisted Pairs"
+          "Antennas"
         ],
         "answer": "Waveguides"
       },
       {
-        "q": "An undesired effect from the communication environment, usually not under our control, is called _______.",
-        "opts": ["Interference", "Jamming", "Noise", "Fading"],
+        "q": "Which is an example of an Unguided Channel?",
+        "opts": [
+          "Optical Fiber",
+          "Coaxial Cable",
+          "Radiowaves",
+          "Waveguides"
+        ],
+        "answer": "Radiowaves"
+      },
+      {
+        "q": "What is an undesired effect from the environment that is usually uncontrollable?",
+        "opts": [
+          "Interference",
+          "Jamming",
+          "Noise",
+          "Attenuation"
+        ],
         "answer": "Noise"
       },
       {
-        "q": "Intentional interference aimed at destroying the quality of the transmitted signal is known as _______.",
-        "opts": ["Noise", "Jamming", "Interference", "Distortion"],
+        "q": "What is the superposition of two or more signals called?",
+        "opts": [
+          "Noise",
+          "Interference",
+          "Jamming",
+          "Modulation"
+        ],
+        "answer": "Interference"
+      },
+      {
+        "q": "What is intentional interference aimed at destroying signal quality?",
+        "opts": [
+          "Noise",
+          "Crosstalk",
+          "Jamming",
+          "Sampling"
+        ],
         "answer": "Jamming"
       },
       {
-        "q": "The information generated by an application that needs to be transmitted is called _______.",
-        "opts": ["Signal", "Data", "Channel", "Noise"],
+        "q": "What is the information generated by the application called?",
+        "opts": [
+          "Signal",
+          "Carrier",
+          "Data",
+          "Code"
+        ],
         "answer": "Data"
       },
       {
-        "q": "The representation of data in a communication system, such as electricity in a wire, is called a _______.",
-        "opts": ["Signal", "Data", "Source", "Channel"],
+        "q": "What is the physical representation of the data in the system?",
+        "opts": [
+          "Data",
+          "Signal",
+          "Source",
+          "Channel"
+        ],
         "answer": "Signal"
       },
       {
-        "q": "A traditional telephone system is an example of which combination?",
+        "q": "Which combination is used in the traditional telephone system?",
         "opts": [
-          "Analog Data, Digital Signal",
           "Analog Data, Analog Signal",
-          "Digital Data, Digital Signal",
-          "Digital Data, Analog Signal"
+          "Analog Data, Digital Signal",
+          "Digital Data, Analog Signal",
+          "Digital Data, Digital Signal"
         ],
         "answer": "Analog Data, Analog Signal"
       },
       {
-        "q": "Voice over IP (VoIP) is a common example of which combination?",
+        "q": "Voice over IP (VoIP) is an example of which combination?",
         "opts": [
-          "Analog Data, Digital Signal",
           "Analog Data, Analog Signal",
-          "Digital Data, Digital Signal",
-          "Digital Data, Analog Signal"
+          "Analog Data, Digital Signal",
+          "Digital Data, Analog Signal",
+          "Digital Data, Digital Signal"
         ],
         "answer": "Analog Data, Digital Signal"
       },
       {
-        "q": "Modern computer networks like Ethernet and Wi-Fi typically use which combination?",
+        "q": "Modems are an example of which combination?",
         "opts": [
           "Analog Data, Analog Signal",
           "Analog Data, Digital Signal",
-          "Digital Data, Digital Signal",
-          "Digital Data, Analog Signal"
+          "Digital Data, Analog Signal",
+          "Digital Data, Digital Signal"
+        ],
+        "answer": "Digital Data, Analog Signal"
+      },
+      {
+        "q": "Ethernet and Wi-Fi are examples of which combination?",
+        "opts": [
+          "Analog Data, Analog Signal",
+          "Analog Data, Digital Signal",
+          "Digital Data, Analog Signal",
+          "Digital Data, Digital Signal"
         ],
         "answer": "Digital Data, Digital Signal"
       }
     ],
     "tf": [
       {
-        "q": "The OSI model consists of 7 layers.",
+        "q": "A communication system has three basic blocks: Transmitter, Channel, and Receiver.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "A receiver prepares the data in an appropriate format to be transmitted over the channel.",
+        "q": "The receiver prepares the data into a suitable format for the channel.",
         "answer": "False",
-        "correction": "The transmitter does this."
+        "correction": "The transmitter prepares the data."
       },
       {
-        "q": "In the Analog-to-Digital conversion process, quantization happens before sampling.",
-        "answer": "False",
-        "correction": "Sampling is the first step."
-      },
-      {
-        "q": "Source encoding's main focus is to add redundancy for error correction.",
-        "answer": "False",
-        "correction": "Its focus is to remove redundancy (compression)."
-      },
-      {
-        "q": "MP3 compression is an example of source encoding.",
+        "q": "Sampling converts a continuous-time signal to a discrete-time signal.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "The channel encoder's goal is to improve reliability by adding extra bits for error control.",
+        "q": "Quantization converts continuous-amplitude samples into infinite discrete levels.",
+        "answer": "False",
+        "correction": "It converts them into a finite set of discrete levels."
+      },
+      {
+        "q": "Source encoding aims to represent the signal efficiently using as few bits as possible.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Twisting the wires in a twisted-pair cable increases electromagnetic interference (EMI).",
+        "q": "Channel encoding removes redundancy to compress the data.",
         "answer": "False",
-        "correction": "It reduces EMI."
+        "correction": "Channel encoding adds redundancy to improve reliability."
       },
       {
-        "q": "Coaxial cables offer better protection against external noise compared to unshielded twisted pair cables.",
+        "q": "Optical fiber is immune to electromagnetic interference (EMI).",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Optical fibers transmit data using electrical signals.",
+        "q": "Waveguides are used to guide low-frequency signals.",
         "answer": "False",
-        "correction": "They use light signals."
+        "correction": "Waveguides are used for high-frequency signals (microwaves)."
       },
       {
-        "q": "A satellite is an example of a guided communication channel.",
+        "q": "Noise is a controllable effect from the environment.",
         "answer": "False",
-        "correction": "It is an unguided channel."
+        "correction": "Noise is usually uncontrollable."
       },
       {
-        "q": "Jamming is an unintentional form of interference.",
+        "q": "Jamming is unintentional interference.",
         "answer": "False",
-        "correction": "It is intentional."
+        "correction": "Jamming is intentional interference."
       },
       {
-        "q": "A digital pulse signal maintains its perfect shape as it travels over long distances.",
+        "q": "Signal is the information generated by the application.",
         "answer": "False",
-        "correction": "The signal degrades and needs regeneration."
+        "correction": "Data is the information; Signal is the physical representation."
       },
       {
-        "q": "In a communication system, the terms 'data' and 'signal' are interchangeable and mean the exact same thing.",
-        "answer": "False",
-        "correction": "Data is the information, and the signal is its physical representation."
-      },
-      {
-        "q": "A modem used in early internet connections is an example of Digital Data, Digital Signal.",
-        "answer": "False",
-        "correction": "It's an example of Digital Data, Analog Signal."
+        "q": "Voice over IP (VoIP) represents Analog Data carried by a Digital Signal.",
+        "answer": "True",
+        "correction": ""
       }
     ]
   },
@@ -209,338 +369,642 @@
   "2": {
     "mcq": [
       {
-        "q": "A signal in which the intensity varies in a smooth fashion over time is called a _______ signal.",
-        "opts": ["Discrete", "Digital", "Continuous", "Square"],
-        "answer": "Continuous"
+        "q": "What type of signal varies in a smooth fashion over time?",
+        "opts": [
+          "Discrete Signal",
+          "Continuous Signal",
+          "Digital Signal",
+          "Square Wave"
+        ],
+        "answer": "Continuous Signal"
       },
       {
-        "q": "A signal that maintains a constant level and then changes to another constant level is called a _______ signal.",
-        "opts": ["Continuous", "Analog", "Sine", "Discrete"],
-        "answer": "Discrete"
+        "q": "Which signal maintains a constant level for a period and then changes to another?",
+        "opts": [
+          "Continuous Signal",
+          "Sine Wave",
+          "Discrete Signal",
+          "Analog Signal"
+        ],
+        "answer": "Discrete Signal"
       },
       {
-        "q": "Which of these is used in digital systems to represent binary data (0s and 1s)?",
+        "q": "Which of the following is an example of a continuous signal?",
+        "opts": [
+          "Binary data",
+          "Human voice",
+          "Square wave",
+          "Digital data"
+        ],
+        "answer": "Human voice"
+      },
+      {
+        "q": "Which fundamental signal describes a smooth, periodic oscillation?",
+        "opts": [
+          "Square Wave",
+          "Sine Wave",
+          "DC Component",
+          "Discrete Signal"
+        ],
+        "answer": "Sine Wave"
+      },
+      {
+        "q": "What type of wave is used in digital systems to represent binary data?",
         "opts": [
           "Sine Wave",
           "Square Wave",
-          "Continuous Signal",
-          "Analog Signal"
+          "Cosine Wave",
+          "Continuous Wave"
         ],
         "answer": "Square Wave"
       },
       {
-        "q": "The peak value (height) of a sine wave, representing its strength, is called its _______.",
-        "opts": ["Frequency", "Period", "Phase", "Amplitude"],
+        "q": "What represents the peak value or maximum strength of a wave?",
+        "opts": [
+          "Frequency",
+          "Phase",
+          "Amplitude",
+          "Period"
+        ],
         "answer": "Amplitude"
       },
       {
-        "q": "The number of complete cycles a sine wave makes per second is called its _______.",
-        "opts": ["Frequency", "Period", "Phase", "Amplitude"],
+        "q": "What is the unit of measurement for frequency?",
+        "opts": [
+          "Watts",
+          "Seconds",
+          "Hertz (Hz)",
+          "Amperes"
+        ],
+        "answer": "Hertz (Hz)"
+      },
+      {
+        "q": "What is defined as the number of cycles that occur per second?",
+        "opts": [
+          "Period",
+          "Frequency",
+          "Phase",
+          "Bandwidth"
+        ],
         "answer": "Frequency"
       },
       {
-        "q": "The time it takes for a sine wave to complete one full cycle is called its _______.",
-        "opts": ["Frequency", "Period", "Phase", "Amplitude"],
+        "q": "What is the inverse of frequency?",
+        "opts": [
+          "Amplitude",
+          "Phase",
+          "Period",
+          "Spectrum"
+        ],
         "answer": "Period"
       },
       {
-        "q": "The horizontal shift, or starting point, of a sine wave on the time axis is called its _______.",
-        "opts": ["Frequency", "Period", "Phase", "Amplitude"],
+        "q": "What determines the starting point of the wave's cycle relative to time 0?",
+        "opts": [
+          "Frequency",
+          "Phase",
+          "Amplitude",
+          "Bandwidth"
+        ],
         "answer": "Phase"
       },
       {
-        "q": "What is the correct mathematical relationship between Period (T) and Frequency (f)?",
-        "opts": ["T = f", "T = f * 2", "T = 1 / f", "T = f / 1"],
-        "answer": "T = 1 / f"
+        "q": "What is the range of frequencies that a signal contains called?",
+        "opts": [
+          "Bandwidth",
+          "Spectrum",
+          "Period",
+          "Harmonics"
+        ],
+        "answer": "Spectrum"
       },
       {
-        "q": "The mathematical tool used to decompose a complex signal into its simple sine wave components is called _______.",
+        "q": "Which mathematical tool decomposes a complex signal into simple sine wave components?",
         "opts": [
-          "Spectrum Analysis",
+          "Calculus",
           "Fourier Analysis",
-          "Amplitude Modulation",
-          "Time Domain Analysis"
+          "Algebra",
+          "Statistical Analysis"
         ],
         "answer": "Fourier Analysis"
       },
       {
-        "q": "The range of frequencies contained within a signal is called its _______.",
-        "opts": ["Spectrum", "Period", "Phase", "Amplitude"],
-        "answer": "Spectrum"
+        "q": "What is a component of zero frequency called?",
+        "opts": [
+          "AC Component",
+          "High Frequency Component",
+          "DC Component",
+          "Harmonic Component"
+        ],
+        "answer": "DC Component"
       },
       {
-        "q": "A component of zero frequency (f=0) in a signal's spectrum is known as a _______ component.",
-        "opts": ["AC", "Phase", "DC", "Peak"],
-        "answer": "DC"
-      },
-      {
-        "q": "The difference between the upper and lower frequencies in a continuous band is called _______.",
-        "opts": ["Data Rate", "Spectrum", "Bandwidth", "Frequency"],
+        "q": "What is the difference between the upper and lower frequencies in a continuous band called?",
+        "opts": [
+          "Spectrum",
+          "Bandwidth",
+          "Period",
+          "Phase"
+        ],
         "answer": "Bandwidth"
       },
       {
-        "q": "Which of the following applications typically requires the largest bandwidth?",
-        "opts": ["Telephone Voice", "AM Radio", "FM Radio", "Wi-Fi & 5G"],
-        "answer": "Wi-Fi & 5G"
+        "q": "What does higher bandwidth allow for?",
+        "opts": [
+          "Slower data transmission",
+          "Faster data transmission",
+          "Lower amplitude",
+          "Higher latency"
+        ],
+        "answer": "Faster data transmission"
       },
       {
-        "q": "A perfect square wave (ideal digital signal) theoretically has _______ bandwidth.",
-        "opts": ["Zero", "Limited", "Infinite", "Small"],
+        "q": "A square wave is a composite of a sine wave with how many harmonics?",
+        "opts": [
+          "Zero",
+          "One",
+          "Ten",
+          "Infinite"
+        ],
         "answer": "Infinite"
       },
       {
-        "q": "Which equation correctly describes a sine wave?",
+        "q": "What is the bandwidth of an ideal digital signal?",
         "opts": [
-          "s(t) = A * f(t)",
-          "s(t) = A + f + t",
-          "s(t) = A sin(2πft + φ)",
-          "s(t) = A / sin(t)"
+          "Zero",
+          "Finite",
+          "Infinite",
+          "Low"
         ],
-        "answer": "s(t) = A sin(2πft + φ)"
+        "answer": "Infinite"
       }
     ],
     "tf": [
       {
-        "q": "A square wave is an example of a continuous signal.",
+        "q": "A continuous signal maintains a constant level for a period.",
         "answer": "False",
-        "correction": "It is an example of a discrete signal."
+        "correction": "A discrete signal maintains a constant level; a continuous signal varies smoothly."
       },
       {
-        "q": "In the equation s(t) = A sin(2πft + φ), 'A' represents the frequency.",
-        "answer": "False",
-        "correction": "It represents the Amplitude (peak strength)."
-      },
-      {
-        "q": "If a signal has a frequency of 10 Hz, its period (T) is 0.1 seconds.",
+        "q": "A sine wave is used to represent analog signals.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "A sine wave with a phase (φ) of 0 starts at its maximum peak value.",
+        "q": "A square wave is a continuous signal.",
         "answer": "False",
-        "correction": "It starts at the 0 value, going positive."
+        "correction": "A square wave is a discrete signal."
       },
       {
-        "q": "Any complex signal, including a square wave, can be represented as a sum of simple sine waves.",
+        "q": "Higher amplitude means a stronger signal.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "The 'spectrum' of a signal shows how its amplitude changes over time.",
-        "answer": "False",
-        "correction": "It shows the range of frequencies the signal contains."
-      },
-      {
-        "q": "A DC component in a signal has a frequency of 0 Hz.",
+        "q": "Period is the time it takes to complete one full cycle.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Higher bandwidth in a communication channel allows for slower data rates.",
+        "q": "Phase represents the vertical shift of the wave.",
         "answer": "False",
-        "correction": "It allows for faster data rates."
+        "correction": "Phase represents the horizontal shift relative to time 0."
       },
       {
-        "q": "AM radio uses a larger bandwidth than FM radio.",
+        "q": "Fourier analysis decomposes a complex signal into square wave components.",
         "answer": "False",
-        "correction": "FM radio uses a much larger bandwidth (e.g., 200 kHz vs 10 kHz)."
+        "correction": "It decomposes it into simple sine wave components."
       },
       {
-        "q": "A digital signal (square wave) requires a large bandwidth to be transmitted accurately.",
+        "q": "A DC component has a frequency of zero.",
         "answer": "True",
-        "correction": "A larger bandwidth is needed to represent the sharp edges."
+        "correction": ""
+      },
+      {
+        "q": "Bandwidth is measured in Watts.",
+        "answer": "False",
+        "correction": "Bandwidth is measured in Hertz (Hz)."
+      },
+      {
+        "q": "An ideal digital signal has infinite bandwidth.",
+        "answer": "True",
+        "correction": ""
       }
     ]
   },
 
   "3": {
-    "mcq": [
+  "mcq": [
       {
-        "q": "The principle that allows light to propagate through an optical fiber is called _______.",
+        "q": "What mechanism does light use to propagate through optical fiber?",
         "opts": [
           "Refraction",
           "Diffraction",
           "Total Internal Reflection",
-          "Attenuation"
+          "Dispersion"
         ],
         "answer": "Total Internal Reflection"
       },
       {
-        "q": "For Total Internal Reflection to occur, the refractive index of the Core (n1) must be _______ the refractive index of the Cladding (n2).",
-        "opts": ["Lower than", "Higher than", "Equal to", "The inverse of"],
-        "answer": "Higher than"
+        "q": "Which region of the optical fiber has a higher refractive index?",
+        "opts": [
+          "Cladding",
+          "Core",
+          "Jacket",
+          "Buffer"
+        ],
+        "answer": "Core"
       },
       {
-        "q": "Which advantage of optical fiber means it is not affected by electrical noise from nearby cables?",
+        "q": "What is the condition for Total Internal Reflection (TIR)?",
         "opts": [
-          "High Bandwidth",
-          "Low Attenuation",
-          "Security",
-          "Immunity to EMI"
+          "n1 < n2",
+          "n1 = n2",
+          "n1 > n2",
+          "n1 + n2 = 0"
+        ],
+        "answer": "n1 > n2"
+      },
+      {
+        "q": "Which of the following is a key advantage of optical fiber regarding interference?",
+        "opts": [
+          "High EMI",
+          "Low EMI",
+          "Immunity to EMI",
+          "Variable EMI"
         ],
         "answer": "Immunity to EMI"
       },
       {
-        "q": "Which fiber type has a very small core (8-10 microns) and is used for long-distance communication?",
+        "q": "What is the typical core size of Single-mode Fiber (SMF)?",
         "opts": [
-          "Multimode Fiber (MMF)",
-          "Single-mode Fiber (SMF)",
-          "Coaxial Fiber",
-          "Graded-Index Fiber"
+          "50–62.5 µm",
+          "8–10 µm",
+          "100 µm",
+          "1 mm"
         ],
-        "answer": "Single-mode Fiber (SMF)"
+        "answer": "8–10 µm"
       },
       {
-        "q": "Which fiber type has a larger core (50-62.5 microns) and is typically used for LANs and Data Centers?",
+        "q": "What is the typical core size of Multimode Fiber (MMF)?",
         "opts": [
-          "Multimode Fiber (MMF)",
-          "Single-mode Fiber (SMF)",
-          "Step-Index Fiber",
-          "Undersea Fiber"
+          "8–10 µm",
+          "5–6 µm",
+          "50–62.5 µm",
+          "200 µm"
         ],
-        "answer": "Multimode Fiber (MMF)"
+        "answer": "50–62.5 µm"
       },
       {
-        "q": "The reduction or loss of signal power as it travels along the fiber is called _______.",
-        "opts": ["Dispersion", "Attenuation", "Reflection", "Nonlinearity"],
-        "answer": "Attenuation"
-      },
-      {
-        "q": "Attenuation in optical fiber is typically measured in which unit?",
-        "opts": ["dB/km", "GHz/km", "Watts", "Volts"],
-        "answer": "dB/km"
-      },
-      {
-        "q": "The widening or 'smearing' of a light pulse as it travels, which limits the data rate, is called _______.",
-        "opts": ["Dispersion", "Attenuation", "Scattering", "Absorption"],
-        "answer": "Dispersion"
-      },
-      {
-        "q": "When pulse widening causes neighboring pulses (bits) to overlap, this is known as _______.",
+        "q": "Which fiber type is suitable for very long distances (40 km+)?",
         "opts": [
+          "Multimode Fiber",
+          "Single-mode Fiber",
+          "Coaxial Cable",
+          "Twisted Pair"
+        ],
+        "answer": "Single-mode Fiber"
+      },
+      {
+        "q": "Which fiber type is typically used for LANs and data centers?",
+        "opts": [
+          "Single-mode Fiber",
+          "Multimode Fiber",
+          "Undersea cables",
+          "Long-haul telecom"
+        ],
+        "answer": "Multimode Fiber"
+      },
+      {
+        "q": "How does light propagate in Multimode Fiber?",
+        "opts": [
+          "Straight path",
+          "Single mode",
+          "Multiple modes (bouncing paths)",
+          "No propagation"
+        ],
+        "answer": "Multiple modes (bouncing paths)"
+      },
+      {
+        "q": "What is the definition of attenuation in optical fiber?",
+        "opts": [
+          "Pulse widening",
+          "Reduction in signal power",
+          "Increase in bandwidth",
+          "Overlapping pulses"
+        ],
+        "answer": "Reduction in signal power"
+      },
+      {
+        "q": "What causes attenuation in optical fiber?",
+        "opts": [
+          "Dispersion",
+          "Absorption and scattering",
+          "Refraction",
+          "Reflection"
+        ],
+        "answer": "Absorption and scattering"
+      },
+      {
+        "q": "What does attenuation limit in an optical system?",
+        "opts": [
+          "Data rate",
+          "Bandwidth",
+          "Maximum transmission distance",
+          "Core size"
+        ],
+        "answer": "Maximum transmission distance"
+      },
+      {
+        "q": "What is the definition of dispersion?",
+        "opts": [
+          "Signal loss",
+          "Pulse widening",
+          "Signal strengthening",
+          "Pulse narrowing"
+        ],
+        "answer": "Pulse widening"
+      },
+      {
+        "q": "What is the primary impact of dispersion on the system?",
+        "opts": [
+          "Limits the distance",
+          "Increases power",
+          "Limits the data rate",
+          "Reduces security"
+        ],
+        "answer": "Limits the data rate"
+      },
+      {
+        "q": "What phenomenon occurs when overlapping pulses cause bit errors?",
+        "opts": [
+          "Total Internal Reflection",
           "Attenuation",
-          "Four-Wave Mixing (FWM)",
           "Inter-Symbol Interference (ISI)",
-          "Crosstalk"
+          "Absorption"
         ],
         "answer": "Inter-Symbol Interference (ISI)"
       },
       {
-        "q": "Which type of dispersion occurs ONLY in Multimode Fiber (MMF) because light takes multiple paths?",
+        "q": "What is the formula for Attenuation (dB)?",
+        "opts": [
+          "alpha / L",
+          "alpha + L",
+          "alpha * L",
+          "L / alpha"
+        ],
+        "answer": "alpha * L"
+      },
+      {
+        "q": "Which type of dispersion occurs only in Multimode Fiber (MMF)?",
         "opts": [
           "Chromatic Dispersion",
           "Modal Dispersion",
-          "Polarization Mode Dispersion (PMD)",
-          "All of the above"
+          "Polarization Mode Dispersion",
+          "Waveguide Dispersion"
         ],
         "answer": "Modal Dispersion"
       },
       {
-        "q": "Which type of dispersion occurs because different wavelengths (colors) of light travel at different speeds?",
+        "q": "What causes Modal Dispersion?",
         "opts": [
-          "Chromatic Dispersion",
+          "Fiber imperfections",
+          "Different wavelengths",
+          "Multiple propagation paths",
+          "High optical intensity"
+        ],
+        "answer": "Multiple propagation paths"
+      },
+      {
+        "q": "Which type of dispersion occurs in both SMF and MMF?",
+        "opts": [
           "Modal Dispersion",
-          "Path Dispersion",
-          "Core Dispersion"
+          "Polarization Mode Dispersion",
+          "Chromatic Dispersion",
+          "Nonlinear Dispersion"
         ],
         "answer": "Chromatic Dispersion"
       },
       {
-        "q": "Which type of dispersion occurs in SMF due to fiber imperfections, causing different polarization states to travel at different speeds?",
+        "q": "What causes Chromatic Dispersion?",
         "opts": [
-          "Chromatic Dispersion",
+          "Multiple propagation paths",
+          "Different wavelengths traveling at different speeds",
+          "Fiber imperfections",
+          "High optical power"
+        ],
+        "answer": "Different wavelengths traveling at different speeds"
+      },
+      {
+        "q": "Which dispersion occurs in SMF due to fiber imperfections affecting polarization states?",
+        "opts": [
           "Modal Dispersion",
+          "Chromatic Dispersion",
           "Polarization Mode Dispersion (PMD)",
-          "Nonlinear Dispersion"
+          "Material Dispersion"
         ],
         "answer": "Polarization Mode Dispersion (PMD)"
       },
       {
-        "q": "A device that takes an input signal from one fiber and splits it into N output fibers is called a _______.",
-        "opts": ["Combiner", "Splitter", "Amplifier", "Reflector"],
+        "q": "When do nonlinearities like FWM occur?",
+        "opts": [
+          "When optical intensity is very low",
+          "When optical intensity is very high",
+          "When using MMF only",
+          "When using plastic core"
+        ],
+        "answer": "When optical intensity is very high"
+      },
+      {
+        "q": "What does Four-Wave Mixing (FWM) create?",
+        "opts": [
+          "New wavelengths",
+          "Heat",
+          "Reflection",
+          "Modal dispersion"
+        ],
+        "answer": "New wavelengths"
+      },
+      {
+        "q": "What is the negative effect of Four-Wave Mixing (FWM)?",
+        "opts": [
+          "Signal amplification",
+          "Interference/crosstalk",
+          "Increased bandwidth",
+          "Reduced attenuation"
+        ],
+        "answer": "Interference/crosstalk"
+      },
+      {
+        "q": "What device is used to combine or split optical signals?",
+        "opts": [
+          "Optical Amplifier",
+          "Optical Source",
+          "Optical Coupler",
+          "Optical Detector"
+        ],
+        "answer": "Optical Coupler"
+      },
+      {
+        "q": "What component splits one input into N outputs?",
+        "opts": [
+          "Combiner",
+          "Splitter",
+          "Amplifier",
+          "Filter"
+        ],
         "answer": "Splitter"
       },
       {
-        "q": "In an 8x8 Passive Star Coupler (PSC), if the input power is 100mW, what is the ideal power received at each output port?",
-        "opts": ["100mW", "8mW", "12.5mW", "800mW"],
-        "answer": "12.5mW"
+        "q": "What component combines N inputs into one output?",
+        "opts": [
+          "Splitter",
+          "Combiner",
+          "Attenuator",
+          "Switch"
+        ],
+        "answer": "Combiner"
       },
       {
-        "q": "PSCs are commonly used in which type of network topology where one signal is distributed to many receivers?",
+        "q": "Which couplers can be used to design an 8-port splitter?",
         "opts": [
-          "Ring networks",
-          "Mesh networks",
-          "Broadcast-and-select networks",
-          "Point-to-point networks"
+          "1x1 couplers",
+          "2x1 couplers",
+          "4x1 couplers",
+          "NxN couplers"
         ],
-        "answer": "Broadcast-and-select networks"
+        "answer": "2x1 couplers"
+      },
+      {
+        "q": "What type of networks use Passive Star Couplers (PSC)?",
+        "opts": [
+          "Point-to-point",
+          "Broadcast-and-select",
+          "Ring topology",
+          "Mesh topology"
+        ],
+        "answer": "Broadcast-and-select"
+      },
+      {
+        "q": "What is the formula for output power in an NxN Passive Star Coupler?",
+        "opts": [
+          "Pin * N",
+          "Pin / N",
+          "Pin + N",
+          "Pin - N"
+        ],
+        "answer": "Pin / N"
+      },
+      {
+        "q": "What describes how the input optical power is divided between output ports?",
+        "opts": [
+          "Attenuation factor",
+          "Coupling Ratio",
+          "Refractive Index",
+          "Dispersion Coefficient"
+        ],
+        "answer": "Coupling Ratio"
+      },
+      {
+        "q": "In the coupling ratio formula, what does P1 represent?",
+        "opts": [
+          "Input power",
+          "Power at output port 1",
+          "Total power",
+          "Loss power"
+        ],
+        "answer": "Power at output port 1"
       }
     ],
     "tf": [
       {
-        "q": "In an optical fiber, the cladding has a higher refractive index than the core.",
+        "q": "The cladding has a higher refractive index than the core.",
         "answer": "False",
-        "correction": "The core has a higher refractive index (n1 > n2)."
+        "correction": "The core has a higher refractive index."
       },
       {
-        "q": "Optical fibers are immune to EMI because they transmit light instead of electrical signals.",
+        "q": "Optical fiber uses electricity to transmit signals.",
+        "answer": "False",
+        "correction": "It uses light."
+      },
+      {
+        "q": "Single-mode fiber supports higher bandwidth than multimode fiber.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Single-mode fiber (SMF) has a larger core and supports more light paths than Multimode fiber (MMF).",
-        "answer": "False",
-        "correction": "MMF has the larger core and supports multiple paths."
-      },
-      {
-        "q": "Attenuation is the primary factor that limits the data rate, while dispersion limits the maximum distance.",
-        "answer": "False",
-        "correction": "Dispersion limits the data rate (causes ISI), while attenuation limits the distance."
-      },
-      {
-        "q": "Modal dispersion occurs in both single-mode and multimode fibers.",
-        "answer": "False",
-        "correction": "Modal dispersion occurs only in multimode fibers (MMF)."
-      },
-      {
-        "q": "Chromatic dispersion occurs because different wavelengths (colors) travel at different speeds.",
+        "q": "Multimode fiber is used for distances up to 550 m.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Polarization Mode Dispersion (PMD) is a significant problem in multimode fibers.",
+        "q": "Attenuation is caused by different signal components arriving at different times.",
         "answer": "False",
-        "correction": "It is a problem primarily in single-mode fibers (SMF)."
+        "correction": "That is the cause of dispersion; attenuation is caused by absorption and scattering."
       },
       {
-        "q": "Nonlinear effects like FWM occur when the light intensity in the fiber is very low.",
+        "q": "Dispersion limits the maximum transmission distance.",
         "answer": "False",
-        "correction": "They occur when the light intensity is very high."
+        "correction": "Dispersion limits the data rate; Attenuation limits the distance."
       },
       {
-        "q": "A 1xN device is a combiner, and an Nx1 device is a splitter.",
+        "q": "Single-mode fiber experiences higher attenuation/dispersion than multimode fiber.",
         "answer": "False",
-        "correction": "A 1xN is a splitter, and an Nx1 is a combiner."
+        "correction": "SMF has lower attenuation/dispersion."
       },
       {
-        "q": "Passive Star Couplers (PSC) are called 'passive' because they do not require an external power source.",
+        "q": "Optical fiber is difficult to tap without detection.",
+        "answer": "True",
+        "correction": ""
+      },{
+        "q": "Modal Dispersion occurs in Single Mode Fiber (SMF).",
+        "answer": "False",
+        "correction": "It occurs only in MMF."
+      },
+      {
+        "q": "Chromatic Dispersion occurs in both SMF and MMF.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "In a 1x2 splitter with a 50/50 coupling ratio, each output port receives 50% of the input power.",
+        "q": "Polarization Mode Dispersion (PMD) is caused by different wavelengths traveling at different speeds.",
+        "answer": "False",
+        "correction": "It is caused by fiber imperfections affecting polarization states."
+      },
+      {
+        "q": "Nonlinearities occur when optical intensity is very high.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Optical fiber cables are heavier and larger than copper cables.",
-        "answer": "False",
-        "correction": "They are significantly lightweight and thinner."
+        "q": "Four-Wave Mixing (FWM) results in the creation of new wavelengths.",
+        "answer": "True",
+        "correction": ""
       },
       {
-        "q": "A '3 dB coupler' is a term for a 1x2 splitter that divides the power equally (50/50).",
+        "q": "A Combiner (Nx1) splits one input into N outputs.",
+        "answer": "False",
+        "correction": "A Combiner combines N inputs into one output."
+      },
+      {
+        "q": "Passive Star Couplers require external power to operate.",
+        "answer": "False",
+        "correction": "They are passive (no external power)."
+      },
+      {
+        "q": "An NxN PSC distributes input power equally among the output ports.",
         "answer": "True",
-        "correction": "A 3dB loss corresponds to a 50% reduction in power."
+        "correction": ""
+      },
+      {
+        "q": "The coupling ratio for port 1 is defined as P1 / (P1 + P2).",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "2x1 couplers cannot be used to design splitters.",
+        "answer": "False",
+        "correction": "They can be used to design an 8-port splitter."
       }
     ]
   },
@@ -548,234 +1012,274 @@
   "4": {
     "mcq": [
       {
-        "q": "The acronym LASER stands for Light Amplification by _______ Emission of Radiation.",
-        "opts": ["Spontaneous", "Stimulated", "Semiconductor", "Stable"],
-        "answer": "Stimulated"
+        "q": "What does LASER stand for?",
+        "opts": [
+          "Light Amplification by Stimulated Energy of Radiation",
+          "Light Amplification by Stimulated Emission of Radiation",
+          "Light Absorption by Stimulated Emission of Radiation",
+          "Light Amplification by Spontaneous Emission of Radiation"
+        ],
+        "answer": "Light Amplification by Stimulated Emission of Radiation"
       },
       {
-        "q": "The process that allows a laser to produce intense, coherent beams of light is called _______.",
+        "q": "Which process enables a laser to produce intense beams of coherent light?",
         "opts": [
-          "Stimulated Emission",
           "Spontaneous Emission",
-          "Population Inversion",
-          "Ground State"
+          "Stimulated Absorption",
+          "Stimulated Emission",
+          "Refraction"
         ],
         "answer": "Stimulated Emission"
       },
       {
-        "q": "The stable, lowest possible energy level for an electron in an atom is called the _______.",
+        "q": "What is the lowest and most stable energy level in an atom?",
         "opts": [
           "Excited State",
-          "Quasi-Stable State",
+          "Quasi-stable State",
           "Ground State",
-          "Photon State"
+          "Population State"
         ],
         "answer": "Ground State"
       },
       {
-        "q": "When an atom absorbs energy, it moves to a higher, unstable energy level known as the _______.",
+        "q": "What happens when electrons absorb energy?",
         "opts": [
-          "Excited State",
-          "Quasi-Stable State",
-          "Ground State",
-          "Stable State"
+          "They move to the ground state",
+          "They move to a higher, unstable level",
+          "They release a photon immediately",
+          "They become neutrons"
         ],
-        "answer": "Excited State"
+        "answer": "They move to a higher, unstable level"
       },
       {
-        "q": "A state where an excited electron can stay for a longer period before returning to the ground state is called a _______.",
+        "q": "What is the special excited state where electrons remain longer than usual?",
         "opts": [
-          "Excited State",
-          "Quasi-Stable State",
           "Ground State",
-          "Inverted State"
+          "Unstable State",
+          "Quasi-stable State",
+          "Emission State"
         ],
-        "answer": "Quasi-Stable State"
+        "answer": "Quasi-stable State"
       },
       {
-        "q": "The critical condition for lasing, where there are more electrons in the excited state than in the ground state, is called _______.",
+        "q": "What is the condition where more electrons occupy the excited state than the ground state?",
         "opts": [
-          "Stimulated Emission",
-          "Ground State",
           "Population Inversion",
-          "Excitation"
+          "Ground State",
+          "Mode Hopping",
+          "Dispersion"
         ],
         "answer": "Population Inversion"
       },
       {
-        "q": "Which component of a laser provides the energy to achieve population inversion?",
+        "q": "Why is population inversion essential?",
+        "opts": [
+          "It absorbs light",
+          "It emits more light than it absorbs",
+          "It stabilizes the electrons",
+          "It stops stimulated emission"
+        ],
+        "answer": "It emits more light than it absorbs"
+      },
+      {
+        "q": "Which component supplies energy to excite electrons in a laser?",
         "opts": [
           "Lasing Medium",
+          "Mirrors",
           "Excitation Device",
-          "Reflective Mirror",
-          "Partially-Transmitting Mirror"
+          "Cavity"
         ],
         "answer": "Excitation Device"
       },
       {
-        "q": "Which component of a laser allows a small portion of the amplified light to exit as the laser beam?",
+        "q": "Through which component does the intense laser beam exit?",
         "opts": [
-          "Lasing Medium",
-          "Excitation Device",
-          "Reflective Mirror",
-          "Partially-Transmitting Mirror"
+          "Fully reflective mirror",
+          "Excitation device",
+          "Partially transmitting mirror",
+          "Lasing medium"
         ],
-        "answer": "Partially-Transmitting Mirror"
+        "answer": "Partially transmitting mirror"
       },
       {
-        "q": "In stimulated emission, the new photon released is _______ the original photon.",
+        "q": "What determines the laser’s output frequency?",
         "opts": [
-          "opposite in phase to",
-          "a different frequency than",
-          "coherent (identical) to",
-          "weaker than"
+          "Excitation energy",
+          "Cavity length",
+          "Mirror reflectivity",
+          "Electron speed"
         ],
-        "answer": "coherent (identical) to"
+        "answer": "Cavity length"
       },
       {
-        "q": "In a laser cavity, what component controls the frequency of the emitted light?",
+        "q": "What happens when a photon passes near another excited electron?",
         "opts": [
-          "The Excitation Device",
-          "The Lasing Medium's material",
-          "The length of the cavity",
-          "The power source"
+          "Absorption",
+          "Stimulated emission",
+          "Reflection",
+          "Refraction"
         ],
-        "answer": "The length of the cavity"
+        "answer": "Stimulated emission"
       },
       {
-        "q": "The simple and common laser type used in optical communication, implemented with a p-n junction, is the _______.",
+        "q": "Which type of laser is built using a p-n junction with reflective edges?",
         "opts": [
-          "Gas Laser",
-          "Mechanical Laser",
+          "Tunable Laser",
           "Semiconductor Diode Laser",
-          "Chemical Laser"
+          "Laser Array",
+          "Gas Laser"
         ],
         "answer": "Semiconductor Diode Laser"
       },
       {
-        "q": "The 'spectral width' of the light generated by a laser is known as its _______.",
+        "q": "Which type of laser is essential in WDM networks?",
         "opts": [
-          "Linewidth",
-          "Frequency Instability",
-          "Mode Hopping",
-          "Longitudinal Mode"
-        ],
-        "answer": "Linewidth"
-      },
-      {
-        "q": "Variations in the laser's frequency, such as 'mode hopping' or 'mode shifts', are called _______.",
-        "opts": [
-          "Laser Linewidth",
-          "Frequency Instability",
-          "Coherence",
-          "Dispersion"
-        ],
-        "answer": "Frequency Instability"
-      },
-      {
-        "q": "It is desirable to use lasers with a single longitudinal mode to avoid _______.",
-        "opts": ["Attenuation", "Dispersion", "Reflection", "Nonlinearity"],
-        "answer": "Dispersion"
-      },
-      {
-        "q": "Lasers that can change their output wavelength are needed for _______ networks.",
-        "opts": ["Ethernet", "WDM", "TDM", "FDM"],
-        "answer": "WDM"
-      },
-      {
-        "q": "Which type of tunable laser offers a very wide tuning range but suffers from a slow tuning time?",
-        "opts": [
-          "Mechanically-Tuned",
-          "Acousto-optic",
-          "Electro-optic",
-          "Injection-Current"
-        ],
-        "answer": "Mechanically-Tuned"
-      },
-      {
-        "q": "An alternative to a tunable laser is a _______, which integrates multiple fixed-tuned lasers on one component.",
-        "opts": [
+          "Semiconductor Diode Laser",
           "Laser Array",
-          "WDM Coupler",
-          "Optical Amplifier",
-          "Mode Hopper"
+          "Tunable Laser",
+          "Fixed-tuned Laser"
+        ],
+        "answer": "Tunable Laser"
+      },
+      {
+        "q": "What is the typical tuning range of a tunable laser?",
+        "opts": [
+          "Over 100 nm",
+          "Less than 10 nm",
+          "Exactly 50 nm",
+          "1 km"
+        ],
+        "answer": "Over 100 nm"
+      },
+      {
+        "q": "What is the tuning time for tunable lasers?",
+        "opts": [
+          "Seconds",
+          "Minutes",
+          "Rapid (< ms ranges)",
+          "Hours"
+        ],
+        "answer": "Rapid (< ms ranges)"
+      },
+      {
+        "q": "What component contains multiple fixed-tuned lasers in one component?",
+        "opts": [
+          "Tunable Laser",
+          "Laser Array",
+          "Semiconductor Diode",
+          "Optical Coupler"
         ],
         "answer": "Laser Array"
+      },
+      {
+        "q": "What is a drawback of laser arrays?",
+        "opts": [
+          "Support multiple transmissions",
+          "Wavelengths are fixed",
+          "High cost",
+          "Low power"
+        ],
+        "answer": "Wavelengths are fixed"
+      },
+      {
+        "q": "What is the spectral width of the laser output called?",
+        "opts": [
+          "Laser Linewidth",
+          "Mode Hopping",
+          "Cavity Length",
+          "Tuning Range"
+        ],
+        "answer": "Laser Linewidth"
+      },
+      {
+        "q": "Which of the following is an example of frequency instability?",
+        "opts": [
+          "Population Inversion",
+          "Mode hopping",
+          "Stimulated Emission",
+          "Absorption"
+        ],
+        "answer": "Mode hopping"
+      },
+      {
+        "q": "What do longitudinal modes represent?",
+        "opts": [
+          "Frequency shifts",
+          "Wavelengths amplified within the cavity",
+          "Laser linewidth",
+          "Output power"
+        ],
+        "answer": "Wavelengths amplified within the cavity"
+      },
+      {
+        "q": "Why are multiple longitudinal modes undesirable?",
+        "opts": [
+          "They decrease power",
+          "They increase dispersion",
+          "They reduce cost",
+          "They prevent lasing"
+        ],
+        "answer": "They increase dispersion"
       }
     ],
     "tf": [
       {
-        "q": "LASER stands for Light Amplification by Spontaneous Emission of Radiation.",
-        "answer": "False",
-        "correction": "It stands for Light Amplification by STIMULATED Emission of Radiation."
-      },
-      {
-        "q": "In the 'ground state', an atom's electrons are in the highest possible energy levels.",
-        "answer": "False",
-        "correction": "They are in the lowest possible energy levels."
-      },
-      {
-        "q": "Population inversion means there are more electrons in the ground state than in the excited state.",
-        "answer": "False",
-        "correction": "It means there are MORE electrons in the EXCITED state."
-      },
-      {
-        "q": "The Lasing Medium in a laser is made of a quasi-stable substance.",
+        "q": "Optical transmitters are essential components in an optical transmission system.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "In a laser, two partially-transmitting mirrors are used at both ends.",
-        "answer": "False",
-        "correction": "One is fully reflective, and the other is partially-transmitting."
-      },
-      {
-        "q": "Stimulated emission occurs when a photon passes near an electron in the ground state.",
-        "answer": "False",
-        "correction": "It occurs when a photon passes near an EXCITED electron."
-      },
-      {
-        "q": "Semiconductor diode lasers are complex and rarely used in optical communication.",
-        "answer": "False",
-        "correction": "They are very simple and commonly used."
-      },
-      {
-        "q": "'Laser linewidth' refers to the physical width of the laser device.",
-        "answer": "False",
-        "correction": "It refers to the spectral (frequency) width of the light it emits."
-      },
-      {
-        "q": "'Mode hopping' is a type of frequency instability in lasers.",
+        "q": "Coherent light consists of light with one or more specific frequencies.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Lasers that produce multiple longitudinal modes are ideal for communication.",
+        "q": "In the excited state, electrons are stable and remain indefinitely.",
         "answer": "False",
-        "correction": "They are undesirable as they cause significant dispersion."
+        "correction": "They are unstable and quickly return to the ground state."
       },
       {
-        "q": "Tunable lasers are required for WDM (Wavelength Division Multiplexing) networks.",
+        "q": "Population inversion is achieved by applying energy to a quasi-stable medium.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Mechanically-tuned lasers are very fast but have a narrow tuning range.",
-        "answer": "False",
-        "correction": "They are very SLOW but have a WIDE tuning range."
-      },
-      {
-        "q": "The main drawback of Injection-Current-Tuned lasers is 'mode hopping'.",
+        "q": "The lasing medium must exhibit quasi-stable states.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "A laser array consists of a single laser that can be tuned to different wavelengths.",
+        "q": "The output mirror in a laser is a fully reflective mirror.",
         "answer": "False",
-        "correction": "It consists of multiple FIXED-tuned lasers integrated into a single component."
+        "correction": "The output mirror is partially transmitting."
       },
       {
-        "q": "An advantage of a laser array is that each wavelength can be modulated independently and simultaneously.",
+        "q": "Stimulated emission produces a coherent photon identical to the incident photon.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Tunable lasers can be tuned continuously or discretely.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Laser arrays allow for multiple simultaneous transmissions.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Laser arrays have tunable wavelengths.",
+        "answer": "False",
+        "correction": "Wavelengths are fixed and cannot be tuned."
+      },
+      {
+        "q": "Single-longitudinal-mode lasers are preferred over multi-mode lasers.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Mode shifts are a form of frequency instability.",
         "answer": "True",
         "correction": ""
       }
@@ -784,252 +1288,475 @@
   "5": {
     "mcq": [
       {
-        "q": "The process of altering properties of light (like amplitude or phase) to carry information is called _______.",
+        "q": "What is the process of changing a property of light to encode information called?",
         "opts": [
-          "Optical Filtering",
+          "Optical Detection",
           "Optical Modulation",
-          "Direct Detection",
-          "Dispersion"
+          "Optical Amplification",
+          "Optical Dispersion"
         ],
         "answer": "Optical Modulation"
       },
       {
-        "q": "In optical systems, Amplitude Shift Keying (ASK) is most commonly known as _______.",
+        "q": "Which of the following is the simplest and most widely used optical modulation method?",
         "opts": [
-          "Phase Shift Keying (PSK)",
-          "Frequency Shift Keying (FSK)",
-          "Intensity Modulation (IM)",
-          "Quadrature Modulation (QAM)"
+          "PSK",
+          "QAM",
+          "FSK",
+          "ASK / IM"
         ],
-        "answer": "Intensity Modulation (IM)"
+        "answer": "ASK / IM"
       },
       {
-        "q": "In On-Off Keying (OOK) modulation, a 'Binary 1' is represented by _______ and a 'Binary 0' by _______.",
+        "q": "In On-Off Keying (OOK), what does high light intensity represent?",
         "opts": [
-          "High Phase / Low Phase",
-          "High Intensity / Low Intensity",
-          "High Frequency / Low Frequency",
-          "Low Intensity / High Intensity"
+          "Binary 0",
+          "Binary 1",
+          "Phase shift",
+          "Frequency shift"
         ],
-        "answer": "High Intensity / Low Intensity"
+        "answer": "Binary 1"
       },
       {
-        "q": "Which modulation technique changes the phase (e.g., 0° or 180°) of the light wave and is more reliable for long distances?",
-        "opts": ["ASK", "FSK", "PSK", "IM"],
+        "q": "Which modulation technique is suitable for long-distance and high-speed communication?",
+        "opts": [
+          "ASK",
+          "PSK",
+          "IM",
+          "OOK"
+        ],
         "answer": "PSK"
       },
       {
-        "q": "How many bits per symbol does Quadrature Phase Shift Keying (QPSK) encode?",
-        "opts": ["1 bit", "2 bits", "4 bits", "8 bits"],
+        "q": "How many bits per symbol does QPSK carry?",
+        "opts": [
+          "1 bit",
+          "2 bits",
+          "4 bits",
+          "6 bits"
+        ],
         "answer": "2 bits"
       },
       {
-        "q": "Which advanced modulation technique modulates BOTH the amplitude and the phase of the light wave for higher efficiency?",
-        "opts": ["BPSK", "ASK", "QAM", "FSK"],
+        "q": "Which modulation technique modifies both amplitude and phase?",
+        "opts": [
+          "ASK",
+          "FSK",
+          "QAM",
+          "OOK"
+        ],
         "answer": "QAM"
       },
       {
-        "q": "How many bits per symbol does 16-QAM transmit?",
-        "opts": ["2 bits", "4 bits", "6 bits", "16 bits"],
+        "q": "How many bits per symbol does 16-QAM carry?",
+        "opts": [
+          "2 bits",
+          "4 bits",
+          "6 bits",
+          "8 bits"
+        ],
         "answer": "4 bits"
       },
       {
-        "q": "The primary role of an optical receiver is to convert the received _______ signal back into an _______ signal.",
+        "q": "How many bits per symbol does 64-QAM carry?",
         "opts": [
-          "Electrical / Optical",
-          "Optical / Electrical",
-          "Phase / Amplitude",
-          "Digital / Analog"
+          "4 bits",
+          "6 bits",
+          "8 bits",
+          "16 bits"
         ],
-        "answer": "Optical / Electrical"
+        "answer": "6 bits"
       },
       {
-        "q": "Which type of receiver converts the optical signal directly to current using a photodetector, and only measures intensity?",
+        "q": "Why is FSK rarely used in modern optics?",
         "opts": [
-          "Coherent Detection",
-          "Direct Detection",
-          "Phase Detection",
-          "QAM Detection"
+          "High cost",
+          "Complexity",
+          "Low spectral efficiency",
+          "High power consumption"
         ],
-        "answer": "Direct Detection"
+        "answer": "Low spectral efficiency"
       },
       {
-        "q": "Direct Detection receivers are simple, cost-effective, and suitable for _______ modulation.",
-        "opts": ["QAM", "PSK", "OOK (IM/DD)", "FSK"],
-        "answer": "OOK (IM/DD)"
-      },
-      {
-        "q": "Which receiver type uses a 'Local Oscillator' (a reference laser) to detect both amplitude and phase?",
+        "q": "What is the purpose of an optical receiver?",
         "opts": [
-          "Coherent Detection",
-          "Direct Detection",
-          "Intensity Detection",
-          "Simple Detection"
+          "Generate light",
+          "Modulate light",
+          "Convert optical signal to electrical",
+          "Reflect light"
         ],
-        "answer": "Coherent Detection"
+        "answer": "Convert optical signal to electrical"
       },
       {
-        "q": "Advanced modulation formats like QPSK and QAM require a _______ receiver.",
-        "opts": ["Direct Detection", "Coherent Detection", "OOK", "Intensity"],
-        "answer": "Coherent Detection"
-      },
-      {
-        "q": "A key advantage of Coherent Detection is its ability to compensate for impairments like _______ using DSP.",
+        "q": "Which component in the receiver chain converts light to electrical current?",
         "opts": [
-          "Cost",
-          "Chromatic Dispersion",
-          "Simple Design",
-          "Low Intensity"
+          "Front-End Amplifier",
+          "Decision Circuit",
+          "Photodetector",
+          "Local Oscillator"
         ],
-        "answer": "Chromatic Dispersion"
+        "answer": "Photodetector"
       },
       {
-        "q": "A device used to selectively transmit or block certain wavelengths (colors) of light is an _______.",
+        "q": "Which component amplifies the weak current in the receiver chain?",
         "opts": [
-          "Optical Amplifier",
-          "Optical Modulator",
-          "Optical Filter",
-          "Photodetector"
+          "Photodetector",
+          "Front-End Amplifier",
+          "Decision Circuit",
+          "Modulator"
         ],
-        "answer": "Optical Filter"
+        "answer": "Front-End Amplifier"
       },
       {
-        "q": "Which type of filter reflects a specific wavelength and transmits all others?",
+        "q": "Which component restores the original digital data in the receiver chain?",
         "opts": [
+          "Photodetector",
+          "Front-End Amplifier",
+          "Decision Circuit",
+          "Local Oscillator"
+        ],
+        "answer": "Decision Circuit"
+      },
+      {
+        "q": "What does Direct Detection use to convert light intensity into electrical current?",
+        "opts": [
+          "Local Oscillator",
+          "Photodiode",
+          "DSP",
+          "Laser"
+        ],
+        "answer": "Photodiode"
+      },
+      {
+        "q": "Where is Direct Detection commonly used?",
+        "opts": [
+          "Long-haul networks",
+          "FTTH and data centers",
+          "Satellite links",
+          "Submarine cables"
+        ],
+        "answer": "FTTH and data centers"
+      },
+      {
+        "q": "What does Coherent Detection combine the incoming signal with?",
+        "opts": [
+          "Another data signal",
+          "Noise",
+          "Local Oscillator (LO) laser",
+          "Electrical current"
+        ],
+        "answer": "Local Oscillator (LO) laser"
+      },
+      {
+        "q": "What does Coherent Detection detect?",
+        "opts": [
+          "Amplitude only",
+          "Phase only",
+          "Amplitude and Phase",
+          "Frequency only"
+        ],
+        "answer": "Amplitude and Phase"
+      },
+      {
+        "q": "How does Coherent Detection compensate for dispersion?",
+        "opts": [
+          "Using mirrors",
+          "Via DSP",
+          "Using amplifiers",
+          "Using filters"
+        ],
+        "answer": "Via DSP"
+      },
+      {
+        "q": "Which is a limitation of Coherent Detection?",
+        "opts": [
+          "Low sensitivity",
+          "Cannot detect phase",
+          "Expensive and complex",
+          "Low spectral efficiency"
+        ],
+        "answer": "Expensive and complex"
+      },{
+        "q": "What is the primary role of optical filters in WDM systems?",
+        "opts": [
+          "Amplify signals",
+          "Selectively allow or block specific wavelengths",
+          "Convert electrical signals to optical",
+          "Combine wavelengths"
+        ],
+        "answer": "Selectively allow or block specific wavelengths"
+      },
+      {
+        "q": "Which of the following is NOT a key characteristic of optical filters mentioned?",
+        "opts": [
+          "Center Wavelength",
+          "Bandwidth",
+          "Insertion Loss",
+          "Power Consumption"
+        ],
+        "answer": "Power Consumption"
+      },
+      {
+        "q": "What type of filter allows only a specific wavelength range to pass?",
+        "opts": [
+          "Bandstop Filter",
           "Bandpass Filter",
-          "Tunable Filter",
-          "Fiber Bragg Grating (FBG)",
-          "Mach-Zehnder Interferometer"
+          "Highpass Filter",
+          "Lowpass Filter"
         ],
-        "answer": "Fiber Bragg Grating (FBG)"
-      },
-
-      {
-        "q": "A Mach-Zehnder Interferometer (MZI) filter separates wavelengths based on the principle of _______.",
-        "opts": ["Reflection", "Absorption", "Interference", "Modulation"],
-        "answer": "Interference"
+        "answer": "Bandpass Filter"
       },
       {
-        "q": "In an MZI, wavelengths are filtered out (cancelled) if they recombine with a phase difference of _______.",
-        "opts": ["0°", "90°", "180°", "360°"],
-        "answer": "180°"
+        "q": "What characterizes the structure of a Fiber Bragg Grating (FBG)?",
+        "opts": [
+          "Two arms with different lengths",
+          "Periodic refractive index variation inside fiber core",
+          "Active gain medium",
+          "Electronic switching"
+        ],
+        "answer": "Periodic refractive index variation inside fiber core"
       },
       {
-        "q": "What does the 'D' in DWDM stand for?",
-        "opts": ["Digital", "Dense", "Direct", "Dynamic"],
-        "answer": "Dense"
+        "q": "What happens to the specific wavelength targeted by an FBG?",
+        "opts": [
+          "It is absorbed",
+          "It is reflected",
+          "It passes through",
+          "It is amplified"
+        ],
+        "answer": "It is reflected"
       },
       {
-        "q": "What DWDM component combines multiple wavelengths (colors) from different sources into a single fiber?",
-        "opts": ["DEMUX", "OADM", "MUX", "Transponder"],
-        "answer": "MUX"
+        "q": "Which component is widely used for dispersion compensation?",
+        "opts": [
+          "VOA",
+          "Fiber Bragg Gratings (FBG)",
+          "Transponder",
+          "Multiplexer"
+        ],
+        "answer": "Fiber Bragg Gratings (FBG)"
       },
       {
-        "q": "What DWDM component separates the mixed wavelengths from one fiber back into individual channels?",
-        "opts": ["DEMUX", "OADM", "MUX", "EDFA"],
-        "answer": "DEMUX"
+        "q": "Which filters are used in flexible WDM networks (e.g., ROADMs)?",
+        "opts": [
+          "Fixed Filters",
+          "Tunable Optical Filters",
+          "Bandpass Filters",
+          "FBG"
+        ],
+        "answer": "Tunable Optical Filters"
       },
       {
-        "q": "What DWDM component converts a standard optical signal (e.g., 1310nm) into a precise DWDM wavelength (e.g., 1550nm)?",
-        "opts": ["EDFA", "Transponder", "MUX", "DCM"],
+        "q": "How does a Mach-Zehnder Interferometer (MZI) cancel unwanted wavelengths?",
+        "opts": [
+          "Absorption",
+          "Reflection",
+          "Interference (180° phase difference)",
+          "Refraction"
+        ],
+        "answer": "Interference (180° phase difference)"
+      },
+      {
+        "q": "How can an MZI be tuned?",
+        "opts": [
+          "By voltage",
+          "By temperature",
+          "By pressure",
+          "By magnetism"
+        ],
+        "answer": "By temperature"
+      },
+      {
+        "q": "What converts client signals into precise DWDM wavelengths?",
+        "opts": [
+          "Transponder",
+          "OADM",
+          "EDFA",
+          "DCM"
+        ],
         "answer": "Transponder"
       },
       {
-        "q": "What device is used at an intermediate node to 'drop' one wavelength and 'add' another?",
-        "opts": ["OADM", "MUX", "DEMUX", "DCM"],
-        "answer": "OADM"
-      },
-      {
-        "q": "What component is placed along the fiber link to compensate for 'Attenuation' (signal loss)?",
-        "opts": ["DCM", "EDFA", "MUX", "OADM"],
-        "answer": "EDFA"
-      },
-      {
-        "q": "What component is placed along the fiber link to compensate for 'Dispersion' (pulse widening)?",
-        "opts": ["DCM", "EDFA", "VOA", "Transponder"],
-        "answer": "DCM"
-      },
-      {
-        "q": "What device is used to reduce the power of an optical signal, often to balance power between channels?",
+        "q": "What is the typical wavelength for DWDM signals mentioned?",
         "opts": [
-          "Optical Amplifier",
-          "Optical Attenuator (VOA)",
-          "Dispersion Compensator",
-          "Multiplexer"
+          "850 nm",
+          "1310 nm",
+          "1550 nm",
+          "1600 nm"
         ],
-        "answer": "Optical Attenuator (VOA)"
+        "answer": "Around 1550 nm"
+      },
+      {
+        "q": "Which component combines multiple wavelengths onto a single fiber?",
+        "opts": [
+          "Optical Demultiplexer",
+          "Optical Multiplexer (MUX)",
+          "Transponder",
+          "VOA"
+        ],
+        "answer": "Optical Multiplexer (MUX)"
+      },
+      {
+        "q": "Which component separates combined wavelengths back into individual channels?",
+        "opts": [
+          "Optical Multiplexer",
+          "Optical Demultiplexer (DEMUX)",
+          "EDFA",
+          "OADM"
+        ],
+        "answer": "Optical Demultiplexer (DEMUX)"
+      },
+      {
+        "q": "What is the function of an OADM at an intermediate node?",
+        "opts": [
+          "Amplify all signals",
+          "Drop a selected wavelength and add a new one",
+          "Convert optical to electrical",
+          "Measure signal power"
+        ],
+        "answer": "Drop a selected wavelength and add a new one"
+      },
+      {
+        "q": "What does an Optical Amplifier (EDFA) do?",
+        "opts": [
+          "Filters wavelengths",
+          "Boosts signal power to counteract attenuation",
+          "Combines signals",
+          "Separates signals"
+        ],
+        "answer": "Boosts signal power to counteract attenuation"
+      },
+      {
+        "q": "Why is a Variable Optical Attenuator (VOA) used?",
+        "opts": [
+          "To boost power",
+          "To equalize channel power levels",
+          "To multiplex signals",
+          "To correct dispersion"
+        ],
+        "answer": "To equalize channel power levels"
+      },
+      {
+        "q": "What is the purpose of a Dispersion Compensator (DCM)?",
+        "opts": [
+          "Boost power",
+          "Correct dispersion and restore pulse shape",
+          "Split signals",
+          "Attenuate signals"
+        ],
+        "answer": "Correct dispersion and restore pulse shape"
+      },
+      {
+        "q": "DCM helps reduce which impairment?",
+        "opts": [
+          "Attenuation",
+          "FWM",
+          "ISI (Inter-Symbol Interference)",
+          "Noise"
+        ],
+        "answer": "ISI (Inter-Symbol Interference)"
       }
     ],
     "tf": [
       {
-        "q": "FSK (Frequency Shift Keying) is the most common and efficient modulation in optical systems.",
-        "answer": "False",
-        "correction": "It is rarely used and less common due to lower spectral efficiency."
-      },
-      {
-        "q": "QAM is highly efficient because it modulates both the amplitude and phase of the light wave.",
+        "q": "Optical filters are used to selectively allow or block specific wavelengths.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Direct Detection receivers are suitable for low-cost, short-range systems like FTTH.",
+        "q": "Out-of-Band Rejection is a key characteristic of optical filters.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Direct Detection receivers can easily decode PSK and QAM signals.",
+        "q": "Fiber Bragg Gratings allow all wavelengths to pass through.",
         "answer": "False",
-        "correction": "They only measure intensity, not phase, so they cannot decode PSK or QAM."
+        "correction": "They reflect a specific wavelength; others pass through."
       },
       {
-        "q": "Coherent Detection receivers use a 'Local Oscillator' (a reference laser).",
+        "q": "Tunable Optical Filters are used in fixed WDM networks.",
+        "answer": "False",
+        "correction": "They are used in flexible WDM networks (e.g., ROADMs)."
+      },
+      {
+        "q": "MZI splits light into two arms with the same path lengths.",
+        "answer": "False",
+        "correction": "It splits light into two arms with different path lengths."
+      },
+      {
+        "q": "MZI tuning by temperature has a fast response.",
+        "answer": "False",
+        "correction": "It has a slow response."
+      },
+      {
+        "q": "A Transponder converts 1550 nm signals into 850 nm signals.",
+        "answer": "False",
+        "correction": "It converts client signals (e.g., 850/1310 nm) into DWDM wavelengths (1550 nm)."
+      },
+      {
+        "q": "Optical Demultiplexers combine multiple wavelengths onto a single fiber.",
+        "answer": "False",
+        "correction": "Multiplexers combine; Demultiplexers separate."
+      },
+      {
+        "q": "EDFA boosts signal power to counteract attenuation.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Coherent Detection is simpler and cheaper than Direct Detection.",
+        "q": "Variable Optical Attenuators increase signal power.",
         "answer": "False",
-        "correction": "It is more complex and expensive."
+        "correction": "They reduce power intentionally."
       },
       {
-        "q": "A Fiber Bragg Grating (FBG) works by allowing a specific wavelength to pass and reflecting all others.",
-        "answer": "False",
-        "correction": "It REFLECTS a specific wavelength and allows all others to pass."
-      },
-      {
-        "q": "A Mach-Zehnder Interferometer (MZI) can be tuned by varying the temperature.",
+        "q": "Amplitude Shift Keying (ASK) is also known as On-Off Keying (OOK).",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Tuning an MZI filter by temperature is a very fast process (ns range).",
+        "q": "In OOK, binary 0 corresponds to high light intensity.",
         "answer": "False",
-        "correction": "It is a slow process (ms range)."
+        "correction": "Binary 0 corresponds to low light intensity."
       },
       {
-        "q": "A MUX (Multiplexer) separates a single combined signal into multiple wavelengths.",
-        "answer": "False",
-        "correction": "A MUX combines signals. A DEMUX separates them."
-      },
-      {
-        "q": "An OADM (Optical Add/Drop Multiplexer) can only be placed at the beginning or end of a network.",
-        "answer": "False",
-        "correction": "It is used at intermediate nodes to add/drop channels."
-      },
-      {
-        "q": "An EDFA amplifies the optical signal to compensate for Attenuation.",
+        "q": "PSK is more robust than ASK.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "A DCM (Dispersion Compensator) is used to compensate for Attenuation.",
+        "q": "BPSK uses four phases.",
         "answer": "False",
-        "correction": "It is used to compensate for Dispersion (pulse widening)."
+        "correction": "BPSK uses two phases."
       },
       {
-        "q": "A VOA (Variable Optical Attenuator) is a type of amplifier.",
+        "q": "QAM is used in high-speed systems due to its high spectral efficiency.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Direct detection can detect phase and frequency.",
         "answer": "False",
-        "correction": "It is the opposite; it reduces (attenuates) the signal power."
+        "correction": "Direct detection cannot detect phase or frequency."
+      },
+      {
+        "q": "Direct detection is simple and low cost.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Coherent detection supports advanced modulation like PSK and QAM.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Coherent detection requires frequency/phase synchronization with the Local Oscillator.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Direct detection has higher sensitivity than coherent detection.",
+        "answer": "False",
+        "correction": "Direct detection has lower sensitivity."
       }
     ]
   },
