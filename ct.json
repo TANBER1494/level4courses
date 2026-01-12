@@ -4973,16 +4973,12 @@
         "correction": "It is an example of a 1G device."
       }
     ]
-  },"20": {
+  },
+  "20": {
     "mcq": [
       {
         "q": "When were 4G networks first deployed?",
-        "opts": [
-          "Early 2000s",
-          "Late 2000s",
-          "Early 1990s",
-          "Late 2010s"
-        ],
+        "opts": ["Early 2000s", "Late 2000s", "Early 1990s", "Late 2010s"],
         "answer": "Late 2000s"
       },
       {
@@ -4997,52 +4993,27 @@
       },
       {
         "q": "What is the peak 4G speed for stationary users?",
-        "opts": [
-          "100 Mbps",
-          "300 Mbps",
-          "1 Gbps",
-          "10 Gbps"
-        ],
+        "opts": ["100 Mbps", "300 Mbps", "1 Gbps", "10 Gbps"],
         "answer": "1 Gbps"
       },
       {
         "q": "What is the peak 4G speed for mobile users?",
-        "opts": [
-          "10 Mbps",
-          "100 Mbps",
-          "1 Gbps",
-          "100 Gbps"
-        ],
+        "opts": ["10 Mbps", "100 Mbps", "1 Gbps", "100 Gbps"],
         "answer": "100 Mbps"
       },
       {
         "q": "4G reduced latency to under what value?",
-        "opts": [
-          "100 ms",
-          "50 ms",
-          "10 ms",
-          "1 ms"
-        ],
+        "opts": ["100 ms", "50 ms", "10 ms", "1 ms"],
         "answer": "10 ms"
       },
       {
         "q": "Which technology is the foundation of LTE data transmission?",
-        "opts": [
-          "CDMA",
-          "TDMA",
-          "OFDM",
-          "FDMA"
-        ],
+        "opts": ["CDMA", "TDMA", "OFDM", "FDMA"],
         "answer": "OFDM"
       },
       {
         "q": "What is the theoretical peak download speed of standard LTE?",
-        "opts": [
-          "75 Mbps",
-          "100 Mbps",
-          "300 Mbps",
-          "1 Gbps"
-        ],
+        "opts": ["75 Mbps", "100 Mbps", "300 Mbps", "1 Gbps"],
         "answer": "300 Mbps"
       },
       {
@@ -5057,32 +5028,17 @@
       },
       {
         "q": "What is the theoretical peak download speed of LTE-Advanced?",
-        "opts": [
-          "300 Mbps",
-          "500 Mbps",
-          "1 Gbps",
-          "10 Gbps"
-        ],
+        "opts": ["300 Mbps", "500 Mbps", "1 Gbps", "10 Gbps"],
         "answer": "1 Gbps"
       },
       {
         "q": "Which 4G technology was an alternative to LTE before LTE became dominant?",
-        "opts": [
-          "Wi-Fi",
-          "Bluetooth",
-          "WiMAX",
-          "GSM"
-        ],
+        "opts": ["Wi-Fi", "Bluetooth", "WiMAX", "GSM"],
         "answer": "WiMAX"
       },
       {
         "q": "What frequency range defines the 5G Low Band?",
-        "opts": [
-          "<1 GHz",
-          "1–6 GHz",
-          ">24 GHz",
-          "100 GHz"
-        ],
+        "opts": ["<1 GHz", "1–6 GHz", ">24 GHz", "100 GHz"],
         "answer": "<1 GHz"
       },
       {
@@ -5097,42 +5053,22 @@
       },
       {
         "q": "What is the frequency range for 5G mmWave (High Band)?",
-        "opts": [
-          "<1 GHz",
-          "1–6 GHz",
-          ">24 GHz",
-          "100-300 GHz"
-        ],
+        "opts": ["<1 GHz", "1–6 GHz", ">24 GHz", "100-300 GHz"],
         "answer": ">24 GHz"
       },
       {
         "q": "What is the maximum download speed of 5G?",
-        "opts": [
-          "1 Gbps",
-          "5 Gbps",
-          "10 Gbps",
-          "100 Gbps"
-        ],
+        "opts": ["1 Gbps", "5 Gbps", "10 Gbps", "100 Gbps"],
         "answer": "10 Gbps"
       },
       {
         "q": "To what value is latency reduced in 5G?",
-        "opts": [
-          "10 ms",
-          "5 ms",
-          "1 ms",
-          "0.1 ms"
-        ],
+        "opts": ["10 ms", "5 ms", "1 ms", "0.1 ms"],
         "answer": "1 ms"
       },
       {
         "q": "Which 5G technology uses hundreds of antennas at base stations?",
-        "opts": [
-          "Carrier Aggregation",
-          "Massive MIMO",
-          "OFDM",
-          "Beamforming"
-        ],
+        "opts": ["Carrier Aggregation", "Massive MIMO", "OFDM", "Beamforming"],
         "answer": "Massive MIMO"
       },
       {
@@ -5157,62 +5093,27 @@
       },
       {
         "q": "Which environmental factor can degrade high-frequency 5G signals?",
-        "opts": [
-          "Wind",
-          "Sunlight",
-          "Rain/Fog",
-          "Temperature"
-        ],
+        "opts": ["Wind", "Sunlight", "Rain/Fog", "Temperature"],
         "answer": "Rain/Fog"
       },
       {
-        "q": "When is the commercial deployment of 6G anticipated?",
-        "opts": [
-          "2025",
-          "2028",
-          "2030",
-          "2040"
-        ],
-        "answer": "2030"
-      },
-      {
         "q": "What is the predicted data rate for 6G?",
-        "opts": [
-          "10 Gbps",
-          "100 Gbps",
-          "500 Gbps",
-          "1 Tbps"
-        ],
+        "opts": ["10 Gbps", "100 Gbps", "500 Gbps", "1 Tbps"],
         "answer": "1 Tbps"
       },
       {
         "q": "What frequency bands will 6G utilize?",
-        "opts": [
-          "1-6 GHz",
-          "24-100 GHz",
-          "100 GHz and 10 THz",
-          "Above 20 THz"
-        ],
+        "opts": ["1-6 GHz", "24-100 GHz", "100 GHz and 10 THz", "Above 20 THz"],
         "answer": "100 GHz and 10 THz"
       },
       {
         "q": "What is the expected latency for 6G?",
-        "opts": [
-          "1 ms",
-          "0.5 ms",
-          "Below 100 microseconds",
-          "10 microseconds"
-        ],
+        "opts": ["1 ms", "0.5 ms", "Below 100 microseconds", "10 microseconds"],
         "answer": "Below 100 microseconds"
       },
       {
         "q": "How many connected devices can 6G support?",
-        "opts": [
-          "Millions",
-          "Billions",
-          "Trillions",
-          "Quadrillions"
-        ],
+        "opts": ["Millions", "Billions", "Trillions", "Quadrillions"],
         "answer": "Trillions"
       },
       {
@@ -5227,12 +5128,7 @@
       },
       {
         "q": "What type of video communication does 6G support?",
-        "opts": [
-          "HD Video",
-          "4K Streaming",
-          "3D Holographic",
-          "Analog Video"
-        ],
+        "opts": ["HD Video", "4K Streaming", "3D Holographic", "Analog Video"],
         "answer": "3D Holographic"
       },
       {
