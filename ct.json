@@ -1763,482 +1763,720 @@
   "6": {
     "mcq": [
       {
-        "q": "What component in a DWDM system converts a non-DWDM wavelength signal into a DWDM-compliant one?",
-        "opts": ["Multiplexer", "Amplifier", "Transponder", "Attenuator"],
-        "answer": "Transponder"
-      },
-      {
-        "q": "The process where a transponder converts a signal from optical to electrical and back to optical is known as _______ conversion.",
-        "opts": ["O-O-O", "O-E-O", "E-O-E", "E-E-O"],
-        "answer": "O-E-O"
-      },
-      {
-        "q": "Which of these is NOT a primary function of a transponder?",
+        "q": "Where are transponders positioned in a DWDM system?",
         "opts": [
-          "Signal Conversion",
-          "Regeneration",
-          "Wavelength Assignment",
-          "Signal Attenuation"
+          "Inside the router",
+          "Between client equipment and DWDM transport system",
+          "After the multiplexer",
+          "At the amplifier stage"
         ],
-        "answer": "Signal Attenuation"
+        "answer": "Between client equipment and DWDM transport system"
       },
       {
-        "q": "Which wavelength is typically used on the terminal side for short-distance connections in multimode fiber systems?",
-        "opts": ["850 nm", "1310 nm", "1550 nm", "1625 nm"],
+        "q": "What conversion process is often used by transponders for signal conversion?",
+        "opts": [
+          "O-O-O conversion",
+          "E-E-E conversion",
+          "O-E-O conversion",
+          "Digital-to-Analog conversion"
+        ],
+        "answer": "O-E-O conversion"
+      },
+      {
+        "q": "What aspect of the signal does regeneration restore?",
+        "opts": [
+          "Frequency only",
+          "Amplitude, shape, and timing",
+          "Wavelength only",
+          "Phase only"
+        ],
+        "answer": "Amplitude, shape, and timing"
+      },
+      {
+        "q": "Which client-side wavelength is used for short-range multimode transmission?",
+        "opts": [
+          "1310 nm",
+          "1550 nm",
+          "850 nm",
+          "1625 nm"
+        ],
         "answer": "850 nm"
       },
       {
-        "q": "Which wavelength is common for single-mode fiber over medium distances (up to 10 km)?",
-        "opts": ["850 nm", "1310 nm", "1550 nm", "1625 nm"],
+        "q": "Which client-side wavelength is typically used for medium-distance single-mode transmission?",
+        "opts": [
+          "850 nm",
+          "1310 nm",
+          "1550 nm",
+          "1530 nm"
+        ],
         "answer": "1310 nm"
       },
       {
-        "q": "DWDM systems primarily operate in which optical spectrum band for its low attenuation?",
-        "opts": ["O-band", "S-band", "C-band", "E-band"],
-        "answer": "C-band"
-      },
-      {
-        "q": "What is the name of the component that allows light to pass in one direction but blocks it in the opposite direction?",
-        "opts": ["Circulator", "Attenuator", "Isolator", "Coupler"],
-        "answer": "Isolator"
-      },
-      {
-        "q": "Isolators are primarily used to protect which type of sensitive components from reflections?",
-        "opts": ["Fibers", "Receivers", "Amplifiers and Lasers", "Filters"],
-        "answer": "Amplifiers and Lasers"
-      },
-      {
-        "q": "In an optical _______, light entering a specific port exits from the next sequential port.",
-        "opts": ["Isolator", "Circulator", "Splitter", "Filter"],
-        "answer": "Circulator"
-      },
-      {
-        "q": "What device combines multiple optical signals of different wavelengths into a single beam?",
+        "q": "What is the wavelength range of the C-band?",
         "opts": [
-          "Demultiplexer (DEMUX)",
-          "Multiplexer (MUX)",
+          "1260–1360 nm",
+          "1530–1565 nm",
+          "1565–1625 nm",
+          "850–900 nm"
+        ],
+        "answer": "1530–1565 nm"
+      },
+      {
+        "q": "What is the wavelength range of the L-band?",
+        "opts": [
+          "1530–1565 nm",
+          "1565–1625 nm",
+          "1310–1550 nm",
+          "1400–1500 nm"
+        ],
+        "answer": "1565–1625 nm"
+      },
+      {
+        "q": "Why are C-band and L-band selected for the DWDM side?",
+        "opts": [
+          "High attenuation",
+          "Low cost",
+          "Low attenuation and suitability for long-haul",
+          "High dispersion"
+        ],
+        "answer": "Low attenuation and suitability for long-haul"
+      },
+      {
+        "q": "What is the function of an optical isolator?",
+        "opts": [
+          "Route light sequentially",
+          "Combine signals",
+          "Allow light to pass only in one direction",
+          "Split signals"
+        ],
+        "answer": "Allow light to pass only in one direction"
+      },
+      {
+        "q": "What does an isolator block?",
+        "opts": [
+          "Forward light",
+          "Reflected light",
+          "All light",
+          "Specific wavelengths"
+        ],
+        "answer": "Reflected light"
+      },
+      {
+        "q": "What is the function of an optical circulator?",
+        "opts": [
+          "Block all light",
+          "Route light from one port to the next in sequence",
+          "Convert signals",
+          "Attenuate power"
+        ],
+        "answer": "Route light from one port to the next in sequence"
+      },
+      {
+        "q": "Which component combines multiple optical signals of different wavelengths into a single output?",
+        "opts": [
+          "Optical DEMUX",
+          "Optical MUX",
           "Isolator",
-          "OADM"
+          "Attenuator"
         ],
-        "answer": "Multiplexer (MUX)"
+        "answer": "Optical MUX"
       },
       {
-        "q": "What device performs the reverse function of a multiplexer by separating a combined signal into individual wavelengths?",
+        "q": "Which component separates a composite optical signal into individual wavelength channels?",
         "opts": [
-          "Demultiplexer (DEMUX)",
-          "Multiplexer (MUX)",
-          "Circulator",
-          "Transponder"
+          "Optical MUX",
+          "Optical DEMUX",
+          "Transponder",
+          "Circulator"
         ],
-        "answer": "Demultiplexer (DEMUX)"
+        "answer": "Optical DEMUX"
       },
       {
-        "q": "A demultiplexer can be constructed using a circulator in combination with what other component?",
-        "opts": ["Isolator", "VOA", "Fiber Bragg Grating (FBG)", "Transponder"],
-        "answer": "Fiber Bragg Grating (FBG)"
-      },
-      {
-        "q": "What does OADM stand for?",
+        "q": "What components are commonly used to build MUX and DEMUX?",
         "opts": [
-          "Optical Amplifier-Demultiplexer Module",
-          "Optical Add-Drop Multiplexer",
-          "Overall Attenuation-Dispersion Manager",
-          "Optical Access Distribution Module"
+          "Transponders and Lasers",
+          "FBGs and Optical Circulators",
+          "Attenuators and Amplifiers",
+          "Isolators and LEDs"
         ],
-        "answer": "Optical Add-Drop Multiplexer"
+        "answer": "FBGs and Optical Circulators"
       },
       {
-        "q": "An OADM is used at what point in a network to route specific channels?",
+        "q": "Where are OADMs typically used in a network?",
         "opts": [
-          "Only at the beginning",
-          "Only at the end",
-          "At intermediate stations",
-          "Only in the transponder"
+          "At the transmitter only",
+          "At the receiver only",
+          "At intermediate nodes",
+          "In the power supply"
         ],
-        "answer": "At intermediate stations"
+        "answer": "At intermediate nodes"
       },
       {
-        "q": "What is the primary function of an Optical Attenuator?",
+        "q": "What components are commonly used to implement OADMs?",
         "opts": [
-          "To amplify the signal",
-          "To control and reduce the power level of the signal",
-          "To filter out unwanted wavelengths",
-          "To change the signal's wavelength"
+          "Circulators and Fiber Bragg Gratings",
+          "Lasers and Detectors",
+          "Amplifiers and Isolators",
+          "Switches and Routers"
         ],
-        "answer": "To control and reduce the power level of the signal"
+        "answer": "Circulators and Fiber Bragg Gratings"
       },
       {
-        "q": "Which type of attenuator provides a predetermined and unchangeable amount of attenuation?",
+        "q": "What is the main function of an optical attenuator?",
         "opts": [
-          "Variable Optical Attenuator (VOA)",
-          "Fixed Optical Attenuator",
-          "Dynamic Optical Attenuator",
-          "Standard Optical Attenuator"
+          "Increase signal power",
+          "Reduce/control optical signal power",
+          "Convert signal wavelength",
+          "Isolate reflections"
         ],
-        "answer": "Fixed Optical Attenuator"
+        "answer": "Reduce/control optical signal power"
       },
       {
-        "q": "Which type of attenuator allows for adjustable attenuation levels, useful in dynamic networks?",
+        "q": "Why is attenuation used in optical networks?",
         "opts": [
-          "Variable Optical Attenuator (VOA)",
-          "Fixed Optical Attenuator",
-          "Static Optical Attenuator",
-          "Preset Optical Attenuator"
+          "To increase distance",
+          "To prevent overloading receivers and amplifiers",
+          "To change wavelengths",
+          "To add noise"
         ],
-        "answer": "Variable Optical Attenuator (VOA)"
+        "answer": "To prevent overloading receivers and amplifiers"
+      },
+      {
+        "q": "Which type of attenuator provides a constant, predetermined attenuation value?",
+        "opts": [
+          "Variable Optical Attenuators",
+          "Fixed Attenuators",
+          "Dynamic Attenuators",
+          "Active Attenuators"
+        ],
+        "answer": "Fixed Attenuators"
+      },
+      {
+        "q": "Which type of attenuator is used in dynamic networks?",
+        "opts": [
+          "Fixed Attenuators",
+          "Variable Optical Attenuators (VOAs)",
+          "Static Attenuators",
+          "Permanent Attenuators"
+        ],
+        "answer": "Variable Optical Attenuators (VOAs)"
       }
     ],
     "tf": [
       {
-        "q": "A transponder's main job is to filter noise from a signal.",
-        "answer": "False",
-        "correction": "Its main job is signal and wavelength conversion."
-      },
-      {
-        "q": "The L-band (1565-1625 nm) is sometimes used to expand the capacity of DWDM systems.",
+        "q": "Transponders convert client optical signals into DWDM-compliant wavelengths.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "An optical isolator is a bi-directional device, allowing light to pass freely in both directions.",
+        "q": "Signal regeneration in transponders restores only the timing of the signal.",
         "answer": "False",
-        "correction": "It is a uni-directional device, allowing light to pass in only one direction."
+        "correction": "It restores amplitude, shape, and timing."
       },
       {
-        "q": "In a 3-port circulator, light entering port 2 will exit from port 1.",
+        "q": "1550 nm is used for short-range multimode transmission on the client side.",
         "answer": "False",
-        "correction": "It will exit from the next sequential port, which is port 3."
+        "correction": "1550 nm is used for long-distance single-mode; 850 nm is for short-range multimode."
       },
       {
-        "q": "A MUX and a DEMUX perform identical functions.",
-        "answer": "False",
-        "correction": "A DEMUX performs the reverse function of a MUX."
-      },
-      {
-        "q": "An FBG used with a circulator for demultiplexing works by reflecting a specific wavelength.",
+        "q": "The C-band wavelength range is 1530–1565 nm.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "An OADM is used to add or remove all wavelengths from a DWDM signal simultaneously.",
+        "q": "Isolators allow light to pass in both directions.",
         "answer": "False",
-        "correction": "It adds or removes specific wavelengths while allowing others to pass through."
+        "correction": "Isolators allow light to pass only in one direction."
       },
       {
-        "q": "An optical attenuator is a type of amplifier.",
-        "answer": "False",
-        "correction": "It performs the opposite function; it reduces signal power."
-      },
-      {
-        "q": "One reason to use an attenuator is to prevent the overloading of components like receivers.",
+        "q": "Circulators are multi-port devices that route light sequentially.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "A Variable Optical Attenuator (VOA) provides a fixed amount of attenuation.",
+        "q": "Optical MUX combines multiple signals using the same wavelength.",
         "answer": "False",
-        "correction": "It allows for adjustable attenuation levels."
+        "correction": "It combines signals using different wavelengths."
       },
       {
-        "q": "A Fixed Optical Attenuator is used in applications where the required attenuation level may change frequently.",
+        "q": "OADM can drop a specific wavelength without affecting the remaining wavelengths.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Attenuators are used to boost signal power.",
         "answer": "False",
-        "correction": "It is used when a specific, unchanging level of signal reduction is needed."
+        "correction": "Attenuators reduce (control) optical signal power."
+      },
+      {
+        "q": "Variable Optical Attenuators (VOAs) allow adjustable attenuation.",
+        "answer": "True",
+        "correction": ""
       }
     ]
   },
   "7": {
     "mcq": [
       {
-        "q": "What phenomenon causes the spreading of different wavelengths of light and signal degradation?",
+        "q": "What problem does the Dispersion Compensation Module (DCM) address?",
         "opts": [
-          "Chromatic dispersion",
-          "Amplification",
-          "Isolation",
-          "Switching"
+          "Signal Attenuation",
+          "Chromatic Dispersion",
+          "Nonlinearities",
+          "Mode Hopping"
         ],
-        "answer": "Chromatic dispersion"
+        "answer": "Chromatic Dispersion"
       },
       {
-        "q": "What is the name of the specialized fiber engineered with opposite dispersion characteristics to reverse broadening?",
+        "q": "What causes pulse spreading in chromatic dispersion?",
         "opts": [
-          "Single-Mode Fiber (SMF)",
-          "Erbium-Doped Fiber",
-          "Dispersion Compensating Fiber (DCF)",
-          "Multi-Mode Fiber (MMF)"
+          "Different wavelengths traveling at different speeds",
+          "Signal amplification",
+          "Reflection",
+          "Absorption"
         ],
-        "answer": "Dispersion Compensating Fiber (DCF)"
+        "answer": "Different wavelengths traveling at different speeds"
       },
       {
-        "q": "Standard Single-Mode Fiber (SMF) typically has which type of chromatic dispersion?",
-        "opts": ["Positive", "Negative", "Zero", "Random"],
+        "q": "What type of chromatic dispersion does standard SMF have?",
+        "opts": [
+          "Negative",
+          "Positive",
+          "Zero",
+          "Variable"
+        ],
         "answer": "Positive"
       },
       {
-        "q": "Dispersion Compensating Fiber (DCF) is designed to have which type of chromatic dispersion?",
-        "opts": ["Positive", "Negative", "Zero", "Random"],
+        "q": "What type of chromatic dispersion does DCF have?",
+        "opts": [
+          "Positive",
+          "Negative",
+          "Neutral",
+          "None"
+        ],
         "answer": "Negative"
       },
       {
-        "q": "In the lecture example, 80 km of regular fiber is compensated by how much DCF?",
-        "opts": ["80 km", "15 km", "160 km", "0 km"],
+        "q": "In the example provided, what length of DCF is used to restore the pulse after 80 km of SMF?",
+        "opts": [
+          "10 km",
+          "15 km",
+          "20 km",
+          "80 km"
+        ],
         "answer": "15 km"
       },
       {
-        "q": "What is the name of a device that amplifies an optical signal directly without converting it to an electrical signal?",
-        "opts": ["Regenerator", "Optical Amplifier", "DCM", "Optical Switch"],
-        "answer": "Optical Amplifier"
-      },
-      {
-        "q": "Which of the following is NOT a type of optical amplifier listed in the lecture?",
+        "q": "What is the primary definition of an optical amplifier?",
         "opts": [
-          "Erbium-Doped Fiber Amplifier (EDFA)",
-          "Raman Amplifier",
-          "Semiconductor Optical Amplifier (SOA)",
-          "Dispersion Compensating Amplifier (DCA)"
+          "Device that converts optical to electrical",
+          "Device that amplifies optical signals directly",
+          "Device that filters wavelengths",
+          "Device that creates dispersion"
         ],
-        "answer": "Dispersion Compensating Amplifier (DCA)"
+        "answer": "Device that amplifies optical signals directly"
       },
       {
-        "q": "What element is used to dope the fiber in an EDFA?",
-        "opts": ["Erbium", "Silicon", "Germanium", "Raman"],
-        "answer": "Erbium"
+        "q": "Which of the following is NOT a type of optical amplifier mentioned?",
+        "opts": [
+          "EDFA",
+          "Raman Amplifier",
+          "SOA",
+          "Transponder"
+        ],
+        "answer": "Transponder"
       },
       {
-        "q": "An EDFA uses a _______ to stimulate the doped fiber and increase signal strength.",
-        "opts": ["Photodetector", "Pump laser", "Isolator", "Coupler"],
-        "answer": "Pump laser"
+        "q": "What does EDFA stand for?",
+        "opts": [
+          "Energy-Doped Fiber Amplifier",
+          "Erbium-Doped Fiber Amplifier",
+          "Electronic Digital Fiber Amplifier",
+          "Emission-Direct Fiber Amplifier"
+        ],
+        "answer": "Erbium-Doped Fiber Amplifier"
       },
       {
-        "q": "EDFAs are ideal for long-distance communication because they have _______ gain and _______ noise.",
-        "opts": ["Low, Low", "Low, High", "High, Low", "High, High"],
-        "answer": "High, Low"
+        "q": "What ions are used to dope the fiber in an EDFA?",
+        "opts": [
+          "Silicon ions",
+          "Erbium ions (Er³⁺)",
+          "Carbon ions",
+          "Oxygen ions"
+        ],
+        "answer": "Erbium ions (Er³⁺)"
       },
       {
-        "q": "The pump laser for an EDFA typically operates at which wavelengths?",
-        "opts": ["980 nm or 1480 nm", "1550 nm", "1310 nm", "850 nm"],
+        "q": "What wavelengths are used by the Pump Laser in an EDFA?",
+        "opts": [
+          "850 nm or 1310 nm",
+          "980 nm or 1480 nm",
+          "1550 nm or 1625 nm",
+          "1300 nm or 1400 nm"
+        ],
         "answer": "980 nm or 1480 nm"
       },
       {
-        "q": "What component is placed at the end of an EDFA to avoid reflections?",
-        "opts": ["Coupler", "Pump laser", "Isolator", "Erbium fiber"],
-        "answer": "Isolator"
-      },
-      {
-        "q": "A Regenerator performs 3R, which stands for _______.",
+        "q": "What process is triggered when the weak data signal passes excited erbium ions?",
         "opts": [
-          "Reamplify, Reshape, and Retime",
-          "Reamplify, Reroute, and Retime",
-          "Reshape, Reroute, and Receive",
-          "Reamplify, Reshape, and Reroute"
+          "Spontaneous Emission",
+          "Stimulated Emission",
+          "Absorption",
+          "Reflection"
         ],
-        "answer": "Reamplify, Reshape, and Retime"
+        "answer": "Stimulated Emission"
       },
       {
-        "q": "An EDFA is known as a _______ device because it only re-amplifies the signal.",
-        "opts": ["1R", "2R", "3R", "O-E-O"],
-        "answer": "1R"
-      },
-      {
-        "q": "What is the main drawback of an Optical Amplifier compared to a Regenerator?",
+        "q": "Which component combines the pump and data signal in an EDFA?",
         "opts": [
-          "It amplifies signal and noise together",
-          "It is more complex and costly",
-          "It cannot amplify all wavelengths",
-          "It converts the signal to electrical"
+          "Isolator",
+          "Wavelength-selective coupler",
+          "Splitter",
+          "Filter"
         ],
-        "answer": "It amplifies signal and noise together"
+        "answer": "Wavelength-selective coupler"
       },
       {
-        "q": "Which device provides a clean, fully restored signal by removing noise and reshaping the pulse?",
-        "opts": ["Regenerator (O-E-O)", "Optical Amplifier", "EDFA", "DCM"],
-        "answer": "Regenerator (O-E-O)"
+        "q": "What is the function of the isolator in an EDFA?",
+        "opts": [
+          "Inject energy",
+          "Combine signals",
+          "Prevent reflections",
+          "Filter noise"
+        ],
+        "answer": "Prevent reflections"
+      },
+      {
+        "q": "What happens if reflections are not prevented in an EDFA?",
+        "opts": [
+          "It stops working",
+          "It becomes a laser",
+          "It overheats",
+          "It loses gain"
+        ],
+        "answer": "It becomes a laser"
+      },
+      {
+        "q": "Which is an advantage of EDFA?",
+        "opts": [
+          "Low gain",
+          "High noise",
+          "High gain, low noise",
+          "Incompatible with standard fiber"
+        ],
+        "answer": "High gain, low noise"
+      },{
+        "q": "What type of conversion does a Regenerator perform?",
+        "opts": [
+          "O-O-O",
+          "E-O-E",
+          "O-E-O",
+          "E-E-E"
+        ],
+        "answer": "O-E-O"
+      },
+      {
+        "q": "Which three functions (3R) does a regenerator perform?",
+        "opts": [
+          "Reamplify, Reshape, Route",
+          "Reamplify, Reshape, Retime",
+          "Reflect, Reshape, Retime",
+          "Reamplify, Redirect, Retime"
+        ],
+        "answer": "Reamplify, Reshape, Retime"
+      },
+      {
+        "q": "What is the main advantage of a regenerator?",
+        "opts": [
+          "Low cost",
+          "Simplicity",
+          "Completely restores the signal",
+          "Amplifies all wavelengths together"
+        ],
+        "answer": "Completely restores the signal"
+      },
+      {
+        "q": "What is a disadvantage of a regenerator?",
+        "opts": [
+          "Amplifies noise",
+          "Does not retime",
+          "High cost and complexity",
+          "Low power consumption"
+        ],
+        "answer": "High cost and complexity"
+      },
+      {
+        "q": "An Optical Amplifier (e.g., EDFA) performs which function?",
+        "opts": [
+          "3R",
+          "2R",
+          "1R (Reamplify)",
+          "Regeneration"
+        ],
+        "answer": "1R (Reamplify)"
+      },
+      {
+        "q": "What is a disadvantage of an Optical Amplifier?",
+        "opts": [
+          "High complexity",
+          "O-E-O conversion required",
+          "Amplifies both signal and noise",
+          "Cannot amplify DWDM wavelengths"
+        ],
+        "answer": "Amplifies both signal and noise"
+      },
+      {
+        "q": "What is an advantage of an Optical Amplifier?",
+        "opts": [
+          "Removes noise",
+          "Reshapes the signal",
+          "Amplifies all DWDM wavelengths together",
+          "Performs retiming"
+        ],
+        "answer": "Amplifies all DWDM wavelengths together"
       },
       {
         "q": "What is the function of a Wavelength Converter (WC)?",
         "opts": [
-          "Converts input wavelength to another wavelength",
-          "Compensates for dispersion",
-          "Amplifies the signal",
-          "Switches the signal to a different fiber"
+          "Amplify signal",
+          "Convert signal from one wavelength to another",
+          "Switch packets",
+          "Filter noise"
         ],
-        "answer": "Converts input wavelength to another wavelength"
+        "answer": "Convert signal from one wavelength to another"
       },
       {
-        "q": "Which type of Wavelength Converter (WC) converts the signal from optical to electrical and back to optical?",
+        "q": "What issue does a Wavelength Converter resolve in WDM routing nodes?",
         "opts": [
-          "Opto-Electronic WC (OE-WC)",
-          "Coherent Effects WC",
+          "Dispersion",
+          "Attenuation",
+          "Wavelength blocking",
+          "Crosstalk"
+        ],
+        "answer": "Wavelength blocking"
+      },
+      {
+        "q": "Which Wavelength Converter technology uses O-E-O processing?",
+        "opts": [
           "All-Optical WC",
-          "Nonlinear WC"
+          "Nonlinear WC",
+          "Opto-Electronic WC (OE-WC)",
+          "Coherent WC"
         ],
         "answer": "Opto-Electronic WC (OE-WC)"
       },
       {
-        "q": "Which type of WC relies on nonlinear optical effects and involves no electrical conversion?",
+        "q": "What is a limitation of Opto-Electronic WCs?",
         "opts": [
-          "Opto-Electronic WC (OE-WC)",
-          "Coherent Effects WC",
-          "O-E-O WC",
-          "Regenerator WC"
+          "No regeneration",
+          "Limited by electronic speed",
+          "High noise",
+          "Cannot reshape"
         ],
-        "answer": "Coherent Effects WC"
+        "answer": "Limited by electronic speed"
       },
       {
-        "q": "Which WC technology has the advantage of signal regeneration (reshaping and retiming)?",
+        "q": "Which Wavelength Converter technology uses nonlinear optical processes?",
         "opts": [
-          "Opto-Electronic WC (OE-WC)",
-          "Coherent Effects WC",
+          "Opto-Electronic WC",
           "All-Optical WC",
-          "Nonlinear WC"
+          "Regenerator",
+          "EDFA"
         ],
-        "answer": "Opto-Electronic WC (OE-WC)"
+        "answer": "All-Optical WC"
       },
       {
-        "q": "Which WC technology is described as being ultrahigh-speed?",
+        "q": "What is a major advantage of All-Optical WCs?",
         "opts": [
-          "Opto-Electronic WC (OE-WC)",
-          "Coherent Effects WC",
-          "O-E-O WC",
-          "Regenerator WC"
+          "Signal regeneration",
+          "Noise removal",
+          "Ultra-high-speed (terabit scale)",
+          "Low cost"
         ],
-        "answer": "Coherent Effects WC"
+        "answer": "Ultra-high-speed (terabit scale)"
       },
       {
-        "q": "Which type of switching is currently employed in WDM optical networks?",
-        "opts": ["Circuit switching", "Packet switching", "OPS", "OBS"],
-        "answer": "Circuit switching"
-      },
-      {
-        "q": "What is the term for the fraction of power lost as a signal passes through an optical switch?",
+        "q": "What is a disadvantage of All-Optical WCs?",
         "opts": [
-          "Extinction Ratio",
-          "Insertion loss",
-          "Crosstalk",
-          "Cross state"
+          "Limited speed",
+          "No signal regeneration (noise accumulates)",
+          "Requires O-E-O",
+          "High latency"
         ],
-        "answer": "Insertion loss"
+        "answer": "No signal regeneration (noise accumulates)"
       },
       {
-        "q": "What term describes the ratio of power at the desired output vs. an undesired output in a switch?",
+        "q": "What is the definition of Optical Switching?",
         "opts": [
-          "Extinction Ratio",
-          "Insertion loss",
-          "Crosstalk",
-          "Bar state"
+          "Directs signal to output with O-E conversion",
+          "Directs signal to output without O-E conversion",
+          "Amplifies signal",
+          "Converts wavelength"
         ],
-        "answer": "Crosstalk"
+        "answer": "Directs signal to output without O-E conversion"
       },
       {
-        "q": "What is the ratio of output power in the ON state to the power in the OFF state called?",
+        "q": "Which type of optical switching is used in DWDM today?",
         "opts": [
-          "Extinction Ratio",
-          "Insertion loss",
-          "Crosstalk",
-          "Bar state"
+          "Packet Switching",
+          "Circuit Switching",
+          "Burst Switching",
+          "Frame Switching"
         ],
-        "answer": "Extinction Ratio"
+        "answer": "Circuit Switching"
+      },
+      {
+        "q": "Which switching type involves reserving a full path (fiber + wavelength)?",
+        "opts": [
+          "Packet Switching",
+          "Circuit Switching",
+          "OPS",
+          "OBS"
+        ],
+        "answer": "Circuit Switching"
+      },
+      {
+        "q": "Why is Optical Packet Switching (OPS) still under research?",
+        "opts": [
+          "Low speed",
+          "High cost",
+          "Synchronization challenges",
+          "Low bandwidth"
+        ],
+        "answer": "Synchronization challenges"
+      },
+      {
+        "q": "What does Extinction Ratio measure?",
+        "opts": [
+          "Power lost",
+          "Leakage to undesired outputs",
+          "ON power vs OFF power",
+          "Input vs Output power"
+        ],
+        "answer": "ON power vs OFF power"
+      },
+      {
+        "q": "What does Insertion Loss measure in an optical switch?",
+        "opts": [
+          "Power lost by passing through the switch",
+          "Leakage to other ports",
+          "Switching speed",
+          "Noise level"
+        ],
+        "answer": "Power lost by passing through the switch"
+      },
+      {
+        "q": "What is Crosstalk in an optical switch?",
+        "opts": [
+          "Power loss",
+          "Leakage to undesired outputs",
+          "Switching time",
+          "Signal regeneration"
+        ],
+        "answer": "Leakage to undesired outputs"
       }
     ],
     "tf": [
       {
-        "q": "Chromatic dispersion causes optical pulses to sharpen and narrow.",
-        "answer": "False",
-        "correction": "It causes pulse broadening (spreading)."
-      },
-      {
-        "q": "Dispersion Compensating Fiber (DCF) works by having dispersion characteristics opposite to regular fiber.",
+        "q": "DCM stands for Dispersion Compensation Module.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "SMF has negative chromatic dispersion, and DCF has positive chromatic dispersion.",
+        "q": "Chromatic dispersion causes the pulse to compress.",
         "answer": "False",
-        "correction": "SMF has positive, and DCF has negative."
+        "correction": "It causes the pulse to spread out."
       },
       {
-        "q": "An optical amplifier must convert a signal to electrical form to amplify it.",
+        "q": "DCF is engineered to have positive chromatic dispersion.",
         "answer": "False",
-        "correction": "It amplifies the signal directly in its optical form."
+        "correction": "It is engineered to have negative chromatic dispersion."
       },
       {
-        "q": "Raman Amplifier is one type of optical amplifier.",
+        "q": "Optical amplifiers convert signals to electrical form before amplifying.",
+        "answer": "False",
+        "correction": "They amplify optical signals directly without conversion."
+      },
+      {
+        "q": "One purpose of optical amplifiers is to keep the signal above the minimum operating level.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "An EDFA amplifies signals by using a fiber doped with erbium and a pump laser.",
+        "q": "The Pump Laser in an EDFA provides excitation energy.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "An isolator is used in an EDFA to couple the pump laser into the fiber.",
+        "q": "Stimulated emission causes excited erbium ions to release photons different from the signal.",
         "answer": "False",
-        "correction": "It is placed at the end to avoid reflections."
+        "correction": "They release photons identical to the signal."
       },
       {
-        "q": "If an EDFA does not have an isolator, it may convert into a laser.",
+        "q": "EDFA is excellent for long-distance communication.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "A regenerator is a 1R device.",
+        "q": "SOA stands for Standard Optical Amplifier.",
         "answer": "False",
-        "correction": "It is a 3R device (Reamplify, Reshape, Retime)."
+        "correction": "SOA stands for Semiconductor Optical Amplifier."
       },
       {
-        "q": "An EDFA performs 1R (Reamplify).",
+        "q": "Without an isolator, an EDFA becomes a laser.",
+        "answer": "True",
+        "correction": ""
+      },{
+        "q": "Regenerators perform O-E-O conversion.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "An EDFA can remove noise and reshape the signal pulse.",
+        "q": "Optical Amplifiers perform all 3R functions (Reamplify, Reshape, Retime).",
         "answer": "False",
-        "correction": "It amplifies both the signal and the noise."
+        "correction": "They perform 1R only (Reamplify)."
       },
       {
-        "q": "A Regenerator (O-E-O) provides a clean, fully restored signal.",
+        "q": "A disadvantage of Optical Amplifiers is that they amplify noise along with the signal.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Optical amplifiers are generally higher in cost and complexity than regenerators.",
-        "answer": "False",
-        "correction": "They are lower in cost and complexity."
-      },
-      {
-        "q": "A Wavelength Converter (WC) is used to amplify an optical signal.",
-        "answer": "False",
-        "correction": "It converts the signal from one wavelength to another."
-      },
-      {
-        "q": "OE-WC is an all-optical conversion method.",
-        "answer": "False",
-        "correction": "It is Optical-to-Electrical-to-Optical."
-      },
-      {
-        "q": "Wavelength conversion using coherent effects provides signal regeneration.",
-        "answer": "False",
-        "correction": "No, it only transfers the wavelength."
-      },
-      {
-        "q": "OE-WC speed is limited by electronic components.",
+        "q": "Opto-Electronic WCs provide signal regeneration (reshape + retime).",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Optical packet switching currently faces many challenges.",
+        "q": "All-Optical WCs are limited by electronic speed.",
+        "answer": "False",
+        "correction": "They are ultra-high-speed; OE-WCs are limited by electronic speed."
+      },
+      {
+        "q": "In All-Optical WCs, noise keeps accumulating because there is no regeneration.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "In a switch's 'bar state', the inputs are crossed to the opposite outputs.",
-        "answer": "False",
-        "correction": "This describes the 'cross state'."
+        "q": "Circuit Switching is commonly used in DWDM networks today.",
+        "answer": "True",
+        "correction": ""
       },
       {
-        "q": "Crosstalk is the fraction of power lost when a signal passes through a switch.",
+        "q": "Optical Packet Switching (OPS) is fully deployed and no longer under research.",
         "answer": "False",
-        "correction": "That is Insertion Loss."
+        "correction": "It is still under research due to synchronization challenges."
+      },
+      {
+        "q": "A lower Extinction Ratio indicates better switching performance.",
+        "answer": "False",
+        "correction": "A higher Extinction Ratio is better."
+      },
+      {
+        "q": "Lower Crosstalk is desirable in optical switches.",
+        "answer": "True",
+        "correction": ""
       }
     ]
   },
@@ -2311,7 +2549,7 @@
       },
       {
         "q": "Today's common channel count for Point-to-Point WDM systems is _______.",
-        "opts": ["64", "160", "320", "10"],
+        "opts": ["64", "170", "65", "60"],
         "answer": "64"
       },
       {
@@ -3293,199 +3531,300 @@
   "11": {
     "mcq": [
       {
-        "q": "Which of the following is NOT a suitable topology for PON deployment mentioned in the lecture?",
-        "opts": ["Tree", "Ring", "Bus", "Mesh"],
-        "answer": "Mesh"
-      },
-      {
-        "q": "The phenomenon where power levels received at the OLT differ due to unequal ONU distances is called the _______.",
+        "q": "Which of the following is NOT a main topology for Passive Optical Networks (PON)?",
         "opts": [
-          "Near-far problem",
-          "Dispersion problem",
-          "Splitting loss",
-          "Wavelength mismatch"
+          "Tree Topology",
+          "Bus Topology",
+          "Mesh Topology",
+          "Ring Topology"
         ],
-        "answer": "Near-far problem"
+        "answer": "Mesh Topology"
       },
       {
-        "q": "Which device in a TDM PON requires a burst-mode receiver?",
-        "opts": ["ONU", "OLT", "Passive Splitter", "Curb Switch"],
+        "q": "Where is the Optical Line Terminal (OLT) located?",
+        "opts": [
+          "At the user end",
+          "At the Central Office",
+          "At the splitter",
+          "At the remote node"
+        ],
+        "answer": "At the Central Office"
+      },
+      {
+        "q": "Where is the Optical Network Unit (ONU) located?",
+        "opts": [
+          "At the Central Office",
+          "At the backbone",
+          "At the user end",
+          "At the amplifier"
+        ],
+        "answer": "At the user end"
+      },
+      {
+        "q": "What causes the Near-Far Problem in PONs?",
+        "opts": [
+          "Equal distances between nodes",
+          "Unequal distances between CO and ONUs",
+          "Constant signal attenuation",
+          "High transmitter power"
+        ],
+        "answer": "Unequal distances between CO and ONUs"
+      },
+      {
+        "q": "What is the result of the Near-Far Problem at the OLT?",
+        "opts": [
+          "Constant power levels",
+          "Differing received power levels",
+          "Increased bandwidth",
+          "Reduced latency"
+        ],
+        "answer": "Differing received power levels"
+      },
+      {
+        "q": "Which device requires a burst-mode receiver to handle the Near-Far Problem?",
+        "opts": [
+          "ONU",
+          "Passive Splitter",
+          "OLT",
+          "Repeater"
+        ],
         "answer": "OLT"
       },
       {
-        "q": "Why is a burst-mode receiver necessary at the OLT?",
+        "q": "What does a burst-mode receiver adjust at the beginning of each timeslot?",
         "opts": [
-          "To adjust the zero-one threshold for each timeslot",
-          "To increase bandwidth",
-          "To split the signal",
-          "To transmit data to ONUs"
+          "Wavelength",
+          "Bit rate",
+          "Zero-one threshold",
+          "Frame size"
         ],
-        "answer": "To adjust the zero-one threshold for each timeslot"
+        "answer": "Zero-one threshold"
+      },
+      {
+        "q": "Why do ONUs not require a burst-mode receiver?",
+        "opts": [
+          "They read a continuous bit stream",
+          "They are closer to the OLT",
+          "They use higher power",
+          "They use lower bit rates"
+        ],
+        "answer": "They read a continuous bit stream"
       },
       {
         "q": "What is an alternative solution to using a burst-mode receiver at the OLT?",
         "opts": [
-          "ONUs adjust their transmitter powers",
-          "Using higher quality fiber",
-          "Removing the splitters",
-          "Using amplifiers at every home"
+          "Using active splitters",
+          "ONUs adjust transmitter power",
+          "Increasing fiber length",
+          "Using copper cables"
         ],
-        "answer": "ONUs adjust their transmitter powers"
+        "answer": "ONUs adjust transmitter power"
       },
       {
-        "q": "EPON carries data traffic encapsulated in _______.",
+        "q": "What is a drawback of ONUs adjusting their transmitter power?",
         "opts": [
-          "ATM cells",
-          "Ethernet frames",
-          "IP packets directly",
-          "SONET frames"
+          "Simpler hardware",
+          "Lower cost",
+          "Complex hardware and special protocol",
+          "Reduced bandwidth"
         ],
-        "answer": "Ethernet frames"
+        "answer": "Complex hardware and special protocol"
       },
       {
-        "q": "In EPON downstream, how does an ONU extract its specific packets from the broadcast stream?",
+        "q": "What standard does EPON use for encapsulating data traffic?",
         "opts": [
-          "Using a Logical Link Identifier (LLID)",
-          "Using the IP address",
-          "Using time slots",
-          "Using wavelength filtering"
+          "ATM",
+          "IEEE 802.3 (Ethernet)",
+          "SONET",
+          "Frame Relay"
         ],
-        "answer": "Using a Logical Link Identifier (LLID)"
+        "answer": "IEEE 802.3 (Ethernet)"
       },
       {
-        "q": "What is the typical range for the splitting ratio (N) in EPON?",
-        "opts": ["2 to 4", "8 to 32", "64 to 128", "100 to 200"],
+        "q": "What is the typical range for 'N' in an EPON 1:N passive splitter?",
+        "opts": [
+          "2 to 4",
+          "8 to 32",
+          "64 to 128",
+          "100 to 200"
+        ],
         "answer": "8 to 32"
       },
       {
-        "q": "In the upstream direction of a PON, frames from different ONUs may _______.",
+        "q": "How do ONUs in EPON filter packets destined for them?",
         "opts": [
-          "Collide",
-          "Be broadcast to other ONUs",
-          "Gain power",
-          "Change wavelength"
+          "Based on MAC address",
+          "Based on IP address",
+          "Based on Logical Link Identifier (LLID)",
+          "Based on wavelength"
         ],
-        "answer": "Collide"
+        "answer": "Based on Logical Link Identifier (LLID)"
       },
       {
-        "q": "What mechanism is required in the upstream direction of EPON to share channel capacity?",
+        "q": "Why do EPON upstream frames not reach other ONUs?",
         "opts": [
+          "Encryption",
+          "Directional properties of the passive combiner",
+          "Active switching",
+          "Wavelength filtering"
+        ],
+        "answer": "Directional properties of the passive combiner"
+      },
+      {
+        "q": "What mechanism is required in EPON upstream to avoid collisions?",
+        "opts": [
+          "Broadcasting",
           "Arbitration mechanism",
-          "Wavelength conversion",
           "Amplification",
-          "Broadcasting"
+          "Modulation"
         ],
         "answer": "Arbitration mechanism"
       },
       {
-        "q": "A WDM-PON creates a _______ link between the OLT and each ONU.",
-        "opts": ["Point-to-multipoint", "Point-to-point", "Broadcast", "Ring"],
+        "q": "What type of access network logic does WDM PON create?",
+        "opts": [
+          "Broadcast",
+          "Ring",
+          "Point-to-point",
+          "Mesh"
+        ],
         "answer": "Point-to-point"
       },
       {
-        "q": "Unlike basic PONs, WDM-PONs do not suffer from _______.",
+        "q": "Which of the following is an advantage of WDM PONs?",
         "opts": [
-          "Power-splitting losses",
-          "Fiber attenuation",
-          "Dispersion",
-          "Insertion loss"
+          "High power-splitting losses",
+          "Fixed bit rates for all ONUs",
+          "No power-splitting losses",
+          "Requires burst mode at ONU"
         ],
-        "answer": "Power-splitting losses"
+        "answer": "No power-splitting losses"
       },
       {
-        "q": "Which component is commonly used in WDM PON designs to route wavelengths?",
+        "q": "Which component is typically used for routing wavelengths in WDM PONs?",
         "opts": [
-          "Arrayed Waveguide Grating (AWG)",
-          "Passive Star Coupler",
-          "Mechanical Switch",
-          "Active Router"
+          "Passive Splitter",
+          "AWG (Arrayed Waveguide Gratings)",
+          "Active Switch",
+          "Coaxial Cable"
         ],
-        "answer": "Arrayed Waveguide Grating (AWG)"
+        "answer": "AWG (Arrayed Waveguide Gratings)"
       },
       {
-        "q": "In CPON (Composite PON), how is the upstream channel shared?",
-        "opts": ["WDM", "TDMA", "CDMA", "FDMA"],
+        "q": "In C-PON, what is used for upstream transmission?",
+        "opts": [
+          "WDM in 1550-nm band",
+          "Single shared wavelength in 1300-nm band",
+          "Dedicated wavelength per ONU",
+          "LED source"
+        ],
+        "answer": "Single shared wavelength in 1300-nm band"
+      },
+      {
+        "q": "What access method does C-PON use for upstream?",
+        "opts": [
+          "FDMA",
+          "CDMA",
+          "TDMA",
+          "SDMA"
+        ],
         "answer": "TDMA"
       },
       {
-        "q": "What technology allows CPON to support upstream and downstream on a single fiber?",
+        "q": "What allows C-PON to support upstream and downstream on a single fiber?",
         "opts": [
-          "Coarse WDM (CWDM)",
-          "Dense WDM (DWDM)",
-          "Time Division Multiplexing",
-          "Space Division Multiplexing"
+          "CWDM",
+          "DWDM",
+          "TDM",
+          "FDM"
         ],
-        "answer": "Coarse WDM (CWDM)"
+        "answer": "CWDM"
       },
       {
-        "q": "In the LARNET architecture, what device is used at the ONU for transmission?",
-        "opts": ["Tunable Laser", "LED", "Fixed Laser", "Modulator"],
+        "q": "What type of receiver does the C-PON OLT require?",
+        "opts": [
+          "Standard Receiver",
+          "Single-Frequency Burst-mode Receiver",
+          "Broadband Receiver",
+          "Tunable Receiver"
+        ],
+        "answer": "Single-Frequency Burst-mode Receiver"
+      },
+      {
+        "q": "What does LARNET stand for?",
+        "opts": [
+          "Local Area Ring Network",
+          "Local Access Remote Network",
+          "Long Area Route Network",
+          "Light Access Radio Network"
+        ],
+        "answer": "Local Access Remote Network"
+      },
+      {
+        "q": "What component is used at the ONU in LARNET architecture?",
+        "opts": [
+          "Laser",
+          "LED",
+          "Modulator",
+          "Reflector"
+        ],
         "answer": "LED"
       }
     ],
     "tf": [
       {
-        "q": "PONs can be deployed in tree, ring, or bus topologies.",
+        "q": "There are three main topologies for PON: Tree, Bus, and Ring.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "In a PON, optical signal attenuation is identical for all ONUs.",
+        "q": "The Near-Far Problem is caused by equal distances between the CO and ONUs.",
         "answer": "False",
-        "correction": "Attenuation varies due to unequal distances."
+        "correction": "It is caused by unequal distances."
       },
       {
-        "q": "A receiver adjusted for a strong signal might mistake zeros for ones when receiving a weak signal.",
+        "q": "A burst-mode receiver is necessary in the ONU.",
         "answer": "False",
-        "correction": "It may mistakenly read ones as zeros."
+        "correction": "It is necessary only in the OLT."
       },
       {
-        "q": "ONUs require burst-mode receivers to read data from the OLT.",
-        "answer": "False",
-        "correction": "ONUs read a continuous bit stream; only OLT needs burst-mode."
-      },
-      {
-        "q": "EPON carries data traffic encapsulated in Ethernet frames.",
+        "q": "EPON operates at standard Ethernet rates.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "In EPON downstream, data is broadcast to all ONUs.",
+        "q": "In EPON downstream, packets are broadcast to all ONUs.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "In EPON upstream, data frames from one ONU are visible to other ONUs.",
+        "q": "In EPON upstream, data frames from one ONU are received by all other ONUs.",
         "answer": "False",
-        "correction": "Directional properties of the combiner prevent this."
+        "correction": "They reach only the OLT due to directional properties."
       },
       {
-        "q": "WDM-PON suffers from high power-splitting losses like basic PONs.",
+        "q": "WDM PONs suffer from power-splitting losses like basic PONs.",
         "answer": "False",
-        "correction": "It does not suffer power-splitting losses."
+        "correction": "They do not suffer power-splitting losses."
       },
       {
-        "q": "WDM-PON allows different ONUs to operate at different bit rates.",
+        "q": "In WDM PONs, different ONUs can support different bit rates.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "In CPON, the upstream uses WDM.",
+        "q": "C-PON uses WDM for both upstream and downstream links.",
         "answer": "False",
-        "correction": "Upstream uses a single wavelength shared via TDMA."
+        "correction": "It uses WDM for downstream and a single shared wavelength for upstream."
       },
       {
-        "q": "LARNET stands for Local Access Remote Network.",
-        "answer": "True",
-        "correction": ""
-      },
-      {
-        "q": "Most WDM PON designs make use of AWGs (Arrayed Waveguide Gratings).",
+        "q": "LARNET uses an LED at the ONU.",
         "answer": "True",
         "correction": ""
       }
     ]
-  },
+  }
+,
   "12": {
     "mcq": [
       {
@@ -3777,560 +4116,993 @@
       }
     ]
   },
+  
   "13": {
     "mcq": [
       {
-        "q": "What does Radio Frequency (RF) refer to?",
+        "q": "What does RF stand for?",
         "opts": [
-          "Sound waves",
-          "Electromagnetic waves",
-          "Gravitational waves",
-          "Mechanical waves"
+          "Radio Field",
+          "Radio Frequency",
+          "Radial Frequency",
+          "Remote Frequency"
         ],
-        "answer": "Electromagnetic waves"
+        "answer": "Radio Frequency"
       },
       {
-        "q": "What is the typical frequency range of the RF electromagnetic spectrum?",
+        "q": "What is the typical frequency range for Radio Frequency waves?",
         "opts": [
-          "3 Hz to 300 kHz",
+          "3 Hz to 300 Hz",
           "3 kHz to 300 GHz",
-          "3 MHz to 300 THz",
-          "3 GHz to 300 PHz"
+          "300 MHz to 300 GHz",
+          "3 kHz to 30 MHz"
         ],
         "answer": "3 kHz to 300 GHz"
       },
       {
-        "q": "What category of waves in the spectrum has the longest wavelength?",
-        "opts": ["Micro Waves", "Infrared", "Radio Waves", "X-ray"],
-        "answer": "Radio Waves"
-      },
-      {
-        "q": "Which wave category follows Ultraviolet in the direction of decreasing wavelength?",
-        "opts": ["Visible light", "Infrared", "X-ray", "Gamma rays"],
-        "answer": "X-ray"
-      },
-      {
-        "q": "What is the speed of RF waves in a vacuum?",
-        "opts": ["300,000 m/s", "300,000 km/s", "3,000 km/s", "30,000 km/s"],
-        "answer": "300,000 km/s"
-      },
-      {
-        "q": "How is 3 kHz to 30 kHz RF classified?",
-        "opts": [
-          "Low Frequency (LF)",
-          "Very Low Frequency (VLF)",
-          "Medium Frequency (MF)",
-          "High Frequency (HF)"
-        ],
-        "answer": "Very Low Frequency (VLF)"
-      },
-      {
-        "q": "What is the frequency range for Medium RF (Low Frequency - LF)?",
+        "q": "What is the frequency range for Low RF (VLF)?",
         "opts": [
           "3 kHz to 30 kHz",
           "30 kHz to 300 kHz",
           "300 kHz to 30 MHz",
-          "30 MHz to 300 GHz"
+          "Up to 300 GHz"
+        ],
+        "answer": "3 kHz to 30 kHz"
+      },
+      {
+        "q": "What is the frequency range for Medium RF (LF)?",
+        "opts": [
+          "3 kHz to 30 kHz",
+          "30 kHz to 300 kHz",
+          "300 kHz to 30 MHz",
+          "Up to 300 GHz"
         ],
         "answer": "30 kHz to 300 kHz"
       },
       {
-        "q": "High RF (300 kHz to 30 MHz) includes which frequency classifications?",
-        "opts": ["VLF and LF", "MF and HF", "UHF and SHF", "EHF and VHF"],
-        "answer": "MF and HF"
+        "q": "What is the frequency range for High RF (MF, HF)?",
+        "opts": [
+          "3 kHz to 30 kHz",
+          "30 kHz to 300 kHz",
+          "300 kHz to 30 MHz",
+          "Up to 300 GHz"
+        ],
+        "answer": "300 kHz to 30 MHz"
       },
       {
-        "q": "Which application uses RF for accurate positioning?",
-        "opts": ["MRI", "Radar", "GPS", "Wi-Fi"],
+        "q": "What is the speed of RF waves in a vacuum?",
+        "opts": [
+          "300,000 m/s",
+          "300,000 km/s",
+          "3,000 km/s",
+          "30,000 km/s"
+        ],
+        "answer": "300,000 km/s"
+      },
+      {
+        "q": "Which technology uses RF for accurate positioning?",
+        "opts": [
+          "Wi-Fi",
+          "Bluetooth",
+          "GPS",
+          "MRI"
+        ],
         "answer": "GPS"
       },
       {
-        "q": "In medical use, RF waves are employed in which machines?",
-        "opts": ["X-ray", "MRI", "ECG", "Dialysis"],
+        "q": "Which medical machine uses RF waves?",
+        "opts": [
+          "X-Ray",
+          "MRI",
+          "CT Scan",
+          "Ultrasound"
+        ],
         "answer": "MRI"
       },
       {
-        "q": "How is Radio Frequency generated?",
+        "q": "How is RF generated in an electronic circuit?",
         "opts": [
-          "Rotating a magnet",
-          "Oscillating a current",
-          "Heating a wire",
-          "Reflecting light"
+          "Static charge",
+          "Oscillating current",
+          "Magnetic pulse",
+          "Thermal expansion"
         ],
-        "answer": "Oscillating a current"
+        "answer": "Oscillating current"
       },
       {
-        "q": "What sends the generated RF signal through a medium?",
-        "opts": ["Resistor", "Receiver", "Antenna", "Capacitor"],
+        "q": "What device sends the generated RF signal through a medium?",
+        "opts": [
+          "Receiver",
+          "Antenna",
+          "Transistor",
+          "Capacitor"
+        ],
         "answer": "Antenna"
       },
       {
         "q": "What does AIDC stand for?",
         "opts": [
-          "Automated Identification and Data Control",
+          "Automated Intelligent Data Control",
           "Automatic Identification and Data Capture",
-          "Advanced Identifier and Data Channel",
-          "Active Identification and Direct Capture"
+          "Advanced Identity Data Code",
+          "Analog Identification Digital Capture"
         ],
         "answer": "Automatic Identification and Data Capture"
       },
       {
-        "q": "AIDC methods directly enter data into computer systems without _______.",
+        "q": "What is a key benefit of AIDC?",
         "opts": [
           "Manual data entry",
-          "Hardware interfaces",
-          "Software integration",
-          "Electronic circuits"
+          "Slower processing",
+          "Direct entry without manual data entry",
+          "Increased physical contact"
         ],
-        "answer": "Manual data entry"
+        "answer": "Direct entry without manual data entry"
       },
       {
-        "q": "Barcodes and QR codes are examples of which AIDC component?",
+        "q": "Which of the following is an example of a Data Carrier?",
         "opts": [
-          "Data Capture Devices",
-          "Data Processing Systems",
-          "Communication Channels",
-          "Data Carriers"
+          "Barcode scanner",
+          "RFID reader",
+          "QR code",
+          "Database"
         ],
-        "answer": "Data Carriers"
+        "answer": "QR code"
       },
       {
-        "q": "Which of the following is a data capture device?",
-        "opts": ["Smart card", "RFID reader", "Database", "ERP software"],
-        "answer": "RFID reader"
-      },
-      {
-        "q": "What transmits captured AIDC data to a processing system?",
+        "q": "Which of the following is an example of a Data Capture Device?",
         "opts": [
-          "Data carrier",
-          "Communication Channels",
-          "Interrogator",
-          "Asset locator"
+          "RFID tag",
+          "Smart card",
+          "Barcode scanner",
+          "ERP software"
         ],
-        "answer": "Communication Channels"
+        "answer": "Barcode scanner"
       },
       {
-        "q": "Which system interprets and manages collected AIDC data?",
+        "q": "Which component transmits captured data to a processing system?",
         "opts": [
-          "Capture device",
-          "Data Processing Systems",
-          "Carrier system",
-          "Antenna array"
-        ],
-        "answer": "Data Processing Systems"
-      },
-      {
-        "q": "Magnetic stripe cards are a type of _______.",
-        "opts": [
-          "Biometric technology",
-          "AIDC technology",
-          "Optical character recognition",
+          "Data Carrier",
+          "Communication Channel",
+          "Data Capture Device",
           "Middleware"
         ],
-        "answer": "AIDC technology"
+        "answer": "Communication Channel"
       },
       {
-        "q": "What does RFID technology use to identify and track objects?",
+        "q": "What does RFID stand for?",
         "opts": [
-          "Sound pulses",
-          "Magnetic strips",
-          "Electromagnetic fields",
-          "Visible light beams"
+          "Radio Frequency Identity",
+          "Radio Frequency Identification",
+          "Remote Frequency Identification",
+          "Radio Field ID"
         ],
-        "answer": "Electromagnetic fields"
+        "answer": "Radio Frequency Identification"
       },
       {
-        "q": "RFID allows for automated data collection without physical contact or _______.",
+        "q": "Which feature distinguishes RFID from barcodes?",
         "opts": [
-          "Radio waves",
-          "Line-of-sight",
-          "Antennas",
-          "Electrical power"
+          "Requires manual entry",
+          "Requires line-of-sight",
+          "No line-of-sight needed",
+          "Uses optical light"
         ],
-        "answer": "Line-of-sight"
+        "answer": "No line-of-sight needed"
       },
       {
-        "q": "What is the technical name for an RFID tag?",
-        "opts": ["Interrogator", "Middleware", "Transceiver", "Transponder"],
+        "q": "What is another name for the RFID Tag?",
+        "opts": [
+          "Interrogator",
+          "Transceiver",
+          "Transponder",
+          "Middleware"
+        ],
         "answer": "Transponder"
       },
       {
-        "q": "What is the technical name for an RFID reader?",
-        "opts": ["Transmitter", "Interrogator", "Controller", "Data carrier"],
+        "q": "What is another name for the RFID Reader?",
+        "opts": [
+          "Transponder",
+          "Interrogator",
+          "Carrier",
+          "Integrator"
+        ],
         "answer": "Interrogator"
       },
       {
-        "q": "Which part of an RFID tag stores data and unique identifiers?",
-        "opts": ["Microchip (IC)", "Antenna", "Battery", "Middleware"],
+        "q": "Which component of an RFID tag stores the unique identifier?",
+        "opts": [
+          "Antenna",
+          "Microchip (IC)",
+          "Battery",
+          "Substrate"
+        ],
         "answer": "Microchip (IC)"
       },
       {
-        "q": "Which RFID tag type has no internal power source?",
+        "q": "Which type of RFID tag has no internal power source?",
         "opts": [
-          "Active Tags",
-          "Passive Tags",
-          "Semi-Passive Tags",
-          "Powered Tags"
+          "Active Tag",
+          "Semi-Passive Tag",
+          "Passive Tag",
+          "Battery-Assisted Tag"
         ],
-        "answer": "Passive Tags"
+        "answer": "Passive Tag"
       },
       {
-        "q": "What powers an active RFID tag?",
+        "q": "How are Active Tags powered?",
         "opts": [
           "Reader's signal",
           "Internal battery",
-          "External capacitor",
-          "Middleware signal"
+          "Solar power",
+          "Kinetic energy"
         ],
         "answer": "Internal battery"
       },
       {
-        "q": "Which RFID reader component combines transmitter and receiver functions?",
-        "opts": ["Antenna", "Controller", "Transceiver", "Interface"],
+        "q": "What powers the chip in a Semi-Passive Tag?",
+        "opts": [
+          "Reader's signal",
+          "Internal battery",
+          "External power source",
+          "Solar panel"
+        ],
+        "answer": "Internal battery"
+      },
+      {
+        "q": "Which component of an RFID reader combines transmitter and receiver functions?",
+        "opts": [
+          "Antenna",
+          "Controller",
+          "Transceiver",
+          "Middleware"
+        ],
         "answer": "Transceiver"
       },
       {
-        "q": "Which component of an RFID reader processes tag data?",
-        "opts": ["Antenna", "Controller", "Transceiver", "Interface"],
-        "answer": "Controller"
-      },
-      {
-        "q": "Which software eliminates duplicate or redundant RFID data?",
-        "opts": ["Interface", "Transceiver", "Middleware", "Interrogator"],
-        "answer": "Middleware"
-      },
-      {
-        "q": "How are passive tags powered?",
+        "q": "What is the function of the Middleware in an RFID system?",
         "opts": [
-          "Internal batteries",
-          "Electromagnetic field from reader",
-          "Wired connection",
-          "Middleware pulses"
+          "Generates RF waves",
+          "Powers the tag",
+          "Handles and filters collected data",
+          "Transmits signals"
         ],
-        "answer": "Electromagnetic field from reader"
+        "answer": "Handles and filters collected data"
+      },
+      {
+        "q": "What specific task does Middleware perform regarding data?",
+        "opts": [
+          "Creates data",
+          "Eliminates duplicate data",
+          "Encrypts data",
+          "Deletes all data"
+        ],
+        "answer": "Eliminates duplicate data"
+      },
+      {
+        "q": "Which interface links the RFID reader to other systems like databases?",
+        "opts": [
+          "Communication Interface",
+          "Power Supply",
+          "Antenna Interface",
+          "Tag Interface"
+        ],
+        "answer": "Communication Interface"
+      },
+      {
+        "q": "What powers a Passive RFID tag?",
+        "opts": [
+          "Internal battery",
+          "Electromagnetic field from the reader",
+          "Wired connection",
+          "Ambient light"
+        ],
+        "answer": "Electromagnetic field from the reader"
       }
     ],
     "tf": [
       {
-        "q": "RF waves travel at approximately 300,000 km/s in a vacuum.",
+        "q": "RF waves travel at the speed of light in a vacuum.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Radio frequencies fall between 3 kHz and 300 GHz.",
-        "answer": "True",
-        "correction": ""
-      },
-      {
-        "q": "RF generation occurs by oscillating a current in an electronic circuit.",
-        "answer": "True",
-        "correction": ""
-      },
-      {
-        "q": "AIDC methods require manual data entry to improve accuracy.",
+        "q": "Low Frequency (LF) range is 300 kHz to 30 MHz.",
         "answer": "False",
-        "correction": "AIDC enters data directly without manual entry."
+        "correction": "LF is 30 kHz to 300 kHz."
       },
       {
-        "q": "Wi-Fi and Bluetooth are examples of AIDC communication channels.",
-        "answer": "True",
-        "correction": ""
-      },
-      {
-        "q": "RFID technology requires physical contact to identify objects.",
+        "q": "AIDC technologies require manual data entry.",
         "answer": "False",
-        "correction": "RFID works without physical contact or line-of-sight."
+        "correction": "AIDC eliminates manual data entry."
       },
       {
-        "q": "A semi-passive tag uses a battery to power its chip but relies on the reader's signal for communication.",
+        "q": "Barcodes and RFID tags are examples of Data Carriers.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "The tag antenna is responsible for sending RF signals to activate tags.",
+        "q": "RFID requires line-of-sight to identify objects.",
         "answer": "False",
-        "correction": "The reader antenna sends signals to activate tags."
+        "correction": "RFID does not require line-of-sight."
       },
       {
-        "q": "Middleware is responsible for data filtering and system integration.",
+        "q": "An RFID Reader is also known as a Transponder.",
+        "answer": "False",
+        "correction": "A Reader is an Interrogator; a Tag is a Transponder."
+      },
+      {
+        "q": "Passive tags rely on the reader's signal for power.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Ethernet and USB are wired communication interface examples for RFID readers.",
+        "q": "Active tags use an internal battery for long-range communication.",
         "answer": "True",
         "correction": ""
+      },
+      {
+        "q": "Semi-passive tags rely on the reader's signal to power the chip.",
+        "answer": "False",
+        "correction": "They use a battery for the chip but rely on the reader for communication."
+      },
+      {
+        "q": "Middleware is the hardware component of the RFID system.",
+        "answer": "False",
+        "correction": "Middleware is a software system."
       }
     ]
-  },
+  }
+,
   "14": {
     "mcq": [
       {
         "q": "Which component of an RFID tag transmits and receives RF signals?",
-        "opts": ["Microchip", "Battery", "Substrate", "Antenna"],
-        "answer": "Antenna"
-      },
-      {
-        "q": "Unlike RFID, barcode technology requires _______ to decode information.",
-        "opts": ["Radio waves", "Optical scanning", "Magnetic fields", "Sonar"],
-        "answer": "Optical scanning"
-      },
-      {
-        "q": "What is the typical read range for Passive UHF RFID tags?",
         "opts": [
-          "Up to 10 cm",
-          "Up to 1 meter",
-          "Up to 12 meters",
-          "100+ meters"
+          "Chip",
+          "Substrate",
+          "Antenna (Coil)",
+          "Battery"
         ],
-        "answer": "Up to 12 meters"
+        "answer": "Antenna (Coil)"
       },
       {
-        "q": "Which technology allows data to be updated on the carrier?",
-        "opts": ["Barcode", "RFID", "QR Code", "Printed Label"],
+        "q": "What is the function of the substrate in an RFID tag?",
+        "opts": [
+          "Stores data",
+          "Powers the chip",
+          "Holds the chip and antenna together",
+          "Receives RF signals"
+        ],
+        "answer": "Holds the chip and antenna together"
+      },
+      {
+        "q": "Which component is found in Active tags but not in Passive tags?",
+        "opts": [
+          "Microchip",
+          "Antenna",
+          "Substrate",
+          "Battery"
+        ],
+        "answer": "Battery"
+      },
+      {
+        "q": "Does RFID technology require line-of-sight for communication?",
+        "opts": [
+          "Yes",
+          "No",
+          "Only for active tags",
+          "Only for passive tags"
+        ],
+        "answer": "No"
+      },
+      {
+        "q": "What technology uses optical scanning to decode printed patterns?",
+        "opts": [
+          "RFID",
+          "Bluetooth",
+          "Barcode",
+          "NFC"
+        ],
+        "answer": "Barcode"
+      },
+      {
+        "q": "What is the read range of a Passive RFID tag?",
+        "opts": [
+          "Few centimeters",
+          "10 cm to 6 m",
+          "100+ meters",
+          "1 kilometer"
+        ],
+        "answer": "10 cm to 6 m"
+      },
+      {
+        "q": "What is the read range of an Active RFID tag?",
+        "opts": [
+          "Up to 12m",
+          "10 cm to 6 m",
+          "100+ meters",
+          "Infinite"
+        ],
+        "answer": "100+ meters"
+      },
+      {
+        "q": "Which technology allows for bulk reading of multiple items simultaneously?",
+        "opts": [
+          "Barcode",
+          "RFID",
+          "QR Code",
+          "Manual entry"
+        ],
         "answer": "RFID"
       },
       {
-        "q": "Which of the following is a disadvantage of Barcodes compared to RFID?",
+        "q": "What is a disadvantage of RFID regarding interference?",
         "opts": [
-          "High cost",
-          "Susceptible to metal interference",
-          "Prone to damage (e.g., tearing)",
-          "Requires battery"
+          "Susceptible to sunlight",
+          "Susceptible to noise",
+          "Susceptible to metals and liquids",
+          "Susceptible to paper"
         ],
-        "answer": "Prone to damage (e.g., tearing)"
+        "answer": "Susceptible to metals and liquids"
       },
       {
-        "q": "RFID is ideal for which type of scanning?",
+        "q": "Which technology has fixed and unchangeable data storage?",
         "opts": [
-          "Line-of-sight only",
-          "Single item at a time",
-          "Automated and bulk scanning",
-          "Manual optical scanning"
+          "Active RFID",
+          "Passive RFID",
+          "Barcode",
+          "Smart Card"
         ],
-        "answer": "Automated and bulk scanning"
+        "answer": "Barcode"
       },
       {
-        "q": "In a Passive Tag workflow, what powers the microchip?",
+        "q": "What powers the microchip in a Passive RFID tag workflow?",
         "opts": [
-          "Internal battery",
-          "Solar power",
-          "Energy from reader's signal",
+          "Internal Battery",
+          "Solar Panel",
+          "Energy captured from Reader's signal",
           "Kinetic energy"
         ],
-        "answer": "Energy from reader's signal"
+        "answer": "Energy captured from Reader's signal"
       },
       {
-        "q": "What method do passive tags use to transmit data back to the reader?",
+        "q": "What method does a Passive tag use to transmit data back to the reader?",
         "opts": [
           "Active broadcasting",
-          "Backscatter communication",
-          "Bluetooth",
-          "Wi-Fi"
+          "Backscatter",
+          "Direct transmission",
+          "Bluetooth"
         ],
-        "answer": "Backscatter communication"
+        "answer": "Backscatter"
       },
       {
-        "q": "Which type of tag uses an internal battery to transmit signals directly to the reader?",
-        "opts": ["Passive Tag", "Semi-Passive Tag", "Active Tag", "Barcode"],
-        "answer": "Active Tag"
-      },
-      {
-        "q": "In a Semi-Passive tag, what is the battery used for?",
+        "q": "In an Active RFID workflow, what powers the data transmission?",
         "opts": [
-          "Transmitting signals",
-          "Powering the microchip",
-          "Powering the reader",
-          "Generating RF fields"
+          "Reader's field",
+          "Internal battery",
+          "External capacitor",
+          "Middleware"
         ],
-        "answer": "Powering the microchip"
+        "answer": "Internal battery"
       },
       {
-        "q": "What is the approximate cost range for a Passive Tag?",
-        "opts": ["$20+", "$0.20 to $0.5", "$10 to $15", "$50 to $100"],
-        "answer": "$0.20 to $0.5"
+        "q": "What powers the chip in a Semi-Passive RFID tag?",
+        "opts": [
+          "Reader's signal",
+          "Internal battery",
+          "External power source",
+          "Solar energy"
+        ],
+        "answer": "Internal battery"
       },
       {
-        "q": "What is the typical tag life for a Passive RFID tag?",
-        "opts": ["2-6 years", "1 year", "10 years", "20+ years"],
+        "q": "What powers the communication in a Semi-Passive RFID tag?",
+        "opts": [
+          "Internal battery",
+          "Reader's signal",
+          "AC power",
+          "Chip energy"
+        ],
+        "answer": "Reader's signal"
+      },
+      {
+        "q": "What is the typical tag life of a Passive RFID tag?",
+        "opts": [
+          "2-6 years",
+          "1 year",
+          "20+ years",
+          "100 years"
+        ],
         "answer": "20+ years"
       },
       {
-        "q": "Active tags are capable of recognizing thousands of tags at speeds up to _______.",
-        "opts": ["10 mph", "50 mph", "100 mph", "500 mph"],
+        "q": "What is the typical tag life of an Active RFID tag?",
+        "opts": [
+          "20+ years",
+          "2-6 years",
+          "10-15 years",
+          "Indefinite"
+        ],
+        "answer": "2-6 years"
+      },
+      {
+        "q": "Which tag type has a higher initial cost ($20+)?",
+        "opts": [
+          "Passive Tags",
+          "Barcode Labels",
+          "Active Tags",
+          "QR Codes"
+        ],
+        "answer": "Active Tags"
+      },
+      {
+        "q": "Which tag type allows reading thousands of tags per second at high speeds?",
+        "opts": [
+          "Passive Tags",
+          "Active Tags",
+          "Barcodes",
+          "Semi-Passive Tags"
+        ],
+        "answer": "Active Tags"
+      },
+      {
+        "q": "What signal strength is required from the reader for Passive Tags?",
+        "opts": [
+          "Low strength",
+          "High strength",
+          "Zero strength",
+          "Variable strength"
+        ],
+        "answer": "High strength"
+      },
+      {
+        "q": "What is the best use case for Barcode technology?",
+        "opts": [
+          "Automated bulk scanning",
+          "Toll collection",
+          "Low-cost, simple identification (POS)",
+          "Asset tracking"
+        ],
+        "answer": "Low-cost, simple identification (POS)"
+      },
+      {
+        "q": "What is a key advantage of RFID over Barcode regarding data?",
+        "opts": [
+          "Data is read-only",
+          "Data capacity is lower",
+          "Tags can be reused and updated",
+          "Data is visible to the eye"
+        ],
+        "answer": "Tags can be reused and updated"
+      },
+      {
+        "q": "Which system component processes data for analysis after reception?",
+        "opts": [
+          "Antenna",
+          "Middleware",
+          "Tag",
+          "Battery"
+        ],
+        "answer": "Middleware"
+      },
+      {
+        "q": "What is the cost range for a Passive RFID tag?",
+        "opts": [
+          "$20 - $50",
+          "$0.20 - $0.50",
+          "$100+",
+          "$5 - $10"
+        ],
+        "answer": "$0.20 - $0.50"
+      },
+      {
+        "q": "Active RFID tags can be read at speeds up to what?",
+        "opts": [
+          "10 mph",
+          "50 mph",
+          "100 mph",
+          "200 mph"
+        ],
         "answer": "100 mph"
-      },
-      {
-        "q": "Which frequency band operates at 125-134 KHz?",
-        "opts": [
-          "High Frequency (HF)",
-          "Ultra High Frequency (UHF)",
-          "Low Frequency (LF)",
-          "Microwave"
-        ],
-        "answer": "Low Frequency (LF)"
-      },
-      {
-        "q": "Low Frequency (LF) tags require which type of antenna?",
-        "opts": [
-          "Dipole antenna",
-          "Coil antenna with many turns",
-          "Patch antenna",
-          "Slot antenna"
-        ],
-        "answer": "Coil antenna with many turns"
-      },
-      {
-        "q": "What is a key advantage of Low Frequency (LF) tags?",
-        "opts": [
-          "High data rates",
-          "Long read range",
-          "Not absorbed by water and tissue",
-          "Cheap manufacturing"
-        ],
-        "answer": "Not absorbed by water and tissue"
-      },
-      {
-        "q": "What is a disadvantage of Low Frequency (LF) tags?",
-        "opts": [
-          "Absorbed by wood",
-          "Does not penetrate metals",
-          "High regulatory limitations",
-          "Short tag life"
-        ],
-        "answer": "Does not penetrate metals"
-      },
-      {
-        "q": "Ultra High Frequency (UHF) tags typically operate in which range?",
-        "opts": ["125 KHz", "13.56 MHz", "890-960 MHz", "2.45 GHz"],
-        "answer": "890-960 MHz"
-      },
-      {
-        "q": "What is the main application mentioned for UHF passive tags?",
-        "opts": [
-          "Animal tagging",
-          "Supply Chain Management",
-          "Access control",
-          "NFC payments"
-        ],
-        "answer": "Supply Chain Management"
-      },
-      {
-        "q": "UHF antennas are _______ providing a controlled read zone.",
-        "opts": ["Omnidirectional", "Directional", "Circular", "Random"],
-        "answer": "Directional"
-      },
-      {
-        "q": "UHF signals have difficulty penetrating which materials?",
-        "opts": ["Metals", "Water and tissue", "Plastic", "Cardboard"],
-        "answer": "Water and tissue"
-      },
-      {
-        "q": "Which frequency band is typically 13.56 MHz?",
-        "opts": [
-          "Low Frequency (LF)",
-          "High Frequency (HF)",
-          "Ultra High Frequency (UHF)",
-          "Microwave"
-        ],
-        "answer": "High Frequency (HF)"
-      },
-      {
-        "q": "High Frequency (HF) tags are commonly used for _______.",
-        "opts": [
-          "Animal tagging",
-          "Supply chain logistics",
-          "Smart cards and NFC",
-          "Toll collection"
-        ],
-        "answer": "Smart cards and NFC"
-      },
-      {
-        "q": "What is the typical read range for High Frequency (HF) tags?",
-        "opts": ["Up to 10 cm", "Up to 1 m", "Up to 12 m", "100+ m"],
-        "answer": "Up to 1 m"
-      },
-      {
-        "q": "Which frequency band offers 'Very High' data rates?",
-        "opts": ["LF", "HF", "UHF/Microwave", "AM Radio"],
-        "answer": "UHF/Microwave"
-      },
-      {
-        "q": "Animal tagging and car keys typically use which frequency band?",
-        "opts": [
-          "Low Frequency (LF)",
-          "High Frequency (HF)",
-          "UHF",
-          "Microwave"
-        ],
-        "answer": "Low Frequency (LF)"
-      },
-      {
-        "q": "What factor influences the choice of RFID frequency?",
-        "opts": [
-          "Government regulations",
-          "Type of host material",
-          "Read-range requirements",
-          "All of the above"
-        ],
-        "answer": "All of the above"
-      },
-      {
-        "q": "Active tags typically have a read range of _______.",
-        "opts": [
-          "10-20 meters",
-          "Up to 12 meters",
-          "90 to 230 meters",
-          "1 kilometer"
-        ],
-        "answer": "90 to 230 meters"
-      },
-      {
-        "q": "Which tag type is described as 'More thicker and expensive than 13.56 MHz'?",
-        "opts": ["UHF tags", "LF tags", "Microwave tags", "Smart labels"],
-        "answer": "LF tags"
-      },
-      {
-        "q": "What is a disadvantage of UHF readers compared to HF readers?",
-        "opts": [
-          "Slower read speed",
-          "More expensive",
-          "Larger antenna size",
-          "Lower data rate"
-        ],
-        "answer": "More expensive"
       }
     ],
     "tf": [
       {
-        "q": "Barcodes require line-of-sight to be scanned.",
+        "q": "RFID tags require direct line-of-sight to be read.",
+        "answer": "False",
+        "correction": "Barcodes require line-of-sight; RFID does not."
+      },
+      {
+        "q": "An RFID chip stores data and processes signals.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "RFID tags can store more data than barcodes.",
+        "q": "Barcodes are more durable than RFID tags.",
+        "answer": "False",
+        "correction": "Barcodes are prone to damage; RFID tags are rugged."
+      },
+      {
+        "q": "RFID allows for updating the data stored on the tag.",
         "answer": "True",
         "correction": ""
       },
       {
         "q": "Passive RFID tags have an internal battery.",
         "answer": "False",
-        "correction": "Passive tags have no internal battery."
+        "correction": "Passive tags rely on RF energy from the reader."
       },
       {
-        "q": "Active RFID tags rely on the reader's signal to power their transmission.",
-        "answer": "False",
-        "correction": "Active tags use an internal battery for transmission."
-      },
-      {
-        "q": "Semi-passive tags use a battery to power the chip but rely on the reader for communication.",
+        "q": "Active RFID tags are physically larger than passive tags due to the battery.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Low Frequency (LF) tags are absorbed by water and tissue.",
+        "q": "Semi-passive tags use the battery to power the communication transmission.",
         "answer": "False",
-        "correction": "LF does not get absorbed by water and tissue."
+        "correction": "The battery powers the chip; reader signal powers communication."
+      },
+      {
+        "q": "Active tags can initiate communication by broadcasting continuously.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Passive tags offer a read range of approximately 90 to 230 meters.",
+        "answer": "False",
+        "correction": "Active tags offer this range; Passive is 10cm to 6m (or up to 12m in general comparison)."
+      },
+      {
+        "q": "Barcodes are susceptible to interference from metals and liquids.",
+        "answer": "False",
+        "correction": "Barcodes have no interference issues; RFID does."
+      },
+      {
+        "q": "The cost of an Active tag is generally lower than a Passive tag.",
+        "answer": "False",
+        "correction": "Active tags are high cost ($20+); Passive are low cost."
+      },
+      {
+        "q": "RFID is suitable for toll collection and livestock identification.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In a passive workflow, the reader emits an electromagnetic field to activate the tag.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Barcode technology supports bulk reading of multiple items at once.",
+        "answer": "False",
+        "correction": "Barcode reads one item at a time."
+      },
+      {
+        "q": "Active tags require a high signal strength from the reader to function.",
+        "answer": "False",
+        "correction": "Low strength is sufficient for Active tags."
+      }
+    ]
+  },
+  "15": {
+    "mcq": [
+      {
+        "q": "Which factor influences the choice of frequency for RFID tags?",
+        "opts": [
+          "Government regulatory requirements",
+          "Color of the tag",
+          "Shape of the reader",
+          "Time of day"
+        ],
+        "answer": "Government regulatory requirements"
+      },
+      {
+        "q": "What is the frequency range for Low Frequency (LF) RFID?",
+        "opts": [
+          "13.56 MHz",
+          "890 – 960 MHz",
+          "125 – 134 KHz",
+          "2.45 GHz"
+        ],
+        "answer": "125 – 134 KHz"
+      },
+      {
+        "q": "What type of antenna is required for LF tags?",
+        "opts": [
+          "Dipole antenna",
+          "Coil antenna with several hundred turns",
+          "Patch antenna",
+          "Monopole antenna"
+        ],
+        "answer": "Coil antenna with several hundred turns"
+      },
+      {
+        "q": "What was the first application of LF tags?",
+        "opts": [
+          "Supply chain management",
+          "Credit card payments",
+          "Animal tagging",
+          "Library systems"
+        ],
+        "answer": "Animal tagging"
+      },
+      {
+        "q": "Which material does LF signals NOT penetrate or transmit around?",
+        "opts": [
+          "Water",
+          "Tissue",
+          "Wood",
+          "Metals"
+        ],
+        "answer": "Metals"
+      },
+      {
+        "q": "What is the typical frequency for High Frequency (HF) RFID?",
+        "opts": [
+          "125 KHz",
+          "13.56 MHz",
+          "915 MHz",
+          "5.8 GHz"
+        ],
+        "answer": "13.56 MHz"
+      },
+      {
+        "q": "Which application is common for HF tags in Europe?",
+        "opts": [
+          "Toll collection",
+          "Smart cards",
+          "Car keys",
+          "Logistics"
+        ],
+        "answer": "Smart cards"
+      },
+      {
+        "q": "How does HF antenna design compare to LF?",
+        "opts": [
+          "More complex and expensive",
+          "Simpler, thinner, and cheaper",
+          "Requires more coil turns",
+          "Larger and thicker"
+        ],
+        "answer": "Simpler, thinner, and cheaper"
+      },
+      {
+        "q": "What is the frequency range for Ultra High Frequency (UHF) RFID?",
+        "opts": [
+          "30 – 300 KHz",
+          "3 – 30 MHz",
+          "890 – 960 MHz",
+          "2.45 – 5.8 GHz"
+        ],
+        "answer": "890 – 960 MHz"
+      },
+      {
+        "q": "Which application is primary for UHF RFID?",
+        "opts": [
+          "Animal tagging",
+          "Supply Chain Management",
+          "NFC payments",
+          "Access control"
+        ],
+        "answer": "Supply Chain Management"
+      },
+      {
+        "q": "What type of antennas do UHF readers use to provide a controlled read zone?",
+        "opts": [
+          "Omnidirectional",
+          "Directional",
+          "Coil",
+          "Dipole"
+        ],
+        "answer": "Directional"
+      },
+      {
+        "q": "What materials block UHF signals?",
+        "opts": [
+          "Metals only",
+          "Wood and plastic",
+          "Water and tissue",
+          "Glass"
+        ],
+        "answer": "Water and tissue"
+      },
+      {
+        "q": "What is the read range for passive UHF tags?",
+        "opts": [
+          "Up to 10 cm",
+          "Up to 1 m",
+          "Up to 12 m",
+          "100+ m"
+        ],
+        "answer": "Up to 12 m"
+      },
+      {
+        "q": "Which frequency band is used for NFC and payments?",
+        "opts": [
+          "LF",
+          "HF",
+          "UHF",
+          "Microwave"
+        ],
+        "answer": "HF"
+      },
+      {
+        "q": "What mechanism do passive tags use to communicate without a transmitter?",
+        "opts": [
+          "Active broadcasting",
+          "Frequency hopping",
+          "Backscatter",
+          "Amplitude modulation"
+        ],
+        "answer": "Backscatter"
+      },
+      {
+        "q": "What does a 3dB loss correspond to in signal strength?",
+        "opts": [
+          "10% loss",
+          "50% loss (halves the signal)",
+          "90% loss",
+          "99% loss"
+        ],
+        "answer": "50% loss (halves the signal)"
+      },
+      {
+        "q": "What does a 10dB loss correspond to?",
+        "opts": [
+          "50% loss",
+          "90% loss (ten-fold decrease)",
+          "99% loss",
+          "100% loss"
+        ],
+        "answer": "90% loss (ten-fold decrease)"
+      },
+      {
+        "q": "What is the reference unit for dBm?",
+        "opts": [
+          "1 Watt",
+          "1 milliwatt",
+          "1 Volt",
+          "1 Hertz"
+        ],
+        "answer": "1 milliwatt"
+      },
+      {
+        "q": "What does EIRP stand for?",
+        "opts": [
+          "Effective Internal Radio Power",
+          "Effective Isotropic Radiated Power",
+          "Estimated Input Ratio Power",
+          "Electronic Integrated Radio Protocol"
+        ],
+        "answer": "Effective Isotropic Radiated Power"
+      },
+      {
+        "q": "What reference antenna is used for ERP?",
+        "opts": [
+          "Isotropic radiator",
+          "Half-wave dipole antenna",
+          "Parabolic dish",
+          "Monopole"
+        ],
+        "answer": "Half-wave dipole antenna"
+      },
+      {
+        "q": "What is the FCC standard limit for RFID power?",
+        "opts": [
+          "2W ERP",
+          "4W EIRP (36 dBm)",
+          "1W ERP",
+          "500mW EIRP"
+        ],
+        "answer": "4W EIRP (36 dBm)"
+      },
+      {
+        "q": "What is the ETSI standard limit for RFID power?",
+        "opts": [
+          "4W EIRP",
+          "2W ERP (33 dBm)",
+          "1W EIRP",
+          "30 dBm ERP"
+        ],
+        "answer": "2W ERP (33 dBm)"
+      },
+      {
+        "q": "What is the formula to convert EIRP to ERP?",
+        "opts": [
+          "ERP = EIRP + 2.15 dB",
+          "ERP = EIRP * 2",
+          "ERP = EIRP - 2.15 dB",
+          "ERP = EIRP / 2.15"
+        ],
+        "answer": "ERP = EIRP - 2.15 dB"
+      },
+      {
+        "q": "If EIRP is 36 dBm, what is the ERP?",
+        "opts": [
+          "38.15 dBm",
+          "33.85 dBm",
+          "34 dBm",
+          "32 dBm"
+        ],
+        "answer": "33.85 dBm"
+      },
+      {
+        "q": "Which frequency band offers the highest data rate?",
+        "opts": [
+          "LF",
+          "HF",
+          "Microwave",
+          "UHF"
+        ],
+        "answer": "Microwave"
+      },
+      {
+        "q": "What is the typical read range for LF tags?",
+        "opts": [
+          "Up to 10 cm",
+          "Up to 1 m",
+          "Up to 12 m",
+          "100+ m"
+        ],
+        "answer": "Up to 10 cm"
+      },
+      {
+        "q": "What is a disadvantage of LF tags regarding data?",
+        "opts": [
+          "Handles large amounts of data",
+          "Handles only small amounts of data",
+          "Fast read speeds",
+          "High interference sensitivity"
+        ],
+        "answer": "Handles only small amounts of data"
+      },
+      {
+        "q": "What is the antenna characteristic of HF readers?",
+        "opts": [
+          "Directional",
+          "Non-directional",
+          "Highly focused",
+          "Beamforming"
+        ],
+        "answer": "Non-directional"
+      },
+      {
+        "q": "Microwave RFID operates at which frequencies?",
+        "opts": [
+          "125 KHz",
+          "13.56 MHz",
+          "2.45 GHz and 5.8 GHz",
+          "900 MHz"
+        ],
+        "answer": "2.45 GHz and 5.8 GHz"
+      },
+      {
+        "q": "What antenna gain unit does FCC standard use?",
+        "opts": [
+          "dBd",
+          "dBi",
+          "dBm",
+          "dBW"
+        ],
+        "answer": "dBi"
+      }
+    ],
+    "tf": [
+      {
+        "q": "LF tags are expensive to manufacture due to the coil antenna requirements.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "LF signals are absorbed by water and tissue.",
+        "answer": "False",
+        "correction": "LF is NOT absorbed by water, tissue, or wood."
+      },
+      {
+        "q": "HF tags have higher data rates than LF tags.",
+        "answer": "True",
+        "correction": ""
       },
       {
         "q": "UHF tags are effective around metals.",
@@ -4338,787 +5110,988 @@
         "correction": ""
       },
       {
-        "q": "The typical read range for LF tags is up to 12 meters.",
+        "q": "UHF signals penetrate water and tissue well.",
         "answer": "False",
-        "correction": "LF range is up to 10 cm."
+        "correction": "UHF does NOT penetrate water or tissue."
       },
       {
-        "q": "High Frequency (HF) tags have a higher interference sensitivity than LF tags.",
+        "q": "Reader cost for HF is generally lower than both LF and UHF.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Active tags are generally cheaper than passive tags.",
+        "q": "UHF tags are larger than HF tags.",
         "answer": "False",
-        "correction": "Active tags are significantly more expensive ($20+)."
-      }
-    ]
-  },
-  "15": {
-    "mcq": [
-      {
-        "q": "What is the UHF frequency standard range for North America (US/Canada)?",
-        "opts": ["865-868 MHz", "902-928 MHz", "952-955 MHz", "840-844 MHz"],
-        "answer": "902-928 MHz"
+        "correction": "UHF tags and antennas are smaller than HF."
       },
       {
-        "q": "What is the UHF frequency standard range for Europe?",
-        "opts": [
-          "902-928 MHz",
-          "865.6-867.6 MHz",
-          "915-919 MHz",
-          "952-955 MHz"
-        ],
-        "answer": "865.6-867.6 MHz"
-      },
-      {
-        "q": "Which region corresponds to Europe under global regulations?",
-        "opts": ["Region 1", "Region 2", "Region 3", "Region 4"],
-        "answer": "Region 1"
-      },
-      {
-        "q": "Which regulatory body governs Region 2 (USA)?",
-        "opts": ["ETSI", "CEPT", "MPHPT", "FCC"],
-        "answer": "FCC"
-      },
-      {
-        "q": "Which country uses the frequency range 952-955 MHz?",
-        "opts": ["China", "Japan", "India", "Australia"],
-        "answer": "Japan"
-      },
-      {
-        "q": "What communication method do passive tags use to avoid having a transmitter?",
-        "opts": [
-          "Active broadcasting",
-          "Backscatter radio",
-          "Frequency hopping",
-          "Amplitude modulation"
-        ],
-        "answer": "Backscatter radio"
-      },
-      {
-        "q": "What does a 3 dB loss in a cable correspond to?",
-        "opts": [
-          "10% loss of signal",
-          "50% loss of signal",
-          "90% loss of signal",
-          "99% loss of signal"
-        ],
-        "answer": "50% loss of signal"
-      },
-      {
-        "q": "A 20 dB gain corresponds to a signal increase by a factor of _______.",
-        "opts": ["10", "20", "50", "100"],
-        "answer": "100"
-      },
-      {
-        "q": "What is the reference power for the unit 'dBm'?",
-        "opts": ["1 Watt", "1 milliwatt", "10 Watts", "10 milliwatts"],
-        "answer": "1 milliwatt"
-      },
-      {
-        "q": "Which power level in Watts corresponds to 30 dBm?",
-        "opts": ["0.1 W", "1.0 W", "10.0 W", "100.0 W"],
-        "answer": "1.0 W"
-      },
-      {
-        "q": "What does EIRP stand for?",
-        "opts": [
-          "Effective Internal Radio Power",
-          "Effective Isotropic Radiated Power",
-          "Estimated Input Radio Power",
-          "Energy Input Ratio Power"
-        ],
-        "answer": "Effective Isotropic Radiated Power"
-      },
-      {
-        "q": "In the EIRP formula, the antenna gain ($G_{antenna}$) is measured in _______.",
-        "opts": ["dB", "dBm", "dBi", "dBd"],
-        "answer": "dBi"
-      },
-      {
-        "q": "What does ERP stand for?",
-        "opts": [
-          "Effective Radiated Power",
-          "Estimated Radiated Power",
-          "Effective Radio Protocol",
-          "Energy Radiated Path"
-        ],
-        "answer": "Effective Radiated Power"
-      },
-      {
-        "q": "ERP assumes the antenna radiates relative to which standard?",
-        "opts": [
-          "Isotropic radiator",
-          "Half-wave dipole",
-          "Parabolic dish",
-          "Monopole"
-        ],
-        "answer": "Half-wave dipole"
-      },
-      {
-        "q": "What is the conversion factor between dBi and dBd?",
-        "opts": ["3.0 dB", "2.15 dB", "10 dB", "1.5 dB"],
-        "answer": "2.15 dB"
-      },
-      {
-        "q": "The FCC standard limits power to _______.",
-        "opts": ["2W ERP", "2W EIRP", "4W ERP", "4W EIRP"],
-        "answer": "4W EIRP"
-      },
-      {
-        "q": "The ETSI standard limits power to _______.",
-        "opts": ["2W ERP", "2W EIRP", "4W ERP", "4W EIRP"],
-        "answer": "2W ERP"
-      },
-      {
-        "q": "If a transmitter outputs 20 dBm, Antenna Gain is 5 dBi, and Cable Loss is 2 dB, what is the EIRP?",
-        "opts": ["27 dBm", "23 dBm", "17 dBm", "25 dBm"],
-        "answer": "23 dBm"
-      },
-      {
-        "q": "If the EIRP is 36 dBm, what is the equivalent ERP?",
-        "opts": ["38.15 dBm", "33.85 dBm", "36 dBm", "34.00 dBm"],
-        "answer": "33.85 dBm"
-      },
-      {
-        "q": "If the ERP is 33 dBm, what is the equivalent EIRP?",
-        "opts": ["30.85 dBm", "35.15 dBm", "31.00 dBm", "33.00 dBm"],
-        "answer": "35.15 dBm"
-      },
-      {
-        "q": "Convert 40 dBm to dBW.",
-        "opts": ["10 dBW", "30 dBW", "40 dBW", "70 dBW"],
-        "answer": "10 dBW"
-      },
-      {
-        "q": "What is 10 Watts expressed in dBm?",
-        "opts": ["10 dBm", "20 dBm", "30 dBm", "40 dBm"],
-        "answer": "40 dBm"
-      },
-      {
-        "q": "Calculate the ERP (in dBm) if Transmitter Power = 30 dBm, Antenna Gain = 4 dBd, and Line Loss = 1 dB.",
-        "opts": ["35 dBm", "33 dBm", "27 dBm", "25 dBm"],
-        "answer": "33 dBm"
-      },
-      {
-        "q": "If a signal of 100 mW goes through a cable with 10 dB loss, what is the output power?",
-        "opts": ["90 mW", "50 mW", "10 mW", "1 mW"],
-        "answer": "10 mW"
-      },
-      {
-        "q": "To convert from dBm to dBW, you must _______.",
-        "opts": ["Add 30", "Subtract 30", "Multiply by 30", "Divide by 30"],
-        "answer": "Subtract 30"
-      }
-    ],
-    "tf": [
-      {
-        "q": "Region 1 in global standards refers to the USA.",
-        "answer": "False",
-        "correction": "Region 1 refers to Europe; Region 2 is USA."
-      },
-      {
-        "q": "Backscatter radio allows a tag to communicate without transmitting its own signal.",
+        "q": "A 20dB loss represents a 99% loss of signal.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "A 10 dB loss corresponds to a 50% decrease in signal level.",
-        "answer": "False",
-        "correction": "10 dB loss corresponds to a 90% decrease; 3 dB loss is 50%."
-      },
-      {
-        "q": "dBm is a logarithmic measure of power referenced to 1 watt.",
-        "answer": "False",
-        "correction": "dBm is referenced to 1 milliwatt (1mW)."
-      },
-      {
-        "q": "EIRP assumes the antenna radiates equally in all directions.",
+        "q": "EIRP assumes an ideal isotropic radiator.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "The conversion formula is ERP = EIRP + 2.15 dB.",
+        "q": "The FCC limit for RFID is 2W ERP.",
         "answer": "False",
-        "correction": "ERP = EIRP - 2.15 dB."
+        "correction": "FCC limit is 4W EIRP; ETSI is 2W ERP."
       },
       {
-        "q": "Antenna gain for ERP is expressed in dBd.",
+        "q": "Backscatter modulation involves changing the reflective property of the tag's antenna.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "36 dBm EIRP is equivalent to approximately 33.85 dBm ERP.",
+        "q": "Microwave RFID has very low interference sensitivity.",
+        "answer": "False",
+        "correction": "It has Very High interference sensitivity."
+      },
+      {
+        "q": "33 dBm ERP is equivalent to 35.15 dBm EIRP.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Systems under ETSI standards are limited to 4W EIRP.",
+        "q": "LF tags are suitable for fast read speeds.",
         "answer": "False",
-        "correction": "ETSI limits to 2W ERP; FCC limits to 4W EIRP."
+        "correction": "LF has slow read speeds."
       },
       {
-        "q": "Power in dBW is equal to Power in dBm minus 30.",
+        "q": "HF frequency is government-regulated.",
         "answer": "True",
         "correction": ""
       }
     ]
   },
+  
   "16": {
     "mcq": [
       {
-        "q": "What is the term for communication from the RFID reader to the tag?",
-        "opts": ["Uplink", "Downlink", "Backscatter", "Inductive coupling"],
-        "answer": "Downlink"
-      },
-      {
-        "q": "What is the term for communication from the RFID tag to the reader?",
-        "opts": ["Downlink", "Load Modulation", "Uplink", "Reader Activation"],
-        "answer": "Uplink"
-      },
-      {
-        "q": "In near-field RFID, communication relies on _______ coupling between the reader and tag.",
-        "opts": ["Capacitive", "Inductive", "Radiative", "Mechanical"],
-        "answer": "Inductive"
-      },
-      {
-        "q": "What is the typical communication range for near-field RFID systems?",
+        "q": "What mechanism does near-field RFID communication rely on?",
         "opts": [
-          "Few cm to 1 meter",
-          "10 to 15 meters",
-          "100 meters",
-          "1 kilometer"
+          "Backscatter modulation",
+          "Optical scanning",
+          "Electromagnetic wave propagation",
+          "Inductive coupling"
         ],
-        "answer": "Few cm to 1 meter"
+        "answer": "Inductive coupling"
       },
       {
-        "q": "Which frequency is used for high-frequency (HF) near-field systems?",
-        "opts": ["125 kHz", "134 kHz", "13.56 MHz", "915 MHz"],
-        "answer": "13.56 MHz"
-      },
-      {
-        "q": "Near-field communication uses _______ modulation to encode data.",
-        "opts": ["Frequency", "Backscatter", "Phase", "Load"],
-        "answer": "Load"
-      },
-      {
-        "q": "Far-field RFID communication occurs via _______ wave propagation.",
-        "opts": ["Magnetic", "Sound", "Electromagnetic", "Seismic"],
-        "answer": "Electromagnetic"
-      },
-      {
-        "q": "What modulation technique is used by far-field RFID tags?",
+        "q": "What modulation technique is used by the tag in near-field communication?",
         "opts": [
           "Load modulation",
           "Backscatter modulation",
-          "Amplitude modulation",
-          "Frequency modulation"
+          "Frequency modulation",
+          "Amplitude modulation"
+        ],
+        "answer": "Load modulation"
+      },
+      {
+        "q": "What is the typical communication range for near-field RFID?",
+        "opts": [
+          "10 to 15 meters",
+          "Few centimeters to 1 meter",
+          "100 meters",
+          "1 kilometer"
+        ],
+        "answer": "Few centimeters to 1 meter"
+      },
+      {
+        "q": "Which frequencies are associated with near-field communication?",
+        "opts": [
+          "UHF and Microwave",
+          "LF and HF",
+          "VHF only",
+          "Microwave only"
+        ],
+        "answer": "LF and HF"
+      },
+      {
+        "q": "Which application is typical for near-field RFID?",
+        "opts": [
+          "Automated toll collection",
+          "Livestock tracking",
+          "Contactless payment systems",
+          "Logistics"
+        ],
+        "answer": "Contactless payment systems"
+      },
+      {
+        "q": "In far-field RFID, communication occurs via what medium?",
+        "opts": [
+          "Magnetic fields",
+          "Electromagnetic wave propagation",
+          "Wired connections",
+          "Sound waves"
+        ],
+        "answer": "Electromagnetic wave propagation"
+      },
+      {
+        "q": "What modulation technique is used in far-field communication?",
+        "opts": [
+          "Load modulation",
+          "Backscatter modulation",
+          "Phase modulation",
+          "Pulse modulation"
         ],
         "answer": "Backscatter modulation"
       },
       {
-        "q": "What is the typical communication range for far-field UHF systems?",
-        "opts": ["1 meter", "5 meters", "10-15 meters", "50 meters"],
-        "answer": "10-15 meters"
-      },
-      {
-        "q": "UHF far-field communication operates in which frequency range?",
+        "q": "What is the typical communication range for far-field RFID?",
         "opts": [
-          "13.56 MHz",
-          "300 MHz - 3 GHz",
-          "3 kHz - 30 kHz",
-          "10 GHz - 20 GHz"
+          "Up to 10–15 meters",
+          "Up to 1 meter",
+          "Up to 1 centimeter",
+          "Infinite"
         ],
-        "answer": "300 MHz - 3 GHz"
+        "answer": "Up to 10–15 meters"
       },
       {
-        "q": "RFID-enabled containers in logistics can provide real-time updates on _______ for perishable goods.",
-        "opts": ["Weight", "Price", "Temperature", "Color"],
-        "answer": "Temperature"
-      },
-      {
-        "q": "What type of collision occurs when coverage areas of two different readers overlap?",
+        "q": "Which frequency bands are used in far-field communication?",
         "opts": [
-          "Tag Collision",
-          "Reader Collision",
-          "Downlink Collision",
-          "Uplink Collision"
+          "LF and HF",
+          "UHF and Microwave",
+          "AM Radio",
+          "VLF"
         ],
-        "answer": "Reader Collision"
+        "answer": "UHF and Microwave"
       },
       {
-        "q": "When multiple tags in the same zone attempt to transmit data simultaneously, it is a _______ collision.",
-        "opts": ["Reader", "System", "Tag", "Modulation"],
-        "answer": "Tag"
-      },
-      {
-        "q": "Which of the following is an impact of RFID signal collisions?",
+        "q": "Which application is suitable for far-field RFID due to its range?",
         "opts": [
-          "Decreased range",
-          "Increased battery life",
+          "Passports",
+          "Keycards",
+          "Automated toll collection",
+          "NFC payments"
+        ],
+        "answer": "Automated toll collection"
+      },
+      {
+        "q": "How does RFID help companies like Walmart and Zara?",
+        "opts": [
+          "Automate stock counts",
+          "Create barcodes",
+          "Manually scan items",
+          "Increase theft"
+        ],
+        "answer": "Automate stock counts"
+      },
+      {
+        "q": "In which industry is RFID critical for regulatory compliance and safety?",
+        "opts": [
+          "Entertainment",
+          "Pharmaceuticals",
+          "Sports",
+          "Education"
+        ],
+        "answer": "Pharmaceuticals"
+      },
+      {
+        "q": "What benefit does RFID provide in logistics monitoring?",
+        "opts": [
+          "Increases risk of loss",
+          "Reduces risk of theft",
+          "Slows down transit",
+          "Removes temperature data"
+        ],
+        "answer": "Reduces risk of theft"
+      },
+      {
+        "q": "How does RFID support sustainability in reverse logistics?",
+        "opts": [
+          "By increasing waste",
+          "By simplifying recycling processes",
+          "By preventing returns",
+          "By using more paper"
+        ],
+        "answer": "By simplifying recycling processes"
+      },
+      {
+        "q": "What occurs when multiple RFID signals overlap causing data corruption?",
+        "opts": [
+          "Modulation",
+          "Encryption",
+          "Collision",
+          "Coupling"
+        ],
+        "answer": "Collision"
+      },
+      {
+        "q": "What causes Reader Collision?",
+        "opts": [
+          "Overlapping coverage areas of two readers",
+          "Multiple tags transmitting at once",
+          "Metal interference",
+          "Liquid absorption"
+        ],
+        "answer": "Overlapping coverage areas of two readers"
+      },
+      {
+        "q": "What causes Tag Collision?",
+        "opts": [
+          "Readers overlapping",
+          "Multiple tags transmitting simultaneously",
+          "Low battery",
+          "High latency"
+        ],
+        "answer": "Multiple tags transmitting simultaneously"
+      },
+      {
+        "q": "What is a negative impact of collision in RFID?",
+        "opts": [
+          "Increased throughput",
           "Increased latency",
-          "Reduced tag memory"
+          "Higher security",
+          "Faster data rates"
         ],
         "answer": "Increased latency"
       },
       {
-        "q": "The Aloha algorithm belongs to which class of anti-collision protocols?",
-        "opts": ["Deterministic", "Probabilistic", "Hybrid", "Binary"],
-        "answer": "Probabilistic"
+        "q": "Which algorithm is probabilistic and involves tags waiting random intervals?",
+        "opts": [
+          "Tree Walking",
+          "Binary Tree",
+          "Aloha",
+          "AES"
+        ],
+        "answer": "Aloha"
       },
       {
-        "q": "Which anti-collision algorithm systematically splits groups based on binary prefixes?",
-        "opts": ["Aloha", "Slotted Aloha", "Tree Walking", "Random Wait"],
+        "q": "Which algorithm is deterministic and uses binary prefixes?",
+        "opts": [
+          "Aloha",
+          "Tree Walking",
+          "Random Wait",
+          "Backscatter"
+        ],
         "answer": "Tree Walking"
       },
       {
-        "q": "Tree Walking is a standard algorithm used in _______ systems.",
-        "opts": ["LF", "HF", "UHF EPC Gen2", "Microwave"],
-        "answer": "UHF EPC Gen2"
+        "q": "The Tree Walking algorithm systematically splits groups based on what?",
+        "opts": [
+          "Signal strength",
+          "Binary prefixes",
+          "Random numbers",
+          "Time of arrival"
+        ],
+        "answer": "Binary prefixes"
       },
       {
-        "q": "What risk involves the unauthorized interception of communication between a reader and tag?",
-        "opts": ["Skimming", "Cloning", "Eavesdropping", "Replay Attack"],
+        "q": "What is the unauthorized interception of communication between reader and tag called?",
+        "opts": [
+          "Skimming",
+          "Eavesdropping",
+          "Cloning",
+          "Jamming"
+        ],
         "answer": "Eavesdropping"
       },
       {
-        "q": "What is the act of using an unauthorized reader to steal tag information like credit card numbers?",
-        "opts": ["Eavesdropping", "Skimming", "Spoofing", "Shielding"],
+        "q": "Using an unauthorized reader to steal information like credit card numbers is called?",
+        "opts": [
+          "Eavesdropping",
+          "Skimming",
+          "Replay Attack",
+          "Collision"
+        ],
         "answer": "Skimming"
       },
       {
-        "q": "Which security risk involves copying data from a legitimate badge onto a blank tag?",
-        "opts": ["Cloning", "Replay Attack", "Jamming", "Interference"],
+        "q": "Copying data from a legitimate tag onto a blank tag is known as?",
+        "opts": [
+          "Cloning",
+          "Skimming",
+          "Eavesdropping",
+          "Modulation"
+        ],
         "answer": "Cloning"
       },
       {
-        "q": "Which mitigation technique uses metal sleeves to block electromagnetic fields?",
+        "q": "Recording a valid transmission and replaying it later is called?",
         "opts": [
-          "Encryption",
-          "Mutual Authentication",
-          "Physical Shielding",
-          "Kill Command"
+          "Cloning",
+          "Replay Attack",
+          "Skimming",
+          "Tree Walking"
         ],
-        "answer": "Physical Shielding"
+        "answer": "Replay Attack"
       },
       {
-        "q": "What command is used to permanently disable a retail tag after purchase?",
+        "q": "Which encryption standards are mentioned for RFID data protection?",
         "opts": [
-          "OFF Command",
+          "HTML/CSS",
+          "AES/DES",
+          "TCP/IP",
+          "GPS/NFC"
+        ],
+        "answer": "AES/DES"
+      },
+      {
+        "q": "Which security mechanism involves a 'Challenge-Response' protocol?",
+        "opts": [
+          "Physical Shielding",
           "Kill Command",
+          "Mutual Authentication",
+          "Skimming"
+        ],
+        "answer": "Mutual Authentication"
+      },
+      {
+        "q": "What is used for physical shielding to block electromagnetic fields?",
+        "opts": [
+          "Plastic covers",
+          "Faraday cages (metal sleeves)",
+          "Foam spacers",
+          "Water barriers"
+        ],
+        "answer": "Faraday cages (metal sleeves)"
+      },
+      {
+        "q": "What command permanently disables a retail tag after purchase?",
+        "opts": [
+          "Stop Command",
           "Sleep Command",
-          "Lock Command"
+          "Kill Command",
+          "Block Command"
         ],
         "answer": "Kill Command"
       },
       {
-        "q": "In Sensor Tags, what does BAP stand for?",
+        "q": "Which sensor tags use an internal battery to log data continuously?",
         "opts": [
-          "Binary Assisted Power",
           "Battery-Assisted Passive",
-          "Backscatter Active Protocol",
-          "Broadband Access Point"
+          "Active Sensor Tags",
+          "Passive Tags",
+          "Near-Field Tags"
         ],
-        "answer": "Battery-Assisted Passive"
+        "answer": "Active Sensor Tags"
       },
       {
-        "q": "Which RFID integration detects misplaced items on warehouse shelves automatically?",
+        "q": "In Battery-Assisted Passive (BAP) tags, what powers the sensor?",
         "opts": [
-          "Smart Mirrors",
-          "Smart Shelves",
-          "Backscatter Modulation",
-          "Load Modulation"
+          "The reader",
+          "The battery",
+          "Solar power",
+          "Inductive coupling"
         ],
-        "answer": "Smart Shelves"
+        "answer": "The battery"
       },
       {
-        "q": "How can metal interference be mitigated in RFID implementations?",
+        "q": "RFID giving a digital identity to non-digital objects is referred to as?",
         "opts": [
-          "Using higher frequency",
-          "Using foam spacers",
-          "Reducing reader power",
-          "Increasing tag memory"
+          "The First Mile",
+          "The Last Meter of IoT",
+          "Smart Mirror",
+          "Cloud Computing"
         ],
-        "answer": "Using foam spacers"
+        "answer": "The Last Meter of IoT"
       },
       {
-        "q": "Which material is a major absorber of UHF energy?",
-        "opts": ["Wood", "Plastic", "Water", "Glass"],
-        "answer": "Water"
-      },
-      {
-        "q": "To detect tags in any orientation, readers should use _______ polarized antennas.",
-        "opts": ["Linear", "Vertical", "Horizontal", "Circular"],
-        "answer": "Circular"
-      },
-      {
-        "q": "If a reader uses a linear antenna, how must the tag antenna be aligned?",
+        "q": "How can metal interference be mitigated in RFID?",
         "opts": [
-          "Perpendicular",
-          "Parallel",
-          "At 45 degrees",
-          "Alignment does not matter"
+          "Using liquid barriers",
+          "Using Mount-on-Metal tags with foam spacers",
+          "Increasing power",
+          "Using linear antennas"
         ],
-        "answer": "Parallel"
+        "answer": "Using Mount-on-Metal tags with foam spacers"
       },
       {
-        "q": "What is the 'Last Meter' of IoT referred to in the lecture?",
+        "q": "What effect does water have on UHF energy?",
         "opts": [
-          "WiFi range",
-          "Bluetooth pairing",
-          "RFID giving identity to non-digital objects",
-          "Ethernet cables"
+          "Reflects it",
+          "Amplifies it",
+          "Absorbs it",
+          "No effect"
         ],
-        "answer": "RFID giving identity to non-digital objects"
+        "answer": "Absorbs it"
+      },
+      {
+        "q": "Which antenna type is used to detect tags in any orientation?",
+        "opts": [
+          "Linear Antenna",
+          "Dipole Antenna",
+          "Circular Polarized Antenna",
+          "Monopole Antenna"
+        ],
+        "answer": "Circular Polarized Antenna"
       }
     ],
     "tf": [
       {
-        "q": "Downlink refers to communication from the tag to the reader.",
-        "answer": "False",
-        "correction": "Downlink is from the reader to the tag (R -> T)."
-      },
-      {
-        "q": "Near-field communication relies on magnetic fields for operation.",
+        "q": "Near-field communication relies on inductive coupling.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Far-field communication has a shorter range than near-field communication.",
+        "q": "Near-field RFID has a longer communication range than far-field.",
         "answer": "False",
-        "correction": "Far-field has a longer range (10-15m) compared to near-field (cm to 1m)."
+        "correction": "Near-field is a few cm to 1m; Far-field is up to 10-15m."
       },
       {
-        "q": "RFID enhances traceability in industries like pharmaceuticals and food.",
+        "q": "In far-field communication, the tag creates a new RF signal to transmit data.",
+        "answer": "False",
+        "correction": "The tag reflects part of the RF signal (backscatter)."
+      },
+      {
+        "q": "Far-field systems are suitable for high-speed applications like moving vehicles.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Reader collision occurs when multiple tags transmit at the same time.",
-        "answer": "False",
-        "correction": "This is Tag Collision; Reader Collision is when reader coverage areas overlap."
-      },
-      {
-        "q": "In Slotted Aloha, if a collision occurs, tags wait a random interval before retrying.",
+        "q": "Amazon uses RFID to enhance robot-assisted sorting in warehouses.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Encryption (like AES or DES) makes data readable even if eavesdropped.",
+        "q": "Aloha is a deterministic anti-collision algorithm.",
         "answer": "False",
-        "correction": "Encryption makes data unreadable without the proper key."
+        "correction": "Aloha is a probabilistic algorithm."
       },
       {
-        "q": "Mutual authentication uses a 'Challenge-Response' mechanism.",
+        "q": "Tree Walking algorithms use a 'divide and conquer' method based on binary prefixes.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Active sensor tags use backscatter for communication.",
+        "q": "Eavesdropping requires the attacker to physically touch the RFID tag.",
         "answer": "False",
-        "correction": "Battery-Assisted Passive (BAP) tags use backscatter; Active tags transmit directly."
+        "correction": "RF signals travel through air and can be sniffed remotely."
       },
       {
-        "q": "Circular polarized antennas detect tags in any orientation but have a slightly reduced range.",
+        "q": "Encrypted RFID data is unreadable without the key.",
         "answer": "True",
         "correction": ""
+      },
+      {
+        "q": "The Kill Command temporarily pauses the tag for later use.",
+        "answer": "False",
+        "correction": "It permanently disables the tag."
+      },
+      {
+        "q": "In Battery-Assisted Passive (BAP) tags, the battery powers the communication transmission.",
+        "answer": "False",
+        "correction": "The battery powers the sensor; communication uses backscatter (passive)."
+      },
+      {
+        "q": "Smart shelves require manual scanning to provide inventory visibility.",
+        "answer": "False",
+        "correction": "They provide real-time visibility without manual scanning."
+      },
+      {
+        "q": "Metal reflects RF waves, creating blind spots.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "LF and HF frequencies penetrate water better than UHF.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Linear antennas can detect tags in any orientation without alignment issues.",
+        "answer": "False",
+        "correction": "Linear antennas must be aligned parallel; Circular Polarized detect any orientation."
       }
     ]
-  },
+  }
+,
   "17": {
     "mcq": [
       {
-        "q": "What type of waves does wireless communication utilize to carry information?",
+        "q": "What is defined as the transmission and reception of data without physical media?",
+        "opts": [
+          "Wired Communication",
+          "Wireless Communication",
+          "Optical Fiber",
+          "Coaxial Transmission"
+        ],
+        "answer": "Wireless Communication"
+      },
+      {
+        "q": "What mechanism does wireless communication utilize?",
         "opts": [
           "Sound waves",
           "Electromagnetic waves",
-          "Seismic waves",
-          "Mechanical waves"
+          "Water waves",
+          "Copper wires"
         ],
         "answer": "Electromagnetic waves"
       },
       {
         "q": "Which of the following is an example of short-distance wireless communication?",
-        "opts": ["Satellite communication", "AM Radio", "Bluetooth", "GPS"],
+        "opts": [
+          "Satellite",
+          "Shortwave Radio",
+          "Bluetooth",
+          "GPS"
+        ],
         "answer": "Bluetooth"
       },
       {
-        "q": "Who demonstrated the first successful wireless transmission using radio waves in 1895?",
+        "q": "Who demonstrated the first successful wireless transmission using radio waves?",
         "opts": [
           "Martin Cooper",
-          "Heinrich Hertz",
           "Guglielmo Marconi",
-          "Alexander Graham Bell"
+          "Tesla",
+          "Bell"
         ],
         "answer": "Guglielmo Marconi"
       },
       {
-        "q": "In which year was the first mobile phone call made?",
-        "opts": ["1895", "1973", "1999", "2000"],
-        "answer": "1973"
+        "q": "Who made the first call on a portable handheld device?",
+        "opts": [
+          "Guglielmo Marconi",
+          "Dr. Martin Cooper",
+          "Steve Jobs",
+          "Heinrich Hertz"
+        ],
+        "answer": "Dr. Martin Cooper"
+      },
+      {
+        "q": "What was the name of the first portable handheld device used in 1973?",
+        "opts": [
+          "iPhone 1",
+          "Nokia 3310",
+          "Motorola DynaTAC 8000X",
+          "BlackBerry"
+        ],
+        "answer": "Motorola DynaTAC 8000X"
       },
       {
         "q": "Which organization introduced the term 'Wi-Fi' in 1999?",
-        "opts": ["IEEE", "FCC", "Wi-Fi Alliance", "Motorola"],
+        "opts": [
+          "IEEE",
+          "Wi-Fi Alliance",
+          "FCC",
+          "Motorola"
+        ],
         "answer": "Wi-Fi Alliance"
       },
       {
-        "q": "What is the typical frequency range for Radio Frequency (RF) waves?",
+        "q": "What type of path exists in Line-of-Sight (LOS) propagation?",
         "opts": [
-          "20 Hz to 20 kHz",
-          "3 kHz to 300 GHz",
-          "300 GHz to 400 THz",
-          "400 THz to 790 THz"
+          "Obstructed path",
+          "Direct, unobstructed path",
+          "Reflected path",
+          "Scattered path"
         ],
-        "answer": "3 kHz to 300 GHz"
+        "answer": "Direct, unobstructed path"
       },
       {
-        "q": "What is the approximate speed of RF waves in a vacuum?",
-        "opts": ["3,000 km/s", "30,000 km/s", "300,000 km/s", "3,000,000 km/s"],
-        "answer": "300,000 km/s"
-      },
-      {
-        "q": "Which frequency band covers 30 MHz to 3 GHz?",
+        "q": "What does Non-Line-of-Sight (NLOS) lead to?",
         "opts": [
-          "HF (High Frequency)",
-          "VHF/UHF (Very/Ultra High Frequency)",
-          "SHF (Super High Frequency)",
-          "EHF (Extremely High Frequency)"
+          "Zero interference",
+          "Multipath propagation",
+          "Direct transmission",
+          "Infinite range"
         ],
-        "answer": "VHF/UHF (Very/Ultra High Frequency)"
+        "answer": "Multipath propagation"
       },
       {
-        "q": "What is a primary application of Super High Frequency (SHF) waves (3 GHz - 30 GHz)?",
+        "q": "What phenomenon occurs when signals reach the receiver through multiple paths?",
         "opts": [
-          "AM Radio",
-          "Satellite communication",
-          "Maritime navigation",
-          "Shortwave radio"
-        ],
-        "answer": "Satellite communication"
-      },
-      {
-        "q": "Which propagation mode involves a direct, unobstructed path between transmitter and receiver?",
-        "opts": [
-          "Non-Line-of-Sight (NLOS)",
-          "Line-of-Sight (LOS)",
           "Multipath",
-          "Skywave"
+          "Doppler Shift",
+          "Ionization",
+          "Polarization"
         ],
-        "answer": "Line-of-Sight (LOS)"
+        "answer": "Multipath"
       },
       {
-        "q": "What phenomenon occurs when signals bounce off large surfaces like buildings?",
-        "opts": ["Diffraction", "Scattering", "Reflection", "Refraction"],
+        "q": "Which propagation phenomenon is essential for Radar systems?",
+        "opts": [
+          "Absorption",
+          "Reflection",
+          "Refraction",
+          "Scattering"
+        ],
         "answer": "Reflection"
       },
       {
-        "q": "Which phenomenon allows signals to pass around obstacles like hills or buildings?",
-        "opts": ["Reflection", "Diffraction", "Refraction", "Absorption"],
+        "q": "Which phenomenon allows signals to reach shadowed zones in urban environments?",
+        "opts": [
+          "Reflection",
+          "Doppler Shift",
+          "Absorption",
+          "Diffraction"
+        ],
         "answer": "Diffraction"
       },
       {
-        "q": "Scattering is most pronounced for which type of signals?",
+        "q": "What causes signal deflection known as scattering?",
         "opts": [
-          "Low frequency signals",
-          "Medium frequency signals",
-          "Higher frequency signals (e.g., 5G millimeter waves)",
-          "AM radio waves"
+          "Large buildings",
+          "Metal surfaces",
+          "Ionosphere",
+          "Small objects (rain, dust)"
         ],
-        "answer": "Higher frequency signals (e.g., 5G millimeter waves)"
+        "answer": "Small objects (rain, dust)"
       },
       {
-        "q": "Which atmospheric layer is responsible for refracting radio waves for long-distance communication?",
-        "opts": ["Troposphere", "Stratosphere", "Ionosphere", "Exosphere"],
-        "answer": "Ionosphere"
+        "q": "Refraction by the ionosphere is crucial for which type of communication?",
+        "opts": [
+          "Bluetooth",
+          "Fiber optics",
+          "Shortwave radio",
+          "Wi-Fi"
+        ],
+        "answer": "Shortwave radio"
       },
       {
-        "q": "What phenomenon causes signal degradation due to water vapor or oxygen absorbing radio waves?",
-        "opts": ["Reflection", "Diffraction", "Absorption", "Refraction"],
+        "q": "What phenomenon involves radio waves being absorbed by atmospheric conditions?",
+        "opts": [
+          "Reflection",
+          "Absorption",
+          "Refraction",
+          "Diffraction"
+        ],
         "answer": "Absorption"
       },
       {
-        "q": "The shift in received frequency caused by relative motion between transmitter and receiver is called _______.",
+        "q": "Rain Fade is especially prominent in which system?",
         "opts": [
-          "Phase Shift",
-          "Doppler Shift",
-          "Amplitude Shift",
-          "Frequency Modulation"
+          "AM Radio",
+          "Satellite Communication",
+          "Bluetooth",
+          "NFC"
         ],
-        "answer": "Doppler Shift"
+        "answer": "Satellite Communication"
       },
       {
-        "q": "Which type of polarization is often used in satellite communications to avoid orientation issues?",
+        "q": "What causes fluctuations in signal strength in urban environments (Multipath Fading)?",
+        "opts": [
+          "Direct LOS",
+          "Signals bouncing off multiple surfaces",
+          "Constant weather",
+          "Fixed receiver"
+        ],
+        "answer": "Signals bouncing off multiple surfaces"
+      },
+      {
+        "q": "What causes a Doppler Shift?",
+        "opts": [
+          "Relative motion between transmitter and receiver",
+          "Rain absorption",
+          "Static obstacles",
+          "Frequency modulation"
+        ],
+        "answer": "Relative motion between transmitter and receiver"
+      },
+      {
+        "q": "What type of polarization do satellites often use?",
         "opts": [
           "Linear Polarization",
+          "Circular Polarization",
           "Horizontal Polarization",
-          "Vertical Polarization",
-          "Circular Polarization"
+          "Vertical Polarization"
         ],
         "answer": "Circular Polarization"
       },
       {
         "q": "In Amplitude Modulation (AM), what characteristic of the carrier wave is varied?",
-        "opts": ["Frequency", "Phase", "Amplitude", "Wavelength"],
+        "opts": [
+          "Frequency",
+          "Phase",
+          "Amplitude",
+          "Wavelength"
+        ],
         "answer": "Amplitude"
       },
       {
-        "q": "What is a major disadvantage of Amplitude Modulation (AM)?",
+        "q": "Which is a disadvantage of Amplitude Modulation (AM)?",
         "opts": [
-          "High complexity",
+          "Complex implementation",
+          "Susceptible to noise",
           "Short range only",
-          "Susceptibility to noise",
-          "Requires large bandwidth"
+          "High cost"
         ],
-        "answer": "Susceptibility to noise"
+        "answer": "Susceptible to noise"
       },
       {
-        "q": "Which analog modulation technique offers better sound quality and resistance to noise?",
-        "opts": ["AM", "FM", "PM", "ASK"],
-        "answer": "FM"
+        "q": "In Frequency Modulation (FM), what remains constant?",
+        "opts": [
+          "Frequency",
+          "Amplitude",
+          "Phase",
+          "Information"
+        ],
+        "answer": "Amplitude"
       },
       {
-        "q": "In Phase Shift Keying (PSK), what is varied to encode data?",
-        "opts": ["Amplitude", "Frequency", "Phase", "Time"],
-        "answer": "Phase"
+        "q": "What is a major advantage of FM over AM?",
+        "opts": [
+          "Smaller bandwidth",
+          "Simpler equipment",
+          "Noise immunity",
+          "Lower quality"
+        ],
+        "answer": "Noise immunity"
       },
       {
-        "q": "How many bits does BPSK (Binary Phase Shift Keying) represent per symbol?",
-        "opts": ["1 bit", "2 bits", "4 bits", "8 bits"],
-        "answer": "1 bit"
+        "q": "What digital modulation method varies the phase of the carrier signal?",
+        "opts": [
+          "AM",
+          "FM",
+          "PSK",
+          "QAM"
+        ],
+        "answer": "PSK"
       },
       {
-        "q": "Quadrature Amplitude Modulation (QAM) is a combination of which two modulation techniques?",
-        "opts": ["AM and FM", "FM and PM", "AM and PM", "ASK and FSK"],
-        "answer": "AM and PM"
+        "q": "How many bits does each phase represent in BPSK?",
+        "opts": [
+          "One",
+          "Two",
+          "Four",
+          "Six"
+        ],
+        "answer": "One"
       },
       {
-        "q": "How many bits per symbol does 16-QAM transmit?",
-        "opts": ["2 bits", "4 bits", "6 bits", "16 bits"],
+        "q": "How many bits does each phase represent in QPSK?",
+        "opts": [
+          "One",
+          "Four",
+          "Three",
+          "Two"
+        ],
+        "answer": "Two"
+      },
+      {
+        "q": "What does QAM stand for?",
+        "opts": [
+          "Quadrature Amplitude Modulation",
+          "Quick Access Modulation",
+          "Quantum Analog Mechanism",
+          "Quadrature Analog Mode"
+        ],
+        "answer": "Quadrature Amplitude Modulation"
+      },
+      {
+        "q": "What two characteristics are varied in QAM?",
+        "opts": [
+          "Frequency and Phase",
+          "Amplitude and Phase",
+          "Frequency and Amplitude",
+          "Time and Space"
+        ],
+        "answer": "Amplitude and Phase"
+      },
+      {
+        "q": "How many bits per symbol does 16-QAM represent?",
+        "opts": [
+          "2 bits",
+          "4 bits",
+          "8 bits",
+          "16 bits"
+        ],
         "answer": "4 bits"
       },
       {
-        "q": "How many bits per symbol does 64-QAM transmit?",
-        "opts": ["4 bits", "6 bits", "8 bits", "64 bits"],
+        "q": "How many bits per symbol does 64-QAM represent?",
+        "opts": [
+          "4 bits",
+          "6 bits",
+          "8 bits",
+          "64 bits"
+        ],
         "answer": "6 bits"
+      },
+      {
+        "q": "What is an advantage of QAM?",
+        "opts": [
+          "Noise immunity at high orders",
+          "Spectrum efficiency",
+          "Simplicity",
+          "Low data rates"
+        ],
+        "answer": "Spectrum efficiency"
       },
       {
         "q": "What is a disadvantage of higher-order QAM (e.g., 64-QAM)?",
         "opts": [
           "Low data rates",
-          "Inefficient bandwidth usage",
-          "High susceptibility to noise",
-          "Simplicity of equipment"
+          "Susceptibility to noise",
+          "Low bandwidth usage",
+          "Low equipment cost"
         ],
-        "answer": "High susceptibility to noise"
+        "answer": "Susceptibility to noise"
       },
       {
-        "q": "Why are digital signals generally preferred over analog signals regarding noise?",
+        "q": "Why are digital signals generally better resistant to noise?",
         "opts": [
-          "They have higher amplitude",
-          "They use more bandwidth",
-          "They can be corrected using error detection",
-          "They are faster"
+          "Noise doesn't exist",
+          "Errors can be corrected",
+          "They use less power",
+          "They are analog"
         ],
-        "answer": "They can be corrected using error detection"
+        "answer": "Errors can be corrected"
       },
       {
-        "q": "Which feature of digital modulation enhances security?",
+        "q": "Which digital modulation scheme is known for high data rates per bandwidth?",
         "opts": [
-          "Higher power",
-          "Encryption",
-          "Lower frequency",
-          "Simpler modulation"
+          "AM",
+          "FM",
+          "BPSK",
+          "QAM"
         ],
-        "answer": "Encryption"
-      },
-      {
-        "q": "Which digital modulation scheme is known for high data rates and efficient bandwidth usage?",
-        "opts": ["AM", "FM", "BPSK", "QAM"],
         "answer": "QAM"
       },
       {
-        "q": "What term describes the phenomenon where rain absorbs or scatters signals in satellite communication?",
-        "opts": ["Sun outage", "Rain fade", "Wind shear", "Cloud cover"],
-        "answer": "Rain fade"
+        "q": "Which digital format advantage allows easier data protection?",
+        "opts": [
+          "Security/Encryption",
+          "Amplitude variation",
+          "Reflection",
+          "Scattering"
+        ],
+        "answer": "Security/Encryption"
+      },
+      {
+        "q": "Atmospheric effects like fog and rain primarily do what to signals?",
+        "opts": [
+          "Amplify",
+          "Scatter and absorb",
+          "Accelerate",
+          "Polarize"
+        ],
+        "answer": "Scatter and absorb"
+      },
+      {
+        "q": "What does BPSK stand for?",
+        "opts": [
+          "Binary Phase Shift Keying",
+          "Basic Phase Signal Key",
+          "Bit Phase System Key",
+          "Binary Pulse Signal Keying"
+        ],
+        "answer": "Binary Phase Shift Keying"
+      },
+      {
+        "q": "Scattering has a pronounced effect on which type of signals?",
+        "opts": [
+          "Low frequency",
+          "High frequency (e.g., 5G)",
+          "Audio signals",
+          "DC signals"
+        ],
+        "answer": "High frequency (e.g., 5G)"
+      },
+      {
+        "q": "Which wireless standard corresponds to IEEE 802.11?",
+        "opts": [
+          "Bluetooth",
+          "Wi-Fi",
+          "NFC",
+          "LTE"
+        ],
+        "answer": "Wi-Fi"
       }
     ],
     "tf": [
       {
-        "q": "Wireless communication requires a physical medium like cables to transmit signals.",
+        "q": "Wireless communication requires physical media like cables.",
         "answer": "False",
-        "correction": "It does not require a physical medium; it uses electromagnetic waves."
+        "correction": "It transmits without physical media."
       },
       {
-        "q": "The first mobile phone call was made using a device called the Motorola DynaTAC 8000X.",
+        "q": "Bluetooth is an example of long-distance communication.",
+        "answer": "False",
+        "correction": "Bluetooth is short-distance."
+      },
+      {
+        "q": "Guglielmo Marconi demonstrated the first successful wireless transmission.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Radio waves have shorter wavelengths than Gamma rays.",
+        "q": "The Motorola DynaTAC 8000X was small and light by modern standards.",
         "answer": "False",
-        "correction": "Radio waves have the longest wavelengths in the spectrum."
+        "correction": "It was large and heavy."
       },
       {
-        "q": "Line-of-Sight (LOS) communication is ideal for high data rates due to minimal interference.",
+        "q": "Line-of-Sight (LOS) allows for high data rates due to minimal interference.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Multipath propagation occurs when signals are unobstructed and travel in a straight line.",
-        "answer": "False",
-        "correction": "It occurs when signals reflect or diffract, reaching the receiver via multiple paths."
-      },
-      {
-        "q": "Diffraction allows wireless signals to reach areas obstructed by buildings.",
+        "q": "Non-Line-of-Sight (NLOS) leads to multipath propagation.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Fog and rain have no effect on wireless signal propagation.",
-        "answer": "False",
-        "correction": "They can scatter and absorb signals, affecting performance."
-      },
-      {
-        "q": "In Frequency Modulation (FM), the amplitude of the carrier wave remains constant.",
+        "q": "Diffraction allows signals to pass around obstacles like buildings.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "QPSK (Quadrature Phase Shift Keying) represents one bit per phase.",
+        "q": "Scattering has a pronounced effect on lower frequency signals.",
         "answer": "False",
-        "correction": "QPSK represents two bits per phase."
+        "correction": "It has a pronounced effect on higher frequency signals."
       },
       {
-        "q": "Digital modulation techniques allow for easier data encryption than analog modulation.",
+        "q": "Refraction is crucial for shortwave radio communication.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "16-QAM uses 16 different frequencies to encode data.",
+        "q": "Rain Fade increases signal quality in satellite communication.",
         "answer": "False",
-        "correction": "It uses 16 different combinations of amplitude and phase."
+        "correction": "It causes degradation."
       },
       {
-        "q": "Doppler shift is crucial in mobile communication due to the relative motion between transmitter and receiver.",
+        "q": "Doppler Shift is caused by the relative motion between transmitter and receiver.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "AM is more efficient in terms of power and bandwidth than FM.",
+        "q": "Mismatched polarization between transmitter and receiver increases signal strength.",
         "answer": "False",
-        "correction": "AM is less efficient in terms of power and bandwidth."
+        "correction": "It leads to reduced signal strength."
       },
       {
-        "q": "Reflection is useful in radar systems.",
+        "q": "AM is less susceptible to noise than FM.",
+        "answer": "False",
+        "correction": "AM is more susceptible to noise."
+      },
+      {
+        "q": "FM requires a larger bandwidth than AM.",
         "answer": "True",
         "correction": ""
       },
       {
-        "q": "Mismatched polarization between antennas increases signal strength.",
+        "q": "In BPSK, each phase represents two bits.",
         "answer": "False",
-        "correction": "It leads to a reduction in signal strength."
+        "correction": "Each phase represents one bit."
+      },
+      {
+        "q": "QAM varies both amplitude and phase.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "16-QAM represents 6 bits per symbol.",
+        "answer": "False",
+        "correction": "16-QAM represents 4 bits per symbol."
+      },
+      {
+        "q": "Digital modulation allows data to be encrypted more easily.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "QPSK requires less bandwidth than AM for a given bit rate.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Higher-order QAM (like 64-QAM) is less sensitive to noise.",
+        "answer": "False",
+        "correction": "It is more sensitive to noise."
       }
     ]
   },
