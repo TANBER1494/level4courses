@@ -1,0 +1,357 @@
+{
+  "1": {
+    "mcq": [
+      {
+        "q": "When a traditional website automatically generates a page from a database to display product listings, what is the primary drawback from a machine's perspective?",
+        "opts": [
+          "The structured relationships are translated into visual formats meant only for humans.",
+          "The database becomes isolated and inaccessible to the original website.",
+          "The search engine completely ignores dynamically generated pages.",
+          "The data is automatically enriched with semantic metadata that is too complex to process."
+        ],
+        "answer": "The structured relationships are translated into visual formats meant only for humans."
+      },
+      {
+        "q": "A student searching for 'automobile maintenance' fails to find a highly relevant article titled 'car repair guide'. This scenario best highlights which limitation of traditional search engines?",
+        "opts": [
+          "Low or no recall",
+          "Results being isolated in single web pages",
+          "High sensitivity to specific vocabulary",
+          "Inability to handle broad queries"
+        ],
+        "answer": "High sensitivity to specific vocabulary"
+      },
+      {
+        "q": "If a search engine returns 500,000 results for a query, but the user finds that most of the pages are completely irrelevant to what they actually need, this search suffers from:",
+        "opts": [
+          "Low recall and low precision",
+          "High recall and low precision",
+          "High recall and high precision",
+          "Low recall and high precision"
+        ],
+        "answer": "High recall and low precision"
+      },
+      {
+        "q": "Why is the term 'information retrieval' considered slightly misleading when describing traditional search engines?",
+        "opts": [
+          "Because they actually retrieve physical documents rather than web pages.",
+          "Because they only find the location of documents, leaving the actual extraction of facts to the human user.",
+          "Because they automatically synthesize answers from multiple sources without user intervention.",
+          "Because they cannot process text-based information effectively."
+        ],
+        "answer": "Because they only find the location of documents, leaving the actual extraction of facts to the human user."
+      },
+      {
+        "q": "A researcher needs to find an author's birth date and the publication year of their first book. If this information is on two different websites, a traditional web environment requires the user to:",
+        "opts": [
+          "Rely on the Semantic Web to automatically merge the data.",
+          "Initiate multiple queries and manually compile the partial information.",
+          "Use a highly specific keyword to force the search engine to merge the pages.",
+          "Write a database script to query the visual HTML tables directly."
+        ],
+        "answer": "Initiate multiple queries and manually compile the partial information."
+      },
+      {
+        "q": "Which of the following represents the fundamental difference between the Traditional Web and the Semantic Web?",
+        "opts": [
+          "The Semantic Web replaces HTML with pure database files.",
+          "The Traditional Web links machines to databases, while the Semantic Web links humans to documents.",
+          "The Traditional Web focuses on visual display for humans, while the Semantic Web focuses on meaningful data for machines.",
+          "The Traditional Web has higher precision in search results compared to the Semantic Web."
+        ],
+        "answer": "The Traditional Web focuses on visual display for humans, while the Semantic Web focuses on meaningful data for machines."
+      },
+      {
+        "q": "A user searches for the word 'Apple' and gets mixed results about the fruit, the technology company, and a record label. This issue occurs primarily because the traditional web:",
+        "opts": [
+          "Lacks contextual understanding and semantics.",
+          "Is highly sensitive to vocabulary.",
+          "Cannot handle short keyword queries.",
+          "Suffers from a low recall rate."
+        ],
+        "answer": "Lacks contextual understanding and semantics."
+      },
+      {
+        "q": "In a hospital, patient records are in one software, lab results in another, and prescriptions in a third. What characteristic of the current web does this exemplify?",
+        "opts": [
+          "Vocabulary sensitivity",
+          "Isolated data",
+          "Human-centric formatting",
+          "High precision retrieval"
+        ],
+        "answer": "Isolated data"
+      },
+      {
+        "q": "What is the primary role of 'metadata' in the context of the Semantic Web?",
+        "opts": [
+          "To format the visual layout of a webpage for better human readability.",
+          "To hide sensitive database information from web crawlers.",
+          "To enrich linked data so machines can understand and reason about it.",
+          "To reduce the number of hyperlinks required on a traditional website."
+        ],
+        "answer": "To enrich linked data so machines can understand and reason about it."
+      },
+      {
+        "q": "When a query is 'too specific' in a traditional search engine, what is the most likely outcome?",
+        "opts": [
+          "The search engine will automatically broaden the terms using semantics.",
+          "The user will retrieve millions of irrelevant pages.",
+          "The user may not retrieve any pages at all.",
+          "The engine will return a single page containing all the extracted answers."
+        ],
+        "answer": "The user may not retrieve any pages at all."
+      },
+      {
+        "q": "How does the Semantic Web envision solving the problem of 'isolated applications'?",
+        "opts": [
+          "By replacing all search engines with a single global database.",
+          "By creating interconnected data that allows tools to access and integrate information seamlessly.",
+          "By preventing websites from using visual formatting like tables and images.",
+          "By requiring all users to manually link related documents together."
+        ],
+        "answer": "By creating interconnected data that allows tools to access and integrate information seamlessly."
+      },
+      {
+        "q": "According to the concept of the Semantic Web, what does it mean for a computer to 'reason' about information?",
+        "opts": [
+          "It can display the data faster than traditional web browsers.",
+          "It can understand relationships between data points and infer new connections.",
+          "It can translate the webpage into multiple human languages instantly.",
+          "It can automatically generate visual charts from plain text."
+        ],
+        "answer": "It can understand relationships between data points and infer new connections."
+      },
+      {
+        "q": "If 'Recall' is defined as retrieving all the relevant pages for a query, a 'low recall' situation means:",
+        "opts": [
+          "The search engine retrieved too many irrelevant documents.",
+          "Important and relevant pages were missed and not shown to the user.",
+          "The query used words that perfectly matched the document's vocabulary.",
+          "The user had to manually extract data from a single web page."
+        ],
+        "answer": "Important and relevant pages were missed and not shown to the user."
+      },
+      {
+        "q": "Why does visually formatting data (like using HTML tables for a product list) create a barrier for machines?",
+        "opts": [
+          "Machines cannot parse HTML tags.",
+          "Visual formatting deletes the original data from the server.",
+          "The semantic meaning and categories of the data are lost in the presentation layer.",
+          "It causes search engines to experience high recall and high precision."
+        ],
+        "answer": "The semantic meaning and categories of the data are lost in the presentation layer."
+      },
+      {
+        "q": "Which phrase best describes the transition from the Traditional Web to the Semantic Web?",
+        "opts": [
+          "From a web of data to a web of documents.",
+          "From machine-centric databases to human-centric visual pages.",
+          "From a collection of linked documents to a web of interconnected, meaningful data.",
+          "From isolated semantic nodes to a centralized relational database."
+        ],
+        "answer": "From a collection of linked documents to a web of interconnected, meaningful data."
+      },
+      {
+        "q": "If the Semantic Web were fully implemented, what would a search engine most likely do if asked: 'Which cities have a population over 1 million and host a tech conference?'",
+        "opts": [
+          "Return a list of links to Wikipedia pages about cities and tech conferences.",
+          "Understand the entities, cross-reference population data with event data, and provide the exact list of cities.",
+          "Fail to return results because the query is too sensitive to vocabulary.",
+          "Return high recall results of every page containing the words 'city' and 'tech'."
+        ],
+        "answer": "Understand the entities, cross-reference population data with event data, and provide the exact list of cities."
+      },
+      {
+        "q": "In traditional web searching, what makes gathering complex information a 'very time-consuming activity'?",
+        "opts": [
+          "The search engine processes queries too slowly.",
+          "The human user must manually browse, filter, and extract facts from multiple retrieved documents.",
+          "The search engine refuses to process queries that require combining multiple data sources.",
+          "Websites actively block search engines from reading their visual formats."
+        ],
+        "answer": "The human user must manually browse, filter, and extract facts from multiple retrieved documents."
+      },
+      {
+        "q": "A search for 'Java' might yield results about an island, coffee, or a programming language. To solve this, Semantic Web technologies would rely on:",
+        "opts": [
+          "Restricting users to highly specific, long-tail keywords.",
+          "Adding semantic metadata that explicitly defines the context of the word on each page.",
+          "Only indexing pages that are visually formatted for humans.",
+          "Decreasing the recall rate of the search engine."
+        ],
+        "answer": "Adding semantic metadata that explicitly defines the context of the word on each page."
+      },
+      {
+        "q": "The statement 'Too much can easily become as bad as too little' in the context of search engines refers to the problem of:",
+        "opts": [
+          "Low recall",
+          "Isolated data",
+          "High recall coupled with low precision",
+          "Vocabulary sensitivity"
+        ],
+        "answer": "High recall coupled with low precision"
+      },
+      {
+        "q": "Instead of viewing search engines as 'information retrieval' systems, a more accurate description for traditional search engines is:",
+        "opts": [
+          "Semantic reasoners",
+          "Location finders",
+          "Data integrators",
+          "Machine interpreters"
+        ],
+        "answer": "Location finders"
+      },
+      {
+        "q": "What is the ultimate promise of the Semantic Web for everyday computing?",
+        "opts": [
+          "Computers will only display text and remove all images to speed up processing.",
+          "Computers will understand content, connect related info automatically, and answer complex questions.",
+          "Users will no longer need search engines because all websites will be merged into one.",
+          "Traditional web pages will be entirely replaced by raw database files."
+        ],
+        "answer": "Computers will understand content, connect related info automatically, and answer complex questions."
+      },
+      {
+        "q": "A user searches for 'cheap flights' but a website uses the term 'budget airlines'. If the website doesn't show up, this proves that traditional search engines:",
+        "opts": [
+          "Are isolated data applications.",
+          "Have perfect precision.",
+          "Struggle to identify semantically similar queries.",
+          "Automatically extract information from single pages."
+        ],
+        "answer": "Struggle to identify semantically similar queries."
+      },
+      {
+        "q": "Why is it problematic that traditional search engines are 'isolated applications'?",
+        "opts": [
+          "They cannot connect to the internet.",
+          "Their retrieved results cannot be readily accessed, processed, or utilized by other software tools automatically.",
+          "They are only capable of returning a single web page per query.",
+          "They require a human to manually type the exact URL to find information."
+        ],
+        "answer": "Their retrieved results cannot be readily accessed, processed, or utilized by other software tools automatically."
+      },
+      {
+        "q": "Which of the following analogies best describes the Semantic Web?",
+        "opts": [
+          "It is like a library where books are thrown randomly on the floor.",
+          "It is like giving the computer a dictionary and an encyclopedia so it understands what the words in the documents actually mean.",
+          "It is like upgrading a computer's monitor so it can display graphics more clearly to humans.",
+          "It is like a locked filing cabinet that only humans have the key to open."
+        ],
+        "answer": "It is like giving the computer a dictionary and an encyclopedia so it understands what the words in the documents actually mean."
+      },
+      {
+        "q": "When we say data on the traditional web is 'Human-Centric', it implies that:",
+        "opts": [
+          "Machines can read it faster than humans.",
+          "The layout and presentation are optimized for the human eye, often at the expense of structural clarity for machines.",
+          "It uses advanced AI to adapt the content based on user emotions.",
+          "Only humans with programming skills can access it."
+        ],
+        "answer": "The layout and presentation are optimized for the human eye, often at the expense of structural clarity for machines."
+      },
+      {
+        "q": "If a query is too broad on a traditional keyword-based search engine, the user is most likely to suffer from:",
+        "opts": [
+          "No recall whatsoever.",
+          "A lack of hyperlinks between the retrieved pages.",
+          "Information overload with a low percentage of actually useful documents.",
+          "The search engine returning only metadata instead of documents."
+        ],
+        "answer": "Information overload with a low percentage of actually useful documents."
+      },
+      {
+        "q": "How does the Semantic Web aim to resolve the 'Single Web Pages' limitation of the traditional web?",
+        "opts": [
+          "By printing all pages into a single PDF document.",
+          "By understanding relationships across different sources and automatically assembling the dispersed information.",
+          "By forcing web developers to put all their website's content on a single scrolling page.",
+          "By limiting search results to only return one webpage per query."
+        ],
+        "answer": "By understanding relationships across different sources and automatically assembling the dispersed information."
+      },
+      {
+        "q": "In the context of evaluating search engine performance, 'Precision' answers which of the following questions?",
+        "opts": [
+          "Did the search engine find every single relevant page that exists?",
+          "Out of the pages the search engine showed me, how many are actually useful?",
+          "How fast did the search engine return the results?",
+          "Did the search engine extract the exact answer from the text?"
+        ],
+        "answer": "Out of the pages the search engine showed me, how many are actually useful?"
+      },
+      {
+        "q": "The traditional web is mostly a collection of websites connected by:",
+        "opts": [
+          "Semantic logic",
+          "Machine-readable metadata",
+          "Hyperlinks",
+          "Isolated databases"
+        ],
+        "answer": "Hyperlinks"
+      },
+      {
+        "q": "A news website generates its daily articles from a backend database. Why is this data still difficult for a traditional search engine to 'understand'?",
+        "opts": [
+          "Because search engines cannot read text.",
+          "Because the underlying database structure and categories are not exposed to the web crawler, only the final human-readable text is.",
+          "Because news databases are always isolated and offline.",
+          "Because the search engine operates with high precision and rejects dynamic content."
+        ],
+        "answer": "Because the underlying database structure and categories are not exposed to the web crawler, only the final human-readable text is."
+      },
+      {
+        "q": "If you want to ensure that semantically similar queries (like 'doctor' and 'physician') return similar results, your system must overcome which traditional web problem?",
+        "opts": [
+          "Isolated data",
+          "Results being single web pages",
+          "High sensitivity to vocabulary",
+          "Human-centric formatting"
+        ],
+        "answer": "High sensitivity to vocabulary"
+      },
+      {
+        "q": "Semantic Web technologies aim to transform the internet from an environment where computers 'just display' information to one where they:",
+        "opts": [
+          "Delete irrelevant information automatically.",
+          "Interpret and process the information.",
+          "Replace human developers entirely.",
+          "Generate traditional web pages slower but with better graphics."
+        ],
+        "answer": "Interpret and process the information."
+      },
+      {
+        "q": "What is the primary danger of having 'High recall' in a traditional search engine without equally high precision?",
+        "opts": [
+          "The user receives zero results.",
+          "The search engine crashes due to data overload.",
+          "The user is overwhelmed by thousands of irrelevant documents, making the relevant ones hard to find.",
+          "The query automatically becomes too specific."
+        ],
+        "answer": "The user is overwhelmed by thousands of irrelevant documents, making the relevant ones hard to find."
+      },
+      {
+        "q": "Which scenario best describes 'integration of information' as promised by the Semantic Web?",
+        "opts": [
+          "A user opening five browser tabs to read different articles.",
+          "A software agent combining your flight schedule from an airline's database with weather data from a meteorological database to suggest packing items.",
+          "A search engine returning a Wikipedia link as the first result.",
+          "A website using both text and images on the same page."
+        ],
+        "answer": "A software agent combining your flight schedule from an airline's database with weather data from a meteorological database to suggest packing items."
+      },
+      {
+        "q": "The goal of the Semantic Web is NOT to replace HTML pages, but rather to:",
+        "opts": [
+          "Remove all hyperlinks from them.",
+          "Make them exclusively readable by machines, blocking human access.",
+          "Enrich them so that the data they contain becomes interconnected and meaningful to machines.",
+          "Convert them all into raw social media feeds."
+        ],
+        "answer": "Enrich them so that the data they contain becomes interconnected and meaningful to machines."
+      }
+    ],
+    "tf": []
+  }
+}
