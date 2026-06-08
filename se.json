@@ -1,0 +1,1875 @@
+{
+  "1": {
+    "mcq": [
+      {
+        "q": "What is the difference between a concrete class and an abstract class in object-oriented programming?",
+        "opts": [
+          "A concrete class cannot be instantiated, while an abstract class can.",
+          "A concrete class can be instantiated, while an abstract class may contain abstract methods that need to be implemented by subclasses.",
+          "Concrete classes define the structure of a system, while abstract classes handle the behavior.",
+          "There is no real difference; they are interchangeable terms."
+        ],
+        "answer": "A concrete class can be instantiated, while an abstract class may contain abstract methods that need to be implemented by subclasses."
+      },
+      {
+        "q": "What is the meaning of \"encapsulation\" in object-oriented programming?",
+        "opts": [
+          "The process of converting data from one format to another.",
+          "The mechanism of inheriting properties and methods from a parent class.",
+          "The bundling of data and methods that operate on that data within a class, hiding the internal details.",
+          "The ability of an object to take on many forms."
+        ],
+        "answer": "The bundling of data and methods that operate on that data within a class, hiding the internal details."
+      },
+      {
+        "q": "In OOP, which concept is demonstrated when a subclass provides a specific implementation of a method already defined in its superclass?",
+        "opts": [
+          "Abstraction",
+          "Inheritance",
+          "Polymorphism",
+          "Method Overriding"
+        ],
+        "answer": "Method Overriding"
+      },
+      {
+        "q": "What will be the output of the following code?\n\nclass Animal {\n  public String sound() { return \"Some sound\"; }\n}\nclass Dog extends Animal {\n  @Override\n  public String sound() { return \"Bark\"; }\n}\nclass Cat extends Animal {\n  @Override\n  public String sound() { return \"Meow\"; }\n}\n\npublic class Main {\n  public static void main(String[] args) {\n    Animal[] animals = {new Dog(), new Cat(), new Animal()};\n    for (Animal animal : animals) {\n      System.out.println(animal.sound());\n    }\n  }\n}",
+        "opts": [
+          "Bark \n Meow \n Some sound",
+          "Some sound \n Some sound \n Some sound",
+          "Meow \n Bark \n Some sound",
+          "Bark \n Some sound \n Meow"
+        ],
+        "answer": "Bark \n Meow \n Some sound"
+      },
+      {
+        "q": "What will be the output of the following code?\n\nclass Parent {\n  public void show() { System.out.println(\"Parent show\"); }\n}\nclass Child extends Parent {\n  public void show() { System.out.println(\"Child show\"); }\n}\npublic class Main {\n  public static void main(String[] args) {\n    Parent p = new Child();\n    p.show();\n  }\n}",
+        "opts": [
+          "Child show",
+          "Parent show",
+          "Compilation Error",
+          "Runtime Error"
+        ],
+        "answer": "Child show"
+      },
+      {
+        "q": "Which of the following code snippets best demonstrates encapsulation?",
+        "opts": [
+          "public class Account { public double balance; }",
+          "public class Account { double balance; public Account(double balance) { this.balance = balance; } }",
+          "public class Account { protected double balance; public void setBalance(double balance) { this.balance = balance; } }",
+          "public class Account {\n  private double balance;\n  public double getBalance() { return balance; }\n  public void deposit(double amount) { if (amount > 0) { balance += amount; } }\n  public void withdraw(double amount) { if (amount > 0 && amount <= balance) { balance -= amount; } }\n}"
+        ],
+        "answer": "public class Account {\n  private double balance;\n  public double getBalance() { return balance; }\n  public void deposit(double amount) { if (amount > 0) { balance += amount; } }\n  public void withdraw(double amount) { if (amount > 0 && amount <= balance) { balance -= amount; } }\n}"
+      },
+      {
+        "q": "Which of the following is NOT a characteristic of object-oriented programming (OOP)?",
+        "opts": ["Encapsulation", "Inheritance", "Polymorphism", "Compilation"],
+        "answer": "Compilation"
+      },
+      {
+        "q": "Which of the following best describes polymorphism in OOP?",
+        "opts": [
+          "The ability of a class to inherit methods from a superclass",
+          "The ability of different objects to respond in unique ways to the same method call",
+          "The process of hiding internal implementation details of a class",
+          "The creation of new classes from existing classes"
+        ],
+        "answer": "The ability of different objects to respond in unique ways to the same method call"
+      },
+      {
+        "q": "What is the primary benefit of encapsulation in OOP?",
+        "opts": [
+          "It ensures that an object can only have one instance",
+          "It allows classes to be easily inherited by subclasses",
+          "It hides the internal details of an object and only exposes necessary parts",
+          "It allows methods to be overridden in subclasses"
+        ],
+        "answer": "It hides the internal details of an object and only exposes necessary parts"
+      },
+      {
+        "q": "Which OOP concept is demonstrated when a subclass overrides a method from its superclass?",
+        "opts": ["Encapsulation", "Abstraction", "Inheritance", "Polymorphism"],
+        "answer": "Polymorphism"
+      },
+      {
+        "q": "Consider the following code snippet:\n\nclass Shape {\n  public void draw() { System.out.println(\"Drawing a shape\"); }\n}\nclass Circle extends Shape {\n  @Override\n  public void draw() { System.out.println(\"Drawing a circle\"); }\n}\n\nShape shape = new Circle();\nshape.draw();\n\nWhat will be the output when the following code is executed?",
+        "opts": [
+          "Drawing a shape",
+          "Drawing a circle",
+          "Compilation errord",
+          "Runtime error"
+        ],
+        "answer": "Drawing a circle"
+      },
+      {
+        "q": "Which of the following best describes the relationship between classes in inheritance?",
+        "opts": [
+          "\"Has-a\" relationship",
+          "Is-arelationship",
+          "\"Uses-a\" relationship",
+          "\"Part-of\" relationship"
+        ],
+        "answer": "Is-arelationship"
+      },
+      {
+        "q": "In OOP, abstraction is achieved through:",
+        "opts": [
+          "Concrete classes",
+          "Abstract classes and interfaces",
+          "Constructors",
+          "Static methods"
+        ],
+        "answer": "Abstract classes and interfaces"
+      },
+      {
+        "q": "Which of the following statements about constructors in Java is TRUE?",
+        "opts": [
+          "Constructors can be inherited",
+          "Constructors must have the same name as the class",
+          "Constructors can return a value",
+          "A class can have only one constructor"
+        ],
+        "answer": "Constructors must have the same name as the class"
+      },
+      {
+        "q": "Which concept in OOP ensures that an object maintains control over its own state and only exposes limited functionality to the outside world?",
+        "opts": ["Inheritance", "Polymorphism", "Encapsulation", "Abstraction"],
+        "answer": "Encapsulation"
+      },
+      {
+        "q": "What is the primary purpose of an interface in OOP?",
+        "opts": [
+          "To allow multiple inheritance",
+          "To create concrete implementations of methods",
+          "To define a contract for classes to implement",
+          "To encapsulate data within a class"
+        ],
+        "answer": "To define a contract for classes to implement"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Polymorphism allows the same method to behave differently based on the object it is acting upon.",
+        "answer": "True"
+      },
+      {
+        "q": "An abstract class can implement multiple interfaces in Java.",
+        "answer": "True"
+      },
+      {
+        "q": "Polymorphism allows a method to have the same name but different implementations in different classes.",
+        "answer": "True"
+      },
+      {
+        "q": "An abstract class cannot have any concrete methods.",
+        "answer": "False"
+      },
+      {
+        "q": "Encapsulation refers to the bundling of data and methods that operate on that data, while hiding the internal details from outside access.",
+        "answer": "True"
+      },
+      {
+        "q": "In OOP, inheritance allows a class to inherit from multiple classes directly.",
+        "answer": "False"
+      },
+      {
+        "q": "Method overriding is a form of polymorphism in which a subclass provides a specific implementation of a method that is already defined in its superclass.",
+        "answer": "True"
+      },
+      {
+        "q": "Abstract classes can be instantiated directly.",
+        "answer": "False"
+      },
+      {
+        "q": "In Java, a class can implement multiple interfaces.",
+        "answer": "True"
+      },
+      {
+        "q": "Constructors are used to initialize objects and can have a return type.",
+        "answer": "False"
+      },
+      {
+        "q": "The \"this\" keyword in Java is used to refer to the current object instance.",
+        "answer": "True"
+      },
+      {
+        "q": "Interfaces in Java can contain both abstract methods and concrete methods.",
+        "answer": "False"
+      }
+    ]
+  },
+  "2": {
+    "mcq": [
+      {
+        "q": "Which principle states that classes should have only one responsibility?",
+        "opts": [
+          "Single Responsibility Principle",
+          "Open-Closed Principle",
+          "Liskov Substitution Principle",
+          "Interface Segregation Principle"
+        ],
+        "answer": "Single Responsibility Principle"
+      },
+      {
+        "q": "Which principle encourages designing classes that are open for extension but closed for modification?",
+        "opts": [
+          "Single Responsibility Principle",
+          "Open-Closed Principle",
+          "Liskov Substitution Principle",
+          "Interface Segregation Principle"
+        ],
+        "answer": "Open-Closed Principle"
+      },
+      {
+        "q": "What does the Liskov Substitution Principle state?",
+        "opts": [
+          "Subtypes should be substitutable for their base types without altering program correctness",
+          "Classes should have only one reason to change",
+          "Interfaces should be small and focused",
+          "High-level modules should not depend on low-level modules"
+        ],
+        "answer": "Subtypes should be substitutable for their base types without altering program correctness"
+      },
+      {
+        "q": "Which principle promotes splitting large interfaces into smaller, more specific ones?",
+        "opts": [
+          "Single Responsibility Principle",
+          "Open-Closed Principle",
+          "Liskov Substitution Principle",
+          "Interface Segregation Principle"
+        ],
+        "answer": "Interface Segregation Principle"
+      },
+      {
+        "q": "What is the main idea behind the Dependency Inversion Principle?",
+        "opts": [
+          "Classes should have only one responsibility",
+          "Code should be open for extension but closed for modification",
+          "High-level modules should not depend on low-level modules. Both should depend on abstractions.",
+          "Interfaces should be small and focused"
+        ],
+        "answer": "High-level modules should not depend on low-level modules. Both should depend on abstractions."
+      },
+      {
+        "q": "What does the acronym SOLID stand for in software engineering principles?",
+        "opts": [
+          "Secure, Object-Oriented, Linked, Independent, Distributed",
+          "Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion",
+          "Scalable, Optimized, Layered, Iterative, Deployable",
+          "Standardized, Object-Oriented, Loosely Coupled, Intuitive, Documented"
+        ],
+        "answer": "Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion"
+      },
+      {
+        "q": "Which SOLID principle aims to reduce the impact of changes by ensuring that modifications to one module do not affect others?",
+        "opts": [
+          "Single Responsibility Principle",
+          "Open/Closed Principle",
+          "Liskov Substitution Principle",
+          "Dependency Inversion Principle"
+        ],
+        "answer": "Single Responsibility Principle"
+      },
+      {
+        "q": "What issue does the Interface Segregation Principle address?",
+        "opts": [
+          "Classes having too many responsibilities.",
+          "Subclasses not adhering to the behavior of their base classes.",
+          "Clients being forced to depend on methods they don't use.",
+          "High-level modules depending directly on low-level modules."
+        ],
+        "answer": "Clients being forced to depend on methods they don't use."
+      },
+      {
+        "q": "Which SOLID principle emphasizes that a class should only have one specific responsibility?",
+        "opts": [
+          "Single Responsibility Principle",
+          "Open/Closed Principle",
+          "Liskov Substitution Principle",
+          "Interface Segregation Principle"
+        ],
+        "answer": "Single Responsibility Principle"
+      },
+      {
+        "q": "Which SOLID principle encourages designing modules to be open for extension but closed for modification?",
+        "opts": [
+          "Single Responsibility Principle",
+          "Open/Closed Principle",
+          "Liskov Substitution Principle",
+          "Interface Segregation Principle"
+        ],
+        "answer": "Open/Closed Principle"
+      },
+      {
+        "q": "The Liskov Substitution Principle states that:",
+        "opts": [
+          "Interfaces should be small and focused.",
+          "Subtypes should be substitutable for their base types without altering program correctness.",
+          "Classes should have only one reason to change.",
+          "High-level modules should not depend on low-level modules."
+        ],
+        "answer": "Subtypes should be substitutable for their base types without altering program correctness."
+      },
+      {
+        "q": "What issue does the Interface Segregation Principle aim to solve?",
+        "opts": [
+          "Classes having too many methods.",
+          "Tight coupling between classes.",
+          "Clients depending on methods they don't use.",
+          "Circular dependencies between modules."
+        ],
+        "answer": "Clients depending on methods they don't use."
+      },
+      {
+        "q": "According to the Dependency Inversion Principle:",
+        "opts": [
+          "Both high-level and low-level modules should depend on abstractions.",
+          "Concrete classes should depend on abstract classes.",
+          "Abstractions should not depend on details.",
+          "Details should depend on abstractions."
+        ],
+        "answer": "Both high-level and low-level modules should depend on abstractions."
+      },
+      {
+        "q": "Which SOLID principle advocates separating interfaces into smaller, more specific ones?",
+        "opts": [
+          "Single Responsibility Principle",
+          "Open/Closed Principle",
+          "Liskov Substitution Principle",
+          "Interface Segregation Principle"
+        ],
+        "answer": "Interface Segregation Principle"
+      },
+      {
+        "q": "What does the acronym \"SOLID\" represent in the context of software design principles?",
+        "opts": [
+          "A set of five design principles aimed at making software more understandable, flexible, and maintainable.",
+          "A specific design pattern for creating complex objects.",
+          "A type of programming language used for enterprise applications.",
+          "A methodology for managing software development projects."
+        ],
+        "answer": "A set of five design principles aimed at making software more understandable, flexible, and maintainable."
+      },
+      {
+        "q": "Which SOLID principle is violated if a class has more than one reason to change?",
+        "opts": [
+          "Open/Closed Principle",
+          "Single Responsibility Principle",
+          "Liskov Substitution Principle",
+          "Dependency Inversion Principle"
+        ],
+        "answer": "Single Responsibility Principle"
+      },
+      {
+        "q": "What is the primary goal of the Liskov Substitution Principle?",
+        "opts": [
+          "To ensure that all classes have a single responsibility.",
+          "To guarantee that subtypes can be used in place of their base types without causing errors.",
+          "To define a template for an algorithm.",
+          "To control access to an object."
+        ],
+        "answer": "To guarantee that subtypes can be used in place of their base types without causing errors."
+      },
+      {
+        "q": "According to the Dependency Inversion Principle, what should high-level modules depend on?",
+        "opts": [
+          "Low-level modules directly.",
+          "Abstractions, not concretions.",
+          "Concrete implementations of other modules.",
+          "The database layer."
+        ],
+        "answer": "Abstractions, not concretions."
+      },
+      {
+        "q": "What does the \"S\" in SOLID stand for?",
+        "opts": [
+          "Single Responsibility Principle",
+          "System Design Principle",
+          "Structured Programming",
+          "Software Reusability"
+        ],
+        "answer": "Single Responsibility Principle"
+      },
+      {
+        "q": "Which of the following is an example of violating the Liskov Substitution Principle?",
+        "opts": [
+          "Using inheritance to extend a class.",
+          "Creating an abstract class that is not implemented by any subclass.",
+          "Subclass modifying the behavior of a method such that it cannot be used in place of its parent class.",
+          "Implementing an interface with an abstract class."
+        ],
+        "answer": "Subclass modifying the behavior of a method such that it cannot be used in place of its parent class."
+      },
+      {
+        "q": "Which of the following best describes the Dependency Inversion Principle?",
+        "opts": [
+          "High-level modules should not depend on low-level modules. Both should depend on abstractions.",
+          "Classes should be designed to be open for extension but closed for modification.",
+          "Subtypes must be substitutable for their base types.",
+          "One class should have only one reason to change."
+        ],
+        "answer": "High-level modules should not depend on low-level modules. Both should depend on abstractions."
+      },
+      {
+        "q": "Which SOLID principle is primarily aimed at reducing the size of large interfaces?",
+        "opts": [
+          "Single Responsibility Principle",
+          "Interface Segregation Principle",
+          "Liskov Substitution Principle",
+          "Dependency Inversion Principle"
+        ],
+        "answer": "Interface Segregation Principle"
+      },
+      {
+        "q": "Which of the following is an example of violating the Open/Closed Principle?",
+        "opts": [
+          "Using inheritance to extend a class's functionality.",
+          "Modifying existing classes to add new features.",
+          "Implementing an interface to add new behaviors.",
+          "Using abstract classes for common functionality."
+        ],
+        "answer": "Modifying existing classes to add new features."
+      },
+      {
+        "q": "Which of the following classes violates the Single Responsibility Principle? (Refer to a class that handles Order Calculation, Database Saving, and Email Confirmation)",
+        "opts": [
+          "The class is correctly designed according to SRP.",
+          "The calculateTotalPrice method should be moved to another class.",
+          "The saveToDatabase and sendOrderConfirmation methods should be moved to separate classes.",
+          "All methods should be in separate classes."
+        ],
+        "answer": "The saveToDatabase and sendOrderConfirmation methods should be moved to separate classes."
+      },
+      {
+        "q": "Which of the following options correctly follows the Interface Segregation Principle? (Refer to Printer interface with print, scan, fax implemented by SimplePrinter)",
+        "opts": [
+          "The Printer interface should be an abstract class.",
+          "This code is already following ISP.",
+          "SimplePrinter should only implement the methods it needs.",
+          "The Printer interface should be split into smaller interfaces."
+        ],
+        "answer": "The Printer interface should be split into smaller interfaces."
+      },
+      {
+        "q": "Which principle in SOLID suggests that a class should only have one reason to change?",
+        "opts": [
+          "Open/Closed Principle",
+          "Liskov Substitution Principle",
+          "Single Responsibility Principle",
+          "Dependency Inversion Principle"
+        ],
+        "answer": "Single Responsibility Principle"
+      },
+      {
+        "q": "What does the Open/Closed Principle advocate?",
+        "opts": [
+          "Classes should be open for modification but closed for extension",
+          "Classes should be closed for modification but open for extension",
+          "Classes should be open for both extension and modification",
+          "Classes should be closed for both extension and modification"
+        ],
+        "answer": "Classes should be closed for modification but open for extension"
+      },
+      {
+        "q": "Which SOLID principle aims to ensure that subclasses can be used interchangeably with their base classes without affecting the functionality?",
+        "opts": [
+          "Single Responsibility Principle",
+          "Liskov Substitution Principle",
+          "Interface Segregation Principle",
+          "Dependency Inversion Principle"
+        ],
+        "answer": "Liskov Substitution Principle"
+      },
+      {
+        "q": "The Interface Segregation Principle encourages:",
+        "opts": [
+          "Combining multiple interfaces into one large interface",
+          "Splitting large interfaces into smaller, more specific ones",
+          "Using abstract classes instead of interfaces",
+          "Creating interfaces that are not used by any class"
+        ],
+        "answer": "Splitting large interfaces into smaller, more specific ones"
+      },
+      {
+        "q": "What is the primary objective of the Dependency Inversion Principle?",
+        "opts": [
+          "High-level modules should depend on low-level modules",
+          "Low-level modules should depend on high-level modules",
+          "Both high-level and low-level modules should depend on abstractions",
+          "Both high-level and low-level modules should be tightly coupled"
+        ],
+        "answer": "Both high-level and low-level modules should depend on abstractions"
+      },
+      {
+        "q": "Which of the following correctly defines the SOLID acronym?",
+        "opts": [
+          "Scalable, Optimized, Layered, Independent, Dynamic",
+          "Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion",
+          "Secure, Object-Oriented, Linked, Independent, Distributed",
+          "Structured, Object-Oriented, Loosely Coupled, Intuitive, Documented"
+        ],
+        "answer": "Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion"
+      },
+      {
+        "q": "Which SOLID principle is violated if a class implements methods that it does not use?",
+        "opts": [
+          "Open/Closed Principle",
+          "Liskov Substitution Principle",
+          "Interface Segregation Principle",
+          "Dependency Inversion Principle"
+        ],
+        "answer": "Interface Segregation Principle"
+      },
+      {
+        "q": "What is an example of adhering to the Dependency Inversion Principle?",
+        "opts": [
+          "A database connection class depends on a concrete implementation",
+          "A logging class depends on a specific file system class",
+          "A payment processing class depends on an abstract payment interface",
+          "A user authentication class directly accesses the database"
+        ],
+        "answer": "A payment processing class depends on an abstract payment interface"
+      },
+      {
+        "q": "Which principle focuses on ensuring that a class has only one responsibility or reason to change?",
+        "opts": [
+          "Open/Closed Principle",
+          "Single Responsibility Principle",
+          "Interface Segregation Principle",
+          "Liskov Substitution Principle"
+        ],
+        "answer": "Single Responsibility Principle"
+      },
+      {
+        "q": "Which principle would you apply to avoid a class from changing frequently due to the introduction of new features?",
+        "opts": [
+          "Open/Closed Principle",
+          "Single Responsibility Principle",
+          "Interface Segregation Principle",
+          "Dependency Inversion Principle"
+        ],
+        "answer": "Open/Closed Principle"
+      }
+    ],
+    "tf": [
+      {
+        "q": "The Open/Closed Principle states that software entities should be open for extension but closed for modification.",
+        "answer": "True"
+      },
+      {
+        "q": "The Single Responsibility Principle promotes having multiple reasons for a class to change.",
+        "answer": "False"
+      },
+      {
+        "q": "The Liskov Substitution Principle ensures that subtypes can replace their base types without altering program correctness.",
+        "answer": "True"
+      },
+      {
+        "q": "The Interface Segregation Principle encourages large, monolithic interfaces.",
+        "answer": "False"
+      },
+      {
+        "q": "The Dependency Inversion Principle aims to reduce coupling between high-level and low-level modules.",
+        "answer": "True"
+      },
+      {
+        "q": "The SOLID principles can be applied to any object-oriented programming language.",
+        "answer": "True"
+      },
+      {
+        "q": "The Open/Closed Principle promotes code reusability and maintainability.",
+        "answer": "True"
+      },
+      {
+        "q": "The Liskov Substitution Principle states that subclasses must have more functionality than their base classes.",
+        "answer": "False"
+      },
+      {
+        "q": "The Interface Segregation Principle helps to make interfaces more specific and reduces the coupling between classes.",
+        "answer": "True"
+      },
+      {
+        "q": "The Dependency Inversion Principle states that high-level modules should directly depend on low-level modules.",
+        "answer": "False"
+      },
+      {
+        "q": "The SOLID principles are guidelines for writing more maintainable and flexible code.",
+        "answer": "True"
+      },
+      {
+        "q": "The Open-Closed Principle states that classes should be open for modification but closed for extension.",
+        "answer": "False"
+      },
+      {
+        "q": "The Liskov Substitution Principle helps to ensure the interchangeability of subclasses and their base classes.",
+        "answer": "True"
+      },
+      {
+        "q": "The Interface Segregation Principle encourages large, monolithic interfaces.",
+        "answer": "False"
+      },
+      {
+        "q": "The Dependency Inversion Principle promotes the use of abstractions over concrete implementations.",
+        "answer": "True"
+      },
+      {
+        "q": "The Single Responsibility Principle means a class should have more than one reason to change.",
+        "answer": "False"
+      },
+      {
+        "q": "Good software design aims to reduce coupling and increase cohesion.",
+        "answer": "True"
+      },
+      {
+        "q": "The Single Responsibility Principle helps in making classes easier to test and understand.",
+        "answer": "True"
+      },
+      {
+        "q": "The Open-Closed Principle discourages the use of abstract classes and interfaces.",
+        "answer": "False"
+      },
+      {
+        "q": "The Liskov Substitution Principle is important for ensuring that subclasses behave consistently with their base classes.",
+        "answer": "True"
+      },
+      {
+        "q": "The Interface Segregation Principle suggests that clients should be forced to implement methods they don’t use.",
+        "answer": "False"
+      },
+      {
+        "q": "The Dependency Inversion Principle promotes loose coupling between modules.",
+        "answer": "True"
+      },
+      {
+        "q": "The SOLID principles are specific design patterns that dictate how to write code.",
+        "answer": "False"
+      },
+      {
+        "q": "Adhering to the SOLID principles generally leads to more maintainable and flexible software systems.",
+        "answer": "True"
+      },
+      {
+        "q": "Liskov Substitution Principle allows using child classes interchangeably with parent classes without altering expected behavior.",
+        "answer": "True"
+      },
+      {
+        "q": "The Interface Segregation Principle aims to combine several interfaces into one larger interface.",
+        "answer": "False"
+      },
+      {
+        "q": "The Single Responsibility Principle states that a class should have more than one reason to change.",
+        "answer": "False"
+      },
+      {
+        "q": "The Open/Closed Principle encourages classes to be open for extension but closed for modification.",
+        "answer": "True"
+      },
+      {
+        "q": "The Liskov Substitution Principle ensures that subclasses can be used as substitutes for their base classes without altering the correctness of the program.",
+        "answer": "True"
+      },
+      {
+        "q": "The Interface Segregation Principle suggests that interfaces should be large and cover all possible methods needed by any class.",
+        "answer": "False"
+      },
+      {
+        "q": "The Dependency Inversion Principle promotes direct dependency between high-level modules and low-level modules.",
+        "answer": "False"
+      },
+      {
+        "q": "Adhering to the SOLID principles generally leads to more maintainable and flexible software systems.",
+        "answer": "True"
+      },
+      {
+        "q": "The Open/Closed Principle requires modifying existing code to add new functionality.",
+        "answer": "False"
+      },
+      {
+        "q": "The Liskov Substitution Principle is concerned with the inheritance hierarchy and ensuring that derived classes can replace base classes without issues.",
+        "answer": "True"
+      },
+      {
+        "q": "The Interface Segregation Principle aims to reduce the number of methods in an interface to make them more specific.",
+        "answer": "True"
+      },
+      {
+        "q": "The Dependency Inversion Principle encourages both high-level and low-level modules to depend on abstractions rather than concrete implementations.",
+        "answer": "True"
+      }
+    ]
+  },
+  "3": {
+    "mcq": [
+      {
+        "q": "Which of the following best describes the Singleton design pattern?",
+        "opts": [
+          "A pattern that restricts the instantiation of a class to a single instance and provides global access to that instance",
+          "A pattern that ensures multiple instances of a class can be created",
+          "A pattern that allows objects with incompatible interfaces to collaborate",
+          "A pattern that defines a family of related objects"
+        ],
+        "answer": "A pattern that restricts the instantiation of a class to a single instance and provides global access to that instance"
+      },
+      {
+        "q": "What problem does the Singleton pattern solve?",
+        "opts": [
+          "The need to create objects with many optional fields",
+          "The need to ensure only one instance of a class exists in the system",
+          "The need to separate the creation of an object from its representation",
+          "The need to provide a common interface for different classes"
+        ],
+        "answer": "The need to ensure only one instance of a class exists in the system"
+      },
+      {
+        "q": "Which of the following is a key characteristic of the Singleton pattern?",
+        "opts": [
+          "It allows multiple instances of a class to be created",
+          "It provides a way to dynamically add behaviors to an object",
+          "It ensures that a class has only one instance and provides a global point of access to that instance",
+          "It allows objects to be created without specifying their exact class"
+        ],
+        "answer": "It ensures that a class has only one instance and provides a global point of access to that instance"
+      },
+      {
+        "q": "Which of the following scenarios is best suited for the Singleton pattern?",
+        "opts": [
+          "A class that represents different types of vehicles",
+          "A configuration manager that holds global application settings",
+          "A class that creates different types of user interfaces",
+          "A database query executor that handles multiple connections"
+        ],
+        "answer": "A configuration manager that holds global application settings"
+      },
+      {
+        "q": "In which of the following cases would the Singleton pattern NOT be appropriate?",
+        "opts": [
+          "Managing a single instance of a logging service",
+          "Controlling access to a shared resource, such as a file system",
+          "Creating multiple instances of a class to handle different tasks",
+          "Managing a single instance of a configuration file reader"
+        ],
+        "answer": "Creating multiple instances of a class to handle different tasks"
+      },
+      {
+        "q": "What is the main difference between Eager and Lazy initialization in the Singleton pattern?",
+        "opts": [
+          "Eager initialization creates the instance at application startup, while Lazy initialization creates it on demand",
+          "Lazy initialization creates the instance at application startup, while Eager initialization creates it on demand",
+          "Eager initialization allows multiple instances, while Lazy initialization ensures only one instance",
+          "Lazy initialization is more memory efficient than Eager initialization"
+        ],
+        "answer": "Eager initialization creates the instance at application startup, while Lazy initialization creates it on demand"
+      },
+      {
+        "q": "Which method is commonly used to access the instance of a Singleton class?",
+        "opts": [
+          "newInstance()",
+          "getObject()",
+          "getInstance()",
+          "createObject()"
+        ],
+        "answer": "getInstance()"
+      },
+      {
+        "q": "What potential issue can arise when using a Singleton pattern in a multithreaded environment?",
+        "opts": [
+          "The instance may be created multiple times if proper synchronization is not applied",
+          "The Singleton class cannot be inherited",
+          "The Singleton instance may be garbage collected",
+          "The Singleton pattern violates the Open/Closed Principle"
+        ],
+        "answer": "The instance may be created multiple times if proper synchronization is not applied"
+      },
+      {
+        "q": "Which of the following is NOT a step in implementing the Singleton pattern?",
+        "opts": [
+          "Make the constructor of the class private",
+          "Create a static method to return the instance of the class",
+          "Create a public static variable to hold the instance",
+          "Use synchronization to handle multithreading issues"
+        ],
+        "answer": "Create a public static variable to hold the instance"
+      },
+      {
+        "q": "When would you use the Singleton pattern?",
+        "opts": [
+          "When you need to ensure that a class has multiple instances",
+          "When you need a global point of access to an object",
+          "When you need to add new behaviors to an object dynamically",
+          "When you need to create a family of related objects"
+        ],
+        "answer": "When you need a global point of access to an object"
+      },
+      {
+        "q": "Which of the following statements about the Singleton pattern is correct?",
+        "opts": [
+          "The Singleton pattern guarantees that a class will have only one instance, but it does not guarantee global access to that instance",
+          "The Singleton pattern is a type of structural design pattern",
+          "The Singleton pattern can be used to manage shared resources like database connections and configuration settings",
+          "The Singleton pattern is only applicable in object-oriented programming languages"
+        ],
+        "answer": "The Singleton pattern can be used to manage shared resources like database connections and configuration settings"
+      },
+      {
+        "q": "Which of the following is a disadvantage of the Singleton pattern?",
+        "opts": [
+          "It reduces the flexibility of code by preventing subclassing",
+          "It allows multiple instances of a class to be created",
+          "It makes the code more difficult to understand and maintain",
+          "It cannot be used in multithreaded environments"
+        ],
+        "answer": "It reduces the flexibility of code by preventing subclassing"
+      },
+      {
+        "q": "Which of the following is a real-world example of the Singleton pattern?",
+        "opts": [
+          "A car engine management system",
+          "A user authentication service",
+          "A logging service that writes application logs to a file",
+          "A graphical user interface (GUI) framework"
+        ],
+        "answer": "A logging service that writes application logs to a file"
+      },
+      {
+        "q": "Which design pattern restricts a class to have only one instance and provides global access to it?",
+        "opts": [
+          "Factory Pattern",
+          "Singleton Pattern",
+          "Builder Pattern",
+          "Prototype Pattern"
+        ],
+        "answer": "Singleton Pattern"
+      },
+      {
+        "q": "What type of design pattern is the Singleton pattern?",
+        "opts": [
+          "Structural Design Pattern",
+          "Creational Design Pattern",
+          "Behavioral Design Pattern",
+          "Architectural Design Pattern"
+        ],
+        "answer": "Creational Design Pattern"
+      },
+      {
+        "q": "When is the creation of a Singleton instance in the Lazy Singleton pattern?",
+        "opts": [
+          "When the application starts.",
+          "When the getInstance() method is called for the first time.",
+          "When the class is loaded into memory.",
+          "Never; a Lazy Singleton is never actually instantiated."
+        ],
+        "answer": "When the getInstance() method is called for the first time."
+      },
+      {
+        "q": "What is the main difference between Eager and Lazy Singleton patterns?",
+        "opts": [
+          "Eager Singleton uses a private constructor, while Lazy Singleton uses a public constructor.",
+          "Eager Singleton creates the instance at application startup, while Lazy Singleton creates it on demand.",
+          "Eager Singleton allows multiple instances, while Lazy Singleton ensures only one.",
+          "Eager Singleton is thread-safe, while Lazy Singleton is not."
+        ],
+        "answer": "Eager Singleton creates the instance at application startup, while Lazy Singleton creates it on demand."
+      },
+      {
+        "q": "Which design pattern provides a way to access and manage a shared resource, like a database connection, to ensure that only one instance exists?",
+        "opts": [
+          "Factory Pattern",
+          "Builder Pattern",
+          "Singleton Pattern",
+          "Adapter Pattern"
+        ],
+        "answer": "Singleton Pattern"
+      },
+      {
+        "q": "According to the Dependency Inversion Principle, what should high-level modules depend on?",
+        "opts": [
+          "Concrete implementations of low-level modules",
+          "Abstractions (interfaces or abstract classes)",
+          "Specific data types",
+          "Global variables"
+        ],
+        "answer": "Abstractions (interfaces or abstract classes)"
+      },
+      {
+        "q": "What is a potential disadvantage of the Eager Singleton pattern?",
+        "opts": [
+          "It can be more complex to implement than Lazy Singleton.",
+          "It can be resource-intensive if the Singleton is not always needed.",
+          "It does not allow for lazy initialization.",
+          "It is not thread-safe."
+        ],
+        "answer": "It can be resource-intensive if the Singleton is not always needed."
+      },
+      {
+        "q": "Which design pattern is ideal for managing game settings that should remain consistent throughout the game?",
+        "opts": [
+          "Prototype Pattern",
+          "Factory Pattern",
+          "Singleton Pattern",
+          "Decorator Pattern"
+        ],
+        "answer": "Singleton Pattern"
+      },
+      {
+        "q": "What is one of the potential drawbacks of the Lazy Singleton pattern in a multithreaded environment?",
+        "opts": [
+          "It can lead to resource wastage.",
+          "It requires synchronization mechanisms to ensure thread safety.",
+          "It creates the instance eagerly at startup.",
+          "It violates the Single Responsibility Principle."
+        ],
+        "answer": "It requires synchronization mechanisms to ensure thread safety."
+      },
+      {
+        "q": "What is a potential benefit of using an Eager Singleton pattern?",
+        "opts": [
+          "Lazy initialization.",
+          "Reduced resource consumption.",
+          "Inherent thread safety.",
+          "Dynamic instantiation."
+        ],
+        "answer": "Inherent thread safety."
+      },
+      {
+        "q": "Which method is commonly used in the Singleton pattern to provide the instance of the class?",
+        "opts": [
+          "getObject()",
+          "newInstance()",
+          "getInstance()",
+          "createObject()"
+        ],
+        "answer": "getInstance()"
+      },
+      {
+        "q": "Which of the following could lead to a potential problem in the Singleton Design Pattern if not handled correctly?",
+        "opts": [
+          "Sharing the Singleton across multiple threads",
+          "Making the constructor public",
+          "Using the Singleton with multiple classes",
+          "Cloning the Singleton object"
+        ],
+        "answer": "Sharing the Singleton across multiple threads"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Using a public constructor, the Singleton pattern ensures a class has only one instance.",
+        "answer": "False"
+      },
+      {
+        "q": "The Singleton pattern is used to restrict the instantiation of a class to one single instance.",
+        "answer": "True"
+      },
+      {
+        "q": "The Singleton pattern is a creational design pattern.",
+        "answer": "True"
+      },
+      {
+        "q": "The Singleton pattern allows for easy creation of multiple instances of the same class.",
+        "answer": "False"
+      },
+      {
+        "q": "The Singleton pattern is ideal for creating objects with multiple configurations.",
+        "answer": "False"
+      },
+      {
+        "q": "In the Lazy Singleton pattern, the instance is created only when it is first needed.",
+        "answer": "True"
+      },
+      {
+        "q": "The Eager Singleton pattern is more suitable for resource-intensive objects that are not frequently used.",
+        "answer": "False"
+      },
+      {
+        "q": "The Singleton pattern guarantees that only one instance of a class is created.",
+        "answer": "True"
+      },
+      {
+        "q": "The Singleton pattern can be implemented in various ways, including Eager and Lazy initialization.",
+        "answer": "True"
+      },
+      {
+        "q": "Lazy initialization in Singleton is more memory efficient but may cause delays during object creation.",
+        "answer": "True"
+      },
+      {
+        "q": "A Singleton class must have a static method that returns the single instance of the class.",
+        "answer": "True"
+      },
+      {
+        "q": "The Singleton pattern is suitable for scenarios where global access to an instance is required.",
+        "answer": "True"
+      },
+      {
+        "q": "The Singleton pattern is used to ensure that a class has only one instance and provides a global point of access to it.",
+        "answer": "True"
+      },
+      {
+        "q": "The Singleton pattern can be implemented using both Eager and Lazy initialization.",
+        "answer": "True"
+      },
+      {
+        "q": "In a multithreaded environment, using a Singleton pattern without proper synchronization can lead to multiple instances being created.",
+        "answer": "True"
+      },
+      {
+        "q": "The Singleton pattern is considered a structural design pattern.",
+        "answer": "False"
+      },
+      {
+        "q": "The Singleton pattern is commonly used to manage shared resources like database connections and configuration settings.",
+        "answer": "True"
+      },
+      {
+        "q": "Using a public constructor in a Singleton class ensures that only one instance of the class is created.",
+        "answer": "False"
+      },
+      {
+        "q": "Lazy initialization in the Singleton pattern creates the instance only when it is first needed.",
+        "answer": "True"
+      },
+      {
+        "q": "The Singleton pattern is suitable for scenarios where global state management is required.",
+        "answer": "True"
+      },
+      {
+        "q": "A Singleton class must always have a static method that returns the single instance of the class.",
+        "answer": "True"
+      },
+      {
+        "q": "The Singleton pattern violates the Single Responsibility Principle by controlling both the instantiation and the behavior of the class.",
+        "answer": "True"
+      },
+      {
+        "q": "Eager initialization is generally more thread-safe than Lazy initialization in the Singleton pattern.",
+        "answer": "True"
+      },
+      {
+        "q": "The Singleton pattern can be used in both object-oriented and functional programming languages.",
+        "answer": "True"
+      },
+      {
+        "q": "The Singleton pattern is ideal for managing multiple instances of a service in an application.",
+        "answer": "False"
+      },
+      {
+        "q": "The Singleton pattern should always be used to manage shared resources in a multithreaded application.",
+        "answer": "False"
+      },
+      {
+        "q": "Using the Singleton pattern can make unit testing more difficult due to the global state it introduces.",
+        "answer": "True"
+      }
+    ]
+  },
+  "4": {
+    "mcq": [
+      {
+        "q": "Which of the following best describes the Factory design pattern?",
+        "opts": [
+          "A pattern that provides a way to create objects without specifying their exact class",
+          "A pattern that ensures only one instance of a class is created",
+          "A pattern that dynamically adds new behavior to an object",
+          "A pattern that defines a one-to-many relationship between objects"
+        ],
+        "answer": "A pattern that provides a way to create objects without specifying their exact class"
+      },
+      {
+        "q": "What problem does the Factory pattern solve?",
+        "opts": [
+          "Managing global state across an application",
+          "Creating objects without exposing the instantiation logic to the client",
+          "Ensuring that a class has only one instance",
+          "Managing the composition of objects to form larger structures"
+        ],
+        "answer": "Creating objects without exposing the instantiation logic to the client"
+      },
+      {
+        "q": "How does the Factory pattern solve the problem of creating objects?",
+        "opts": [
+          "By using a constructor to create objects",
+          "By providing a static method that returns an instance of a specific class",
+          "By using reflection to instantiate objects",
+          "By allowing direct access to the class's fields"
+        ],
+        "answer": "By providing a static method that returns an instance of a specific class"
+      },
+      {
+        "q": "Which of the following is a key characteristic of the Factory pattern?",
+        "opts": [
+          "It ensures that a class can have only one instance",
+          "It hides the creation logic from the client and provides a common interface for object creation",
+          "It adds new behaviors to objects dynamically",
+          "It allows multiple classes to be instantiated at runtime"
+        ],
+        "answer": "It hides the creation logic from the client and provides a common interface for object creation"
+      },
+      {
+        "q": "Which of the following is an example of when to use the Factory pattern?",
+        "opts": [
+          "When you need to manage a single instance of a class",
+          "When you need to create objects that are determined at runtime",
+          "When you need to dynamically change an object's behavior",
+          "When you need to manage complex relationships between classes"
+        ],
+        "answer": "When you need to create objects that are determined at runtime"
+      },
+      {
+        "q": "What is the main benefit of using the Factory pattern?",
+        "opts": [
+          "It ensures code is more efficient",
+          "It simplifies object creation and promotes loose coupling",
+          "It eliminates the need for classes altogether",
+          "It enforces strict type-checking"
+        ],
+        "answer": "It simplifies object creation and promotes loose coupling"
+      },
+      {
+        "q": "Which of the following is NOT a step in implementing the Factory pattern?",
+        "opts": [
+          "Define a common interface for the objects being created",
+          "Create concrete classes that implement the interface",
+          "Provide a factory method to create objects",
+          "Use a public constructor to create objects directly"
+        ],
+        "answer": "Use a public constructor to create objects directly"
+      },
+      {
+        "q": "When would the Factory pattern be an inappropriate choice?",
+        "opts": [
+          "When you need to manage a single instance of a resource",
+          "When object creation is simple and doesn’t require additional logic",
+          "When the application needs to create objects dynamically",
+          "When different subclasses need to be instantiated based on user input"
+        ],
+        "answer": "When object creation is simple and doesn’t require additional logic"
+      },
+      {
+        "q": "Which of the following scenarios is best suited for the Factory pattern?",
+        "opts": [
+          "Creating a singleton database connection",
+          "Creating different types of shapes in a drawing application",
+          "Adding new functionality to an existing object at runtime",
+          "Managing access to a shared resource"
+        ],
+        "answer": "Creating different types of shapes in a drawing application"
+      },
+      {
+        "q": "Which method is commonly used to implement the Factory pattern?",
+        "opts": [
+          "getInstance()",
+          "createObject()",
+          "factoryMethod()",
+          "newObject()"
+        ],
+        "answer": "factoryMethod()"
+      },
+      {
+        "q": "What principle does the Factory pattern promote?",
+        "opts": [
+          "Dependency on concrete classes",
+          "Tight coupling between components",
+          "Encapsulation of object creation logic",
+          "Multiple inheritance"
+        ],
+        "answer": "Encapsulation of object creation logic"
+      },
+      {
+        "q": "How does the Factory pattern improve code maintainability?",
+        "opts": [
+          "By reducing the number of classes",
+          "By centralizing the object creation logic",
+          "By enforcing strict variable naming conventions",
+          "By eliminating the need for interfaces"
+        ],
+        "answer": "By centralizing the object creation logic"
+      },
+      {
+        "q": "What is a potential drawback of the Factory pattern?",
+        "opts": [
+          "It can make code less flexible",
+          "It may introduce additional complexity",
+          "It prevents object instantiation",
+          "It requires the use of multiple inheritance"
+        ],
+        "answer": "It may introduce additional complexity"
+      },
+      {
+        "q": "Which of the following best demonstrates the use of the Factory pattern in Java?",
+        "opts": [
+          "The ShapeFactory uses a constructor to create shapes",
+          "The ShapeFactory class exposes the instantiation logic to the client",
+          "The ShapeFactory hides the object creation logic and returns an appropriate object",
+          "The Shape class handles object creation internally"
+        ],
+        "answer": "The ShapeFactory hides the object creation logic and returns an appropriate object"
+      },
+      {
+        "q": "Which design principle is closely related to the Factory pattern?",
+        "opts": [
+          "Open/Closed Principle",
+          "Single Responsibility Principle",
+          "Liskov Substitution Principle",
+          "Interface Segregation Principle"
+        ],
+        "answer": "Open/Closed Principle"
+      },
+      {
+        "q": "What is a key advantage of the Factory design pattern?",
+        "opts": [
+          "It ensures that only one instance of a class is created",
+          "It allows you to create objects without specifying the exact class",
+          "It provides a way to copy existing objects",
+          "It adds new responsibilities to objects dynamically"
+        ],
+        "answer": "It allows you to create objects without specifying the exact class"
+      },
+      {
+        "q": "Which design pattern is used to create families of related objects without specifying their concrete classes?",
+        "opts": [
+          "Singleton Pattern",
+          "Factory Pattern",
+          "Prototype Pattern",
+          "Builder Pattern"
+        ],
+        "answer": "Factory Pattern"
+      },
+      {
+        "q": "Which design pattern is suitable for creating weapon objects in a game like PUBG, allowing easy addition of new weapon types?",
+        "opts": [
+          "Builder Pattern",
+          "Prototype Pattern",
+          "Factory Pattern",
+          "Singleton Pattern"
+        ],
+        "answer": "Factory Pattern"
+      },
+      {
+        "q": "What is the core idea behind the Factory design pattern?",
+        "opts": [
+          "To define a template for creating objects.",
+          "To centralize the creation of objects, providing an interface that isolates clients from concrete classes.",
+          "To ensure that only one instance of a class exists.",
+          "To add responsibilities to objects dynamically."
+        ],
+        "answer": "To centralize the creation of objects, providing an interface that isolates clients from concrete classes."
+      },
+      {
+        "q": "Which of the following scenarios is best suited for the Factory pattern?",
+        "opts": [
+          "When a class needs to ensure a single instance.",
+          "When a class needs to be extended.",
+          "When you have a superclass with multiple subclasses, and you need to return an object based on input.",
+          "When you want to copy objects."
+        ],
+        "answer": "When you have a superclass with multiple subclasses, and you need to return an object based on input."
+      },
+      {
+        "q": "What does the Factory pattern provide over directly instantiating objects using the 'new' keyword?",
+        "opts": [
+          "Reduces the number of classes.",
+          "Improves code readability.",
+          "Encapsulates object creation and increases flexibility.",
+          "Reduces memory usage."
+        ],
+        "answer": "Encapsulates object creation and increases flexibility."
+      },
+      {
+        "q": "In the Factory Method pattern, what advantage does the provided 'createShape' implementation provide over a traditional constructor?",
+        "opts": [
+          "The renderShape method violates the Open/Closed Principle.",
+          "None of the above.",
+          "The CircleFactory eliminates the need for a separate Factory class.",
+          "The createShape method allows for dynamic selection of shape types at runtime."
+        ],
+        "answer": "The createShape method allows for dynamic selection of shape types at runtime."
+      },
+      {
+        "q": "Consider the code snippet for the AnimalFactory (Dog/Cat). What is the output of the code when 'Dog' is passed?",
+        "opts": ["Meow", "Compilation Error", "Bark", "NullPointerException"],
+        "answer": "Bark"
+      }
+    ],
+    "tf": [
+      {
+        "q": "The Factory Method pattern creates an object by exposing its implementation.",
+        "answer": "False"
+      },
+      {
+        "q": "The Factory Method pattern violates the Open/Closed Principle if new types are added.",
+        "answer": "False"
+      },
+      {
+        "q": "In the Factory Method pattern, the client determines which class to instantiate.",
+        "answer": "False"
+      },
+      {
+        "q": "The Factory Method pattern is used to create an object without exposing the instantiation logic to the client.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory pattern is a creational design pattern.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory pattern defines an interface for creating objects, but lets subclasses decide which class to instantiate.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory pattern promotes loose coupling by abstracting the object creation process.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory pattern provides a centralized way to create objects.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory pattern requires clients to know the concrete classes of the objects they are creating.",
+        "answer": "False"
+      },
+      {
+        "q": "Factory patterns eliminate the need to use inheritance between classes.",
+        "answer": "False"
+      },
+      {
+        "q": "Factory patterns help to reduce coupling between the client and the concrete classes.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory pattern is a creational design pattern that provides a way to create objects without specifying their exact class.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory pattern promotes tight coupling between the client and the concrete classes.",
+        "answer": "False"
+      },
+      {
+        "q": "Using the Factory pattern can make it easier to add new types of objects without modifying existing code.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory pattern eliminates the need for interfaces in object-oriented programming.",
+        "answer": "False"
+      },
+      {
+        "q": "The Factory pattern is suitable for creating objects with complex initialization logic.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory pattern can be used to manage shared resources in a multithreaded application.",
+        "answer": "True"
+      },
+      {
+        "q": "A Factory class must always use a static method to create objects.",
+        "answer": "False"
+      },
+      {
+        "q": "The Factory pattern helps reduce the number of direct dependencies between classes.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory pattern can help achieve the Open/Closed Principle by making it easier to extend functionality without modifying existing code.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory pattern can be used to create objects that are determined at runtime based on input or configuration.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory pattern is inappropriate for scenarios where object creation logic is straightforward and doesn’t require additional complexity.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory pattern can make unit testing easier by abstracting the creation of objects.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory pattern is primarily used to enforce the Single Responsibility Principle.",
+        "answer": "False"
+      },
+      {
+        "q": "The Factory pattern is considered a behavioral design pattern.",
+        "answer": "False"
+      },
+      {
+        "q": "Using the Factory pattern can lead to code that is more flexible and easier to maintain.",
+        "answer": "True"
+      }
+    ]
+  },
+  "5": {
+    "mcq": [
+      {
+        "q": "Which OOP principle primarily focuses on hiding internal implementation details while exposing only necessary functionality?",
+        "opts": ["Encapsulation", "Polymorphism", "Abstraction", "Inheritance"],
+        "answer": "Encapsulation"
+      },
+      {
+        "q": "According to the Single Responsibility Principle (SRP), a class should:",
+        "opts": [
+          "Have exactly one public method",
+          "Only depend on abstract classes",
+          "Have one reason to change",
+          "Handle all responsibilities for its module"
+        ],
+        "answer": "Have one reason to change"
+      },
+      {
+        "q": "Which scenario most clearly violates the Liskov Substitution Principle (LSP)?",
+        "opts": [
+          "A subclass overrides a method to improve performance while maintaining the same contract",
+          "A subclass adds a new helper method",
+          "A Square subclass of Rectangle that breaks width/height assignment behavior",
+          "A subclass implements an additional interface"
+        ],
+        "answer": "A Square subclass of Rectangle that breaks width/height assignment behavior"
+      },
+      {
+        "q": "The Open/Closed Principle (OCP) is best demonstrated by:",
+        "opts": [
+          "Using a single class for all behaviors to avoid duplication",
+          "Adding new classes that implement existing interfaces instead of modifying existing code",
+          "Declaring all methods as final to prevent changes",
+          "Editing existing code whenever new features are needed"
+        ],
+        "answer": "Adding new classes that implement existing interfaces instead of modifying existing code"
+      },
+      {
+        "q": "Which OOP feature allows different objects to be treated uniformly through a common interface?",
+        "opts": ["Encapsulation", "Abstraction", "Inheritance", "Polymorphism"],
+        "answer": "Polymorphism"
+      },
+      {
+        "q": "The Interface Segregation Principle (ISP) suggests that:",
+        "opts": [
+          "All interfaces must have default implementations",
+          "Clients should not be forced to depend on methods they do not use",
+          "Interfaces should always be implemented by exactly one class",
+          "One large interface is better than many small ones"
+        ],
+        "answer": "Clients should not be forced to depend on methods they do not use"
+      },
+      {
+        "q": "The Dependency Inversion Principle (DIP) encourages:",
+        "opts": [
+          "Using only concrete classes for better performance",
+          "Avoiding all external dependencies",
+          "High-level modules depending directly on low-level modules",
+          "Depending on abstractions and injecting implementations at runtime"
+        ],
+        "answer": "Depending on abstractions and injecting implementations at runtime"
+      },
+      {
+        "q": "The primary purpose of the Singleton pattern is to:",
+        "opts": [
+          "Create families of related objects",
+          "Allow an object to change its behavior based on internal state",
+          "Ensure a class has only one instance and provide global access to it",
+          "Separate object construction from its representation"
+        ],
+        "answer": "Ensure a class has only one instance and provide global access to it"
+      },
+      {
+        "q": "What is the primary difference between eager and lazy initialization in the Singleton pattern?",
+        "opts": [
+          "Eager initialization creates the instance when the class is first loaded, while lazy initialization creates the instance only when first requested",
+          "Eager initialization requires synchronized methods, while lazy initialization does not",
+          "Lazy initialization uses more memory than eager initialization",
+          "Eager initialization is always thread-safe, while lazy initialization is never thread-safe"
+        ],
+        "answer": "Eager initialization creates the instance when the class is first loaded, while lazy initialization creates the instance only when first requested"
+      },
+      {
+        "q": "Which statement best describes the trade-offs between lazy and eager singleton initialization?",
+        "opts": [
+          "Eager initialization always performs better than lazy initialization in all scenarios",
+          "Both A and B are correct",
+          "Eager initialization guarantees thread safety but may waste resources if the instance is never used",
+          "Lazy initialization saves resources if unused but requires careful consideration of thread safety in multithreaded environments"
+        ],
+        "answer": "Lazy initialization saves resources if unused but requires careful consideration of thread safety in multithreaded environments"
+      },
+      {
+        "q": "A ReportService class: fetches data from a database, formats it as PDF, emails it to users. Which statement is most accurate?",
+        "opts": [
+          "SRP applies only to abstract classes",
+          "SRP is not violated because all tasks are related to reporting",
+          "SRP is violated only if inheritance is used",
+          "SRP is violated because the class has multiple reasons to change"
+        ],
+        "answer": "SRP is violated because the class has multiple reasons to change"
+      },
+      {
+        "q": "Which of the following violates the Open/Closed Principle?",
+        "opts": [
+          "Adding a new subclass for a new payment type",
+          "Modifying a switch statement to handle a new case",
+          "Adding a new method to an interface",
+          "Using dependency injection to inject behavior"
+        ],
+        "answer": "Modifying a switch statement to handle a new case"
+      },
+      {
+        "q": "Which situation is a classic LSP violation?",
+        "opts": [
+          "A subclass throws broader exceptions than its base class",
+          "A subclass overrides a method to run faster",
+          "A subclass adds new public methods",
+          "A subclass reuses base class methods"
+        ],
+        "answer": "A subclass throws broader exceptions than its base class"
+      },
+      {
+        "q": "Which design choice best satisfies the Interface Segregation Principle?",
+        "opts": [
+          "One interface per class",
+          "One large interface with many optional methods",
+          "Multiple small interfaces grouped by responsibility",
+          "One interface per package"
+        ],
+        "answer": "Multiple small interfaces grouped by responsibility"
+      },
+      {
+        "q": "Which design choice best satisfies the Dependency Inversion Principle?",
+        "opts": [
+          "Abstractions depend on concrete implementations",
+          "Concrete classes inherit from interfaces",
+          "High-level modules depend on utility classes",
+          "Both high-level and low-level modules depend on abstractions"
+        ],
+        "answer": "Both high-level and low-level modules depend on abstractions"
+      },
+      {
+        "q": "Which Singleton implementation is not thread-safe in a multithreaded environment?",
+        "opts": [
+          "Lazy initialization without synchronization",
+          "Double-checked locking",
+          "Eager initialization",
+          "Enum Singleton"
+        ],
+        "answer": "Lazy initialization without synchronization"
+      },
+      {
+        "q": "Which scenario clearly favors the Builder pattern over Factory?",
+        "opts": [
+          "Object creation depends on runtime type",
+          "Object creation must be hidden from client",
+          "Object creation must be centralized",
+          "Object has many optional parameters with complex combinations"
+        ],
+        "answer": "Object has many optional parameters with complex combinations"
+      },
+      {
+        "q": "What is the primary function of the Adapter Pattern?",
+        "opts": [
+          "Converts one interface into another expected by clients",
+          "Creates families of related objects",
+          "Controls access to an object",
+          "Adds new behavior to an object"
+        ],
+        "answer": "Converts one interface into another expected by clients"
+      },
+      {
+        "q": "Which Proxy type adds behavior without changing the real object's interface?",
+        "opts": [
+          "Remote Proxy",
+          "Protection Proxy",
+          "Virtual Proxy",
+          "All of the above"
+        ],
+        "answer": "All of the above"
+      },
+      {
+        "q": "Which design pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate?",
+        "opts": ["Singleton", "Adapter", "Factory Method", "Proxy"],
+        "answer": "Factory Method"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Inheritance allows one class to acquire properties and behaviors from another class.",
+        "answer": "True"
+      },
+      {
+        "q": "The Singleton pattern is designed to create multiple distinct instances of a class.",
+        "answer": "False"
+      },
+      {
+        "q": "The Interface Segregation Principle advocates for creating large, comprehensive interfaces that serve many different clients.",
+        "answer": "False"
+      },
+      {
+        "q": "Abstraction in OOP focuses on essential characteristics while hiding irrelevant implementation details.",
+        "answer": "True"
+      },
+      {
+        "q": "The Open/Closed Principle suggests that you should modify existing classes whenever new requirements emerge.",
+        "answer": "False"
+      },
+      {
+        "q": "Polymorphism enables a single interface to represent different underlying data types or classes.",
+        "answer": "True"
+      },
+      {
+        "q": "The Dependency Inversion Principle states that high-level modules should depend on abstractions rather than concrete implementations.",
+        "answer": "True"
+      },
+      {
+        "q": "A key characteristic of Singleton pattern implementation is typically a private constructor.",
+        "answer": "True"
+      },
+      {
+        "q": "The Singleton Method pattern creates families of related objects, while the Abstract Factory pattern creates individual objects.",
+        "answer": "False"
+      },
+      {
+        "q": "Favoring composition over inheritance generally leads to more flexible and less tightly coupled designs.",
+        "answer": "True"
+      },
+      {
+        "q": "SRP is violated only when a class has more than one public method.",
+        "answer": "False"
+      },
+      {
+        "q": "A class can comply with SRP but still violate OCP.",
+        "answer": "True"
+      },
+      {
+        "q": "Using many small interfaces may increase the number of classes but improves maintainability.",
+        "answer": "True"
+      },
+      {
+        "q": "DIP requires that interfaces must always be created.",
+        "answer": "False"
+      },
+      {
+        "q": "Singleton can violate SRP and DIP by introducing global state.",
+        "answer": "True"
+      },
+      {
+        "q": "Builder Pattern improves code readability when object construction is complex.",
+        "answer": "True"
+      },
+      {
+        "q": "Adapter and Proxy patterns solve fundamentally different problems despite similar structure.",
+        "answer": "True"
+      },
+      {
+        "q": "Proxy pattern can be used for lazy loading, security, and logging.",
+        "answer": "True"
+      }
+    ]
+  },
+  "6": {
+    "mcq": [
+      {
+        "q": "Which of the following statements about the Adapter pattern is correct?",
+        "opts": [
+          "The Adapter pattern provides a way to change the behavior of a class at runtime.",
+          "The Adapter pattern is used to convert an object's interface into a compatible one for another system.",
+          "The Adapter pattern is the same as the Proxy pattern.",
+          "The Adapter pattern can only be used with abstract classes."
+        ],
+        "answer": "The Adapter pattern is used to convert an object's interface into a compatible one for another system."
+      },
+      {
+        "q": "What is the primary goal of the Builder design pattern?",
+        "opts": [
+          "To create objects based on cloning existing instances.",
+          "To allow objects to be created without specifying the exact class of the object.",
+          "To provide a common interface for creating families of related objects.",
+          "To simplify the construction of complex objects."
+        ],
+        "answer": "To simplify the construction of complex objects."
+      },
+      {
+        "q": "In which scenario would the Prototype pattern be most useful?",
+        "opts": [
+          "When creating multiple instances of a class without exposing the instantiation logic.",
+          "When an object needs to be cloned to create similar objects.",
+          "When you need to instantiate objects that are similar but require different configurations.",
+          "When a class has many subclasses, but you only need to instantiate a particular subclass."
+        ],
+        "answer": "When an object needs to be cloned to create similar objects."
+      },
+      {
+        "q": "Which of the following is NOT a responsibility of the Decorator pattern?",
+        "opts": [
+          "Create an object in a systematic way using the builder.",
+          "Allow an object to exhibit different behavior under different conditions.",
+          "Change the behavior of an object at runtime.",
+          "Add new responsibilities to an object dynamically."
+        ],
+        "answer": "Create an object in a systematic way using the builder."
+      },
+      {
+        "q": "What is the main difference between the Observer pattern and the Singleton pattern?",
+        "opts": [
+          "The Observer pattern is part of the Factory pattern family.",
+          "The Singleton pattern does not use multiple instances, but the Observer pattern does.",
+          "The Observer pattern is used for event handling while the Singleton pattern is used for limiting instances of a class.",
+          "The Observer pattern is used to provide a global point of access to a class."
+        ],
+        "answer": "The Observer pattern is used for event handling while the Singleton pattern is used for limiting instances of a class."
+      },
+      {
+        "q": "In the Proxy design pattern, what is the primary responsibility of the proxy object? [cite: 636]",
+        "opts": [
+          "To provide multiple implementations for the subject object.",
+          "To provide additional functionality to the subject.",
+          "To control access to the real subject by acting as a surrogate.",
+          "To directly create the subject object."
+        ],
+        "answer": "To control access to the real subject by acting as a surrogate."
+      },
+      {
+        "q": "In the Observer pattern, which of the following is true about the relationship between the subject and the observers? [cite: 641]",
+        "opts": [
+          "The subject knows and updates all of its observers.",
+          "The subject has no knowledge of its observers.",
+          "The observers are tightly coupled to the subject.",
+          "The observers notify the subject when they need updates."
+        ],
+        "answer": "The subject knows and updates all of its observers."
+      },
+      {
+        "q": "What is the primary role of the Builder pattern? [cite: 728]",
+        "opts": [
+          "To encapsulate a request as an object",
+          "To construct complex objects step by step",
+          "To control object creation",
+          "To simplify object creation by using prototypes"
+        ],
+        "answer": "To construct complex objects step by step"
+      },
+      {
+        "q": "What is the main purpose of the Builder Design Pattern? [cite: 891]",
+        "opts": [
+          "To ensure a single instance of a class is created.",
+          "To simplify the creation of complex objects.",
+          "To provide an interface for creating families of objects.",
+          "To create multiple instances of a class."
+        ],
+        "answer": "To simplify the creation of complex objects."
+      },
+      {
+        "q": "Which of the following best describes the difference between the Builder and the Prototype Design Patterns in terms of object creation? [cite: 903]",
+        "opts": [
+          "Builder uses the prototype object as a template to build new instances, while Prototype creates a new object by cloning an existing instance.",
+          "Builder creates complex objects with different interfaces, while Prototype is used to create clones of objects with the same interface.",
+          "Builder constructs objects step by step, while Prototype duplicates an existing object.",
+          "Builder allows for flexible object creation, while Prototype restricts cloning to a single instance."
+        ],
+        "answer": "Builder constructs objects step by step, while Prototype duplicates an existing object."
+      },
+      {
+        "q": "How does the Adapter Pattern differ from the Decorator Pattern in terms of functionality? [cite: 915]",
+        "opts": [
+          "Adapter allows creating objects with different constructors, while Decorator is used to manage object creation.",
+          "Both Adapter and Decorator serve the same purpose with no difference in behavior.",
+          "Adapter provides a new interface to the object, while Decorator changes the object's behavior without altering the interface.",
+          "Adapter changes the interface of an object, while Decorator adds functionality to it."
+        ],
+        "answer": "Adapter changes the interface of an object, while Decorator adds functionality to it."
+      },
+      {
+        "q": "In a system where a proxy is used to control access to a remote service, what is the primary concern when using a Proxy Pattern? [cite: 927]",
+        "opts": [
+          "The proxy has no effect on the performance of method calls.",
+          "The proxy always creates new instances of remote objects.",
+          "The proxy cannot be subclassed.",
+          "The proxy introduces additional overhead for method calls."
+        ],
+        "answer": "The proxy introduces additional overhead for method calls."
+      },
+      {
+        "q": "Which of the following could lead to a potential problem in the Singleton Design Pattern if not handled correctly? [cite: 938]",
+        "opts": [
+          "Using the Singleton with multiple classes",
+          "Making the constructor public",
+          "Cloning the Singleton object",
+          "Sharing the Singleton across multiple threads"
+        ],
+        "answer": "Cloning the Singleton object"
+      }
+    ],
+    "tf": [
+      {
+        "q": "The Singleton pattern is used to restrict the instantiation of a class to one single instance.",
+        "answer": "True"
+      },
+      {
+        "q": "In the Factory Method pattern, the client determines which class to instantiate.",
+        "answer": "False"
+      },
+      {
+        "q": "The Builder pattern allows you to create an object step by step, ensuring the object is fully constructed before use.",
+        "answer": "True"
+      },
+      {
+        "q": "The Prototype pattern allows the creation of objects based on cloning existing instances of the class.",
+        "answer": "True"
+      },
+      {
+        "q": "In the Observer pattern, the subject maintains a list of observers and notifies them when its state changes.",
+        "answer": "True"
+      },
+      {
+        "q": "The Proxy pattern is used to create multiple objects of the same class.",
+        "answer": "False"
+      },
+      {
+        "q": "The Decorator pattern allows you to add new functionality to an object without changing its class.",
+        "answer": "True"
+      },
+      {
+        "q": "The Adapter pattern allows an object to adapt its interface to match the interface expected by the client.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory Method pattern is used to create an object without exposing the instantiation logic to the client.",
+        "answer": "True"
+      },
+      {
+        "q": "The Builder pattern provides a way to construct complex objects by composing them with multiple steps.",
+        "answer": "True"
+      },
+      {
+        "q": "The Adapter pattern is used to simplify the implementation of an interface that is already compatible.",
+        "answer": "False"
+      },
+      {
+        "q": "The Builder pattern separates the construction of a complex object from its representation.",
+        "answer": "True"
+      },
+      {
+        "q": "The Proxy pattern is only useful for managing access to local objects.",
+        "answer": "False"
+      },
+      {
+        "q": "The Factory Method pattern creates an object by exposing its implementation.",
+        "answer": "False"
+      },
+      {
+        "q": "The Adapter pattern can adapt multiple incompatible interfaces simultaneously.",
+        "answer": "False"
+      },
+      {
+        "q": "In the Builder pattern, the immutability of the constructed object depends on using final fields.",
+        "answer": "False"
+      },
+      {
+        "q": "The Prototype pattern eliminates the need to create a new object from scratch.",
+        "answer": "True"
+      },
+      {
+        "q": "The Factory Method pattern violates the Open/Closed Principle if new types are added.",
+        "answer": "False"
+      },
+      {
+        "q": "The Singleton pattern ensures a class has only one instance by using a public constructor.",
+        "answer": "False"
+      }
+    ]
+  }
+}

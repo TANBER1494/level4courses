@@ -1,0 +1,4468 @@
+{
+  "1": {
+    "mcq": [
+      {
+        "q": "An Embedded System (ES) is best defined as a combination of hardware, software, and...",
+        "opts": [
+          "a general-purpose OS",
+          "a mechanical component",
+          "a user interface",
+          "an internet connection"
+        ],
+        "answer": "a mechanical component"
+      },
+      {
+        "q": "What is the primary characteristic of an Embedded System's function?",
+        "opts": [
+          "It performs a specific task",
+          "It can be altered by the user",
+          "It relies on high performance",
+          "It performs multiple functions"
+        ],
+        "answer": "It performs a specific task"
+      },
+      {
+        "q": "In an embedded system like a washing machine, the chip holding the software is the _______, while the motor is the _______.",
+        "opts": [
+          "Hardware, Mechanical Component",
+          "Software, Hardware",
+          "Software, Mechanical Component",
+          "Mechanical Component, Software"
+        ],
+        "answer": "Software, Mechanical Component"
+      },
+      {
+        "q": "The 'Control Unit' of an embedded system (Processor, RAM, ROM) is analogous to what part of any computing system?",
+        "opts": [
+          "Processor, Memory, and I/O",
+          "Hardware, Software, and Mechanical",
+          "Input, Process, and Output",
+          "CPU, GPU, and DSP"
+        ],
+        "answer": "Processor, Memory, and I/O"
+      },
+      {
+        "q": "A laptop is a 'General Purpose' system. What is a microwave an example of?",
+        "opts": [
+          "A multi-purpose system",
+          "A general-purpose system",
+          "A specific purpose system",
+          "An alterable system"
+        ],
+        "answer": "A specific purpose system"
+      },
+      {
+        "q": "What is a key difference between Embedded Systems (ES) and General Purpose (GP) computers?",
+        "opts": [
+          "ES applications are alterable; GP are not",
+          "ES key factor is performance; GP is cost",
+          "ES applications are non-alterable; GP are alterable",
+          "ES power consumption is high; GP is low"
+        ],
+        "answer": "ES applications are non-alterable; GP are alterable"
+      },
+      {
+        "q": "For which system is 'Response Time' often critical?",
+        "opts": [
+          "General Purpose Computer",
+          "Embedded system",
+          "Both",
+          "Neither"
+        ],
+        "answer": "Embedded system"
+      },
+      {
+        "q": "Power, cost, speed, and size are known as:",
+        "opts": [
+          "Embedded system challenges",
+          "General-purpose features",
+          "Software requirements",
+          "Hardware components"
+        ],
+        "answer": "Embedded system challenges"
+      },
+      {
+        "q": "What are the two main methods for building an Embedded System?",
+        "opts": [
+          "MPU and MCU",
+          "IC and VLSI",
+          "Hardware and Software",
+          "System Board (SB) and System on Chip (SoC)"
+        ],
+        "answer": "System Board (SB) and System on Chip (SoC)"
+      },
+      {
+        "q": "Which technology integrates all system components (Processor, Memory, etc.) onto a single IC?",
+        "opts": [
+          "System Board (SB)",
+          "Breadboard",
+          "System on Chip (SoC)",
+          "VLSI"
+        ],
+        "answer": "System on Chip (SoC)"
+      },
+      {
+        "q": "When comparing SB and SoC, which is larger, more expensive, but more configurable?",
+        "opts": ["SoC", "SB", "Both are the same", "Neither"],
+        "answer": "SB"
+      },
+      {
+        "q": "What does 'VLSI' stand for?",
+        "opts": [
+          "Very Low-Size IC",
+          "Variable Large-Scale IC",
+          "Very Large-Scale Integrated Circuit",
+          "Virtual Logic System IC"
+        ],
+        "answer": "Very Large-Scale Integrated Circuit"
+      },
+      {
+        "q": "MPUs, MCUs, SoCs, and RAM are all examples of:",
+        "opts": [
+          "System Boards (SB)",
+          "Integrated Circuits (ICs)",
+          "Mechanical Components",
+          "Vacuum Tubes"
+        ],
+        "answer": "Integrated Circuits (ICs)"
+      },
+      {
+        "q": "What is the 'Primary/Master' processor in a system called?",
+        "opts": ["MPU", "GPU", "DSP", "CPU"],
+        "answer": "CPU"
+      },
+      {
+        "q": "What component replaced large 'Vacuum Tubes' to create smaller 'Microprocessors'?",
+        "opts": ["Transistors", "Breadboards", "Timer 555", "SoCs"],
+        "answer": "Transistors"
+      },
+      {
+        "q": "What is a 'Microcontroller' (MCU)?",
+        "opts": [
+          "Just another name for a CPU",
+          "A processor only (MPU)",
+          "A small computer on a single IC",
+          "A type of system board"
+        ],
+        "answer": "A small computer on a single IC"
+      },
+      {
+        "q": "What is the correct relationship between MPU and MCU?",
+        "opts": [
+          "MCU is a part of MPU",
+          "MPU is a part of MCU",
+          "They are unrelated",
+          "They are the same thing"
+        ],
+        "answer": "MPU is a part of MCU"
+      },
+      {
+        "q": "What is the function of a GPU (Graphics Processing Unit)?",
+        "opts": [
+          "To deal with complex computations",
+          "To be the primary processor",
+          "To assist the MP with graphics operations",
+          "To store the main software"
+        ],
+        "answer": "To assist the MP with graphics operations"
+      },
+      {
+        "q": "Which secondary processor is a microprocessor that deals with 'Complex Computations'?",
+        "opts": [
+          "DSP (Digital Signal Processor)",
+          "CPU (Central Processing Unit)",
+          "GPU (Graphics Processing Unit)",
+          "VPU (Visual Processing Unit)"
+        ],
+        "answer": "DSP (Digital Signal Processor)"
+      }
+    ],
+    "tf": [
+      {
+        "q": "An Embedded System is designed to perform a specific function.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "An embedded system is a combination of hardware and software only.",
+        "answer": "False",
+        "correction": "It is a combination of hardware, software, and a mechanical component."
+      },
+      {
+        "q": "A general-purpose computer (like a laptop) is an example of a 'specific purpose' system.",
+        "answer": "False",
+        "correction": "It is a 'general purpose' system."
+      },
+      {
+        "q": "In an embedded system, applications are 'non-alterable' by the user.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "'Performance' is the main key factor for embedded systems.",
+        "answer": "False",
+        "correction": "Application specific requirements (cost, power, size) are the key factors."
+      },
+      {
+        "q": "A breadboard is used to build a System on Chip (SoC).",
+        "answer": "False",
+        "correction": "It is used to build a System Board (SB)."
+      },
+      {
+        "q": "A System on Chip (SoC) is less expensive and smaller than a System Board (SB).",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "VLSI is an IC with millions of transistors.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Old processors used transistors, while new microprocessors use vacuum tubes.",
+        "answer": "False",
+        "correction": "Old processors used vacuum tubes; new ones use transistors."
+      },
+      {
+        "q": "A system can have multiple CPUs.",
+        "answer": "False",
+        "correction": "A system can have one CPU (primary processor)."
+      },
+      {
+        "q": "A Microcontroller (MCU) is a complete computer on a chip, containing a processor (MPU), memory, and I/O.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A DSP (Digital Signal Processor) assists the main processor with graphics operations.",
+        "answer": "False",
+        "correction": "The GPU (Graphics Processing Unit) assists with graphics."
+      }
+    ]
+  },
+  "2": {
+    "mcq": [
+      {
+        "q": "What are the three main components found inside a Microprocessor (MP)?",
+        "opts": [
+          "ALU, CU, RF",
+          "CPU, GPU, DSP",
+          "Memory, I/O, MP",
+          "Kernel, Drivers, HW"
+        ],
+        "answer": "ALU, CU, RF"
+      },
+      {
+        "q": "In the system diagram, what are the GPU and DSP classified as?",
+        "opts": [
+          "Primary Processors",
+          "Secondary Processors",
+          "Memory Units",
+          "I/O Devices"
+        ],
+        "answer": "Secondary Processors"
+      },
+      {
+        "q": "Which component is used for complex computations, like Fourier transform, to reduce load on the primary processor?",
+        "opts": ["ALU", "CU", "DSP", "RF"],
+        "answer": "DSP"
+      },
+      {
+        "q": "What is the name for a system integrating MP, Memory, I/O, GPU, and DSP on a single chip?",
+        "opts": ["ECU", "ALU", "MCU", "SoC"],
+        "answer": "SoC"
+      },
+      {
+        "q": "A System on Chip (SoC) is defined as a high-performance version of what?",
+        "opts": ["MCU", "CPU", "DSP", "ECU"],
+        "answer": "MCU"
+      },
+      {
+        "q": "In an 'OS Applications' architecture, what layer sits between the Application layer and the Drivers?",
+        "opts": ["Kernel", "Hardware", "BareMetal SW", "ALU"],
+        "answer": "Kernel"
+      },
+      {
+        "q": "Why does a System on Chip (SoC) typically deal with OS Applications?",
+        "opts": [
+          "Because it is low cost",
+          "Because it needs high performance",
+          "Because it uses BareMetal SW",
+          "Because it has no drivers"
+        ],
+        "answer": "Because it needs high performance"
+      },
+      {
+        "q": "Which of the following is an example of a Non-BareMetal SW (OS Application)?",
+        "opts": ["Arduino IDE", "Embedded Linux", "SCADA", "DSKY"],
+        "answer": "Embedded Linux"
+      },
+      {
+        "q": "What is an 'ECU' (Electrical Control Unit)?",
+        "opts": [
+          "A sensor only",
+          "A Kit + Sensors & Actuators",
+          "A high-performance SoC",
+          "A BareMetal application"
+        ],
+        "answer": "A Kit + Sensors & Actuators"
+      },
+      {
+        "q": "What is the function of a sensor?",
+        "opts": [
+          "Convert electrical signals to physical events",
+          "Convert physical events to electrical signals",
+          "Execute complex computations",
+          "Store data in Register Files"
+        ],
+        "answer": "Convert physical events to electrical signals"
+      },
+      {
+        "q": "What is the function of an actuator?",
+        "opts": [
+          "Convert electrical signals to physical events",
+          "Convert physical events to electrical signals",
+          "Take input from the environment",
+          "Perform arithmetic operations"
+        ],
+        "answer": "Convert electrical signals to physical events"
+      },
+      {
+        "q": "Which of the following is an example of an actuator?",
+        "opts": [
+          "Temperature sensor",
+          "Light sensor",
+          "Motors",
+          "Pressure sensor"
+        ],
+        "answer": "Motors"
+      },
+      {
+        "q": "What was the first recognized embedded system?",
+        "opts": [
+          "Intel 4004",
+          "Arduino",
+          "Apollo Guidance Computer (AGC)",
+          "SCADA"
+        ],
+        "answer": "Apollo Guidance Computer (AGC)"
+      },
+      {
+        "q": "What was the name of the first commercially available microprocessor introduced by Intel in 1971?",
+        "opts": ["4004", "SoC", "DSKY", "AGC"],
+        "answer": "4004"
+      },
+      {
+        "q": "Second generation embedded systems were built around which type of microprocessors?",
+        "opts": [
+          "8-bit microprocessors",
+          "16-bit microprocessors",
+          "32-bit microprocessors",
+          "SoCs"
+        ],
+        "answer": "16-bit microprocessors"
+      },
+      {
+        "q": "What does 'ASIC' stand for?",
+        "opts": [
+          "Application Specific Integrated Circuits",
+          "Arithmetic System Instruction Core",
+          "Advanced Sensor and IC",
+          "Actuator System Input Control"
+        ],
+        "answer": "Application Specific Integrated Circuits"
+      },
+      {
+        "q": "Fourth generation embedded systems are built around which component?",
+        "opts": [
+          "8-bit microprocessors",
+          "16-bit microprocessors",
+          "ASICs",
+          "System on Chips (SoC's)"
+        ],
+        "answer": "System on Chips (SoC's)"
+      },
+      {
+        "q": "Which classification of embedded systems is characterized by simple needs and is 'not time-critical'?",
+        "opts": [
+          "Small-scale",
+          "Medium-scale",
+          "Large-scale",
+          "Hard Real time"
+        ],
+        "answer": "Small-scale"
+      },
+      {
+        "q": "In which type of real-time system can missing a deadline have catastrophic consequences?",
+        "opts": [
+          "Soft Real time systems",
+          "Hard Real time systems",
+          "Event triggered systems",
+          "Time triggered systems"
+        ],
+        "answer": "Hard Real time systems"
+      },
+      {
+        "q": "Which triggering classification follows a 'statically computed schedule' and is predictable?",
+        "opts": [
+          "Event Triggered",
+          "Time triggered",
+          "Soft Real time",
+          "Hard Real time"
+        ],
+        "answer": "Time triggered"
+      }
+    ],
+    "tf": [
+      {
+        "q": "The Control Unit (CU) is a component found inside the MP.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The ALU is used for complex computations like Fourier transform.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "An MCU is a high-performance version of an SoC.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "In BareMetal SW, the Application layer deals directly with the Kernel.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "BareMetal SW is typically used for microcontrollers that do not have high performance.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A car is an example of a large system that can consist of at least 200 ECUs.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A sensor converts electrical signals into physical events.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "An actuator takes input from the system and gives output to the environment.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "SCADA is an example of a first-generation embedded system.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "ASICs are designed for general-purpose use.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "Miniaturization is a characteristic of fourth-generation embedded systems.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Medium-scale embedded systems usually contain an operating system.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "For large-scale embedded systems, response time is not critical.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "In Soft Real-time systems, missing a deadline is tolerated.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Event-triggered systems are dynamic and depend on the occurrence of events.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
+  },
+  "3": {
+    "mcq": [
+      {
+        "q": "What is the primary function of an Anti-lock Braking System (ABS)?",
+        "opts": [
+          "Increase engine power",
+          "Prevent wheels from locking up",
+          "Reduce fuel consumption",
+          "Automate steering"
+        ],
+        "answer": "Prevent wheels from locking up"
+      },
+      {
+        "q": "Which components does an ABS use to function?",
+        "opts": [
+          "Wheel speed sensors and an ECU",
+          "GPS and an LCD screen",
+          "A thermistor and a compressor",
+          "A microphone and a speaker"
+        ],
+        "answer": "Wheel speed sensors and an ECU"
+      },
+      {
+        "q": "Which category of embedded systems includes printers and scanners?",
+        "opts": [
+          "Consumer Electronics",
+          "Automotive industry",
+          "Healthcare",
+          "Computer peripherals"
+        ],
+        "answer": "Computer peripherals"
+      },
+      {
+        "q": "Which of these is NOT listed as a main purpose of embedded systems?",
+        "opts": [
+          "Data (Signal) Processing",
+          "Monitoring",
+          "Control",
+          "General Purpose Computing"
+        ],
+        "answer": "General Purpose Computing"
+      },
+      {
+        "q": "Which purpose involves acquiring data from the external world?",
+        "opts": [
+          "Data Communication",
+          "Data Collection/Storage",
+          "Control",
+          "Monitoring"
+        ],
+        "answer": "Data Collection/Storage"
+      },
+      {
+        "q": "Network hubs, routers, and switches are examples of which type of embedded system purpose?",
+        "opts": [
+          "Data Communication",
+          "Data (Signal) Processing",
+          "Monitoring",
+          "Application Specific User Interface"
+        ],
+        "answer": "Data Communication"
+      },
+      {
+        "q": "Embedded systems demanding speech coding or audio/video codecs are used for which purpose?",
+        "opts": [
+          "Control",
+          "Monitoring",
+          "Data (Signal) Processing",
+          "Data Collection"
+        ],
+        "answer": "Data (Signal) Processing"
+      },
+      {
+        "q": "Which type of embedded system is computationally intensive and often employs DSPs?",
+        "opts": [
+          "Data (Signal) Processing",
+          "Data Communication",
+          "Monitoring",
+          "Control"
+        ],
+        "answer": "Data (Signal) Processing"
+      },
+      {
+        "q": "What is a key characteristic of an embedded system designed for 'Monitoring'?",
+        "opts": [
+          "It cannot impose control",
+          "It must use a DSP",
+          "It requires an actuator",
+          "It only accepts digital data"
+        ],
+        "answer": "It cannot impose control"
+      },
+      {
+        "q": "An ECG machine is a typical example of which purpose?",
+        "opts": [
+          "Control",
+          "Data Communication",
+          "Monitoring",
+          "Data (Signal) Processing"
+        ],
+        "answer": "Monitoring"
+      },
+      {
+        "q": "Embedded systems with 'Control' functionality must contain which components?",
+        "opts": [
+          "Sensors and Actuators",
+          "A microphone and a speaker",
+          "Only a DSP",
+          "A network router"
+        ],
+        "answer": "Sensors and Actuators"
+      },
+      {
+        "q": "In an Air conditioner, what component acts as the actuator?",
+        "opts": [
+          "Thermistor (sensor)",
+          "Compressor",
+          "Handheld unit",
+          "Power button"
+        ],
+        "answer": "Compressor"
+      },
+      {
+        "q": "The 'Top-down' design process for embedded systems starts with which step?",
+        "opts": [
+          "Architecture",
+          "Specification",
+          "Requirements",
+          "System integration"
+        ],
+        "answer": "Requirements"
+      },
+      {
+        "q": "Which of the following is considered a 'nonfunctional' requirement?",
+        "opts": [
+          "User login",
+          "Button press response",
+          "Power consumption",
+          "Data storage format"
+        ],
+        "answer": "Power consumption"
+      },
+      {
+        "q": "Performance requirements can be a combination of soft metrics and what?",
+        "opts": [
+          "Manufacturing costs",
+          "Hard deadlines",
+          "User preferences",
+          "Physical size"
+        ],
+        "answer": "Hard deadlines"
+      },
+      {
+        "q": "What are the two major components of 'Cost' as a nonfunctional requirement?",
+        "opts": [
+          "Hardware and Software",
+          "Manufacturing cost and NRE cost",
+          "Battery cost and Power cost",
+          "Sensor cost and Actuator cost"
+        ],
+        "answer": "Manufacturing cost and NRE cost"
+      },
+      {
+        "q": "What does 'NRE' cost refer to in the design process?",
+        "opts": [
+          "New Requirement Engineering",
+          "Non-recurring engineering",
+          "Network Routing Engine",
+          "Nominal Resource Expenditure"
+        ],
+        "answer": "Non-recurring engineering"
+      },
+      {
+        "q": "In the requirements form, which entry should be a brief one or two-line description?",
+        "opts": ["Name", "Purpose", "Inputs and outputs", "Functions"],
+        "answer": "Purpose"
+      },
+      {
+        "q": "In the GPS example, what was the specified manufacturing cost?",
+        "opts": ["$10", "$30", "$100", "$1000"],
+        "answer": "$30"
+      },
+      {
+        "q": "What performance requirement was set for the GPS moving map example?",
+        "opts": [
+          "Updates screen within 0.25s",
+          "Updates screen within 1s",
+          "Battery life of 10 hours",
+          "Weighs less than 10 ounces"
+        ],
+        "answer": "Updates screen within 0.25s"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Washing machines and refrigerators are examples of automotive embedded systems.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "ABS works by using an ECU to rapidly apply and release the brakes.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "EEG and ECG machines are examples of embedded systems in the 'Telecom' category.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "Data collected by an embedded system must always be stored; it cannot be deleted instantly.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "Embedded data communication can only happen through a wired interface like Ethernet.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "A 'Monitoring' system uses sensors to determine the state of variables.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "An embedded system for 'Control' contains sensors but does not require actuators.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "The 'Bottom-up' design process starts with system integration and moves toward requirements.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Requirements for an embedded system can only be functional.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "Performance, cost, and physical size are examples of nonfunctional requirements.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Manufacturing cost includes the cost of components, assembly, and the design process (NRE).",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "Power consumption is usually specified by the customer in terms of allowable wattage.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "In a requirements form, 'Inputs and outputs' is a simple entry covering only device types.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "The most important power decision is often whether the machine will be battery-powered or wall-plugged.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The GPS moving map example specified a power requirement of 100mW.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
+  },
+  "4": {
+    "mcq": [
+      {
+        "q": "What document serves as the contract between the customer and the architects?",
+        "opts": [
+          "Requirements Form",
+          "Specification",
+          "Architecture Diagram",
+          "User Manual"
+        ],
+        "answer": "Specification"
+      },
+      {
+        "q": "Which of these is listed as a component of the GPS system specification?",
+        "opts": [
+          "Manufacturing Cost",
+          "Power consumption",
+          "Map data",
+          "Physical size"
+        ],
+        "answer": "Map data"
+      },
+      {
+        "q": "What are the two main categories of components defined in the architecture design phase?",
+        "opts": [
+          "Hardware and Software",
+          "CPU and Peripherals",
+          "Programs and Data Structures",
+          "Functional and Non-functional"
+        ],
+        "answer": "Hardware and Software"
+      },
+      {
+        "q": "In the GPS block diagram, which component finds data from the map database based on location?",
+        "opts": ["GPS Receiver", "Renderer", "Search Engine", "User Interface"],
+        "answer": "Search Engine"
+      },
+      {
+        "q": "Which hardware component temporarily stores image data before it is displayed?",
+        "opts": ["Memory", "CPU", "Panel I/O", "Frame Buffer"],
+        "answer": "Frame Buffer"
+      },
+      {
+        "q": "In the GPS software architecture, what is used to refresh data periodically?",
+        "opts": ["Position", "Renderer", "Timer", "Pixels"],
+        "answer": "Timer"
+      },
+      {
+        "q": "At which stage of the design process are components put together, often revealing new bugs?",
+        "opts": [
+          "Specification",
+          "System integration",
+          "Architecture design",
+          "Requirements"
+        ],
+        "answer": "System integration"
+      },
+      {
+        "q": "Which device is described as general-purpose and requires an external memory device?",
+        "opts": [
+          "Microcontroller (MCU)",
+          "Microprocessor (MPU)",
+          "System on Chip (SoC)",
+          "ALU"
+        ],
+        "answer": "Microprocessor (MPU)"
+      },
+      {
+        "q": "Which device is described as specific-purpose, independent, and includes power-saving features?",
+        "opts": [
+          "Microcontroller (MCU)",
+          "Microprocessor (MPU)",
+          "Bus Set",
+          "RF"
+        ],
+        "answer": "Microcontroller (MCU)"
+      },
+      {
+        "q": "What are the three main busses that make up the 'Bus Set'?",
+        "opts": [
+          "Fetch, Decode, Execute",
+          "Data, Address, Control",
+          "MPU, MCU, CPU",
+          "Input, Output, Memory"
+        ],
+        "answer": "Data, Address, Control"
+      },
+      {
+        "q": "What are the three main components of a processor?",
+        "opts": [
+          "ALU, CU, RF",
+          "CPU, Memory, I/O",
+          "MAR, MDR, IR",
+          "Data, Address, Control Bus"
+        ],
+        "answer": "ALU, CU, RF"
+      },
+      {
+        "q": "What are the three main stages of the Instruction Life Cycle?",
+        "opts": [
+          "Fetch, Decode, Execute",
+          "Read, Write, Store",
+          "Compile, Link, Run",
+          "Start, Wait, Stop"
+        ],
+        "answer": "Fetch, Decode, Execute"
+      },
+      {
+        "q": "Which register contains the memory address of the *next* instruction to be executed?",
+        "opts": [
+          "Instruction Register (IR)",
+          "Program Counter (PC)",
+          "Memory Address Register (MAR)",
+          "Register File (RF)"
+        ],
+        "answer": "Program Counter (PC)"
+      },
+      {
+        "q": "What happens to the Program Counter (PC) immediately after the CPU fetches an instruction?",
+        "opts": [
+          "It is reset to zero",
+          "It is incremented",
+          "It is loaded into the IR",
+          "It is sent to the ALU"
+        ],
+        "answer": "It is incremented"
+      },
+      {
+        "q": "Which component is responsible for fetching the instruction from memory?",
+        "opts": [
+          "ALU",
+          "Control Unit (CU)",
+          "Register Files (RF)",
+          "Instruction Decoder (ID)"
+        ],
+        "answer": "Control Unit (CU)"
+      },
+      {
+        "q": "The Control Unit (CU) fetches an instruction and stores it in which register?",
+        "opts": [
+          "Program Counter (PC)",
+          "Instruction Register (IR)",
+          "ALU",
+          "MDR"
+        ],
+        "answer": "Instruction Register (IR)"
+      },
+      {
+        "q": "What is the purpose of the 'Decode' step in the instruction life cycle?",
+        "opts": [
+          "To increase the PC",
+          "To fetch from memory",
+          "To understand the instruction",
+          "To store the result"
+        ],
+        "answer": "To understand the instruction"
+      },
+      {
+        "q": "What two pieces of information are required to decode an instruction?",
+        "opts": [
+          "ALU and CU",
+          "Instruction Set and Instruction Format",
+          "Data Bus and Address Bus",
+          "PC and IR"
+        ],
+        "answer": "Instruction Set and Instruction Format"
+      }
+    ],
+    "tf": [
+      {
+        "q": "The 'Specification' is less precise than the 'Requirements'.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "Architecture design must only account for functional specifications.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "In the GPS hardware, the 'Frame Buffer' manages input from the user interface.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "It is recommended to start coding or designing circuits *before* architecting the system.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "A microprocessor (MPU) is an independent device that does not require other chips.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "A microcontroller (MCU) is considered a specific-purpose device.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "'RF' stands for Register Files, which are groups of registers inside the microprocessor.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Program Counter (PC) is a register located inside the Register Files.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "C Code is directly converted into Machine Language (0s and 1s).",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "The Program Counter (PC) contains the address of the *current* instruction being executed.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "After fetching an instruction, the CPU increments the PC to point to the next instruction.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The ALU is the component that fetches the instruction from ROM.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "It is easier to fetch an instruction to a register inside the CPU than to deal directly with the Bus.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Instruction Decoder (ID) is located inside the Control Unit (CU).",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Decoding an instruction involves sending a signal to the ALU.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
+  },
+  "5": {
+    "mcq": [
+      {
+        "q": "What are the three main stages of the processor's Instruction Life Cycle?",
+        "opts": [
+          "Fetch, Decode, Execute",
+          "Read, Write, Store",
+          "Compile, Link, Run",
+          "Input, Process, Output"
+        ],
+        "answer": "Fetch, Decode, Execute"
+      },
+      {
+        "q": "What is the primary function of the Program Counter (PC)?",
+        "opts": [
+          "Store instruction result",
+          "Hold address of next instruction",
+          "Decode the instruction",
+          "Perform arithmetic operations"
+        ],
+        "answer": "Hold address of next instruction"
+      },
+      {
+        "q": "How does the Program Counter (PC) know its first or initial location?",
+        "opts": [
+          "From the ALU",
+          "Using startup code",
+          "By user input",
+          "From the Instruction Register"
+        ],
+        "answer": "Using startup code"
+      },
+      {
+        "q": "What happens to the Program Counter (PC) immediately after the CPU fetches an instruction?",
+        "opts": [
+          "It is cleared",
+          "It is incremented",
+          "It is decoded",
+          "It is sent to ALU"
+        ],
+        "answer": "It is incremented"
+      },
+      {
+        "q": "Which component fetches the instruction from RAM and places it in the Instruction Register (IR)?",
+        "opts": ["ALU", "Control Unit (CU)", "Register File (RF)", "PC"],
+        "answer": "Control Unit (CU)"
+      },
+      {
+        "q": "Where is the Instruction Register (IR) located?",
+        "opts": [
+          "Outside the microprocessor",
+          "Inside the microprocessor",
+          "Inside the RAM",
+          "In the Address Bus"
+        ],
+        "answer": "Inside the microprocessor"
+      },
+      {
+        "q": "What is the primary reason for fetching instructions from memory into a CPU register?",
+        "opts": [
+          "Memory is slow",
+          "Dealing with the Bus is hard",
+          "Registers are larger",
+          "To save power"
+        ],
+        "answer": "Dealing with the Bus is hard"
+      },
+      {
+        "q": "Which component inside the Control Unit is used to understand the instruction?",
+        "opts": ["ALU", "Instruction Decoder (ID)", "Accumulator", "PC"],
+        "answer": "Instruction Decoder (ID)"
+      },
+      {
+        "q": "What two pieces of information are required to decode an instruction?",
+        "opts": [
+          "ALU and CU",
+          "Instruction Set and Instruction Format",
+          "Data Bus and Address Bus",
+          "PC and IR"
+        ],
+        "answer": "Instruction Set and Instruction Format"
+      },
+      {
+        "q": "In an instruction format, what is the part that specifies the operation (e.g., ADD, SUB)?",
+        "opts": ["Op-code", "Operand 1", "Operand 2", "Address"],
+        "answer": "Op-code"
+      },
+      {
+        "q": "In old processors, which specific register was used to store the results of the ALU?",
+        "opts": [
+          "Program Counter (PC)",
+          "Instruction Register (IR)",
+          "Accumulator",
+          "General Purpose Register"
+        ],
+        "answer": "Accumulator"
+      },
+      {
+        "q": "What mapping is defined by the 'Instruction Set'?",
+        "opts": [
+          "Op-code to Operation (e.g., 00010 to ADD)",
+          "Register to Memory Address",
+          "C Code to Assembly Code",
+          "CPU to Bus"
+        ],
+        "answer": "Op-code to Operation (e.g., 00010 to ADD)"
+      },
+      {
+        "q": "Why is using C language considered better than Assembly language for microprocessors?",
+        "opts": [
+          "C is faster",
+          "Assembly varies between different microprocessors",
+          "Assembly uses logic gates",
+          "C doesn't need a compiler"
+        ],
+        "answer": "Assembly varies between different microprocessors"
+      },
+      {
+        "q": "If a processor only understands addition and the instruction is multiplication (*), what handles the conversion?",
+        "opts": [
+          "The ALU",
+          "The Control Unit",
+          "Software (Compiler)",
+          "The ID"
+        ],
+        "answer": "Software (Compiler)"
+      },
+      {
+        "q": "What are the two main types of Instruction Set Architecture (ISA)?",
+        "opts": [
+          "RISC and CISC",
+          "Harvard and Von-Neumann",
+          "ALU and CU",
+          "Hard-Wired and Memory-Mapped"
+        ],
+        "answer": "RISC and CISC"
+      },
+      {
+        "q": "What does 'RISC' stand for?",
+        "opts": [
+          "Reduced Instruction Set Computing",
+          "Rapid Instruction System Core",
+          "Register Intensive System CPU",
+          "Reusable Instruction Set Compiler"
+        ],
+        "answer": "Reduced Instruction Set Computing"
+      },
+      {
+        "q": "What does 'CISC' stand for?",
+        "opts": [
+          "Complex Instruction Set Computing",
+          "Common Instruction System Core",
+          "Compiled Instruction Set CPU",
+          "Controlled Instruction System Compiler"
+        ],
+        "answer": "Complex Instruction Set Computing"
+      },
+      {
+        "q": "Which ISA type understands *fewer* instructions and requires a *strong* compiler?",
+        "opts": ["RISC", "CISC", "ISA", "ID"],
+        "answer": "RISC"
+      },
+      {
+        "q": "What are the two main manufacturing methods for an Instruction Decoder (ID)?",
+        "opts": [
+          "RISC and CISC",
+          "Hard-Wired and Memory-Mapped",
+          "ALU and CU",
+          "Hardware and Software"
+        ],
+        "answer": "Hard-Wired and Memory-Mapped"
+      },
+      {
+        "q": "Which ID manufacturing method uses logic gates, is fast, and is typical for RISC?",
+        "opts": ["Hard-Wired", "Memory-Mapped", "Compiler", "Accumulator"],
+        "answer": "Hard-Wired"
+      },
+      {
+        "q": "In which manufacturing method does the ID search for instructions in memory, taking more time?",
+        "opts": ["Hard-Wired", "Memory-Mapped", "RISC", "Logic Gates"],
+        "answer": "Memory-Mapped"
+      },
+      {
+        "q": "In terms of size, which ISA has a bigger Instruction Decoder (ID) but a small ALU?",
+        "opts": ["CISC", "RISC", "Both", "Neither"],
+        "answer": "RISC"
+      },
+      {
+        "q": "In terms of performance, where does a RISC system lose time?",
+        "opts": [
+          "In searching memory",
+          "In conversion",
+          "In executing ALU",
+          "In the clock cycle"
+        ],
+        "answer": "In conversion"
+      },
+      {
+        "q": "Which ISA is most commonly used in embedded systems due to needing fewer instructions?",
+        "opts": ["RISC", "CISC", "Both", "Neither"],
+        "answer": "RISC"
+      },
+      {
+        "q": "Which architecture is specifically associated with RISC in the material?",
+        "opts": ["Von-Neumann", "Harvard", "Both", "Distributed"],
+        "answer": "Harvard"
+      },
+      {
+        "q": "What is the typical range of instructions for a RISC processor?",
+        "opts": ["10 to 20", "30 to 40", "Over 100", "Exactly 8"],
+        "answer": "30 to 40"
+      },
+      {
+        "q": "Which ISA is characterized by single instructions that can execute several low-level operations?",
+        "opts": ["RISC", "CISC", "ALU", "CU"],
+        "answer": "CISC"
+      }
+    ],
+    "tf": [
+      {
+        "q": "The Program Counter (PC) is a register located inside the Register Files.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The PC knows its initial location through the startup code.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The PC holds the memory address of the instruction *currently* being executed.",
+        "answer": "False",
+        "correction": "It holds the address of the next instruction."
+      },
+      {
+        "q": "The Instruction Register (IR) is located inside the microprocessor to make it easier to deal with the instruction.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Decoding an instruction means understanding it and sending a signal to the ALU.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In modern microprocessors, all ALU results are stored in the Accumulator.",
+        "answer": "False",
+        "correction": "They are stored in any empty general purpose register."
+      },
+      {
+        "q": "Every microprocessor uses the same machine language for the same operation.",
+        "answer": "False",
+        "correction": "Each microprocessor can have a different machine language."
+      },
+      {
+        "q": "Assembly language speed advantage is no longer critical when using high-performance processors and compilers.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Understanding an instruction requires both Hardware (ID) and Software (Compiler).",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "CISC architecture understands *many* instructions and requires a *strong* compiler.",
+        "answer": "False",
+        "correction": "It requires a simple compiler because it understands many instructions directly."
+      },
+      {
+        "q": "A 'Hard-Wired' ID is made of logic gates and is considered fast.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Increasing the number of instructions in a 'Hard-Wired' ID makes it cheaper to manufacture.",
+        "answer": "False",
+        "correction": "It makes it more expensive because it is hardware."
+      },
+      {
+        "q": "A 'Memory-Mapped' ID takes more time because it searches for instructions in memory.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "CISC systems generally lose time in the searching process.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "RISC systems have high power consumption in the ALU compared to the ID.",
+        "answer": "False",
+        "correction": "ALU consumption is less; ID consumption is high (logic gates)."
+      },
+      {
+        "q": "RISC is designed to operate at higher speeds by performing a smaller number of instructions.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "CISC architecture can only use Von-Neumann Architecture.",
+        "answer": "False",
+        "correction": "It can be Harvard or Von-Neumann."
+      },
+      {
+        "q": "In RISC, adding more instruction types makes the microprocessor more complicated and slower.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
+  },
+
+  "6": {
+    "mcq": [
+      {
+        "q": "What are the two primary types of Register Files?",
+        "opts": ["GPR and SPR/SFR", "ALU and CU", "PC and IR", "ROM and RAM"],
+        "answer": "GPR and SPR/SFR"
+      },
+      {
+        "q": "What is the primary function of General Purpose Registers (GPR)?",
+        "opts": [
+          "Store data permanently",
+          "Store data temporarily",
+          "Hold the next instruction",
+          "Store status flags"
+        ],
+        "answer": "Store data temporarily"
+      },
+      {
+        "q": "Why might a programmer use the 'register' keyword in C language?",
+        "opts": [
+          "To guarantee memory storage",
+          "To store in GPR for faster access by being near to CPU",
+          "To create a permanent variable",
+          "To define a status flag"
+        ],
+        "answer": "To store in GPR for faster access by being near to CPU"
+      },
+      {
+        "q": "What determines if a variable marked with 'register' is actually stored in a GPR?",
+        "opts": [
+          "The user's preference",
+          "The size of the variable",
+          "Compiler availability of registers",
+          "The speed of the RAM"
+        ],
+        "answer": "Compiler availability of registers"
+      },
+      {
+        "q": "If a GPR is not available for a 'register' keyword variable, where is it stored?",
+        "opts": [
+          "In the Program Counter",
+          "In the ALU",
+          "In the Memory (RAM)",
+          "It is deleted"
+        ],
+        "answer": "In the Memory (RAM)"
+      },
+      {
+        "q": "What does SFR stand for in the context of register files?",
+        "opts": [
+          "System File Register",
+          "Special Function Registers",
+          "Standard Flow Register",
+          "Serial Frequency Register"
+        ],
+        "answer": "Special Function Registers"
+      },
+      {
+        "q": "where is the Program Counter (PC) placed?",
+        "opts": ["RAM", "ALU", "ROM", "Stack"],
+        "answer": "RAM"
+      },
+      {
+        "q": "Which register holds the memory address of the next instruction to be executed?",
+        "opts": [
+          "Stack Pointer (SP)",
+          "Instruction Register (IR)",
+          "Program Counter (PC)",
+          "Accumulator (ACC)"
+        ],
+        "answer": "Program Counter (PC)"
+      },
+      {
+        "q": "What is the function of the Stack Pointer (SP)?",
+        "opts": [
+          "Store the next instruction address",
+          "Store memory address of the last data element added to the stack",
+          "Store ALU results",
+          "Control the flow of JMP instructions"
+        ],
+        "answer": "Store memory address of the last data element added to the stack"
+      },
+      {
+        "q": "The stack is a specific region of memory that operates in which manner?",
+        "opts": [
+          "FIFO (First In, First Out)",
+          "LIFO (Last In, First Out)",
+          "Random Access",
+          "Read Only"
+        ],
+        "answer": "LIFO (Last In, First Out)"
+      },
+      {
+        "q": "What is the status of the Accumulator (ACC) register in modern microprocessors?",
+        "opts": [
+          "Widely used",
+          "Unavailable",
+          "Stores memory addresses",
+          "Only used for JMP instructions"
+        ],
+        "answer": "Unavailable"
+      },
+      {
+        "q": "Which register stores the instruction after it is fetched from memory?",
+        "opts": [
+          "Instruction Register (IR)",
+          "Program Counter (PC)",
+          "Process Status Word (PSW)",
+          "Stack Pointer (SP)"
+        ],
+        "answer": "Instruction Register (IR)"
+      },
+      {
+        "q": "What is the Process Status Word (PSW)?",
+        "opts": [
+          "A general-purpose register",
+          "A set of flags (bits) where each has a specific function",
+          "The stack memory itself",
+          "The instruction op-code"
+        ],
+        "answer": "A set of flags (bits) where each has a specific function"
+      },
+      {
+        "q": "In the PSW, what does a Sign flag value of '0' represent?",
+        "opts": [
+          "Negative result (-ve)",
+          "Zero result",
+          "Positive result (+ve)",
+          "Error"
+        ],
+        "answer": "Positive result (+ve)"
+      },
+      {
+        "q": "In the PSW, what does a Sign flag value of '1' represent?",
+        "opts": [
+          "Positive result (+ve)",
+          "Negative result (-ve)",
+          "Arithmetic overflow",
+          "Carry bit"
+        ],
+        "answer": "Negative result (-ve)"
+      },
+      {
+        "q": "Why does a 'JMP' instruction typically not require an ALU operation?",
+        "opts": [
+          "It is too fast for the ALU",
+          "It only changes the Program Counter (PC) address",
+          "It uses the Stack Pointer",
+          "It is executed in RAM"
+        ],
+        "answer": "It only changes the Program Counter (PC) address"
+      },
+      {
+        "q": "Which instruction adds 1 to a register and may not involve the ALU in certain designs?",
+        "opts": ["ADD", "JMP", "INC (Increment)", "MOV"],
+        "answer": "INC (Increment)"
+      },
+      {
+        "q": "What does an 8-bit architecture imply about the ALU operands?",
+        "opts": [
+          "Maximum size is 16-bit",
+          "Maximum size is 8-bit",
+          "No limit on size",
+          "Minimum size is 8-bit"
+        ],
+        "answer": "Maximum size is 8-bit"
+      },
+      {
+        "q": "What is the solution if operands are larger than the architecture size (e.g., 16-bit data in an 8-bit system)?",
+        "opts": [
+          "Crashing",
+          "Slicing (dividing into more than one operation)",
+          "Using the PC",
+          "Stacking"
+        ],
+        "answer": "Slicing (dividing into more than one operation)"
+      },
+      {
+        "q": "In an 8-bit architecture, what is the size of each memory location?",
+        "opts": ["1 bit", "1 byte (8-bits)", "2 bytes", "4 bytes"],
+        "answer": "1 byte (8-bits)"
+      }
+    ],
+    "tf": [
+      {
+        "q": "GPRs store ALU results temporarily until the CU stores them finally in RAM.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Using the 'register' keyword in C always guarantees that data will be stored in GPR.",
+        "answer": "False",
+        "correction": "It depends on the compiler and if a register is available."
+      },
+      {
+        "q": "The Program Counter (PC) is classified as a Special Purpose Register (SPR).",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Stack Pointer (SP) stores the address of the first item added to the stack.",
+        "answer": "False",
+        "correction": "It stores the address of the last item added to the stack."
+      },
+      {
+        "q": "The stack is a specific region of memory used for temporary data in a LIFO manner.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Accumulator (ACC) is a primary register used in modern processors.",
+        "answer": "False",
+        "correction": "It is unavailable in modern microprocessors."
+      },
+      {
+        "q": "The Instruction Register (IR) stores the instruction inside it after it is fetched from memory.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Process Status Word (PSW) is a set of flags where each bit has a specific function.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Every instruction, including Jump (JMP), must be executed in the ALU.",
+        "answer": "False",
+        "correction": "JMP instructions alter the flow of execution without using the ALU."
+      },
+      {
+        "q": "The INC instruction may not involve the ALU if the processor has specialized hardware for it.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "An 8-bit architecture means the width of the memory register is 8-bits.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Slicing is the solution for handling operands that are larger than the ALU bit-width.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Special Purpose Registers (SPR) are also known as Special Function Registers (SFR).",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Sign flag bit represents the sign of the last result from the ALU.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Memory locations in an 8-bit architecture can hold any value other than 0 or 1.",
+        "answer": "False",
+        "correction": "Each bit in a location can only hold a value of 0 or 1."
+      }
+    ]
+  },
+  "7": {
+    "mcq": [
+      {
+        "q": "In memory access, which operation's access time is typically greater (slower)?",
+        "opts": [
+          "Read (r)",
+          "Write (w)",
+          "Both are equal",
+          "Depends on the CPU"
+        ],
+        "answer": "Write (w)"
+      },
+      {
+        "q": "What component is used to construct an 8-bit register?",
+        "opts": [
+          "8 D-flip-flops",
+          "8 Capacitors",
+          "8 Transistors",
+          "8 Address Busses"
+        ],
+        "answer": "8 D-flip-flops"
+      },
+      {
+        "q": "Which bus determines the memory *location* for a read or write operation?",
+        "opts": ["Data bus", "Control bus", "Address bus", "System bus"],
+        "answer": "Address bus"
+      },
+      {
+        "q": "Which bus carries the *contents* (data) to be read from or written to memory?",
+        "opts": ["Data bus", "Control bus", "Address bus", "System bus"],
+        "answer": "Data bus"
+      },
+      {
+        "q": "Which bus manages the information flow, indicating if the operation is a read or a write?",
+        "opts": ["Data bus", "Control bus", "Address bus", "System bus"],
+        "answer": "Control bus"
+      },
+      {
+        "q": "Why is the read operation time generally less than the write operation time?",
+        "opts": [
+          "Write may need to clear data first",
+          "Read uses a faster bus",
+          "Write uses the ALU",
+          "Read is a simpler instruction"
+        ],
+        "answer": "Write may need to clear data first"
+      },
+      {
+        "q": "What determines the 'Capacity' (Memory Size) of a memory?",
+        "opts": [
+          "Data bus",
+          "Control bus",
+          "Address line in address bus",
+          "Speed / Access time"
+        ],
+        "answer": "Address line in address bus"
+      },
+      {
+        "q": "In a microcontroller, what component allows the CPU to deal with the external world (e.g., LEDs, sensors)?",
+        "opts": ["ALU", "Port", "DRAM", "MOSFET"],
+        "answer": "Port"
+      },
+      {
+        "q": "What are the three pins of a MOSFET transistor?",
+        "opts": [
+          "Source, Gate, Drain",
+          "Input, Output, Ground",
+          "TRISA, PORTA, Pins",
+          "RAM, ROM, CPU"
+        ],
+        "answer": "Source, Gate, Drain"
+      },
+      {
+        "q": "Which of the following is a type of Volatile memory?",
+        "opts": ["ROM", "RAM", "EPROM", "Flash"],
+        "answer": "RAM"
+      },
+      {
+        "q": "Which type of memory does *not* keep data if the power is disconnected?",
+        "opts": ["Volatile (RAM)", "Non-Volatile (ROM)", "Hybrid", "EPROM"],
+        "answer": "Volatile (RAM)"
+      },
+      {
+        "q": "What component is Dynamic RAM (DRAM) based on?",
+        "opts": ["Capacitor", "6 Transistors", "D-flip-flop", "Logic gates"],
+        "answer": "Capacitor"
+      },
+      {
+        "q": "What is the primary problem of using capacitors in DRAM?",
+        "opts": [
+          "They are too fast",
+          "They are too expensive",
+          "They discharge over time",
+          "They consume no power"
+        ],
+        "answer": "They discharge over time"
+      },
+      {
+        "q": "What is required in DRAM to prevent charge leakage from the capacitors?",
+        "opts": [
+          "A Refreshment Circuit",
+          "An Address Bus",
+          "A MOSFET",
+          "A bigger capacitor"
+        ],
+        "answer": "A Refreshment Circuit"
+      },
+      {
+        "q": "If both the CPU and the Refreshment Circuit need to access DRAM, which has higher priority?",
+        "opts": [
+          "The CPU",
+          "The Refreshment Circuit",
+          "Whichever comes first",
+          "They have equal priority"
+        ],
+        "answer": "The Refreshment Circuit"
+      },
+      {
+        "q": "What is Static RAM (SRAM) based on?",
+        "opts": [
+          "Capacitors",
+          "Transistor (flip-flops)",
+          "A single D-flip-flop",
+          "EPROM cells"
+        ],
+        "answer": "Transistor (flip-flops)"
+      },
+      {
+        "q": "What is a major problem of SRAM compared to DRAM?",
+        "opts": [
+          "It is slower",
+          "It needs a refreshment circuit",
+          "It has high cost per bit",
+          "It has low density"
+        ],
+        "answer": "It has high cost per bit"
+      },
+      {
+        "q": "According to the comparison table, which RAM type is faster?",
+        "opts": ["SRAM", "DRAM", "They are the same", "ROM"],
+        "answer": "SRAM"
+      },
+      {
+        "q": "According to the comparison table, which RAM type has higher density (size)?",
+        "opts": ["SRAM", "DRAM", "Both are equal", "EPROM"],
+        "answer": "DRAM"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Accessing memory means to only read from it.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "An 8-bit register is constructed from 8 D-flip-flops.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A bus is a single wire.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "The 'Address bus' is one of the three main advantages of memory.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "A MOSFET is a type of transistor.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "RAM is an example of Non-Volatile memory.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "Hybrid memory is a mix between RAM and ROM.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "RAM is generally faster than ROM.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In DRAM, a charged capacitor represents a '0' and a discharged one represents a '1'.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "DRAM is slow because the refreshment circuit can delay the CPU.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "DRAM is listed as having low power consumption as an advantage.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "SRAM requires a refreshment circuit.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "In embedded systems, large sizes of SRAM are used because it is cheap.",
+        "answer": "False",
+        "correction": ""
+      },
+      {
+        "q": "According to the comparison table, SRAM has lower power consumption than DRAM.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
+  },
+  "8_9": {
+    "mcq": [
+      {
+        "q": "What type of memory is ROM considered?",
+        "opts": [
+          "Data memory",
+          "Program memory",
+          "Volatile memory",
+          "Temporary memory"
+        ],
+        "answer": "Program memory"
+      },
+      {
+        "q": "How does the access time of ROM compare to RAM?",
+        "opts": ["Faster", "Slower", "Same speed", "Variable"],
+        "answer": "Slower"
+      },
+      {
+        "q": "Which component is the basic building block of ROM and Flash memory?",
+        "opts": ["Capacitor", "Floating Gate MOSFET (FGM)", "BJT", "Resistor"],
+        "answer": "Floating Gate MOSFET (FGM)"
+      },
+      {
+        "q": "In a MOSFET, what are the N+ regions where current enters and leaves called?",
+        "opts": [
+          "Gate and Body",
+          "Source and Drain",
+          "P-region and Oxide",
+          "Anode and Cathode"
+        ],
+        "answer": "Source and Drain"
+      },
+      {
+        "q": "What happens in a MOSFET when voltage is applied to the gate?",
+        "opts": [
+          "Current is blocked",
+          "A path is created for electrons to flow",
+          "The P-region disappears",
+          "The battery is disconnected"
+        ],
+        "answer": "A path is created for electrons to flow"
+      },
+      {
+        "q": "Which gate in a Floating Gate MOSFET is electrically isolated and can store charge?",
+        "opts": ["Control Gate", "Floating Gate", "Main Gate", "External Gate"],
+        "answer": "Floating Gate"
+      },
+      {
+        "q": "The floating gate is surrounded by which material to retain charge without power?",
+        "opts": [
+          "Conducting metal",
+          "Insulating oxide layer",
+          "Silicon substrate",
+          "External wire"
+        ],
+        "answer": "Insulating oxide layer"
+      },
+      {
+        "q": "What represents the bit value (0 or 1) in a Floating Gate MOSFET?",
+        "opts": [
+          "Voltage at source",
+          "Current at drain",
+          "Charge inside floating gate",
+          "Size of the gate"
+        ],
+        "answer": "Charge inside floating gate"
+      },
+      {
+        "q": "Which gate is connected to external circuitry to influence the charge on the floating gate?",
+        "opts": ["Floating Gate", "Control Gate", "N+ region", "P body"],
+        "answer": "Control Gate"
+      },
+      {
+        "q": "A floating gate containing negative charge (electrons) represents which logic value?",
+        "opts": ["Logic 1", "Logic 0", "High Impedance", "Ground"],
+        "answer": "Logic 0"
+      },
+      {
+        "q": "A floating gate with no electrons represents which logic value?",
+        "opts": ["Logic 1", "Logic 0", "Logic Low", "Floating state"],
+        "answer": "Logic 1"
+      },
+      {
+        "q": "What is the state called when the floating gate has electrons?",
+        "opts": [
+          "Erased state",
+          "Programmed state",
+          "Open state",
+          "Initial state"
+        ],
+        "answer": "Programmed state"
+      },
+      {
+        "q": "What is applied to the Control Gate to program a Floating Gate MOSFET?",
+        "opts": ["Low voltage", "High voltage", "Ground", "Zero voltage"],
+        "answer": "High voltage"
+      },
+      {
+        "q": "How is the charge released (erased) in an FGM according to page 10?",
+        "opts": [
+          "Applying high voltage to Control Gate",
+          "Applying high voltage to Drain",
+          "Applying low voltage to Source",
+          "Disconnecting the battery"
+        ],
+        "answer": "Applying high voltage to Drain"
+      },
+      {
+        "q": "What happens to the electrons during the 'Erased state'?",
+        "opts": [
+          "They are trapped",
+          "They are attracted to the +ve drain",
+          "They stay in the Control Gate",
+          "They move to the source"
+        ],
+        "answer": "They are attracted to the +ve drain"
+      },
+      {
+        "q": "Who typically writes the code on ROM?",
+        "opts": [
+          "The CPU during execution",
+          "The user using a keyboard",
+          "A Burner/Flasher",
+          "The RAM controller"
+        ],
+        "answer": "A Burner/Flasher"
+      },
+      {
+        "q": "Who burns the code onto a Mask Programmable ROM?",
+        "opts": [
+          "The end user",
+          "The factory",
+          "The operating system",
+          "The BIOS"
+        ],
+        "answer": "The factory"
+      },
+      {
+        "q": "Which of the following is a key application of Mask Programmable ROM?",
+        "opts": ["RAM cache", "BIOS Chip", "USB Flash", "Data buffer"],
+        "answer": "BIOS Chip"
+      },
+      {
+        "q": "What is a disadvantage of Mask Programmable ROM?",
+        "opts": [
+          "High cost",
+          "Bugs cannot be fixed after manufacturing",
+          "Volatile",
+          "Requires constant power"
+        ],
+        "answer": "Bugs cannot be fixed after manufacturing"
+      },
+      {
+        "q": "What component does PROM (Programmable ROM) consist of?",
+        "opts": [
+          "Capacitors",
+          "Group of Fuses",
+          "Batteries",
+          "Software triggers"
+        ],
+        "answer": "Group of Fuses"
+      },
+      {
+        "q": "In PROM, what does a burned fuse represent?",
+        "opts": ["Logic 1", "Logic 0", "High Impedance", "Error"],
+        "answer": "Logic 0"
+      },
+      {
+        "q": "Who installs the code on a PROM?",
+        "opts": ["The factory", "The user", "The processor", "The compiler"],
+        "answer": "The user"
+      },
+      {
+        "q": "How is EPROM (Erasable Programmable ROM) erased?",
+        "opts": [
+          "Electricity",
+          "Magnetic fields",
+          "Ultraviolet (UV) beams",
+          "High heat"
+        ],
+        "answer": "Ultraviolet (UV) beams"
+      },
+      {
+        "q": "How long can EPROM typically save data?",
+        "opts": ["1 year", "10 years", "100 years", "Forever"],
+        "answer": "10 years"
+      },
+      {
+        "q": "What can corrupt data in an EPROM (changing zero to 1 or vice versa)?",
+        "opts": [
+          "Low voltage",
+          "Radiation and noise",
+          "Software bugs",
+          "Lack of clock"
+        ],
+        "answer": "Radiation and noise"
+      },
+      {
+        "q": "Which memory type belongs to the Hybrid category?",
+        "opts": ["SRAM", "DRAM", "Mask ROM", "EEPROM (E2PROM)"],
+        "answer": "EEPROM (E2PROM)"
+      },
+      {
+        "q": "How is EEPROM (E2PROM) erased?",
+        "opts": [
+          "Ultraviolet beams",
+          "Electricity",
+          "Manual switch",
+          "Magnetic pulse"
+        ],
+        "answer": "Electricity"
+      },
+      {
+        "q": "What is the endurance (erase/write cycles) of EEPROM?",
+        "opts": ["1,000 times", "10,000 times", "100,000 times", "Unlimited"],
+        "answer": "100,000 times"
+      },
+      {
+        "q": "What type of access does EEPROM provide, allowing updates to each location alone?",
+        "opts": ["Bit access", "Byte Access", "Block Access", "Sector Access"],
+        "answer": "Byte Access"
+      },
+      {
+        "q": "Why do microcontrollers use internal EEPROM?",
+        "opts": [
+          "It is faster than Flash",
+          "To make microcontrollers cheaper",
+          "It is volatile",
+          "It has the highest density"
+        ],
+        "answer": "To make microcontrollers cheaper"
+      },
+      {
+        "q": "What type of access does Flash memory provide?",
+        "opts": [
+          "Byte access",
+          "Block (Sector) access",
+          "Random access",
+          "Bit access"
+        ],
+        "answer": "Block (Sector) access"
+      },
+      {
+        "q": "What is the typical endurance of Flash memory?",
+        "opts": [
+          "1,000 times",
+          "10,000 times",
+          "100,000 times",
+          "1,000,000 times"
+        ],
+        "answer": "10,000 times"
+      },
+      {
+        "q": "Why is Flash memory faster than EEPROM?",
+        "opts": [
+          "Because it is volatile",
+          "Due to block access",
+          "It uses UV light",
+          "It uses more batteries"
+        ],
+        "answer": "Due to block access"
+      },
+      {
+        "q": "What is the typical sector size for Flash memory?",
+        "opts": [
+          "1 byte to 8 bytes",
+          "256 byte to 16 kilo byte",
+          "1 MB to 10 MB",
+          "Exactly 1 bit"
+        ],
+        "answer": "256 byte to 16 kilo byte"
+      },
+      {
+        "q": "What is a known problem/limitation with Flash memory?",
+        "opts": [
+          "Volatile",
+          "Erasing is sector by sector only",
+          "Requires UV light",
+          "Extremely slow access"
+        ],
+        "answer": "Erasing is sector by sector only"
+      },
+      {
+        "q": "What is NVRAM composed of in its simplest form?",
+        "opts": [
+          "DRAM + Battery",
+          "SRAM + Battery",
+          "Flash + UV lamp",
+          "ROM + Capacitor"
+        ],
+        "answer": "SRAM + Battery"
+      },
+      {
+        "q": "How does the speed of NVRAM compare to ROM?",
+        "opts": ["Slower", "Faster", "Same", "Much slower"],
+        "answer": "Faster"
+      },
+      {
+        "q": "What happens in NVRAM (SRAM+E2PROM+Battery) when power is disconnected?",
+        "opts": [
+          "Data is deleted",
+          "Data is transferred from SRAM to E2PROM",
+          "SRAM becomes ROM",
+          "Battery explodes"
+        ],
+        "answer": "Data is transferred from SRAM to E2PROM"
+      },
+      {
+        "q": "Why does NVRAM have a high cost per bit?",
+        "opts": [
+          "It uses gold wires",
+          "It is based on SRAM",
+          "It requires UV beams",
+          "It is OTP"
+        ],
+        "answer": "It is based on SRAM"
+      },
+      {
+        "q": "Which memory is considered 'OTP' (One Time Program)?",
+        "opts": ["EPROM", "Flash", "PROM", "NVRAM"],
+        "answer": "PROM"
+      }
+    ],
+    "tf": [
+      {
+        "q": "ROM is the program memory that holds the code.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Access time of ROM is faster than RAM.",
+        "answer": "False",
+        "correction": "Access time of ROM is slower than RAM."
+      },
+      {
+        "q": "A MOSFET acts like a switch controlling electric current flow.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In a MOSFET, current flows from source to drain when voltage is applied to the gate.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The floating gate in an FGM is directly connected to external circuits.",
+        "answer": "False",
+        "correction": "It is electrically isolated and not directly connected to any external circuit."
+      },
+      {
+        "q": "Charge in the floating gate is trapped even if power is disconnected.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In FGM, a programmed state represents logic 1.",
+        "answer": "False",
+        "correction": "Programmed state (with electrons) represents logic 0."
+      },
+      {
+        "q": "High voltage on the drain is used to erase the FGM by attracting negative charges.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The microprocessor can write code directly to ROM during normal operation.",
+        "answer": "False",
+        "correction": "ROM is Read-Only; code is written by a burner or flasher."
+      },
+      {
+        "q": "Mask Programmable ROM bugs can be fixed using a software update.",
+        "answer": "False",
+        "correction": "There is no way to fix bugs in Mask ROM once manufactured."
+      },
+      {
+        "q": "In PROM, a burned fuse represents logic 0.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "EPROM data can be corrupted by radiation and noise.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "EEPROM is erased using ultraviolet light.",
+        "answer": "False",
+        "correction": "EPROM uses UV; EEPROM (E2PROM) uses electricity."
+      },
+      {
+        "q": "EEPROM has a higher endurance (100,000 cycles) compared to Flash (10,000 cycles).",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Flash memory is more expensive per bit than EEPROM.",
+        "answer": "False",
+        "correction": "Flash has a lower cost per bit than EEPROM."
+      },
+      {
+        "q": "Flash memory erasing must be done sector by sector, not byte by byte.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "NVRAM combines the advantages of RAM (read/write) and ROM (non-volatile).",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "External EEPROM is connected to the CPU via master on the bus.",
+        "answer": "False",
+        "correction": "Internal EEPROM uses the bus; External EEPROM uses communication protocols."
+      },
+      {
+        "q": "The BIOS chip is an example of Mask Programmable ROM.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In EPROM, covering the small window can help protect it from radiation corruption.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
+  },
+  "10": {
+    "mcq": [
+      {
+        "q": "What type of RAM is primarily used for Cache memory?",
+        "opts": ["DRAM", "SRAM", "NVRAM", "SDRAM"],
+        "answer": "SRAM"
+      },
+      {
+        "q": "What is a characteristic of SRAM used in Cache?",
+        "opts": [
+          "Low cost per bit",
+          "High cost per bit",
+          "Slower than DRAM",
+          "Non-volatile"
+        ],
+        "answer": "High cost per bit"
+      },
+      {
+        "q": "Where is Cache memory typically placed?",
+        "opts": [
+          "Between CPU and Register Files",
+          "Between CPU and Main Memory (RAM)",
+          "Inside the Hard Drive",
+          "Between RAM and ROM"
+        ],
+        "answer": "Between CPU and Main Memory (RAM)"
+      },
+      {
+        "q": "How does CPU speed compare to RAM speed?",
+        "opts": [
+          "CPU is slower",
+          "CPU is faster",
+          "They are equal",
+          "RAM is infinitely fast"
+        ],
+        "answer": "CPU is faster"
+      },
+      {
+        "q": "What allows the CPU to transfer data without using the main bus set constantly?",
+        "opts": ["ROM", "Hard Disk", "Cache", "Flash"],
+        "answer": "Cache"
+      },
+      {
+        "q": "When the CPU requests address 3001, what does the Cache fetch?",
+        "opts": [
+          "Address 3001 only",
+          "Address 3001 and previous addresses",
+          "Address 3001 and the next few addresses",
+          "Nothing"
+        ],
+        "answer": "Address 3001 and the next few addresses"
+      },
+      {
+        "q": "Why does the Cache fetch neighboring addresses along with the requested one?",
+        "opts": [
+          "To fill up space",
+          "Random selection",
+          "It is expected the CPU may need them",
+          "Due to hardware error"
+        ],
+        "answer": "It is expected the CPU may need them"
+      },
+      {
+        "q": "What is it called when the CPU finds the requested address in the Cache?",
+        "opts": ["Cache Miss", "Cache Hit", "Cache Error", "Cache Flush"],
+        "answer": "Cache Hit"
+      },
+      {
+        "q": "What is it called when the CPU does NOT find the requested address in the Cache?",
+        "opts": ["Cache Hit", "Cache Run", "Cache Miss", "Cache Stop"],
+        "answer": "Cache Miss"
+      },
+      {
+        "q": "What happens when a Cache Miss occurs?",
+        "opts": [
+          "System crashes",
+          "CPU stops working",
+          "Cache gets another set of addresses",
+          "Data is deleted"
+        ],
+        "answer": "Cache gets another set of addresses"
+      },
+      {
+        "q": "Which Cache level is the fastest?",
+        "opts": ["L1", "L2", "L3", "L4"],
+        "answer": "L1"
+      },
+      {
+        "q": "How does L2 speed compare to L1 and L3?",
+        "opts": [
+          "Faster than L1",
+          "Slower than L3",
+          "Faster than L3, slower than L1",
+          "Fastest of all"
+        ],
+        "answer": "Faster than L3, slower than L1"
+      },
+      {
+        "q": "Where is L1 Cache usually located?",
+        "opts": [
+          "Outside the microprocessor",
+          "Inside the microprocessor core",
+          "On the motherboard",
+          "In the hard drive"
+        ],
+        "answer": "Inside the microprocessor core"
+      },
+      {
+        "q": "What problem arises in multi-core systems when caches contain the same address?",
+        "opts": [
+          "Cache Overflow",
+          "Cache Coherence problem",
+          "Cache Miss",
+          "Memory Leak"
+        ],
+        "answer": "Cache Coherence problem"
+      },
+      {
+        "q": "In the Cache Coherence problem, what happens if Core 1 edits a value?",
+        "opts": [
+          "Core 2 automatically updates without help",
+          "Core 2 might hold the old value",
+          "The system shuts down",
+          "RAM rejects the change"
+        ],
+        "answer": "Core 2 might hold the old value"
+      },
+      {
+        "q": "What component helps solve the Cache Coherence problem?",
+        "opts": ["The ALU", "The Cache Controller", "The ROM", "The User"],
+        "answer": "The Cache Controller"
+      },
+      {
+        "q": "What is the fastest memory component that allows CPU access without buses?",
+        "opts": ["RAM", "Cache", "Register Files", "Flash"],
+        "answer": "Register Files"
+      },
+      {
+        "q": "Which is the correct order of speed from fastest to slowest?",
+        "opts": [
+          "RAM > Cache > Register Files",
+          "Register Files > Cache > Main Memory",
+          "Cache > Register Files > RAM",
+          "Main Memory > Register Files > Cache"
+        ],
+        "answer": "Register Files > Cache > Main Memory"
+      },
+      {
+        "q": "Why are Register Files the fastest?",
+        "opts": [
+          "They are large",
+          "They are volatile",
+          "CPU doesn't need buses to access them",
+          "They use batteries"
+        ],
+        "answer": "CPU doesn't need buses to access them"
+      },
+      {
+        "q": "Which component is stated to be the fastest component overall?",
+        "opts": ["RAM", "CPU", "Hard Disk", "Monitor"],
+        "answer": "CPU"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Cache memory is based on DRAM technology.",
+        "answer": "False",
+        "correction": "It is based on SRAM."
+      },
+      {
+        "q": "SRAM has a high cost per bit.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "CPU speed is slower than RAM speed.",
+        "answer": "False",
+        "correction": "CPU speed is faster than RAM speed."
+      },
+      {
+        "q": "When a CPU requests an address, the Cache fetches only that specific address.",
+        "answer": "False",
+        "correction": "It fetches that address and the next few addresses."
+      },
+      {
+        "q": "A 'Cache Miss' means the CPU found the requested address in the Cache.",
+        "answer": "False",
+        "correction": "That is a Cache Hit; a Miss means it didn't find it."
+      },
+      {
+        "q": "L3 Cache is faster than L1 Cache.",
+        "answer": "False",
+        "correction": "L1 is the fastest."
+      },
+      {
+        "q": "Cache Coherence is needed when multiple cores cache the same address.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The solution to Cache Coherence involves one controller notifying the other about edits.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Register Files require buses for the CPU to access them.",
+        "answer": "False",
+        "correction": "CPU doesn't want buses to access Register Files."
+      },
+      {
+        "q": "Register Files are faster than Cache memory.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
+  },
+  "11": {
+    "mcq": [
+      {
+        "q": "What does FPU stand for?",
+        "opts": [
+          "Frequency Processing Unit",
+          "Floating Point Unit",
+          "Fast Processing Unit",
+          "Fractional Point Unit"
+        ],
+        "answer": "Floating Point Unit"
+      },
+      {
+        "q": "What type of numbers is an FPU designed to handle?",
+        "opts": [
+          "Integers only",
+          "Binary strings",
+          "Real numbers with fractional parts",
+          "Hexadecimal codes"
+        ],
+        "answer": "Real numbers with fractional parts"
+      },
+      {
+        "q": "Which of the following operations is handled by an FPU?",
+        "opts": [
+          "Bitwise AND",
+          "String concatenation",
+          "Square root",
+          "GPIO toggling"
+        ],
+        "answer": "Square root"
+      },
+      {
+        "q": "How does an FPU perform floating-point calculations compared to software implementation?",
+        "opts": [
+          "Significantly faster",
+          "Significantly slower",
+          "At the same speed",
+          "It cannot perform them"
+        ],
+        "answer": "Significantly faster"
+      },
+      {
+        "q": "Which modern processors typically include a built-in FPU?",
+        "opts": [
+          "Only Intel",
+          "Intel, AMD, and ARM",
+          "Only 8-bit microcontrollers",
+          "Vacuum tube systems"
+        ],
+        "answer": "Intel, AMD, and ARM"
+      },
+      {
+        "q": "What is one of the main benefits of offloading math operations to the FPU?",
+        "opts": [
+          "Increasing RAM size",
+          "Lowering CPU load",
+          "Reducing hard disk noise",
+          "Increasing the number of GPIOs"
+        ],
+        "answer": "Lowering CPU load"
+      },
+      {
+        "q": "What does MPU stand for?",
+        "opts": [
+          "Memory Protection Unit",
+          "Main Processing Unit",
+          "Memory Paging Unit",
+          "Micro Controller Unit"
+        ],
+        "answer": "Memory Protection Unit"
+      },
+      {
+        "q": "What is the primary function of an MPU?",
+        "opts": [
+          "Perform math operations",
+          "Enforce access rules on memory regions",
+          "Increase RAM size",
+          "Map virtual addresses"
+        ],
+        "answer": "Enforce access rules on memory regions"
+      },
+      {
+        "q": "Where is the MPU typically integrated?",
+        "opts": [
+          "Physically between Cache and RAM",
+          "Inside the CPU or Microcontroller",
+          "Inside the external Hard Drive",
+          "On the Power Supply unit"
+        ],
+        "answer": "Inside the CPU or Microcontroller"
+      },
+      {
+        "q": "What does the MPU check conceptually?",
+        "opts": [
+          "Network traffic",
+          "Memory access between processor core and memory system",
+          "Battery voltage",
+          "Clock frequency stability"
+        ],
+        "answer": "Memory access between processor core and memory system"
+      },
+      {
+        "q": "Which register set inside the MPU defines memory ranges and permissions?",
+        "opts": [
+          "ALU Registers",
+          "Configuration Registers",
+          "Stack Pointers",
+          "Program Counters"
+        ],
+        "answer": "Configuration Registers"
+      },
+      {
+        "q": "In an MPU, memory attributes can define a region as being:",
+        "opts": [
+          "Cacheable or Strongly ordered",
+          "Red or Blue",
+          "Fast or Slow only",
+          "Digital or Analog"
+        ],
+        "answer": "Cacheable or Strongly ordered"
+      },
+      {
+        "q": "When running both Linux and RTOS on the same device, what layer is placed beneath them?",
+        "opts": [
+          "Driver Layer",
+          "Hypervisor Layer",
+          "Application Layer",
+          "Physical Layer"
+        ],
+        "answer": "Hypervisor Layer"
+      },
+      {
+        "q": "What happens if a program sends an 'error address' to the MPU?",
+        "opts": [
+          "The system ignores it",
+          "A Bus Fault is triggered",
+          "The RAM size increases",
+          "The FPU takes over"
+        ],
+        "answer": "A Bus Fault is triggered"
+      },
+      {
+        "q": "What is triggered if a rule violation occurs in the MPU system?",
+        "opts": [
+          "Interrupt",
+          "Hardware Fault (Exception)",
+          "Soft Reset",
+          "Timer Overflow"
+        ],
+        "answer": "Hardware Fault (Exception)"
+      },
+      {
+        "q": "What does MMU stand for?",
+        "opts": [
+          "Memory Management Unit",
+          "Main Memory Unit",
+          "Micro Management Unit",
+          "Memory Mapping Utility"
+        ],
+        "answer": "Memory Management Unit"
+      },
+      {
+        "q": "What is the key function of an MMU?",
+        "opts": [
+          "Protecting stack memory",
+          "Mapping virtual addresses to physical addresses",
+          "Calculating floating point numbers",
+          "Managing power consumption"
+        ],
+        "answer": "Mapping virtual addresses to physical addresses"
+      },
+      {
+        "q": "What allows programs to think they have 8GB of memory while physical RAM is only 1GB?",
+        "opts": [
+          "FPU",
+          "Paging and Virtual Memory",
+          "Overclocking",
+          "Using multiple CPUs"
+        ],
+        "answer": "Paging and Virtual Memory"
+      },
+      {
+        "q": "In an MMU system, where are the 'inactive pages' stored?",
+        "opts": [
+          "In the Cache",
+          "On the disk (Swap/Storage)",
+          "In the ALU",
+          "In the MPU registers"
+        ],
+        "answer": "On the disk (Swap/Storage)"
+      },
+      {
+        "q": "Which operating system strictly requires an MMU to function normally?",
+        "opts": [
+          "Simple bare-metal code",
+          "Linux",
+          "Basic Arduino sketches",
+          "Simple bootloaders"
+        ],
+        "answer": "Linux"
+      },
+      {
+        "q": "What are the two key factors to check if a Microcontroller can run Linux?",
+        "opts": [
+          "RAM brand and Case color",
+          "Core speed and MMU presence",
+          "Number of Buttons and LEDs",
+          "FPU speed and Bus width only"
+        ],
+        "answer": "Core speed and MMU presence"
+      },
+      {
+        "q": "What distinguishes an MPU from an MMU?",
+        "opts": [
+          "MPU does translation, MMU does protection",
+          "MPU does protection, MMU does translation",
+          "MPU is for floats, MMU is for integers",
+          "There is no difference"
+        ],
+        "answer": "MPU does protection, MMU does translation"
+      },
+      {
+        "q": "Which unit provides 'Task Isolation', which is important in RTOS environments?",
+        "opts": ["FPU", "MPU", "ALU", "CU"],
+        "answer": "MPU"
+      },
+      {
+        "q": "What is the result of using virtual addresses via MMU?",
+        "opts": [
+          "Applications think they have large continuous memory",
+          "The CPU gets slower",
+          "Physical RAM physically grows",
+          "All programs must be stored in ROM"
+        ],
+        "answer": "Applications think they have large continuous memory"
+      },
+      {
+        "q": "Which unit allows the OS to mark memory regions as 'Privileged' or 'Unprivileged'?",
+        "opts": ["FPU", "MPU", "Timer", "UART"],
+        "answer": "MPU"
+      }
+    ],
+    "tf": [
+      {
+        "q": "An FPU provides higher precision and much faster performance for fractional math.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "If a CPU lacks an FPU, it cannot perform floating-point arithmetic at all.",
+        "answer": "False",
+        "correction": "It can perform them in software, but it will be much slower."
+      },
+      {
+        "q": "The MPU is physically placed between the cache and the RAM.",
+        "answer": "False",
+        "correction": "It is integrated inside the CPU/MCU, though conceptually it sits between them."
+      },
+      {
+        "q": "Configuration registers in the MPU define address ranges and access permissions.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Hypervisor layer helps in running Linux and RTOS independently on the same device.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A Bus Fault triggered by the MPU will stop the system.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "MPU hardware split RAM into address ranges to prevent OS interference.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The MMU allows a system with 1GB RAM to run an app that believes it has 8GB.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Paging keeps all portions of an application in RAM simultaneously.",
+        "answer": "False",
+        "correction": "Only active portions currently needed are kept in RAM."
+      },
+      {
+        "q": "Inactive pages in an MMU system are moved in and out of the disk as required.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A microcontroller can run Linux even if it doesn't have an MMU.",
+        "answer": "False",
+        "correction": "An MMU is a crucial requirement for installing Linux normally."
+      },
+      {
+        "q": "The MPU provides improved reliability and security through fault detection.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "If a memory region is defined as Read-Only by the MPU, no task can write to it.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The MMU maps virtual addresses used by applications into physical addresses in RAM.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Scientific computing and 3D simulations are examples of programs that benefit from an FPU.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
+  },
+  "12": {
+    "mcq": [
+      {
+        "q": "Which signal is used by the CPU to read data from a peripheral like a keyboard?",
+        "opts": ["IORC", "MWTC", "MRDC", "IOWC"],
+        "answer": "IORC"
+      },
+      {
+        "q": "What is the direction of the data bus when the CPU is communicating with RAM?",
+        "opts": [
+          "Uni-directional from CPU",
+          "Bi-directional (To/From CPU)",
+          "Uni-directional to CPU",
+          "It depends on the clock"
+        ],
+        "answer": "Bi-directional (To/From CPU)"
+      },
+      {
+        "q": "What is the typical direction of the Address Bus in a computing system?",
+        "opts": [
+          "Uni-directional from CPU to peripherals",
+          "Bi-directional",
+          "Uni-directional to CPU",
+          "Variable during execution"
+        ],
+        "answer": "Uni-directional from CPU to peripherals"
+      },
+      {
+        "q": "Which control signal indicates that the CPU wants to fetch an instruction from ROM?",
+        "opts": ["MWTC", "MRDC", "IOWC", "IORC"],
+        "answer": "MRDC"
+      },
+      {
+        "q": "What characterizes an 'Active Low' signal on a bus diagram?",
+        "opts": [
+          "It is active at logic 0",
+          "It is active at logic 1",
+          "It carries negative voltage",
+          "It is always inactive"
+        ],
+        "answer": "It is active at logic 0"
+      },
+      {
+        "q": "What is the primary characteristic of the Von-Neumann architecture?",
+        "opts": [
+          "Separate data and code buses",
+          "Single shared bus for code and data",
+          "No use of RAM",
+          "Uses only wireless connections"
+        ],
+        "answer": "Single shared bus for code and data"
+      },
+      {
+        "q": "In Von-Neumann architecture, what term describes RAM, ROM, and I/O sharing the same address space?",
+        "opts": [
+          "Memory-Mapped",
+          "Port-Mapped",
+          "Cache-Locked",
+          "Bus-Switched"
+        ],
+        "answer": "Memory-Mapped"
+      },
+      {
+        "q": "Why is Von-Neumann architecture considered less expensive than Harvard?",
+        "opts": [
+          "It uses gold wires",
+          "It requires fewer cables and buses",
+          "It has no CPU",
+          "It is faster"
+        ],
+        "answer": "It requires fewer cables and buses"
+      },
+      {
+        "q": "In a digital signal diagram, what does a signal with *no* circle (bubble) at the gate indicate?",
+        "opts": ["Active High", "Active Low", "Floating", "Ground"],
+        "answer": "Active High"
+      },
+      {
+        "q": "Which architecture suffers from a performance bottleneck because it cannot access RAM and ROM simultaneously?",
+        "opts": ["Harvard", "Von-Neumann", "RISC", "CISC"],
+        "answer": "Von-Neumann"
+      },
+      {
+        "q": "How does Harvard architecture avoid the shared bus bottleneck?",
+        "opts": [
+          "By slowing down the CPU",
+          "By removing the ROM",
+          "By using separate buses for instructions and data",
+          "By using a single wire"
+        ],
+        "answer": "By using separate buses for instructions and data"
+      },
+      {
+        "q": "Which architecture is generally easier to pipeline for higher performance?",
+        "opts": ["Von-Neumann", "Linear", "Harvard", "Serial"],
+        "answer": "Harvard"
+      },
+      {
+        "q": "According to the comparison table, which architecture has 'no chances' for accidental corruption of program memory?",
+        "opts": ["CISC", "Von-Neumann", "Harvard", "Bi-bus"],
+        "answer": "Harvard"
+      },
+      {
+        "q": "Where is Harvard architecture commonly applied?",
+        "opts": [
+          "Supercomputers",
+          "Personal Computers",
+          "Microcontrollers",
+          "Cloud Servers"
+        ],
+        "answer": "Microcontrollers"
+      },
+      {
+        "q": "Which signal is activated when the CPU wants to send data to a printer?",
+        "opts": ["MRDC", "IORC", "MWTC", "IOWC"],
+        "answer": "IOWC"
+      },
+      {
+        "q": "What happens if a Von-Neumann CPU needs to fetch data while executing an instruction?",
+        "opts": [
+          "It does both at once",
+          "It must wait and complete the cycles sequentially",
+          "It resets",
+          "It uses the Address bus for data"
+        ],
+        "answer": "It must wait and complete the cycles sequentially"
+      },
+      {
+        "q": "Which feature is unique to Von-Neumann architecture according to the comparison?",
+        "opts": [
+          "Parallel processing",
+          "Separate memory slots",
+          "Self-modifying codes",
+          "High cable cost"
+        ],
+        "answer": "Self-modifying codes"
+      },
+      {
+        "q": "What are the three main components of a computing system mentioned in the lecture?",
+        "opts": [
+          "Monitor, Keyboard, Mouse",
+          "Processor, Memory, I/O Peripherals",
+          "ALU, CU, Registers",
+          "Hardware, Software, Firmware"
+        ],
+        "answer": "Processor, Memory, I/O Peripherals"
+      },
+      {
+        "q": "What is the direction of the Data Bus when the CPU reads from ROM?",
+        "opts": [
+          "Bi-directional",
+          "Uni-directional (From CPU)",
+          "Uni-directional (To CPU)",
+          "Variable"
+        ],
+        "answer": "Uni-directional (To CPU)"
+      },
+      {
+        "q": "How is a component like ROM or RAM selected in Von-Neumann architecture?",
+        "opts": [
+          "By its physical color",
+          "By its price",
+          "By its specific address range",
+          "By a manual switch"
+        ],
+        "answer": "By its specific address range"
+      },
+      {
+        "q": "Which signal is specifically for writing data to RAM?",
+        "opts": ["IOWC", "IORC", "MWTC", "MRDC"],
+        "answer": "MWTC"
+      },
+      {
+        "q": "In Harvard architecture, how does the CPU distinguish between RAM and ROM addresses?",
+        "opts": [
+          "Voltage levels",
+          "Wire size",
+          "Using different buses/instructions",
+          "Clock pulses"
+        ],
+        "answer": "Using different buses/instructions"
+      },
+      {
+        "q": "Which architecture wastes more time due to single bus access?",
+        "opts": ["CISC", "RISC", "Von-Neumann", "Harvard"],
+        "answer": "Von-Neumann"
+      },
+      {
+        "q": "What is the primary reason for using Von-Neumann in Personal Computers?",
+        "opts": [
+          "It is faster",
+          "It avoids cable complexity in large systems",
+          "It is more secure",
+          "It uses less power"
+        ],
+        "answer": "It avoids cable complexity in large systems"
+      },
+      {
+        "q": "How are the buses organized in a standard connection?",
+        "opts": [
+          "Randomly",
+          "Inside the ALU only",
+          "Address, Data, and Control bus set",
+          "Wirelessly"
+        ],
+        "answer": "Address, Data, and Control bus set"
+      },
+      {
+        "q": "What part of the system 'points' to the location to be accessed?",
+        "opts": ["Data bus", "Control bus", "Address bus", "ALU"],
+        "answer": "Address bus"
+      },
+      {
+        "q": "What does MWTC stand for?",
+        "opts": [
+          "Memory Wide Task Control",
+          "Main Wire Task Communication",
+          "Modern Wave Time Clock",
+          "Memory Write Control"
+        ],
+        "answer": "Memory Write Control"
+      },
+      {
+        "q": "What is the input/output type for Harvard architecture according to the diagram?",
+        "opts": ["Memory-Mapped", "Wireless", "Cloud-Mapped", "Port-Mapped"],
+        "answer": "Port-Mapped"
+      },
+      {
+        "q": "Which architecture is described as having a parallel connection?",
+        "opts": ["Von-Neumann", "Serial-Architecture", "RISC", "Harvard"],
+        "answer": "Harvard"
+      },
+      {
+        "q": "According to the connection diagrams, the CPU connects to memory using how many types of buses?",
+        "opts": ["One", "Two", "Three", "Four"],
+        "answer": "Three"
+      }
+    ],
+    "tf": [
+      {
+        "q": "In Von-Neumann architecture, the CPU can access RAM and ROM at the same time.",
+        "answer": "False",
+        "correction": "It uses a single shared bus and cannot access them simultaneously."
+      },
+      {
+        "q": "The Data Bus is bi-directional when connecting to RAM.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Address Bus is bi-directional between the CPU and peripherals.",
+        "answer": "False",
+        "correction": "It is uni-directional from the microprocessor to memory/peripherals."
+      },
+      {
+        "q": "Active Low signals are active when their value is 0.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Harvard architecture requires more cables and buses than Von-Neumann.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "MWTC stands for Memory Read Control.",
+        "answer": "False",
+        "correction": "It stands for Memory Write Control."
+      },
+      {
+        "q": "Harvard architecture has higher performance than Von-Neumann due to parallel access.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In Von-Neumann architecture, I/O devices share the same address range logic as RAM and ROM.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Self-modifying code is possible in Harvard architecture.",
+        "answer": "False",
+        "correction": "It is possible only in Von-Neumann architecture."
+      },
+      {
+        "q": "An 'Active High' signal is represented by a circle on the gate in a diagram.",
+        "answer": "False",
+        "correction": "The circle represents 'Active Low'; no circle represents 'Active High'."
+      },
+      {
+        "q": "Pipelining is easier to implement in Harvard architecture.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Von-Neumann architecture is more expensive than Harvard architecture.",
+        "answer": "False",
+        "correction": "Harvard is more expensive due to more buses and parallel connections."
+      },
+      {
+        "q": "Accidental corruption of program memory is a higher risk in Von-Neumann architecture.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "IORC stands for I/O Read Control.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Harvard architecture is typically used in Personal Computers.",
+        "answer": "False",
+        "correction": "Von-Neumann is used in PCs; Harvard is used in Microcontrollers."
+      }
+    ]
+  },
+  "13": {
+    "mcq": [
+      {
+        "q": "What are the two ways to connect Input/Output using Harvard Architecture?",
+        "opts": [
+          "Memory-Mapped and Port-Mapped",
+          "Serial-Mapped and Parallel-Mapped",
+          "Direct-Mapped and Indirect-Mapped",
+          "Bus-Mapped and Wire-Mapped"
+        ],
+        "answer": "Memory-Mapped and Port-Mapped"
+      },
+      {
+        "q": "Which I/O connection method is commonly used in Embedded Systems?",
+        "opts": [
+          "Port-Mapped",
+          "Memory-Mapped",
+          "Virtual-Mapped",
+          "Cache-Mapped"
+        ],
+        "answer": "Memory-Mapped"
+      },
+      {
+        "q": "In Memory-Mapped I/O, which assembly instructions are used to deal with I/O?",
+        "opts": [
+          "In and Out",
+          "Read and Write",
+          "Load and Store",
+          "Push and Pop"
+        ],
+        "answer": "Load and Store"
+      },
+      {
+        "q": "In Memory-Mapped I/O, the code is typically written in which language before conversion?",
+        "opts": ["Assembly Language", "C-Language", "Java", "Python"],
+        "answer": "C-Language"
+      },
+      {
+        "q": "In Memory-Mapped architecture, can the CPU deal with RAM and I/O at the same time?",
+        "opts": [
+          "Yes, always",
+          "No, they are connected like Von Neumann",
+          "Yes, if using DMA",
+          "Only in CISC architectures"
+        ],
+        "answer": "No, they are connected like Von Neumann"
+      },
+
+      {
+        "q": "Which instruction is used to deal with I/O in Port-Mapped architecture?",
+        "opts": ["Load/Store", "Read/Write", "In/Out", "Mov/Cpy"],
+        "answer": "In/Out"
+      },
+      {
+        "q": "Which instruction is used to deal with ROM in Port-Mapped architecture?",
+        "opts": ["In/Out", "Load/Store", "Read/Write", "Fetch/Decode"],
+        "answer": "Read/Write"
+      },
+      {
+        "q": "How does the CPU distinguish addresses in Port-Mapped architecture?",
+        "opts": [
+          "By address range",
+          "By the specific assembly instruction used",
+          "By memory allocation",
+          "By operating system assignment"
+        ],
+        "answer": "By the specific assembly instruction used"
+      },
+      {
+        "q": "In the '2nd way' (hybrid) architecture, using Bus no. 1 (Memory Mapped style) results in:",
+        "opts": [
+          "Faster performance",
+          "Slower performance and no pipeline between RAM and I/O",
+          "Ability to use assembly In/Out instructions",
+          "Simultaneous access to RAM and I/O"
+        ],
+        "answer": "Slower performance and no pipeline between RAM and I/O"
+      },
+      {
+        "q": "If dealing with I/O using Bus set no. 3 in the '2nd way' architecture, the program must be written in:",
+        "opts": ["C-Language", "Java", "Assembly", "Python"],
+        "answer": "Assembly"
+      },
+      {
+        "q": "Which architecture is typically used in Personal Computers (PCs)?",
+        "opts": [
+          "Harvard Architecture",
+          "Von Neumann Architecture",
+          "RISC Architecture",
+          "Port-Mapped Architecture"
+        ],
+        "answer": "Von Neumann Architecture"
+      },
+      {
+        "q": "Which architecture is typically used in Microcontrollers?",
+        "opts": [
+          "Von Neumann Architecture",
+          "Harvard Architecture",
+          "CISC Architecture",
+          "Distributed Architecture"
+        ],
+        "answer": "Harvard Architecture"
+      },
+      {
+        "q": "Why is Von Neumann suitable for PCs regarding signal length?",
+        "opts": [
+          "It uses more wires for speed",
+          "It reduces the huge number of wires required for large scale systems",
+          "It allows wires to be wireless",
+          "It requires 128-bit buses"
+        ],
+        "answer": "It reduces the huge number of wires required for large scale systems"
+      },
+      {
+        "q": "In a PC, the microprocessor loads the OS from the Hard Disk into:",
+        "opts": ["ROM", "I/O", "RAM", "Cache"],
+        "answer": "RAM"
+      },
+      {
+        "q": "Why is Harvard Architecture suitable for Microcontrollers?",
+        "opts": [
+          "Components are on one small chip allowing small wires",
+          "It supports Hard Disk loading",
+          "It uses fewer pins",
+          "It is cheaper for large scale"
+        ],
+        "answer": "Components are on one small chip allowing small wires"
+      },
+      {
+        "q": "What are the three stages of a standard instruction cycle mentioned?",
+        "opts": [
+          "Read, Write, Store",
+          "Input, Process, Output",
+          "Fetch, Decode, Execute",
+          "Load, Run, Save"
+        ],
+        "answer": "Fetch, Decode, Execute"
+      },
+      {
+        "q": "What technique allows the CPU to fetch a 2nd instruction while decoding the 1st?",
+        "opts": [
+          "Multitasking",
+          "Instruction Pipelining",
+          "Memory Mapping",
+          "Overclocking"
+        ],
+        "answer": "Instruction Pipelining"
+      },
+      {
+        "q": "Which architecture supports Instruction Pipelining?",
+        "opts": ["Von Neumann", "Harvard", "Both", "Neither"],
+        "answer": "Harvard"
+      },
+      {
+        "q": "Why can Von Neumann NOT support pipelining?",
+        "opts": [
+          "It is too fast",
+          "It cannot store and fetch instructions at the same time",
+          "It uses too much power",
+          "It has no Control Bus"
+        ],
+        "answer": "It cannot store and fetch instructions at the same time"
+      },
+      {
+        "q": "How does Pipelining affect execution time?",
+        "opts": [
+          "Increases execution time",
+          "Makes execution time less",
+          "No change",
+          "Halves the clock speed"
+        ],
+        "answer": "Makes execution time less"
+      },
+      {
+        "q": "What does MIPS stand for?",
+        "opts": [
+          "Memory Inputs Per System",
+          "Microcontrollers In Parallel Systems",
+          "Millions Instructions Per Second",
+          "Multiple Interrupt Processing System"
+        ],
+        "answer": "Millions Instructions Per Second"
+      },
+      {
+        "q": "Which type of processor architecture supports pipelining?",
+        "opts": ["CISC", "RISC", "Von Neumann", "Single Bus"],
+        "answer": "RISC"
+      },
+      {
+        "q": "Why does CISC generally NOT support pipelining?",
+        "opts": [
+          "Instructions are executed in one cycle",
+          "Instructions can take more than one cycle to execute",
+          "It uses Harvard architecture",
+          "It is too simple"
+        ],
+        "answer": "Instructions can take more than one cycle to execute"
+      },
+      {
+        "q": "Most instructions in RISC are executed in how many clock cycles?",
+        "opts": ["One", "Two", "Five", "Ten"],
+        "answer": "One"
+      }
+    ],
+    "tf": [
+      {
+        "q": "In Memory-Mapped I/O, the CPU uses specific In/Out instructions.",
+        "answer": "False",
+        "correction": "It uses Load/Store instructions."
+      },
+      {
+        "q": "In Port-Mapped architecture, the CPU can deal with RAM, ROM, and I/O simultaneously.",
+        "answer": "True",
+        "correction": "They are connected via different bus sets."
+      },
+      {
+        "q": "Port-Mapped architecture relies on the assembly instruction type to identify the target (RAM, ROM, or I/O).",
+        "answer": "True",
+        "correction": "Load/Store for RAM, Read/Write for ROM, In/Out for I/O."
+      },
+      {
+        "q": "Writing code in C-Language for I/O is associated with the 'In/Out' assembly instructions.",
+        "answer": "False",
+        "correction": "C-Language converts to Load/Store (Memory-Mapped style)."
+      },
+      {
+        "q": "Von Neumann architecture is used in PCs because it reduces the number of wires required.",
+        "answer": "True",
+        "correction": "A shared bus reduces wiring complexity for large scale systems."
+      },
+      {
+        "q": "Microcontrollers typically use Von Neumann architecture.",
+        "answer": "False",
+        "correction": "Microcontrollers typically use Harvard architecture."
+      },
+      {
+        "q": "Pipelining allows the Fetch, Decode, and Execute stages of different instructions to overlap.",
+        "answer": "True",
+        "correction": "This parallel processing increases performance."
+      },
+      {
+        "q": "Von Neumann architecture supports pipelining because it can access RAM and ROM simultaneously.",
+        "answer": "False",
+        "correction": "Von Neumann cannot access both simultaneously, so it does not support pipelining."
+      },
+      {
+        "q": "RISC processors execute most instructions in one clock cycle.",
+        "answer": "True",
+        "correction": "This feature supports pipelining."
+      },
+      {
+        "q": "8 MIPS means the processor can execute 8 thousand instructions per second.",
+        "answer": "False",
+        "correction": "It means 8 Million Instructions Per Second."
+      }
+    ]
+  },
+  "14": {
+    "mcq": [
+      {
+        "q": "According to the lecture, if an arithmetic operation requires more than 8 bits in an 8-bit system, what happens?",
+        "opts": [
+          "The system crashes",
+          "It is ignored",
+          "It is divided into multiple arithmetic operations",
+          "The data bus expands automatically"
+        ],
+        "answer": "It is divided into multiple arithmetic operations"
+      },
+      {
+        "q": "What type of instructions does the 'I' in MIPS specifically refer to?",
+        "opts": [
+          "Python instructions",
+          "C++ instructions",
+          "Assembly instructions",
+          "Java instructions"
+        ],
+        "answer": "Assembly instructions"
+      },
+      {
+        "q": "Which of the following describes the shape of a standard clock signal?",
+        "opts": [
+          "Triangular wave",
+          "Square wave",
+          "Sawtooth wave",
+          "Sinusoidal wave"
+        ],
+        "answer": "Square wave"
+      },
+      {
+        "q": "Which method can be used to generate a clock square wave using software?",
+        "opts": [
+          "555 Timer",
+          "Logic gates",
+          "MATLAB or Python",
+          "Mechanical vibration"
+        ],
+        "answer": "MATLAB or Python"
+      },
+      {
+        "q": "What is the primary function of the clock in an embedded system?",
+        "opts": [
+          "To provide power to the ALU",
+          "To store memory addresses",
+          "To control the system and keep speed consistent",
+          "To detect bit errors in the data bus"
+        ],
+        "answer": "To control the system and keep speed consistent"
+      },
+
+      {
+        "q": "If a system performs 8 million cycles per second, what is its frequency?",
+        "opts": ["8 KHz", "8 MHz", "8 GHz", "8 Hz"],
+        "answer": "8 MHz"
+      },
+      {
+        "q": "In a RISC microprocessor, how many cycles does it typically take to execute one instruction?",
+        "opts": ["Five cycles", "Two cycles", "One cycle", "Ten cycles"],
+        "answer": "One cycle"
+      },
+      {
+        "q": "A RISC microprocessor with an 8 MHz clock will have a performance of:",
+        "opts": ["8 MIPS", "1 MIPS", "64 MIPS", "16 MIPS"],
+        "answer": "8 MIPS"
+      },
+      {
+        "q": "Which components are used alongside a 555 timer to create an RC Oscillator?",
+        "opts": [
+          "Crystal and Resonator",
+          "Inductor and Diode",
+          "Resistor and Capacitor",
+          "Transistor and Transformer"
+        ],
+        "answer": "Resistor and Capacitor"
+      },
+      {
+        "q": "According to page 8, what type of output signal does a type of linear electronic RC oscillator produce?",
+        "opts": [
+          "Square signal",
+          "Digital signal",
+          "Sinusoidal signal",
+          "Pulse signal"
+        ],
+        "answer": "Sinusoidal signal"
+      },
+      {
+        "q": "What is the input required for natural mechanical clock materials?",
+        "opts": [
+          "Mechanical pressure",
+          "Electrical power",
+          "Thermal energy",
+          "Magnetic field"
+        ],
+        "answer": "Electrical power"
+      },
+      {
+        "q": "Which of the following is a type of mechanical clock system material?",
+        "opts": [
+          "555 Timer",
+          "MATLAB simulation",
+          "Ceramic resonator",
+          "Python code"
+        ],
+        "answer": "Ceramic resonator"
+      },
+      {
+        "q": "Which clock system has the lowest manufacturing cost?",
+        "opts": [
+          "Crystal Oscillator",
+          "Ceramic Resonator",
+          "RC Oscillator",
+          "Mechanical Resonator"
+        ],
+        "answer": "RC Oscillator"
+      },
+      {
+        "q": "Which clock system provides the highest accuracy?",
+        "opts": [
+          "RC Oscillator",
+          "Crystal Oscillator",
+          "Ceramic Resonator",
+          "555 Timer circuit"
+        ],
+        "answer": "Crystal Oscillator"
+      },
+      {
+        "q": "What does 'Settling Time' refer to in clock systems?",
+        "opts": [
+          "The time to reach maximum voltage",
+          "The time for a signal to become stable with same frequency",
+          "The time it takes to power off the system",
+          "The duration of one square wave cycle"
+        ],
+        "answer": "The time for a signal to become stable with same frequency"
+      },
+      {
+        "q": "Which system has the lowest settling time?",
+        "opts": [
+          "RC Oscillator",
+          "Ceramic Resonator",
+          "Crystal Oscillator",
+          "Timer 555 circuit"
+        ],
+        "answer": "Crystal Oscillator"
+      },
+      {
+        "q": "Which system has the lowest noise immunity against temperature?",
+        "opts": [
+          "RC Oscillator",
+          "Ceramic Resonator",
+          "Crystal Oscillator",
+          "Natural material systems"
+        ],
+        "answer": "RC Oscillator"
+      },
+      {
+        "q": "Which system has high immunity against vibration noise?",
+        "opts": [
+          "Crystal Oscillator",
+          "Ceramic Resonator",
+          "RC Oscillator",
+          "Mechanical oscillators"
+        ],
+        "answer": "RC Oscillator"
+      },
+      {
+        "q": "Why do Crystal Oscillators have low immunity against vibration?",
+        "opts": [
+          "Because they are made of metal",
+          "Because they work by vibration",
+          "Because they are high cost",
+          "Because they use electrical power"
+        ],
+        "answer": "Because they work by vibration"
+      },
+      {
+        "q": "Which clock system has 'In between' cost and accuracy?",
+        "opts": [
+          "RC Oscillator",
+          "Crystal Oscillator",
+          "Ceramic Resonator",
+          "Simulation software"
+        ],
+        "answer": "Ceramic Resonator"
+      },
+
+      {
+        "q": "In the comparison table, which system has the highest settling time?",
+        "opts": [
+          "Crystal Oscillator",
+          "Ceramic Resonator",
+          "RC Oscillator",
+          "All are equal"
+        ],
+        "answer": "RC Oscillator"
+      },
+      {
+        "q": "The speed of a RISC microprocessor depends on what?",
+        "opts": [
+          "The size of the hard disk",
+          "The speed of the clock",
+          "The number of I/O peripherals",
+          "The manufacturing cost"
+        ],
+        "answer": "The speed of the clock"
+      }
+    ],
+    "tf": [
+      {
+        "q": "In an n-bit microcontroller, the bit size determines the location of the memory.",
+        "answer": "True",
+        "correction": "The n-bit data bus determines the location of the memory."
+      },
+      {
+        "q": "MIPS stands for Millions Instructions Per Second.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A clock signal's frequency is inconsistent and constantly changing.",
+        "answer": "False",
+        "correction": "The clock frequency is constant."
+      },
+      {
+        "q": "8 MHz means the clock performs 8 thousand cycles per second.",
+        "answer": "False",
+        "correction": "It means 8 million cycles per second."
+      },
+      {
+        "q": "In RISC architectures, one instruction typically takes one clock cycle.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "An RC oscillator uses a 555 timer circuit with a resistor and capacitor.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Crystal oscillators are the lowest cost option for generating a clock.",
+        "answer": "False",
+        "correction": "RC oscillators are the lowest cost; Crystal oscillators are the highest cost."
+      },
+      {
+        "q": "Ceramic resonators have high immunity against temperature effects.",
+        "answer": "True",
+        "correction": ""
+      },
+
+      {
+        "q": "Natural materials used for clocks take electrical power as input and output a square wave.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
+  },
+  "15": {
+    "mcq": [
+      {
+        "q": "Which connection method is primarily used in Embedded Systems (ES)?",
+        "opts": [
+          "Logic-Mapped",
+          "Port-Mapped",
+          "Serial-Mapped",
+          "Memory-Mapped"
+        ],
+        "answer": "Memory-Mapped"
+      },
+      {
+        "q": "What technique assigns specific address ranges to RAM, ROM, or I/O devices?",
+        "opts": [
+          "Memory Mapping",
+          "Port Switching",
+          "Bus Matrixing",
+          "Instruction Pipelining"
+        ],
+        "answer": "Memory Mapping"
+      },
+      {
+        "q": "Internally, embedded systems commonly use which type of CPU?",
+        "opts": ["Von Neumann", "Harvard", "Serial", "CISC"],
+        "answer": "Harvard"
+      },
+      {
+        "q": "In an ES, I/O peripherals appear inside which address space?",
+        "opts": [
+          "Control space",
+          "Data address space (RAM space)",
+          "Instruction space",
+          "External bus space"
+        ],
+        "answer": "Data address space (RAM space)"
+      },
+      {
+        "q": "Which assembly instructions does the CPU use to access memory-mapped I/O?",
+        "opts": ["Load/Store", "In/Out", "Push/Pop", "Fetch/Decode"],
+        "answer": "Load/Store"
+      },
+      {
+        "q": "What is used to reach the very first address in a specific peripheral?",
+        "opts": ["Slave port", "Base address", "Offset", "Master port"],
+        "answer": "Base address"
+      },
+      {
+        "q": "What is used to reach each individual register inside a peripheral?",
+        "opts": ["Base address", "Bridge", "Master port", "Offset"],
+        "answer": "Offset"
+      },
+      {
+        "q": "What does GPIO stand for?",
+        "opts": [
+          "Generic-Port Instruction/Object",
+          "General-Purpose Input/Output",
+          "Ground-Power Internal/Offset",
+          "Global-Peripheral Input/Output"
+        ],
+        "answer": "General-Purpose Input/Output"
+      },
+      {
+        "q": "Which port type is required by the CPU to initiate a transaction on the system bus?",
+        "opts": ["Offset port", "Master port", "Bridge port", "Slave port"],
+        "answer": "Master port"
+      },
+      {
+        "q": "Which part of a peripheral is responsible for executing the GPIO process?",
+        "opts": [
+          "The registers",
+          "The system bus",
+          "The hardware circuit",
+          "The TRM"
+        ],
+        "answer": "The hardware circuit"
+      },
+      {
+        "q": "What does TRM stand for in embedded systems?",
+        "opts": [
+          "Task Reference Module",
+          "Total Registry Manual",
+          "Technical Reference Manual",
+          "Transfer Rate Measurement"
+        ],
+        "answer": "Technical Reference Manual"
+      },
+      {
+        "q": "In the provided example, what is the offset for the Direction Register (DR)?",
+        "opts": ["OX8", "OX1", "OX4", "OX0"],
+        "answer": "OX0"
+      },
+      {
+        "q": "In the provided example, what is the offset for the Output Data Register (ODR)?",
+        "opts": ["OXF", "OX1", "OX4", "OX0"],
+        "answer": "OX4"
+      },
+      {
+        "q": "What is required if a GPIO slave type is 'AHP' but the system bus master is not 'AHO'?",
+        "opts": ["A Bridge", "A TRM", "A new CPU", "A Bus Matrix"],
+        "answer": "A Bridge"
+      },
+      {
+        "q": "Which hardware description language is mentioned as being used to design the system bus?",
+        "opts": ["Verilog", "Java", "C++", "Assembly"],
+        "answer": "Verilog"
+      },
+      {
+        "q": "According to the AXI example, which of these can act as a master to initiate transactions?",
+        "opts": [
+          "TRM and Bridges",
+          "CPU, GPU, and DSP",
+          "GPIO and RAM",
+          "Only the CPU"
+        ],
+        "answer": "CPU, GPU, and DSP"
+      },
+      {
+        "q": "What component converts Harvard CPU output to appear as memory-mapped (Von Neumann style) address ranges?",
+        "opts": ["Bridge", "ISR", "Slave port", "Bus matrix"],
+        "answer": "Bus matrix"
+      },
+      {
+        "q": "What mechanism temporarily halts a program to attend to a high-priority task?",
+        "opts": ["Pipelining", "Bridging", "Polling", "An Interrupt"],
+        "answer": "An Interrupt"
+      },
+      {
+        "q": "What is the special routine executed when an interrupt occurs?",
+        "opts": [
+          "Interrupt Service Routine (ISR)",
+          "Bus Matrix Routine",
+          "AXI",
+          "TRM"
+        ],
+        "answer": "Interrupt Service Routine (ISR)"
+      },
+      {
+        "q": "Which method continuously checks a device status in a loop until a condition is met?",
+        "opts": ["Pipelining", "Interrupt", "Polling", "Direct Memory Access"],
+        "answer": "Polling"
+      },
+      {
+        "q": "After an ISR finishes, where does the processor return?",
+        "opts": [
+          "To the standby state",
+          "To the polling loop",
+          "To the main program",
+          "To the beginning of the program"
+        ],
+        "answer": "To the main program"
+      },
+      {
+        "q": "To reach each register in a peripheral, the formula used is:",
+        "opts": [
+          "Base address + Offset",
+          "Base address * Offset",
+          "Base address - End size",
+          "Base address + End size"
+        ],
+        "answer": "Base address + Offset"
+      },
+      {
+        "q": "If we have a Direction Register (DR) with offset OX0 and a base address of GPIO, what is the full address?",
+        "opts": ["OX0 * Base", "OX4 + Base", "OX0 + Base", "Base - OX0"],
+        "answer": "OX0 + Base"
+      },
+      {
+        "q": "In Section 1 of the TRM specs, what is primarily defined?",
+        "opts": [
+          "Only GPIO offsets",
+          "The CPU core frequency",
+          "The memory map for all peripherals",
+          "C-Language code"
+        ],
+        "answer": "The memory map for all peripherals"
+      },
+      {
+        "q": "Polling a sensor to read its value is an example of:",
+        "opts": [
+          "Hardware signaling",
+          "A method to check device status",
+          "Interrupt handling",
+          "Bus matrixing"
+        ],
+        "answer": "A method to check device status"
+      },
+      {
+        "q": "In the system bus architecture, what type of port is used by a device to *receive* a transaction?",
+        "opts": ["Bridge port", "Slave port", "Offset port", "Master port"],
+        "answer": "Slave port"
+      },
+      {
+        "q": "Which section of the Technical Reference Manual (TRM) contains detailed information about specific registers for a peripheral?",
+        "opts": ["Section 1", "Section 2", "Section 3", "The index only"],
+        "answer": "Section 2"
+      },
+      {
+        "q": "Which hardware component acts as an intermediary when the master and slave on a bus are of incompatible types?",
+        "opts": ["A Switch", "An Inverter", "A Bridge", "A Router"],
+        "answer": "A Bridge"
+      },
+      {
+        "q": "In a Harvard-based microcontroller, what is the main purpose of a Bus Matrix?",
+        "opts": [
+          "To speed up the clock",
+          "To perform arithmetic",
+          "To make peripherals appear in a continuous address range",
+          "To manage power"
+        ],
+        "answer": "To make peripherals appear in a continuous address range"
+      },
+      {
+        "q": "What is the basic concept of a signal (hardware or software) that causes a CPU to stop and execute an ISR?",
+        "opts": ["Interrupt", "Wait-cycle", "Pipelining", "Polling"],
+        "answer": "Interrupt"
+      }
+    ],
+    "tf": [
+      {
+        "q": "In embedded systems, the connection for I/O is almost always memory-mapped.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Port-mapped I/O is the primary method used in Embedded Systems according to the lecture.",
+        "answer": "False",
+        "correction": "Memory-mapped I/O is used."
+      },
+      {
+        "q": "A base address is used to reach each individual register in a peripheral.",
+        "answer": "False",
+        "correction": "Base address reaches the first address; Offset reaches each register."
+      },
+      {
+        "q": "The System Bus must have a slave port to connect to the CPU's master port.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Registers in a peripheral are used to write 0 or 1 to perform actions like opening/closing a device.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A Technical Reference Manual (TRM) contains the bus addresses and register offsets for an ES engineer.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "A Bus Matrix is used because Harvard architecture output is naturally port-mapped.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "An Interrupt is a hardware or software signal that causes the processor to stop its current operation.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Polling is more efficient than interrupts because it gives attention to high-priority tasks immediately.",
+        "answer": "False",
+        "correction": "Interrupts handle high-priority tasks; Polling checks status continuously in a loop."
+      },
+      {
+        "q": "Verilog code can define how many masters and slaves exist in a system bus.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "In a Harvard CPU, the program memory and data memory share the same bus.",
+        "answer": "False",
+        "correction": "They have separate buses."
+      },
+      {
+        "q": "The 'Base Address' is specifically used to reach the very first address of a peripheral.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Output Data Register (ODR) for GPIO in the provided example has an offset of OX0.",
+        "answer": "False",
+        "correction": "The DR has offset OX0; the ODR has offset OX4."
+      },
+      {
+        "q": "The CPU, GPU, and DSP can all act as masters on a system bus like AXI.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Interrupts are generally less efficient than polling because the CPU must wait for the device.",
+        "answer": "False",
+        "correction": "Interrupts are more efficient because they only give attention when needed."
+      }
+    ]
+  },
+  "16": {
+    "mcq": [
+      {
+        "q": "What mechanism temporarily halts a program to attend to a high-priority task?",
+        "opts": [
+          "Polling",
+          "Pipelining",
+          "Instruction fetching",
+          "An Interrupt"
+        ],
+        "answer": "An Interrupt"
+      },
+      {
+        "q": "What is the special routine executed by the processor when an interrupt signal is received?",
+        "opts": [
+          "Interrupt Service Routine (ISR)",
+          "Main Program Loop",
+          "Technical Reference Manual (TRM)",
+          "Context Restore Function"
+        ],
+        "answer": "Interrupt Service Routine (ISR)"
+      },
+      {
+        "q": "Where does the processor return after the ISR finishes execution?",
+        "opts": [
+          "To the standby mode",
+          "To the start of the program",
+          "To the main program",
+          "To the polling loop"
+        ],
+        "answer": "To the main program"
+      },
+      {
+        "q": "Which method continuously checks the status of another device in a loop?",
+        "opts": ["Context Switching", "Polling", "Nesting", "Masking"],
+        "answer": "Polling"
+      },
+      {
+        "q": "What is an example of an operation that uses polling?",
+        "opts": [
+          "Critical power failure error",
+          "Timer overflow",
+          "Checking a serial port for data in a loop",
+          "Hardware watchdog reset"
+        ],
+        "answer": "Checking a serial port for data in a loop"
+      },
+      {
+        "q": "Which benefit of interrupts prevents the need for constant status checking?",
+        "opts": [
+          "Multitasking",
+          "Efficiency",
+          "Resource Management",
+          "Real-time Response"
+        ],
+        "answer": "Efficiency"
+      },
+      {
+        "q": "Interrupts facilitate the execution of multiple tasks without needing multiple processors, which is called:",
+        "opts": ["Pipelining", "Nesting", "Multitasking", "Polling"],
+        "answer": "Multitasking"
+      },
+      {
+        "q": "Internal interrupts are typically generated by which component?",
+        "opts": [
+          "External sensors",
+          "User buttons",
+          "Timers or watchdogs",
+          "Communication interfaces"
+        ],
+        "answer": "Timers or watchdogs"
+      },
+      {
+        "q": "What table maps each interrupt source to its corresponding ISR?",
+        "opts": [
+          "Instruction Table",
+          "Technical Reference Table",
+          "Interrupt Vector Table",
+          "Context Table"
+        ],
+        "answer": "Interrupt Vector Table"
+      },
+      {
+        "q": "What action involves saving the registers and program counter before jumping to an ISR?",
+        "opts": ["Context Switching", "Polling", "Masking", "Nesting"],
+        "answer": "Context Switching"
+      },
+      {
+        "q": "In the interrupt processing flow, what happens immediately after the interrupt signal occurs?",
+        "opts": [
+          "ISR execution",
+          "Interrupt Vector Lookup",
+          "Context Restoring",
+          "Return to main program"
+        ],
+        "answer": "Interrupt Vector Lookup"
+      },
+      {
+        "q": "A button press or sensor data availability is classified as what type of interrupt?",
+        "opts": [
+          "Software Interrupt",
+          "Internal Interrupt",
+          "Watchdog Interrupt",
+          "Hardware Interrupt"
+        ],
+        "answer": "Hardware Interrupt"
+      },
+      {
+        "q": "Which interrupts are initiated by program commands or predefined time intervals?",
+        "opts": [
+          "Software Interrupts",
+          "Physical Interrupts",
+          "Non-maskable Interrupts",
+          "External Interrupts"
+        ],
+        "answer": "Software Interrupts"
+      },
+      {
+        "q": "What type of interrupt can be disabled by the processor during critical sections?",
+        "opts": [
+          "Non-Maskable Interrupt (NMI)",
+          "Maskable Interrupt",
+          "Critical Error Interrupt",
+          "Power Failure Interrupt"
+        ],
+        "answer": "Maskable Interrupt"
+      },
+      {
+        "q": "Which of the following is an example of a Non-Maskable Interrupt (NMI)?",
+        "opts": [
+          "Timer interrupt",
+          "Button press",
+          "Power failure",
+          "UART data receipt"
+        ],
+        "answer": "Power failure"
+      },
+      {
+        "q": "What is a key characteristic required of an ISR to minimize latency?",
+        "opts": [
+          "Include long delays",
+          "Perform complex tasks",
+          "Quick and short execution",
+          "Include I/O blocking operations"
+        ],
+        "answer": "Quick and short execution"
+      },
+      {
+        "q": "Why are interrupts generally disabled during the execution of an ISR?",
+        "opts": [
+          "To speed up the clock",
+          "To prevent nesting",
+          "To save power",
+          "To enable polling"
+        ],
+        "answer": "To prevent nesting"
+      },
+      {
+        "q": "What happens when a higher-priority interrupt occurs while a lower-priority ISR is running?",
+        "opts": [
+          "The higher-priority is ignored",
+          "The lower-priority ISR is terminated",
+          "The higher-priority interrupt preempts the lower-priority ISR",
+          "The system resets"
+        ],
+        "answer": "The higher-priority interrupt preempts the lower-priority ISR"
+      },
+      {
+        "q": "What prevents all interrupts from being processed for a specific period?",
+        "opts": [
+          "Disabling Interrupts",
+          "Masking Interrupts",
+          "Polling",
+          "Pipelining"
+        ],
+        "answer": "Disabling Interrupts"
+      },
+      {
+        "q": "Which specific timer resets the system in case of a software malfunction?",
+        "opts": [
+          "System Timer",
+          "Real-time Clock",
+          "UART Timer",
+          "Watchdog Timer"
+        ],
+        "answer": "Watchdog Timer"
+      },
+      {
+        "q": "In the timer interrupt example, what must be enabled globally before execution?",
+        "opts": [
+          "UART transmission",
+          "Polling loop",
+          "Global Interrupts",
+          "Context Switching"
+        ],
+        "answer": "Global Interrupts"
+      },
+      {
+        "q": "What is defined as the time between the arrival of an interrupt and the execution of the ISR?",
+        "opts": [
+          "Settling Time",
+          "Context Time",
+          "Interrupt Latency",
+          "Cycle Time"
+        ],
+        "answer": "Interrupt Latency"
+      },
+      {
+        "q": "Which factor increases interrupt latency?",
+        "opts": [
+          "High priority",
+          "Short ISRs",
+          "Long ISR lengths",
+          "Hardware triggers"
+        ],
+        "answer": "Long ISR lengths"
+      },
+      {
+        "q": "In the simple embedded system example, which event updates the button state?",
+        "opts": [
+          "Timer overflow",
+          "Button press interrupt",
+          "UART transmission",
+          "Watchdog timeout"
+        ],
+        "answer": "Button press interrupt"
+      },
+      {
+        "q": "What does the processor save during Context Saving?",
+        "opts": [
+          "TRM specs",
+          "Registers and flags",
+          "Polling requests",
+          "Wait cycles"
+        ],
+        "answer": "Registers and flags"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Polling is a mechanism that temporarily halts the normal execution of a program.",
+        "answer": "False",
+        "correction": "Interrupts halt the program; Polling is continuous checking in a loop."
+      },
+      {
+        "q": "Real-time response allows a system to respond to external events like sensor data immediately.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The Interrupt Vector Table maps interrupt sources to their corresponding ISR.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Context switching occurs after the ISR has completed execution.",
+        "answer": "False",
+        "correction": "Context is saved before jumping to ISR and restored after completion."
+      },
+      {
+        "q": "Software interrupts are initiated by hardware devices like sensors.",
+        "answer": "False",
+        "correction": "Hardware interrupts are initiated by devices; Software interrupts are initiated by commands."
+      },
+      {
+        "q": "Non-Maskable Interrupts (NMI) can be disabled by the processor during critical code sections.",
+        "answer": "False",
+        "correction": "NMIs cannot be disabled and are used for critical events like power failure."
+      },
+      {
+        "q": "ISRs should avoid long delays and blocking I/O operations.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Higher-priority interrupts can preempt lower-priority ISRs.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Interrupt latency is affected by context switching and ISR length.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Disabling interrupts is often used when updating shared resources.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
+  },
+  "17": {
+    "mcq": [
+      {
+        "q": "What are the two primary classifications of communication systems in embedded systems?",
+        "opts": [
+          "Internal and Global",
+          "On-board and External",
+          "Serial and Binary",
+          "Synchronous and Fast"
+        ],
+        "answer": "On-board and External"
+      },
+      {
+        "q": "Which of the following is an example of an on-board communication interface?",
+        "opts": ["Ethernet", "RS232 C", "I2C", "USB"],
+        "answer": "I2C"
+      },
+      {
+        "q": "How many wires are required for the I2C protocol?",
+        "opts": ["One", "Two", "Four", "Eight"],
+        "answer": "Two"
+      },
+      {
+        "q": "What company designed the I2C bus in the early 80's?",
+        "opts": ["Intel", "Apple", "Phillips", "ARM"],
+        "answer": "Phillips"
+      },
+      {
+        "q": "What does the SCL line in I2C stand for?",
+        "opts": [
+          "Serial Control Line",
+          "System Command Loop",
+          "Serial Clockwise",
+          "Serial Capacitor Link"
+        ],
+        "answer": "Serial Clockwise"
+      },
+      {
+        "q": "What is the data transfer speed of I2C in 'Fast mode'?",
+        "opts": ["100 kbps", "400 kbps", "3.4 mbps", "10 mbps"],
+        "answer": "400 kbps"
+      },
+      {
+        "q": "What is the data transfer speed of I2C in 'High Speed' mode?",
+        "opts": ["400 kbps", "100 kbps", "3.4 mbps", "480 mbps"],
+        "answer": "3.4 mbps"
+      },
+      {
+        "q": "Which protocol is known for supporting a 'data broadcast' feature?",
+        "opts": ["UART", "I2C", "RS232", "Parallel"],
+        "answer": "I2C"
+      },
+      {
+        "q": "How many wires are required for SPI communication?",
+        "opts": ["Two", "Three", "Four", "Five"],
+        "answer": "Four"
+      },
+      {
+        "q": "In SPI, what does the 'MOSI' wire stand for?",
+        "opts": [
+          "Main Output Serial Input",
+          "Master Out Slave In",
+          "Multiple Object Serial Interface",
+          "Memory Output Storage Input"
+        ],
+        "answer": "Master Out Slave In"
+      },
+      {
+        "q": "In which mode does the SPI bus work?",
+        "opts": ["Simplex", "Half duplex", "Full duplex", "Static"],
+        "answer": "Full duplex"
+      },
+      {
+        "q": "Which SPI wire is used to select a specific device?",
+        "opts": ["MOSI", "MISO", "SCK", "SS"],
+        "answer": "SS"
+      },
+      {
+        "q": "What is a major disadvantage of the SPI bus mentioned in the text?",
+        "opts": [
+          "It is too slow",
+          "It only uses two wires",
+          "No acknowledgement from slave",
+          "It requires a clock signal"
+        ],
+        "answer": "No acknowledgement from slave"
+      },
+      {
+        "q": "How many wires are used by UART for communication?",
+        "opts": ["Two", "Four", "One", "Eight"],
+        "answer": "Two"
+      },
+      {
+        "q": "Which UART pin is responsible for sending data?",
+        "opts": ["RX", "TX", "SDA", "SCK"],
+        "answer": "TX"
+      },
+      {
+        "q": "Which protocol does NOT need a clock signal to synchronize data?",
+        "opts": ["I2C", "SPI", "UART", "CAN"],
+        "answer": "UART"
+      },
+      {
+        "q": "What bits are added to outgoing UART signals to separate them?",
+        "opts": [
+          "Wait bits",
+          "Parity and Command bits",
+          "Start and stop bits",
+          "Address bits"
+        ],
+        "answer": "Start and stop bits"
+      },
+      {
+        "q": "In UART, what is used to check the integrity of incoming bytes?",
+        "opts": ["Clock pulse", "SS pin", "Parity bit", "SDA line"],
+        "answer": "Parity bit"
+      },
+      {
+        "q": "Communication where data is sent bit by bit, one after another, is called:",
+        "opts": [
+          "Parallel Communication",
+          "Serial Communication",
+          "Logic Communication",
+          "Simultaneous Communication"
+        ],
+        "answer": "Serial Communication"
+      },
+      {
+        "q": "Why is parallel communication less commonly used in embedded systems?",
+        "opts": [
+          "It is too simple",
+          "It uses fewer wires",
+          "It is more complex and costly",
+          "It is slower than serial"
+        ],
+        "answer": "It is more complex and costly"
+      },
+      {
+        "q": "Which protocol is described as 'fault-tolerant' and used in safety-critical systems?",
+        "opts": ["USB", "UART", "I2C", "CAN"],
+        "answer": "CAN"
+      },
+      {
+        "q": "In which environment is the CAN protocol most commonly found?",
+        "opts": [
+          "Flash drives",
+          "Smartwatches",
+          "Automotive systems",
+          "GPS modules"
+        ],
+        "answer": "Automotive systems"
+      },
+      {
+        "q": "Which protocol provides both high-speed data transfer and power to connected devices?",
+        "opts": ["Bluetooth", "USB", "SPI", "Ethernet"],
+        "answer": "USB"
+      },
+      {
+        "q": "What is the typical range for a standard Bluetooth protocol?",
+        "opts": [
+          "Up to 10 meters",
+          "Up to 100 meters",
+          "Up to 1 kilometer",
+          "Unlimited"
+        ],
+        "answer": "Up to 100 meters"
+      },
+      {
+        "q": "Which wireless protocol is specifically mentioned for use in home automation and IoT?",
+        "opts": ["UART", "Bluetooth", "Wi-Fi", "CAN"],
+        "answer": "Wi-Fi"
+      },
+      {
+        "q": "For long distances, which protocol is considered a good choice according to the selection guide?",
+        "opts": ["UART", "SPI", "I2C", "LoRa"],
+        "answer": "LoRa"
+      },
+      {
+        "q": "If a device runs on battery, which protocol version is recommended?",
+        "opts": [
+          "Standard I2C",
+          "High-Speed USB",
+          "Bluetooth Low Energy (BLE)",
+          "Parallel Interface"
+        ],
+        "answer": "Bluetooth Low Energy (BLE)"
+      },
+      {
+        "q": "Which protocol is best if you need to send a lot of data quickly?",
+        "opts": ["I2C", "UART", "SPI or USB", "Bluetooth"],
+        "answer": "SPI or USB"
+      },
+      {
+        "q": "Standard I2C speed is defined as:",
+        "opts": ["400 kbps", "3.4 mbps", "100 kbps", "115.2 kbps"],
+        "answer": "100 kbps"
+      },
+      {
+        "q": "How many masters does the SPI bus support?",
+        "opts": ["Only 1", "Up to 8", "Up to 127", "Unlimited"],
+        "answer": "Only 1"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Communication interfaces are necessary for sub-systems to talk to the external world.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "RS232 C is an example of an on-board communication interface.",
+        "answer": "False",
+        "correction": "RS232 C is an external communication interface."
+      },
+      {
+        "q": "The I2C bus is a uni-directional serial link.",
+        "answer": "False",
+        "correction": "I2C is a bi-directional 2-wire serial bus."
+      },
+      {
+        "q": "I2C includes a provision for collision detection.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "SPI requires 4 wires: MOSI, MISO, SCK, and SS.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Full duplex mode means a device can send and receive data at the same time.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "SPI provides automatic error checking during data transfer.",
+        "answer": "False",
+        "correction": "There is no provision for error checking in SPI."
+      },
+      {
+        "q": "UART converts parallel data from a computer into a serial bit stream.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "UART uses a clock signal to synchronize data between devices.",
+        "answer": "False",
+        "correction": "UART is asynchronous and does not need a clock signal."
+      },
+      {
+        "q": "Serial communication uses more wires than parallel communication.",
+        "answer": "False",
+        "correction": "Serial uses fewer wires; parallel uses more."
+      },
+      {
+        "q": "The CAN protocol is fault-tolerant and continues working even if there is an issue.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "Bluetooth Low Energy (BLE) features high power consumption.",
+        "answer": "False",
+        "correction": "BLE features low power consumption."
+      },
+      {
+        "q": "UART and SPI are good choices for communicating over long distances.",
+        "answer": "False",
+        "correction": "They are good choices for short distances."
+      },
+      {
+        "q": "I2C is often used to connect temperature sensors or LCD screens.",
+        "answer": "True",
+        "correction": ""
+      },
+      {
+        "q": "The I2C SDA line stands for Serial Data Line.",
+        "answer": "True",
+        "correction": ""
+      }
+    ]
+  }
+}

@@ -1,33 +1,49 @@
 document.addEventListener('DOMContentLoaded', function () {
   const subjects = [
     {
-      id: 'ccn',
-      title: 'Cloud Computing Networks',
+      id: 'acn',
+      title: 'Fundamentals of Management',
       description:
-        'A question bank and quizzes for advanced computer networks.',
+        'A question bank and quizzes for fundamentals of management.',
       driveLink:
-        'https://drive.google.com/drive/folders/1_wUP6MEd0AN22i-HbQGndtnEgseeMbUU?lfhs=2&usp=drive_link',
+        'https://drive.google.com/drive/folders/1OKxFA0FkT1_kgfCB2ft8VkuA8UKABC1B?usp=drive_link',
     },
     {
-      id: 'sl',
-      title: 'Selected labs in Ai',
-      description: 'A question bank and quizzes for communication technology.',
+      id: 'ct',
+      title: 'Course 2',
+      description: 'description for course 2',
       driveLink:
-        'https://drive.google.com/drive/folders/1nmT14jHSq9S-m_Po-8dHbBcBnkGVu09g?lfhs=2&usp=drive_link',
+        'https://drive.google.com/drive/folders/1J5Y6DOYHa2gbi_mMKylFaG5ms4d7Boba?usp=drive_link',
     },
     {
-      id: 'sw',
-      title: 'Semantic Web',
-      description: 'A question bank and quizzes for computer graphics.',
+      id: 'cg',
+      title: 'Course 3',
+      description: 'description for course 3',
       driveLink:
-        'https://drive.google.com/drive/folders/1NBTSzLBjoEe4xFAon6qUOvd4bsk5zOQo?lfhs=2&usp=drive_link',
+        'https://drive.google.com/drive/folders/1s_8SKV7LXP8Q5TXWo4R6ta3gONC4LfBK?usp=drive_link',
     },
     {
-      id: 'wmn',
-      title: 'Wireless and mobile networks',
-      description: 'A question bank and quizzes for embedded systems .',
+      id: 'es',
+      title: 'Course 4',
+      description: 'description for course 4',
       driveLink:
-        'https://drive.google.com/drive/folders/1k3Gymw_bpC-kxSKHYOq3MwdyrRgb2hS2?lfhs=2&usp=drive_link',
+        'https://drive.google.com/drive/folders/1XOYeK6lDH-y0hvFrqt9oFC3g9D96wghP?usp=drive_link',
+    },
+    {
+      id: 'se',
+      title: 'Course 5',
+      description:
+        'description for course 5',
+      driveLink:
+        'https://drive.google.com/drive/folders/1mGZzQCC43RILbC2TFp1CklVHJaDWASHG?usp=drive_link',
+    },
+    {
+      id: 'se',
+      title: 'Course 6',
+      description:
+        'description for course 6',
+      driveLink:
+        'https://drive.google.com/drive/folders/1mGZzQCC43RILbC2TFp1CklVHJaDWASHG?usp=drive_link',
     },
   ];
 
@@ -281,28 +297,40 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function populateLectures() {
-    UIElements.lectureGrid.innerHTML = '';
+  UIElements.lectureGrid.innerHTML = '';
 
-    const lectureKeys = Object.keys(currentSubjectData)
-      .filter((key) => key !== 'midterm')
-      .sort((a, b) => parseInt(a) - parseInt(b));
-    if (lectureKeys.length === 0) {
-      UIElements.lectureGrid.innerHTML = `<p style="text-align:center;">No lectures available for this subject yet.</p>`;
-      return;
-    }
+  const lectureKeys = Object.keys(currentSubjectData)
+    .filter((key) => key !== 'midterm')
+    .sort((a, b) => parseInt(a) - parseInt(b));
 
-    for (const lectureNum of lectureKeys) {
-      const btn = document.createElement('div');
-      btn.className = 'lecture-button';
-      btn.textContent = `Lecture ${lectureNum}`;
-      if (lectureSelectionMode === 'view') {
-        btn.onclick = () => showLectureDetailPage(lectureNum);
-      } else {
-        btn.onclick = () => startQuiz(lectureNum);
-      }
-      UIElements.lectureGrid.appendChild(btn);
-    }
+  if (lectureKeys.length === 0) {
+    UIElements.lectureGrid.innerHTML = `<p style="text-align:center;">No lectures available yet.</p>`;
+    return;
   }
+
+  // إضافة زر "Final Exam" إذا كنا في وضع الكويزات
+  if (lectureSelectionMode === 'quiz') {
+    const finalBtn = document.createElement('div');
+    finalBtn.className = 'lecture-button final-quiz-btn'; // أضف هذا الكلاس في CSS لتمييزه
+    finalBtn.style.backgroundColor = '#ff9800'; // لون مميز للامتحان الشامل
+    finalBtn.textContent = 'Final Exam (All Questions)';
+    finalBtn.onclick = () => startQuiz('final'); // إرسال كلمة 'final' للدالة
+    UIElements.lectureGrid.appendChild(finalBtn);
+  }
+
+  // إضافة باقي الأزرار
+  for (const lectureNum of lectureKeys) {
+    const btn = document.createElement('div');
+    btn.className = 'lecture-button';
+    btn.textContent = `Lecture ${lectureNum}`;
+    if (lectureSelectionMode === 'view') {
+      btn.onclick = () => showLectureDetailPage(lectureNum);
+    } else {
+      btn.onclick = () => startQuiz(lectureNum);
+    }
+    UIElements.lectureGrid.appendChild(btn);
+  }
+}
 
   function populateLectureDetails(lectureNum) {
     UIElements.lectureDetailContent.innerHTML = '';
@@ -339,39 +367,66 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function startQuiz(lectureNum) {
-    currentLectureNum = lectureNum;
+  currentLectureNum = lectureNum;
+  let allQuestions = [];
+
+  // التحقق هل هو امتحان شامل أم محاضرة محددة
+  if (lectureNum === 'final') {
+    // تجميع الأسئلة من جميع المحاضرات
+    for (const key in currentSubjectData) {
+      if (key !== 'midterm' && currentSubjectData[key].mcq) {
+        allQuestions.push(
+          ...currentSubjectData[key].mcq.map((q) => ({ ...q, type: 'mcq' })),
+          ...currentSubjectData[key].tf.map((q) => ({ ...q, type: 'tf' }))
+        );
+      }
+    }
+  } else {
+    // المنطق الأصلي للمحاضرة الواحدة
     const data = currentSubjectData?.[lectureNum];
     if (!data || (data.mcq.length === 0 && data.tf.length === 0)) {
       alert(`A quiz for Lecture ${lectureNum} is not available yet.`);
       return;
     }
-    UIElements.quizTitle.textContent = `${currentSubject.title} - Quiz (Lecture ${lectureNum})`;
-    UIElements.submitQuizBtn.disabled = false;
-    UIElements.submitQuizBtn.style.display = 'block';
-    UIElements.quizActionsContainer.style.display = 'none';
-    const allQuestions = [
+    allQuestions = [
       ...data.mcq.map((q) => ({ ...q, type: 'mcq' })),
       ...data.tf.map((q) => ({ ...q, type: 'tf' })),
     ];
-    quizQuestions = allQuestions.sort(() => 0.5 - Math.random()).slice(0, 200);
-    UIElements.quizForm.innerHTML = quizQuestions
-      .map((q, index) => {
-        const options =
-          q.type === 'mcq'
-            ? q.opts
-                .map(
-                  (opt) =>
-                    `<label><input type="radio" name="q${index}" value="${opt}">${opt}</label>`
-                )
-                .join('')
-            : `<label><input type="radio" name="q${index}" value="True">True</label><label><input type="radio" name="q${index}" value="False">False</label>`;
-        return `<div class="quiz-question" id="quiz-q${index}"><p>${
-          index + 1
-        }. ${q.q}</p><div class="quiz-options">${options}</div></div>`;
-      })
-      .join('');
-    transitionTo(pageElements.quiz);
   }
+
+  if (allQuestions.length === 0) {
+    alert("No questions found.");
+    return;
+  }
+
+  // إعداد الكويز
+  UIElements.quizTitle.textContent = `${currentSubject.title} - ${lectureNum === 'final' ? 'Final Exam (All)' : 'Quiz (Lecture ' + lectureNum + ')'}`;
+  UIElements.submitQuizBtn.disabled = false;
+  UIElements.submitQuizBtn.style.display = 'block';
+  UIElements.quizActionsContainer.style.display = 'none';
+
+  // خلط الأسئلة واختيار عدد معين (مثلاً 50 سؤالاً أو كل الأسئلة إذا كانت أقل)
+  quizQuestions = allQuestions.sort(() => 0.5 - Math.random()).slice(0, 200); 
+
+  UIElements.quizForm.innerHTML = quizQuestions
+    .map((q, index) => {
+      const options =
+        q.type === 'mcq'
+          ? q.opts
+              .map(
+                (opt) =>
+                  `<label><input type="radio" name="q${index}" value="${opt}">${opt}</label>`
+              )
+              .join('')
+          : `<label><input type="radio" name="q${index}" value="True">True</label><label><input type="radio" name="q${index}" value="False">False</label>`;
+      return `<div class="quiz-question" id="quiz-q${index}"><p>${
+        index + 1
+      }. ${q.q}</p><div class="quiz-options">${options}</div></div>`;
+    })
+    .join('');
+    
+  transitionTo(pageElements.quiz);
+}
 
   function handleInstantCorrection(selectedInput) {
     const questionIndex = selectedInput.name.substring(1);

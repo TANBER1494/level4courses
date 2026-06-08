@@ -1,0 +1,1213 @@
+{
+  "1": {
+    "mcq": [
+      {
+        "q": "What is the primary definition of Computer Graphics?",
+        "opts": [
+          "Designing computer hardware components",
+          "Generating, manipulating, and displaying visual content using computers",
+          "Programming computer networks",
+          "Creating only 2D images and animations"
+        ],
+        "answer": "Generating, manipulating, and displaying visual content using computers"
+      },
+      {
+        "q": "Which of these is NOT mentioned as an application of Computer Graphics?",
+        "opts": [
+          "Database management",
+          "Virtual & Augmented Reality",
+          "Medical imaging",
+          "Video games"
+        ],
+        "answer": "Database management"
+      },
+      {
+        "q": "What is the correct sequence of the primary stages in the Graphics Pipeline?",
+        "opts": [
+          "Lighting, Modeling, Rasterization, Transformation, Shading",
+          "Shading, Modeling, Transformation, Lighting, Rasterization",
+          "Modeling, Transformation, Lighting, Rasterization, Shading",
+          "Transformation, Modeling, Shading, Lighting, Rasterization"
+        ],
+        "answer": "Modeling, Transformation, Lighting, Rasterization, Shading"
+      },
+      {
+        "q": "Which coordinate system comes after 'World Coordinates' in the graphics pipeline?",
+        "opts": [
+          "Device Coordinates",
+          "Modeling Coordinates",
+          "Viewing Coordinates",
+          "Normalized Coordinates"
+        ],
+        "answer": "Viewing Coordinates"
+      },
+      {
+        "q": "What are the two main types of Computer Graphics?",
+        "opts": [
+          "Raster and Vector",
+          "Real-time and Offline",
+          "2D and 3D",
+          "Interactive and Non-Interactive"
+        ],
+        "answer": "Interactive and Non-Interactive"
+      },
+      {
+        "q": "What are the three components of a modern graphics display system?",
+        "opts": [
+          "CPU, GPU, RAM",
+          "Keyboard, Mouse, Monitor",
+          "Display controller, Digital memory, Television monitor",
+          "ALU, CU, RF"
+        ],
+        "answer": "Display controller, Digital memory, Television monitor"
+      },
+      {
+        "q": "What is the function of the Display Controller?",
+        "opts": [
+          "Manage network connections",
+          "Execute main program logic",
+          "Pass Frame Buffer's contents to the monitor",
+          "Store the operating system"
+        ],
+        "answer": "Pass Frame Buffer's contents to the monitor"
+      },
+      {
+        "q": "What is another name for the Digital Memory in graphics systems?",
+        "opts": [
+          "Main Memory",
+          "Frame Buffer",
+          "Cache Memory",
+          "Virtual Memory"
+        ],
+        "answer": "Frame Buffer"
+      },
+      {
+        "q": "How are images stored in a Frame Buffer?",
+        "opts": [
+          "As mathematical equations",
+          "As audio signals",
+          "As text descriptions",
+          "As an array (matrix of 0 & 1)"
+        ],
+        "answer": "As an array (matrix of 0 & 1)"
+      },
+      {
+        "q": "What is the modern term for Frame Buffer?",
+        "opts": [
+          "CPU Cache",
+          "V-RAM (video RAM)",
+          "SSD Storage",
+          "Cloud Storage"
+        ],
+        "answer": "V-RAM (video RAM)"
+      },
+      {
+        "q": "Why does the Frame Buffer help increase graphics speed?",
+        "opts": [
+          "It compresses image files automatically",
+          "It eliminates the need for a graphics card",
+          "Graphics hardware can quickly read/write without involving slower main CPU",
+          "It reduces the monitor's refresh rate"
+        ],
+        "answer": "Graphics hardware can quickly read/write without involving slower main CPU"
+      },
+      {
+        "q": "What is another name for Non-Interactive Computer Graphics?",
+        "opts": [
+          "Active computer graphics",
+          "Dynamic graphics",
+          "Passive computer graphics",
+          "Real-time graphics"
+        ],
+        "answer": "Passive computer graphics"
+      },
+      {
+        "q": "Which of these is an example of Non-Interactive Computer Graphics?",
+        "opts": [
+          "Video games",
+          "Drawing on touch screens",
+          "Ping-pong game",
+          "Screen savers"
+        ],
+        "answer": "Screen savers"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Computer graphics deals only with simple 2D images.",
+        "answer": "False"
+      },
+      {
+        "q": "Medical imaging uses computer graphics for 3D reconstructions of CT scans.",
+        "answer": "True"
+      },
+      {
+        "q": "Rasterization is the process of converting 3D information into a 2D image.",
+        "answer": "True"
+      },
+      {
+        "q": "In interactive computer graphics, users have no control over the image.",
+        "answer": "False"
+      },
+      {
+        "q": "The display controller is also known as a display card.",
+        "answer": "True"
+      },
+      {
+        "q": "VGA card typically has a resolution of 1920x1080.",
+        "answer": "False"
+      },
+      {
+        "q": "In frame buffer, 0 represents darkness and 1 represents image or picture.",
+        "answer": "True"
+      },
+      {
+        "q": "Non-interactive graphics are completely controlled by program instructions.",
+        "answer": "True"
+      },
+      {
+        "q": "Drawing on touch screens is an example of interactive computer graphics.",
+        "answer": "True"
+      },
+      {
+        "q": "The television monitor is responsible for executing graphics calculations.",
+        "answer": "False"
+      }
+    ]
+  },
+  "2": {
+    "mcq": [
+      {
+        "q": "What is the process of converting vector graphics into a raster image called?",
+        "opts": ["Transformation", "Rasterization", "Shading", "Modeling"],
+        "answer": "Rasterization"
+      },
+      {
+        "q": "Which rendering type prioritizes speed over quality and is used in video games?",
+        "opts": [
+          "Offline rendering",
+          "Batch rendering",
+          "Real-time rendering",
+          "High-quality rendering"
+        ],
+        "answer": "Real-time rendering"
+      },
+      {
+        "q": "What is the main characteristic of vector graphics?",
+        "opts": [
+          "Resolution-dependent",
+          "Pixel-based",
+          "Resolution-independent",
+          "Fixed size"
+        ],
+        "answer": "Resolution-independent"
+      },
+      {
+        "q": "Which component in the graphics system architecture contains the Frame Buffer?",
+        "opts": [
+          "CPU Processor",
+          "Display Processor Memory",
+          "System Memory",
+          "Video Controller"
+        ],
+        "answer": "Display Processor Memory"
+      },
+      {
+        "q": "What type of graphics representation uses mathematical equations and geometric shapes?",
+        "opts": [
+          "Raster Graphics",
+          "Bitmap Graphics",
+          "Pixel Graphics",
+          "Vector Graphics"
+        ],
+        "answer": "Vector Graphics"
+      },
+      {
+        "q": "In raster graphics, what is the term for the small individual dots that make up the image?",
+        "opts": ["Vectors", "Pixels", "Points", "Coordinates"],
+        "answer": "Pixels"
+      },
+      {
+        "q": "Which of these is an advantage of frame buffers?",
+        "opts": [
+          "They reduce image quality",
+          "They work with different screen resolutions",
+          "They slow down rendering",
+          "They require more CPU processing"
+        ],
+        "answer": "They work with different screen resolutions"
+      },
+      {
+        "q": "What is the typical frame rate target for real-time rendering in video games?",
+        "opts": [
+          "24 frames per second",
+          "30 frames per second",
+          "60 frames per second or higher",
+          "10 frames per second"
+        ],
+        "answer": "60 frames per second or higher"
+      },
+      {
+        "q": "Which graphics representation is also known as bitmap images?",
+        "opts": [
+          "Vector Graphics",
+          "3D Graphics",
+          "Raster Graphics",
+          "Mathematical Graphics"
+        ],
+        "answer": "Raster Graphics"
+      },
+      {
+        "q": "What happens when you scale up a raster image?",
+        "opts": [
+          "It becomes sharper",
+          "It maintains perfect quality",
+          "It can become pixelated or blurry",
+          "It converts to vector graphics"
+        ],
+        "answer": "It can become pixelated or blurry"
+      },
+      {
+        "q": "Where are vector graphics best suited?",
+        "opts": [
+          "For complex photographs",
+          "For detailed textures",
+          "For logos and illustrations",
+          "For realistic scenes"
+        ],
+        "answer": "For logos and illustrations"
+      },
+      {
+        "q": "What does a frame buffer contain for each pixel?",
+        "opts": [
+          "Mathematical equations",
+          "Color values",
+          "Sound data",
+          "Text information"
+        ],
+        "answer": "Color values"
+      },
+      {
+        "q": "Which rendering type can take minutes or hours per frame?",
+        "opts": [
+          "Real-time rendering",
+          "Interactive rendering",
+          "Offline rendering",
+          "Game rendering"
+        ],
+        "answer": "Offline rendering"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Rasterization is the process of converting 3D models into vector graphics.",
+        "answer": "False"
+      },
+      {
+        "q": "Vector graphics can be scaled infinitely without losing quality.",
+        "answer": "True"
+      },
+      {
+        "q": "Real-time rendering is commonly used in film production.",
+        "answer": "False"
+      },
+      {
+        "q": "Raster images are resolution-dependent.",
+        "answer": "True"
+      },
+      {
+        "q": "The frame buffer is located in the CPU processor.",
+        "answer": "False"
+      },
+      {
+        "q": "Vector files are typically larger than high-resolution raster images.",
+        "answer": "False"
+      },
+      {
+        "q": "Rasterization is often used in real-time rendering for video games.",
+        "answer": "True"
+      },
+      {
+        "q": "Offline rendering prioritizes speed over quality.",
+        "answer": "False"
+      },
+      {
+        "q": "Each pixel in a raster image has a defined color value.",
+        "answer": "True"
+      },
+      {
+        "q": "Vector graphics are made up of a grid of colored squares.",
+        "answer": "False"
+      },
+      {
+        "q": "The frame buffer acts as temporary storage for pixel data.",
+        "answer": "True"
+      },
+      {
+        "q": "Raster images are best suited for logos and simple illustrations.",
+        "answer": "False"
+      }
+    ]
+  },
+  "3": {
+    "mcq": [
+      {
+        "q": "What is the fundamental element of picture representation in computer graphics?",
+        "opts": ["Line", "Polygon", "Point", "Pixel"],
+        "answer": "Point"
+      },
+      {
+        "q": "How is a point represented in two-dimensional space?",
+        "opts": ["(x₁, y₁, z₁)", "(x₁)", "(x₁, y₁)", "(y₁)"],
+        "answer": "(x₁, y₁)"
+      },
+      {
+        "q": "What represents a collection of three or more points?",
+        "opts": ["Line", "Edge", "Pixel", "Polygon"],
+        "answer": "Polygon"
+      },
+      {
+        "q": "In computer graphics, how is a line actually drawn on screen?",
+        "opts": [
+          "By drawing continuous perfect lines",
+          "By shading selected pixels",
+          "By using special pens",
+          "By projecting laser beams"
+        ],
+        "answer": "By shading selected pixels"
+      },
+      {
+        "q": "What is the general equation of any straight line?",
+        "opts": ["x = my + c", "y = mx + c", "y = cx + m", "x = cy + m"],
+        "answer": "y = mx + c"
+      },
+      {
+        "q": "In the line equation y = mx + c, what does 'm' represent?",
+        "opts": [
+          "Y-intercept",
+          "X-intercept",
+          "Gradient/steepness",
+          "Constant value"
+        ],
+        "answer": "Gradient/steepness"
+      },
+      {
+        "q": "In the line equation y = mx + c, what does 'c' represent?",
+        "opts": ["X-intercept", "Y-intercept", "Slope", "Gradient"],
+        "answer": "Y-intercept"
+      },
+      {
+        "q": "What is the formula to calculate slope (m) between two points (x₁,y₁) and (x₂,y₂)?",
+        "opts": [
+          "m = (x₂-x₁)/(y₂-y₁)",
+          "m = (y₂-x₂)/(x₂-y₁)",
+          "m = (y₂-y₁)/(x₂-x₁)",
+          "m = (x₂+y₂)/(x₁+y₁)"
+        ],
+        "answer": "m = (y₂-y₁)/(x₂-x₁)"
+      },
+      {
+        "q": "For points (2,2) and (3,4), what is the slope of the line?",
+        "opts": ["1", "3", "4", "2"],
+        "answer": "2"
+      },
+      {
+        "q": "For points (2,2) and (3,4), what is the y-intercept (b)?",
+        "opts": ["-2", "2", "0", "4"],
+        "answer": "-2"
+      },
+      {
+        "q": "What is the main problem with the Slope-Intercept formula method for line drawing?",
+        "opts": [
+          "It uses only integers",
+          "It's too fast",
+          "It uses decimal/floating-point numbers",
+          "It doesn't work for straight lines"
+        ],
+        "answer": "It uses decimal/floating-point numbers"
+      },
+      {
+        "q": "Why is the Slope-Intercept method not suitable for computer graphics?",
+        "opts": [
+          "It's too accurate",
+          "It's resource-intensive and slow",
+          "It only works for curved lines",
+          "It doesn't use mathematics"
+        ],
+        "answer": "It's resource-intensive and slow"
+      },
+      {
+        "q": "What is the slope-intercept form equation for the line passing through points (2,3) and (6,11)?",
+        "opts": ["y = 3x - 1", "y = 2x - 1", "y = 2x + 1", "y = 4x - 5"],
+        "answer": "y = 2x - 1"
+      },
+      {
+        "q": "What is the slope-intercept form equation for the line passing through points (1,-7) and (3,-15)?",
+        "opts": ["y = -4x - 3", "y = 4x - 11", "y = -8x + 1", "y = -2x - 5"],
+        "answer": "y = -4x - 3"
+      },
+      {
+        "q": "What is the slope-intercept form equation for the line passing through (-1,1) with slope 2/3?",
+        "opts": [
+          "y = 2/3x + 5/3",
+          "y = 2/3x + 1",
+          "y = 3/2x + 5/3",
+          "y = 2/3x - 1/3"
+        ],
+        "answer": "y = 2/3x + 5/3"
+      },
+      {
+        "q": "What is the slope-intercept form equation for the line passing through (6,-3) with slope -1/2?",
+        "opts": [
+          "y = -1/2x + 0",
+          "y = -1/2x + 3",
+          "y = -2x - 3",
+          "y = 1/2x - 6"
+        ],
+        "answer": "y = -1/2x + 0"
+      },
+      {
+        "q": "What is the standard form equation for the line passing through points (5,8) and (3,2)?",
+        "opts": ["3x - y = 7", "x - 3y = 7", "2x + y = 18", "3x + y = 23"],
+        "answer": "3x - y = 7"
+      },
+      {
+        "q": "What is the standard form equation for the line passing through points (-4,-5) and (-2,5)?",
+        "opts": ["5x - y = -15", "x - 5y = 21", "5x + y = -25", "2x - y = -3"],
+        "answer": "5x - y = -15"
+      },
+      {
+        "q": "What is the slope of the line passing through points (2,3) and (6,11)?",
+        "opts": ["1", "3", "2", "4"],
+        "answer": "2"
+      },
+      {
+        "q": "What is the slope of the line passing through points (1,-7) and (3,-15)?",
+        "opts": ["-8", "-4", "4", "-2"],
+        "answer": "-4"
+      },
+      {
+        "q": "What is the y-intercept of the line y = 2x - 1?",
+        "opts": ["2", "1", "0", "-1"],
+        "answer": "-1"
+      },
+      {
+        "q": "In parametric form, what range of values does parameter 't' take?",
+        "opts": ["1 to 10", "-1 to 1", "0 to 1", "0 to 100"],
+        "answer": "0 to 1"
+      },
+      {
+        "q": "In parametric form, what point do you get when t=0?",
+        "opts": ["End point", "Mid point", "Start point", "No point"],
+        "answer": "Start point"
+      },
+      {
+        "q": "In parametric form, what point do you get when t=1?",
+        "opts": ["Start point", "Mid point", "End point", "Random point"],
+        "answer": "End point"
+      }
+    ],
+    "tf": [
+      {
+        "q": "A point in three-dimensional space is represented as (x₁, y₁).",
+        "answer": "False"
+      },
+      {
+        "q": "Two points would represent a line or edge.",
+        "answer": "True"
+      },
+      {
+        "q": "In computer graphics, lines are drawn as continuous perfect lines.",
+        "answer": "False"
+      },
+      {
+        "q": "The slope of a straight line is always constant.",
+        "answer": "True"
+      },
+      {
+        "q": "In the equation y = 3x - 2, the y-intercept is 3.",
+        "answer": "False"
+      },
+      {
+        "q": "For parallel lines, the slopes are equal.",
+        "answer": "True"
+      },
+      {
+        "q": "The Slope-Intercept method is the fastest method for line drawing in computer graphics.",
+        "answer": "False"
+      },
+      {
+        "q": "Parametric form uses a parameter 't' that varies between 0 and 1.",
+        "answer": "True"
+      },
+      {
+        "q": "In parametric form, when t=0.5, you get the midpoint of the line.",
+        "answer": "True"
+      },
+      {
+        "q": "The main problem with both Slope-Intercept and Parametric forms is the use of floating-point numbers.",
+        "answer": "True"
+      },
+      {
+        "q": "Pixels are the tiny squares that make up a computer screen.",
+        "answer": "True"
+      },
+      {
+        "q": "The y-intercept is where the line crosses the x-axis.",
+        "answer": "False"
+      },
+      {
+        "q": "For points (1,-7) and (3,-15), the slope is -4.",
+        "answer": "True"
+      }
+    ]
+  },
+  "4": {
+    "mcq": [
+      {
+        "q": "What is the main disadvantage of the DDA algorithm mentioned?",
+        "opts": [
+          "It uses too much memory",
+          "Floating point arithmetic is time-consuming",
+          "It only works for vertical lines",
+          "It requires special hardware"
+        ],
+        "answer": "Floating point arithmetic is time-consuming"
+      },
+      {
+        "q": "What is one advantage of the DDA algorithm?",
+        "opts": [
+          "It eliminates multiplication operations",
+          "It uses only integer arithmetic",
+          "It works without endpoints",
+          "It draws curved lines"
+        ],
+        "answer": "It eliminates multiplication operations"
+      },
+      {
+        "q": "For endpoints (23,33) and (29,40), what is the value of Δx?",
+        "opts": ["7", "6", "5", "8"],
+        "answer": "6"
+      },
+      {
+        "q": "For endpoints (23,33) and (29,40), what is the value of Δy?",
+        "opts": ["6", "7", "8", "5"],
+        "answer": "7"
+      },
+      {
+        "q": "In the DDA example with points (23,33) and (29,40), what is the length used?",
+        "opts": ["6", "7", "8", "5"],
+        "answer": "7"
+      },
+      {
+        "q": "What is the x-increment for points (23,33) and (29,40)?",
+        "opts": ["0.857", "1.0", "0.75", "0.9"],
+        "answer": "0.857"
+      },
+      {
+        "q": "What is the y-increment for points (23,33) and (29,40)?",
+        "opts": ["0.857", "1.0", "0.75", "0.9"],
+        "answer": "1.0"
+      },
+      {
+        "q": "For the line from (0,0) to (6,6), what are the x and y increments?",
+        "opts": [
+          "xinc=0.5, yinc=0.5",
+          "xinc=1, yinc=1",
+          "xinc=2, yinc=2",
+          "xinc=0.6, yinc=0.6"
+        ],
+        "answer": "xinc=1, yinc=1"
+      },
+      {
+        "q": "For the line from (0,0) to (4,6), what is the x-increment?",
+        "opts": ["0.66", "1.0", "0.5", "0.75"],
+        "answer": "0.66"
+      },
+      {
+        "q": "For the line from (0,0) to (4,6), what is the y-increment?",
+        "opts": ["0.66", "1.0", "0.5", "0.75"],
+        "answer": "1.0"
+      },
+      {
+        "q": "What is the second disadvantage mentioned for DDA algorithm?",
+        "opts": [
+          "It's too complex to implement",
+          "It requires color information",
+          "It is orientation dependent",
+          "It only works for short lines"
+        ],
+        "answer": "It is orientation dependent"
+      },
+      {
+        "q": "How many iterations are needed for the line from (0,0) to (6,6)?",
+        "opts": ["5", "6", "7", "8"],
+        "answer": "6"
+      },
+      {
+        "q": "In DDA, when m<1, what is the increment strategy?",
+        "opts": ["x++, y=y+m", "x=x+1/m, y++", "x++, y++", "x=x+m, y++"],
+        "answer": "x++, y=y+m"
+      }
+    ],
+    "tf": [
+      {
+        "q": "DDA algorithm completely eliminates floating point arithmetic.",
+        "answer": "False"
+      },
+      {
+        "q": "The DDA algorithm is simpler to implement than the slope-intercept method.",
+        "answer": "True"
+      },
+      {
+        "q": "For endpoints (23,33) and (29,40), the first plotted point is (23,33).",
+        "answer": "True"
+      },
+      {
+        "q": "In DDA, the number of steps equals the minimum of Δx and Δy.",
+        "answer": "False"
+      },
+      {
+        "q": "The line from (0,0) to (6,6) has equal x and y increments.",
+        "answer": "True"
+      },
+      {
+        "q": "For the line from (0,0) to (4,6), the length used is 4.",
+        "answer": "False"
+      },
+      {
+        "q": "DDA algorithm provides perfect end point accuracy.",
+        "answer": "False"
+      },
+      {
+        "q": "In the line from (0,0) to (4,6), when x=2.66, y=4.",
+        "answer": "True"
+      },
+      {
+        "q": "For m=1 in DDA, both x and y are incremented by 1.",
+        "answer": "True"
+      },
+      {
+        "q": "The DDA algorithm is faster than using the direct equation y=mx+b.",
+        "answer": "True"
+      }
+    ]
+  },
+  "5": {
+    "mcq": [
+      {
+        "q": "What is the basic principle of Bresenham's line algorithm?",
+        "opts": [
+          "To use floating point calculations for accuracy",
+          "To select optimum raster locations to represent a straight line",
+          "To draw lines using only trigonometric functions",
+          "To work only with horizontal and vertical lines"
+        ],
+        "answer": "To select optimum raster locations to represent a straight line"
+      },
+      {
+        "q": "What type of calculations does Bresenham's algorithm use?",
+        "opts": [
+          "Floating point calculations",
+          "Complex number calculations",
+          "Incremental integer calculations",
+          "Trigonometric calculations"
+        ],
+        "answer": "Incremental integer calculations"
+      },
+      {
+        "q": "For lines with slope |m| < 1, what coordinate is always incremented by one?",
+        "opts": [
+          "Y coordinate",
+          "X coordinate",
+          "Both X and Y coordinates",
+          "Neither coordinate"
+        ],
+        "answer": "X coordinate"
+      },
+      {
+        "q": "What is the initial decision parameter p₀ in Bresenham's algorithm?",
+        "opts": ["2Δx - Δy", "2Δy - Δx", "Δx + Δy", "Δx - Δy"],
+        "answer": "2Δy - Δx"
+      },
+      {
+        "q": "If pₖ < 0, what is the next point to plot?",
+        "opts": ["(xₖ₊₁, yₖ₊₁)", "(xₖ, yₖ₊₁)", "(xₖ₊₁, yₖ)", "(xₖ, yₖ)"],
+        "answer": "(xₖ₊₁, yₖ)"
+      },
+      {
+        "q": "If pₖ ≥ 0, what is the next point to plot?",
+        "opts": ["(xₖ₊₁, yₖ)", "(xₖ, yₖ₊₁)", "(xₖ₊₁, yₖ₊₁)", "(xₖ, yₖ)"],
+        "answer": "(xₖ₊₁, yₖ₊₁)"
+      },
+      {
+        "q": "For endpoints (20,10) and (30,18), what is the value of Δx?",
+        "opts": ["8", "10", "12", "6"],
+        "answer": "10"
+      },
+      {
+        "q": "For endpoints (20,10) and (30,18), what is the value of Δy?",
+        "opts": ["10", "8", "6", "12"],
+        "answer": "8"
+      },
+      {
+        "q": "For endpoints (20,10) and (30,18), what is the initial decision parameter p₀?",
+        "opts": ["2", "6", "10", "14"],
+        "answer": "6"
+      },
+      {
+        "q": "When pₖ < 0, how is pₖ₊₁ calculated?",
+        "opts": ["pₖ + 2Δy - 2Δx", "pₖ + 2Δx", "pₖ + 2Δy", "pₖ - 2Δy"],
+        "answer": "pₖ + 2Δy"
+      },
+      {
+        "q": "When pₖ ≥ 0, how is pₖ₊₁ calculated?",
+        "opts": ["pₖ + 2Δy", "pₖ + 2Δx", "pₖ + 2Δy - 2Δx", "pₖ - 2Δy"],
+        "answer": "pₖ + 2Δy - 2Δx"
+      },
+      {
+        "q": "For which slopes does Bresenham's algorithm NOT need to be used?",
+        "opts": [
+          "Only for slopes between 0 and 1",
+          "For all slopes",
+          "For horizontal, vertical and ±45° lines",
+          "Only for negative slopes"
+        ],
+        "answer": "For horizontal, vertical and ±45° lines"
+      },
+      {
+        "q": "In which octant is a line with slope between 0 and 1?",
+        "opts": [
+          "First octant",
+          "Second octant",
+          "Third octant",
+          "Fourth octant"
+        ],
+        "answer": "First octant"
+      },
+      {
+        "q": "What is the main advantage of Bresenham's algorithm over DDA?",
+        "opts": [
+          "It uses floating point arithmetic",
+          "It uses only integer calculations",
+          "It works only for special cases",
+          "It is slower but more accurate"
+        ],
+        "answer": "It uses only integer calculations"
+      },
+      {
+        "q": "For endpoints (5,8) and (9,11), what is the initial decision parameter?",
+        "opts": ["1", "2", "3", "4"],
+        "answer": "2"
+      }
+    ],
+    "tf": [
+      {
+        "q": "Bresenham's algorithm uses floating point arithmetic extensively.",
+        "answer": "False"
+      },
+      {
+        "q": "The algorithm always increments both x and y coordinates by one.",
+        "answer": "False"
+      },
+      {
+        "q": "For lines with |m| < 1, x is always incremented by one.",
+        "answer": "True"
+      },
+      {
+        "q": "The decision parameter determines whether to increment y or not.",
+        "answer": "True"
+      },
+      {
+        "q": "Bresenham's algorithm works only for lines in the first octant.",
+        "answer": "False"
+      },
+      {
+        "q": "When pₖ < 0, the next point is (xₖ₊₁, yₖ) and pₖ₊₁ = pₖ + 2Δy.",
+        "answer": "True"
+      },
+      {
+        "q": "When pₖ ≥ 0, the next point is (xₖ₊₁, yₖ₊₁) and pₖ₊₁ = pₖ + 2Δy - 2Δx.",
+        "answer": "True"
+      },
+      {
+        "q": "For horizontal lines, Bresenham's algorithm is not needed.",
+        "answer": "True"
+      },
+      {
+        "q": "The number of iterations in Bresenham's algorithm is Δx - 1.",
+        "answer": "True"
+      },
+      {
+        "q": "Bresenham's algorithm is less efficient than the DDA algorithm.",
+        "answer": "False"
+      },
+      {
+        "q": "For endpoints (20,10) and (30,18), the first point plotted is (20,10).",
+        "answer": "True"
+      },
+      {
+        "q": "The algorithm can handle lines in all eight octants.",
+        "answer": "True"
+      },
+      {
+        "q": "Bresenham's algorithm was developed specifically for circle drawing only.",
+        "answer": "False"
+      },
+      {
+        "q": "In the second octant, the roles of x and y are swapped.",
+        "answer": "True"
+      },
+      {
+        "q": "The decision parameter pₖ is always positive.",
+        "answer": "False"
+      }
+    ]
+  },
+  "6": {
+    "mcq": [
+      {
+        "q": "A line has endpoints (48,8) and (32,3). In which octant is this line located?",
+        "opts": [
+          "Third Octant",
+          "Fifth Octant",
+          "First Octant",
+          "Seventh Octant"
+        ],
+        "answer": "Fifth Octant"
+      },
+      {
+        "q": "A line has endpoints (3,48) and (8,32). In which octant is this line located?",
+        "opts": [
+          "Fifth Octant",
+          "Seventh Octant",
+          "First Octant",
+          "Third Octant"
+        ],
+        "answer": "Seventh Octant"
+      },
+      {
+        "q": "A line has endpoints (32,3) and (48,8). In which octant is this line located?",
+        "opts": [
+          "First Octant",
+          "Fourth Octant",
+          "Sixth Octant",
+          "Eighth Octant"
+        ],
+        "answer": "First Octant"
+      },
+      {
+        "q": "A line has endpoints (8,48) and (3,32). In which octant is this line located?",
+        "opts": [
+          "Second Octant",
+          "Fourth Octant",
+          "Sixth Octant",
+          "Eighth Octant"
+        ],
+        "answer": "Sixth Octant"
+      },
+      {
+        "q": "A line has endpoints (48,3) and (32,8). In which octant is this line located?",
+        "opts": [
+          "Second Octant",
+          "Fourth Octant",
+          "Sixth Octant",
+          "Eighth Octant"
+        ],
+        "answer": "Fourth Octant"
+      },
+      {
+        "q": "A line has endpoints (32,8) and (48,3). In which octant is this line located?",
+        "opts": [
+          "Second Octant",
+          "Fourth Octant",
+          "Sixth Octant",
+          "Eighth Octant"
+        ],
+        "answer": "Eighth Octant"
+      },
+      {
+        "q": "A line has endpoints (3,32) and (8,48). In which octant is this line located?",
+        "opts": [
+          "First Octant",
+          "Second Octant",
+          "Third Octant",
+          "Fourth Octant"
+        ],
+        "answer": "Second Octant"
+      },
+      {
+        "q": "A line has endpoints (8,32) and (3,48). In which octant is this line located?",
+        "opts": [
+          "Third Octant",
+          "Fifth Octant",
+          "Seventh Octant",
+          "First Octant"
+        ],
+        "answer": "Third Octant"
+      },
+      {
+        "q": "In the First Octant, what operations are performed?",
+        "opts": [
+          "INC X by -1, set_pixel(X,Y)",
+          "INC Y by -1, set_pixel(X,Y)",
+          "No swap, direct plotting",
+          "Swap X1,Y1 and Swap X2,Y2"
+        ],
+        "answer": "No swap, direct plotting"
+      },
+      {
+        "q": "In the Second Octant, what is the main operation before plotting?",
+        "opts": [
+          "INC X by -1",
+          "INC Y by -1",
+          "Swap X1,Y1 and Swap X2,Y2",
+          "INC both X and Y by -1"
+        ],
+        "answer": "Swap X1,Y1 and Swap X2,Y2"
+      },
+      {
+        "q": "Which octant requires swapping coordinates AND decrementing both X and Y?",
+        "opts": [
+          "Third Octant",
+          "Fifth Octant",
+          "Sixth Octant",
+          "Seventh Octant"
+        ],
+        "answer": "Sixth Octant"
+      },
+      {
+        "q": "In the Fourth Octant, what operation is performed on X?",
+        "opts": [
+          "Swap with Y",
+          "Increment by 1",
+          "Decrement by 1",
+          "No change"
+        ],
+        "answer": "Decrement by 1"
+      },
+      {
+        "q": "Which octant uses 'INC Y by -1, set_pixel(X,Y)'?",
+        "opts": [
+          "First Octant",
+          "Third Octant",
+          "Fifth Octant",
+          "Eighth Octant"
+        ],
+        "answer": "Eighth Octant"
+      },
+      {
+        "q": "In the Seventh Octant, what operations are performed?",
+        "opts": [
+          "Swap X1,Y1 and Swap X2,Y2, INC X by -1, set_pixel(Y,X)",
+          "INC Y by -1, INC X by -1, set_pixel(X,Y)",
+          "Swap X1,Y1 and Swap X2,Y2, INC Y by -1, set_pixel(Y,X)",
+          "INC X by -1, set_pixel(X,Y)"
+        ],
+        "answer": "Swap X1,Y1 and Swap X2,Y2, INC X by -1, set_pixel(Y,X)"
+      },
+      {
+        "q": "Which octant requires only decrementing X before plotting?",
+        "opts": [
+          "First Octant",
+          "Third Octant",
+          "Fourth Octant",
+          "Seventh Octant"
+        ],
+        "answer": "Fourth Octant"
+      },
+      {
+        "q": "In the Fifth Octant, what operations are performed?",
+        "opts": [
+          "INC X by -1, INC Y by -1, set_pixel(X,Y)",
+          "Swap X1,Y1 and Swap X2,Y2, set_pixel(Y,X)",
+          "INC Y by -1, set_pixel(X,Y)",
+          "INC X by -1, set_pixel(X,Y)"
+        ],
+        "answer": "INC X by -1, INC Y by -1, set_pixel(X,Y)"
+      }
+    ],
+    "tf": []
+  },
+  "7": {
+    "mcq": [
+      {
+        "q": "What is the equation used to define a circle in computer graphics?",
+        "opts": ["x + y = r", "x² + y² = r²", "y = mx + c", "x² - y² = r²"],
+        "answer": "x² + y² = r²"
+      },
+      {
+        "q": "What is the main disadvantage of the simple circle drawing algorithm?",
+        "opts": [
+          "It uses too many colors",
+          "It has large gaps where slope approaches vertical",
+          "It only works for small circles",
+          "It requires special hardware"
+        ],
+        "answer": "It has large gaps where slope approaches vertical"
+      },
+      {
+        "q": "How many points are calculated directly in the Midpoint Circle Algorithm due to symmetry?",
+        "opts": ["All points", "One quadrant", "One octant", "Half the circle"],
+        "answer": "One octant"
+      },
+      {
+        "q": "What is the initial decision parameter P₀ for a circle with radius r?",
+        "opts": ["1 - r", "r - 1", "5/4 - r", "Both 1 - r and 5/4 - r"],
+        "answer": "Both 1 - r and 5/4 - r"
+      },
+      {
+        "q": "When Pₖ < 0 in the Midpoint Circle Algorithm, what is the next point?",
+        "opts": [
+          "(xₖ + 1, yₖ - 1)",
+          "(xₖ + 1, yₖ)",
+          "(xₖ, yₖ - 1)",
+          "(xₖ - 1, yₖ)"
+        ],
+        "answer": "(xₖ + 1, yₖ)"
+      },
+      {
+        "q": "When Pₖ ≥ 0 in the Midpoint Circle Algorithm, what is the next point?",
+        "opts": [
+          "(xₖ + 1, yₖ)",
+          "(xₖ + 1, yₖ - 1)",
+          "(xₖ, yₖ - 1)",
+          "(xₖ - 1, yₖ)"
+        ],
+        "answer": "(xₖ + 1, yₖ - 1)"
+      },
+      {
+        "q": "For a circle with radius 10 centered at (0,0), what is the initial point?",
+        "opts": ["(0,0)", "(10,0)", "(0,10)", "(10,10)"],
+        "answer": "(0,10)"
+      },
+      {
+        "q": "What is the initial decision parameter for a circle with radius 10?",
+        "opts": ["-9", "9", "-10", "10"],
+        "answer": "-9"
+      },
+      {
+        "q": "When Pₖ < 0, how is Pₖ₊₁ calculated?",
+        "opts": [
+          "Pₖ + 2xₖ₊₁ + 1",
+          "Pₖ + 2xₖ₊₁ + 1 - 2yₖ₊₁",
+          "Pₖ + 2yₖ₊₁ + 1",
+          "Pₖ - 2xₖ₊₁ - 1"
+        ],
+        "answer": "Pₖ + 2xₖ₊₁ + 1"
+      },
+      {
+        "q": "When Pₖ ≥ 0, how is Pₖ₊₁ calculated?",
+        "opts": [
+          "Pₖ + 2xₖ₊₁ + 1",
+          "Pₖ + 2xₖ₊₁ + 1 - 2yₖ₊₁",
+          "Pₖ + 2yₖ₊₁ + 1",
+          "Pₖ - 2xₖ₊₁ - 1"
+        ],
+        "answer": "Pₖ + 2xₖ₊₁ + 1 - 2yₖ₊₁"
+      },
+      {
+        "q": "The Midpoint Circle Algorithm terminates when:",
+        "opts": ["x = 0", "y = 0", "x ≥ y", "x ≤ y"],
+        "answer": "x ≥ y"
+      },
+      {
+        "q": "Which mathematician developed the Midpoint Circle Algorithm?",
+        "opts": [
+          "Jack Bresenham",
+          "Albert Einstein",
+          "Isaac Newton",
+          "Alan Turing"
+        ],
+        "answer": "Jack Bresenham"
+      },
+      {
+        "q": "What is the circle function f_circ(x,y) used for?",
+        "opts": [
+          "To calculate circle area",
+          "To determine if a point is inside/on/outside circle",
+          "To find circle circumference",
+          "To calculate circle diameter"
+        ],
+        "answer": "To determine if a point is inside/on/outside circle"
+      },
+      {
+        "q": "For the point (4,9) in octant-1, what is the corresponding point in octant-2?",
+        "opts": ["(9,4)", "(4,9)", "(9,-4)", "(-4,9)"],
+        "answer": "(9,4)"
+      },
+      {
+        "q": "What is evaluated at the midpoint between candidate pixels?",
+        "opts": [
+          "The color value",
+          "The circle function f_circ(x,y)",
+          "The distance from origin",
+          "The slope of the circle"
+        ],
+        "answer": "The circle function f_circ(x,y)"
+      }
+    ],
+    "tf": [
+      {
+        "q": "The simple circle drawing algorithm using y = ±√(r² - x²) is very efficient for computer graphics.",
+        "answer": "False"
+      },
+      {
+        "q": "The Midpoint Circle Algorithm uses eight-way symmetry to reduce calculations.",
+        "answer": "True"
+      },
+      {
+        "q": "In the Midpoint Circle Algorithm, we calculate all points of the circle directly.",
+        "answer": "False"
+      },
+      {
+        "q": "The initial point for a circle centered at (0,0) with radius r is (0,r).",
+        "answer": "True"
+      },
+      {
+        "q": "When Pₖ < 0, the midpoint is outside the circle.",
+        "answer": "False"
+      },
+      {
+        "q": "When Pₖ ≥ 0, the midpoint is inside or on the circle.",
+        "answer": "False"
+      },
+      {
+        "q": "The algorithm moves in unit steps along the x-axis.",
+        "answer": "True"
+      },
+      {
+        "q": "For a circle with radius 10, the initial decision parameter P₀ is -10.",
+        "answer": "False"
+      },
+      {
+        "q": "Points in other octants are obtained by swapping and negating coordinates.",
+        "answer": "True"
+      },
+      {
+        "q": "The Midpoint Circle Algorithm uses floating point arithmetic extensively.",
+        "answer": "False"
+      },
+      {
+        "q": "The circle function f_circ(x,y) = x² + y² - r² equals 0 for points on the circle.",
+        "answer": "True"
+      },
+      {
+        "q": "The algorithm continues until x becomes less than y.",
+        "answer": "False"
+      },
+      {
+        "q": "For radius 10, the point (7,7) is the last point calculated in the first octant.",
+        "answer": "True"
+      },
+      {
+        "q": "The Midpoint Circle Algorithm can only draw circles centered at (0,0).",
+        "answer": "False"
+      },
+      {
+        "q": "The algorithm uses only integer arithmetic for efficiency.",
+        "answer": "True"
+      }
+    ]
+  }
+}
